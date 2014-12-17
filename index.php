@@ -25,11 +25,11 @@
     <h1 id="sexy-name">TUM<strong>.sexy</strong></h1>
        
         
-        <p>Welcome dude.<br />What's this all about? Well first of all you find some nice <strong>subdomain-redirects</strong> which are a shorter and more memorable.</p>
+        <p><br />What's this all about? Well first of all you find some nice <strong>subdomain-redirects</strong> which are a shorter and more memorable.</p>
 
         <p>In the future we are going to host some cool projects relating to TUM here.</p>
 
-        <p>If you wanna have new redirects or have your project linked here, just drop a line at <a href="mailto:heilig@tum.sexy">heilig@tum.sexy</a>.</p>
+        <p>If you wanna have new redirects or have your project linked here, just drop a line at <a href="mailto:heilig@tum.sexy">heilig@tum.sexy</a>. Btw, because Open-Source is cool you find it at <a href="https://github.com/mammuth/TUM.sexy">Github</a></p>
         <br />
       
     </div>
