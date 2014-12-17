@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <title>tum.sexy | CalProxy</title>
+  <meta name="description" content="Helpfull links, subdomains, redirects and tools for students of the Technical University Munich (TUM)">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/skeleton.css">
+  <link rel="stylesheet" href="../css/custom.css">
+  <link rel="icon" type="image/png" href="../images/favicon.png" />
+
+
+</head>
+<body>
+
+
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+
+  <div id="breadcrumb">  
+    <ul class="crumbs">  
+        <li class="first"><a href="http://tum.sexy" style="z-index:9;"><span></span>Home</a></li>  
+        
+    </ul>  
+</div>  
+
+
+  <?php
+    include('../header.php');
+  ?>
+
+    <div class="row" style="margin-top: 10%">
+
+ <h1>TUM Calendar Proxy</h1>
+<h2>About</h2>
+<p>Nice and easy proxy to remove some clutter from the TUM online iCal export. E.g.: replaces 'Tutorübung' with 'T'</p>
+
+<h2>HowTo</h2>
+<ol>
+	<li>Grab the URL from the TUMO calendar</li>
+	<li>Copy 'n' Paste the query string (everything after the ? sign) and append it to this url</li>
+	<li>Go to Google Calendar (or similar) and import the resulting url</li>
+</ol>
+
+<h3>Contribute</h3>
+If you want to help out, contribute to the Github Repo, held bei Kordian B.: <a href="https://github.com/kordianbruck/TumCalProxy">https://github.com/kordianbruck/TumCalProxy</a>
+
+<br />
+<br />
+
+
+<span style="font-size:10px;color:#ccc;">Version v0.2</span>
+<?php include('googleanalytics.php') ?>
+</div>
+</div>
+</body>
+</html>

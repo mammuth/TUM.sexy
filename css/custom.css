@@ -1,0 +1,61 @@
+h1#sexy-name {
+	margin-bottom: 5%;
+	text-align: center;
+	
+}
+
+.container {
+	min-height:100% !important;
+	position:relative !important;
+	padding-bottom: 20px !important; /* Height of the Footer */
+}
+#footer {
+	bottom: 0px;
+	right: 10px;
+	height: 20px;
+}
+#footer p {
+	font-size: x-small !important;
+	color: grey;
+	text-align: right;
+	margin-right:5px;
+}
+
+
+.crumbs { display: block;  }  
+.crumbs li {  display: inline; }  
+.crumbs li.first { padding-left: 8px; }  
+.crumbs li a,  
+.crumbs li a:link,  
+.crumbs li a:visited {  
+    color: #666;  
+    display: block;  
+    float: left;  
+    font-size: 12px;  
+    margin-left: -13px;  
+    padding: 7px 17px 11px 25px;  
+    position: relative;  
+    text-decoration: none;  
+}  
+.crumbs li a {  
+    background-repeat: no-repeat;  
+    background-position: 100% 0;  
+    position: relative;  
+}  
+.crumbs li a:hover {  
+    color: #333;  
+    background-position: 100% -48px;  
+    cursor: pointer;  
+}  
+.crumbs li a:active {  
+    color: #333;  
+    background-position: 100% -96px;  
+}  
+.crumbs li.first a span {  
+    height: 29px;  
+    width: 3px;  
+    border-left: 1px solid #d9d9d9;  
+    position: absolute;  
+    top: 0px;  
+    left: 0px;  
+}  
