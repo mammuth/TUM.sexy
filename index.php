@@ -56,7 +56,7 @@
         <ul>
           <li>TUM Online - <a href="http://c.tum.sexy">c.tum.sexy</a></li>
           <li>FMI Bistro "Speiseplan" - <a href="http://hunger.tum.sexy">hunger.tum.sexy</a>
-            <ul><li>U know, why this is cool? It automatically redirects to the current week's Speiseplan.</li></ul>
+            <ul><li>U know, why this is cool? The power of PHP automatically redirects to the current week's Speiseplan.</li></ul>
           </li>
           <li>ReddiTUM - <a href="http://reddi.tum.sexy">reddi.tum.sexy</a></li>
           <li>Moodle - <a href="http://m.tum.sexy">m.tum.sexy</a></li>
