@@ -52,8 +52,8 @@ function cleanEvent(&$e){
 	
 	//Some common replacements for some stuff
 	$e['SUMMARY']=str_replace(
-	array('Tutorübungen', 'Grundlagen: ','Betriebssysteme und Systemsoftware', 'Einführung in die Informatik 2'), 
-	array('TÜ','G','BS','INFO2'), $e['SUMMARY']);
+	array('Tutorübungen', 'Grundlagen: ','Betriebssysteme und Systemsoftware', 'Einführung in die Informatik ', 'Praktikum: Grundlagen der Programmierung', 'Einführung in die Rechnerarchitektur (Einführung in die Technische Informatik)', 'Einführung in die Softwaretechnik', 'Algorithmen und Datenstrukturen', 'Rechnernetze und Verteilte Systeme', 'Einfürhung in die Theoretische Informatik', 'Diskrete Strukturen', 'Diskrete Wahrscheinlichkeitstheorie', 'Numerisches Programmieren', 'Lineare Algebra für Informatik', 'Analysis für Informatik'), 
+	array('TÜ','G','BS','INFO', 'PGP', 'ERA', 'EIST', 'AD', 'RNVS', 'THEO', 'DS', 'DWT', 'NumProg', 'LinAlg', 'Analysis'), $e['SUMMARY']);
 	$e['SUMMARY']=str_replace(array('Standardgruppe', 'PR, ','VO, '), '', $e['SUMMARY']);
 	
 	//Try to make sense out of the location
