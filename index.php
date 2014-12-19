@@ -58,9 +58,9 @@
           <li>FMI Bistro "Speiseplan" - <a href="http://hunger.tum.sexy">hunger.tum.sexy</a>
             <ul><li>U know, why this is cool? The power of PHP automatically redirects to the current week's Speiseplan.</li></ul>
           </li>
+          <li>MI Raumbelegungen - <a href="http://rooms.tum.sexy">rooms.tum.sexy</a></li>
           <li>ReddiTUM - <a href="http://reddi.tum.sexy">reddi.tum.sexy</a></li>
           <li>Moodle - <a href="http://m.tum.sexy">m.tum.sexy</a></li>
-          <li>MI Raumbelegungen - <a href="http://rooms.tum.sexy">rooms.tum.sexy</a></li>
         </ul>
 
         <h5>Lessons</h5>
