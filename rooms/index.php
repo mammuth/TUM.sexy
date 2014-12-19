@@ -1,6 +1,8 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<title>tum.sexy | Raumbelegungen</title>
+  <meta name="description" content="Helpfull links, subdomains, redirects and tools for students of the Technical University Munich (TUM)">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="../css/normalize.css">
@@ -35,6 +37,7 @@
 	<?php
 
 	$replacements = array();
+	$replacements['<h1>Raumbelegung</h1>'] = '<h1 style="font-size: 30px !important">Raumbelegung | <span style="font-size:15px !important">TUM.<strong>sexy</strong></span></h1>'; // 
 	$replacements['voraussichtlich'] = ''; // shorten "voraussichtlich noch x Minuten belegt."
 	$replacements['wbrisweb.status_mobile_mi'] = 'https://sexipretschi.eu/Game/'; // replace Refresh with Pretschner Game
 	$site = strtr(file_get_contents('https://campus.tum.de/tumonline/wbrisweb.status_mobile_mi'), $replacements); // apply replacements
@@ -44,6 +47,7 @@
 	echo $site;
 	?>
 
+	<hr />
 	<p>Dies ist ein Mirror mit einer Handvoll kleiner Änderungen. Original zu finden auf <a href="https://campus.tum.de/tumonline/wbrisweb.status_mobile_mi" target="_blank">https://campus.tum.de/tumonline/wbrisweb.status_mobile_mi</a></p>
 
 </body>
