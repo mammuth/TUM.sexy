@@ -12,4 +12,4 @@ Code of http://tum.sexy. A website providing some links, redirects and tools reg
  
  
 **Projects** like
-* CalProxy: Removes clutter from TUMOnline Calendar and optimizes it (hosted at https://github.com/kordianbruck/TumCalProxy)
+* CalProxy: Removes clutter from TUMOnline Calendar and optimizes it (http://tum.sexy/calendar/)
