@@ -3,7 +3,7 @@
 require 'vendor/autoload.php';
 
 //Comment this out to enable debugging
-//unset($_GET['debug']);
+unset($_GET['debug']);
 
 //Only output errors if debugging
 if(isset($_GET['debug'])){
@@ -50,21 +50,42 @@ function cleanEvent(&$e){
 	//Remove the TAG and anything after e.g.: (IN0001)
 	$e['SUMMARY'] = preg_replace("/(\\(IN[0-9]+\\)|\\[MA[0-9]+\\]).+/", '', $e['SUMMARY']);
 	
-	//Some common replacements for some stuff
-	$e['SUMMARY']=str_replace(
-	array('Tutorübungen', 'Grundlagen: ','Betriebssysteme und Systemsoftware', 'Einführung in die Informatik ', 'Praktikum: Grundlagen der Programmierung', 'Einführung in die Rechnerarchitektur (Einführung in die Technische Informatik)', 'Einführung in die Softwaretechnik', 'Algorithmen und Datenstrukturen', 'Rechnernetze und Verteilte Systeme', 'Einfürhung in die Theoretische Informatik', 'Diskrete Strukturen', 'Diskrete Wahrscheinlichkeitstheorie', 'Numerisches Programmieren', 'Lineare Algebra für Informatik', 'Analysis für Informatik'), 
-	array('TÜ','G','BS','INFO', 'PGP', 'ERA', 'EIST', 'AD', 'RNVS', 'THEO', 'DS', 'DWT', 'NumProg', 'LinAlg', 'Analysis'), $e['SUMMARY']);
-	$e['SUMMARY']=str_replace(array('Standardgruppe', 'PR, ','VO, '), '', $e['SUMMARY']);
+	//Some common replacements: yes its a long list
+	$searchReplace = array();
+	$searchReplace['Tutorübungen'] = 'TÜ';
+	$searchReplace['Grundlagen'] = 'G';
+	$searchReplace['Betriebssysteme und Systemsoftware'] = 'BS';
+	$searchReplace['Einführung in die Informatik '] = 'INFO';
+	$searchReplace['Praktikum: Grundlagen der Programmierung'] = 'PGP';
+	$searchReplace['Einführung in die Rechnerarchitektur (Einführung in die Technische Informatik)'] = 'ERA';
+	$searchReplace['Einführung in die Softwaretechnik'] = 'EIST';
+	$searchReplace['Algorithmen und Datenstrukturen'] = 'AD';
+	$searchReplace['Rechnernetze und Verteilte Systeme'] = 'RNVS';
+	$searchReplace['Einführung in die Theoretische Informatik'] = 'THEO';
+	$searchReplace['Diskrete Strukturen'] = 'DS';
+	$searchReplace['Diskrete Wahrscheinlichkeitstheorie'] = 'DWT';
+	$searchReplace['Numerisches Programmieren'] = 'NumProg';
+	$searchReplace['Lineare Algebra für Informatik'] = 'LinAlg';
+	$searchReplace['Analysis für Informatik'] = 'Analysis';
+	
+	//Do the replacement
+	$e['SUMMARY'] = strtr($e['SUMMARY'], $searchReplace);
+	
+	//Remove some stuff which is not really needed
+	$e['SUMMARY'] = str_replace(array('Standardgruppe', 'PR, ','VO, ', 'FA, '), '', $e['SUMMARY']);
 	
 	//Try to make sense out of the location
 	if(!empty($e['LOCATION'])){
-		if(strpos($e['LOCATION'],'(5609')!==false){ 
+		if(strpos($e['LOCATION'],'(56')!==false){ 
 			// Informatik
 			switchLocation($e,'Boltzmannstraße 3, 85748 Garching bei München');
-		}else if(strpos($e['LOCATION'],'(8102')!==false){ 
+		} else if(strpos($e['LOCATION'],'(55')!==false){ 
+			// Maschbau
+			switchLocation($e,'Boltzmannstraße 15, 85748 Garching bei München');
+		} else if(strpos($e['LOCATION'],'(81')!==false){ 
 			// Hochbrück
 			switchLocation($e,'Parkring 11-13, 85748 Garching bei München');
-		} else if(strpos($e['LOCATION'],'(5101')!==false){ 
+		} else if(strpos($e['LOCATION'],'(51')!==false){ 
 			// Physik
 			switchLocation($e,'James-Franck-Straße 1, 85748 Garching bei München');
 		} 
@@ -95,10 +116,54 @@ function switchLocation(&$e,$newLoc){
 }
 
 /*
+ * Remove duplicate entries: events that happen at the same time in multiple locations 
+ */
+function noDupes(&$events){
+	//Sort them
+	usort($events, function($a, $b){
+		if(strtotime($a['DTSTART']) > strtotime($b['DTSTART'])){
+			return 1;
+		}elseif($a['DTSTART'] > $b['DTSTART']){
+			return -1;
+		}
+		return 0;
+	});
+	
+	//Find dupes
+	$total=count($events);
+	$removeMe = array();
+	for($i=1;$i<$total;$i++){
+		//Check if start time, end time and title match then merge
+		if($events[$i-1]['DTSTART']===$events[$i]['DTSTART'] && $events[$i-1]['DTEND']===$events[$i]['DTEND'] && $events[$i-1]['SUMMARY']===$events[$i]['SUMMARY']){
+			//Append the location to the next (same) element
+			$events[$i]['LOCATION'] .= "\n" . $events[$i-1]['LOCATION'];
+			
+			//Mark this element for removal
+			$removeMe[] = $events[$i-1];
+		}
+	}
+	
+	//Remove the marked for deletion elements
+	return array_udiff($events, $removeMe, function($a,$b){
+		//Are the uids equal?
+		return strcmp($a['UID'], $b['UID']);
+	});
+}
+
+
+/*
  * Debugging function to dump the data to the browser
  */
 function dumpMe($arr, $echo=true) {
+	// Don't output if we are not in debug mode
+	if(!isset($_GET['debug'])){
+		return; 
+	}
+	
+	//Assemble the string 
     $str=str_replace(array("\n", ' '), array('<br/>', '&nbsp;'), print_r($arr, true)) . '<br/>';
+	
+	//Output based on the second param
     if($echo) {
         echo $str;
     }else{
@@ -113,14 +178,17 @@ if(!isset($_GET['pStud'],$_GET['pToken'])){
 }
 
 //Parse the file
-$calAddr = 'https://campus.tum.de/tumonlinej/ws/termin/ical?pStud=' . $_GET['pStud'].'&pToken='.$_GET['pToken'];
-$ical   = new ICal($calAddr);
-$allEvents=$ical->events();
+$calAddr 	= 'https://campus.tum.de/tumonlinej/ws/termin/ical?pStud=' . $_GET['pStud'].'&pToken='.$_GET['pToken'];
+$ical   	= new ICal($calAddr);
+$allEvents 	= $ical->events();
 
 //Check if anything was received
 if(empty($allEvents)){
 	die('Ihre parameter sind ung&uuml;ltig oder ein anderer Fehler ist aufgetreten');
 }
+
+//Remove dupes
+$allEvents = noDupes($allEvents);
 
 //Create new object for outputting the new calender
 $cal = new \Eluceo\iCal\Component\Calendar('TUM iCal Proxy');
@@ -131,9 +199,7 @@ foreach($allEvents as $e){
 	
 	//Process object
 	cleanEvent($e);
-	if(isset($_GET['debug'])){
-		dumpMe($e);
-	}	
+	dumpMe($e);
  
 	//Create new and save it
 	$vEvent
@@ -158,5 +224,3 @@ if(!isset($_GET['debug'])){
 	header('Content-Disposition: attachment; filename="cal.ics"');
 	echo $cal->render();
 }
-
-?>

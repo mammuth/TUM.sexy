@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/custom.css">
-  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link rel="icon" type="image/png" href="favicon.png" />
 
 </head>
 <body>
@@ -22,15 +22,15 @@
   <div class="container">
     <div class="row" style="margin-top: 10%">
 
-    <h1 id="sexy-name">TUM<strong>.sexy</strong></h1>
-       
-        
-        <p><br />What's this all about? Well first of all you find some nice <strong>subdomain-redirects</strong> which are a shorter and more memorable.</p>
+      <h1 id="sexy-name">TUM<strong>.sexy</strong></h1>
+      
+      
+      <p><br />What's this all about? Well first of all you find some nice <strong>subdomain-redirects</strong> which are a shorter and more memorable.</p>
 
-        <p>In the future we are going to host some cool projects relating to TUM here.</p>
+      <p>In the future we are going to host some cool projects relating to TUM here.</p>
 
-        <p>If you wanna have new redirects or have your project linked here, just drop a line at <a href="mailto:heilig@tum.sexy">heilig@tum.sexy</a>. Btw, because Open-Source is cool you find it at <a href="https://github.com/mammuth/TUM.sexy">Github</a></p>
-        <br />
+      <p>If you wanna have new redirects or have your project linked here, just drop a line at <a href="mailto:heilig@tum.sexy">heilig@tum.sexy</a>. Btw, because Open-Source is cool you find it at <a href="https://github.com/mammuth/TUM.sexy">Github</a></p>
+      <br />
       
     </div>
     <div class="row" style="margin-top:10%">
@@ -75,15 +75,16 @@
         3. Semester
         <ul>
           <li>Analysis - <a href="http://anal.tum.sexy">anal.tum.sexy</a>
-          <li>Info2 - <a href="http://info2.tum.sexy">info2.tum.sexy</a></li>
-        </ul>
+            <li>Info2 - <a href="http://info2.tum.sexy">info2.tum.sexy</a></li>
+            <li>Algorithmische Diskrete Mathematik - <a href="http://adm.tum.sexy">adm.tum.sexy</a>
+            </ul>
+          </div>
+
+        </div>
       </div>
 
-    </div>
-  </div>
-
-  <div id="footer"><p>Provided by Lukas K. and Max M.</p></div>
-  <?php include('googleanalytics.php') ?>
+      <div id="footer"><p>Provided by Lukas K. and Max M.</p></div>
+      <?php include('googleanalytics.php') ?>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

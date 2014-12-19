@@ -23,47 +23,46 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
 
-  <div id="breadcrumb">  
-    <ul class="crumbs">  
+    <div id="breadcrumb">  
+      <ul class="crumbs">  
         <li class="first"><a href="http://tum.sexy" style="z-index:9;"><span></span>Home</a></li>  
         
-    </ul>  
-</div>  
+      </ul>  
+    </div>  
 
-
-  <?php
-    include('../header.php');
-  ?>
 
     <div class="row" style="margin-top: 10%">
 
- <h1>TUM Calendar Proxy</h1>
-<h2>About</h2>
-<p>Nice and easy proxy to remove some clutter from the TUM online iCal export. E.g.</p>
-<ul>
-  <li>Replaces 'Tutorübung' with 'TÜ'</li>
-  <li>Shorten Lesson Names like 'Grundlagen Betriebssysteme und Systemsoftware' → 'GBS'</li>
-  <li>Adds locations, which are understood by Google Maps / Google Now</li>
-  <li>(ToDo: Remove event duplicates due to multiple rooms)</li>
-</ul>
+     <h1>TUM Calendar Proxy</h1>
 
-<h2>HowTo</h2>
-<ol>
-	<li>Grab the URL from the TUMO calendar</li>
-	<li>Copy 'n' Paste the query string (everything after the ? sign) and append it to this url</li>
-	<li>Go to Google Calendar (or similar) and import the resulting url</li>
-</ol>
+     <img src="showcase.png" />
 
-<h3>Contribute</h3>
-If you want to help out, contribute to the Github Repo, held bei Kordian B.: <a href="https://github.com/kordianbruck/TumCalProxy">https://github.com/kordianbruck/TumCalProxy</a>
+     <h2>About</h2>
+     <p>Nice and easy proxy to remove some clutter from the TUM online iCal export. E.g.</p>
+     <ul>
+      <li>Shorten Lesson Names like 'Grundlagen Betriebssysteme und Systemsoftware' → 'GBS'</li>
+      <li>Adds locations, which are understood by Google Maps / Google Now</li>
+      <li>Replaces 'Tutorübung' with 'TÜ'</li>
+      <li>(ToDo: Remove event duplicates due to multiple rooms)</li>
+    </ul>
 
-<br />
-<br />
+    <h2>HowTo</h2>
+    <ol>
+     <li>Grab the URL from the <a href="https://campus.tum.de/tumonline/wbKalender.wbPerson">TUM Online Calendar</a> (you get it by clicking on 'Veröffentlichen'</li>
+     <li>Copy 'n' Paste the query string (everything after the ? sign, e.g. "?pStud=ABCDEF&pToken=XYZ") and append it to this url so it looks like: <em>http://tum.sexy/calendar/?pStud=ABCDEF&pToken=XYZ</em></li>
+     <li>Go to Google Calendar (or similar) and import the resulting url</li>
+   </ol>
+
+   <h3>Contribute</h3>
+   If you want to help out, contribute to the Github Repo, held bei Kordian B.: <a href="https://github.com/kordianbruck/TumCalProxy">https://github.com/kordianbruck/TumCalProxy</a>
+
+   <br />
+   <br />
 
 
-<span style="font-size:10px;color:#ccc;">Version v0.3</span>
-<?php include('googleanalytics.php') ?>
-</div>
+   <span style="font-size:10px;color:#aaa;">Version v0.5 - <a href="https://github.com/kordianbruck/TumCalProxy/commits/master">Changelog</a></span>
+   <?php include('googleanalytics.php') ?>
+ </div>
 </div>
 </body>
 </html>
