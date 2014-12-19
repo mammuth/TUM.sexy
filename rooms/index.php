@@ -37,7 +37,7 @@
 	<?php
 
 	$replacements = array();
-	$replacements['<h1>Raumbelegung</h1>'] = '<h1 style="font-size: 30px !important">Raumbelegung | <span style="font-size:15px !important">TUM.<strong>sexy</strong></span></h1>'; // 
+	$replacements['<h1>Raumbelegung</h1>'] = '<h1 style="font-size: 30px !important">Raumbelegung | <a href="http://tum.sexy" style="color: #FFF !important; font-size:15px !important; text-decoration: none !important">TUM.<strong>sexy</strong></a></h1>'; // 
 	$replacements['voraussichtlich'] = ''; // shorten "voraussichtlich noch x Minuten belegt."
 	$replacements['wbrisweb.status_mobile_mi'] = 'https://sexipretschi.eu/Game/'; // replace Refresh with Pretschner Game
 	$site = strtr(file_get_contents('https://campus.tum.de/tumonline/wbrisweb.status_mobile_mi'), $replacements); // apply replacements
