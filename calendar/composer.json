@@ -1,6 +1,0 @@
-{
-    "require": {
-        "eluceo/ical": "0.6.*",
-		"johngrogg/ics-parser": "dev-master"
-    }
-}

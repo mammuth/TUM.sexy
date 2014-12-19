@@ -1,7 +1,0 @@
-RewriteEngine on
-
-Rewritecond %{HTTP_HOST} !^calproxy\.kbruck\.name
-RewriteRule (.*) https://calproxy.kbruck.name/$1 [R=301,L]
-
-RewriteCond %{SERVER_PORT} !^443$
-RewriteRule ^(.*) https://%{HTTP_HOST}/$1 [NC,R,L]
