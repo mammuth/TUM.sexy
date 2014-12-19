@@ -1,0 +1,3 @@
+[submodule "calendar/TumCalProxy"]
+	path = calendar/TumCalProxy
+	url = git@github.com:kordianbruck/TumCalProxy.git
