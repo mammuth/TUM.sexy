@@ -1,3 +1,11 @@
+body {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+
 h1#sexy-name {
 	margin-bottom: 5%;
 	text-align: center;
@@ -8,6 +16,10 @@ h1#sexy-name {
 	min-height:100% !important;
 	position:relative !important;
 	padding-bottom: 20px !important; /* Height of the Footer */
+    /* for the gifs */
+    opacity: 0.9;
+    padding: 0px 20px 0px 20px;
+    background-color: rgba(255,255,255, 0.8);
 }
 #footer {
 	bottom: 0px;
