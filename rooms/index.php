@@ -30,6 +30,10 @@
 			background-image: linear-gradient(#FF9800 0%, #FF9800 100%) !important;
 			background-image: werbkit-linear-gradient(#FF9800 0%, #FF9800 100%) !important;
 		}
+		ul {
+			margin-left: auto !important;
+			margin-right: auto !important;
+		}
 
 	</style>
 </head>
@@ -38,7 +42,8 @@
 
 	$replacements = array();
 	$replacements['<h1>Raumbelegung</h1>'] = '<h1 style="font-size: 30px !important">Raumbelegung | <a href="http://tum.sexy" style="color: #FFF !important; font-size:15px !important; text-decoration: none !important">TUM.<strong>sexy</strong></a></h1>'; // 
-	$replacements['voraussichtlich'] = ''; // shorten "voraussichtlich noch x Minuten belegt."
+	$replacements['voraussichtlich noch'] = ''; // shorten "voraussichtlich noch x Minuten belegt."
+    $replacements[' belegt'] = '';
 	$replacements['wbrisweb.status_mobile_mi'] = 'https://sexipretschi.eu/Game/'; // replace Refresh with Pretschner Game
 	$site = strtr(file_get_contents('https://campus.tum.de/tumonline/wbrisweb.status_mobile_mi'), $replacements); // apply replacements
 
