@@ -47,20 +47,21 @@
               <li>Nice and easy proxy to remove some clutter from the TUM online iCal export. E.g.: replaces 'Tutorübung' with 'TÜ' and Google Now readable locations</li>
             </ul>
           </li>
+          <li>FMI Bistro "Speiseplan" - <a href="http://hunger.tum.sexy">hunger.tum.sexy</a></li>
+          <li>MI Raumbelegungen - <a href="http://rooms.tum.sexy">rooms.tum.sexy</a></li>
           <li><a href="https://sexipretschi.eu/Game/">Sexi Pretschi Game</a></li>
           <li>...</li>
         </ul>
       </div>
 
       <div class="one-half column">
-        <h3>Redirects</h3>
+        <h3>Simple Redirects</h3>
         <h5>Special Stuff</h5>
         <ul>
-          <li>FMI Bistro "Speiseplan" - <a href="http://hunger.tum.sexy">hunger.tum.sexy</a></li>
-          <li>MI Raumbelegungen - <a href="http://rooms.tum.sexy">rooms.tum.sexy</a></li>
           <li>TUM Online - <a href="http://c.tum.sexy">c.tum.sexy</a></li>
           <li>ReddiTUM - <a href="http://reddi.tum.sexy">reddi.tum.sexy</a></li>
           <li>Moodle - <a href="http://m.tum.sexy">m.tum.sexy</a></li>
+          <li>TEDxTUM - <a href="http://tedx.tum.sexy">tedx.tum.sexy</a></li>
         </ul>
 
         <h5>Lessons</h5>
@@ -96,58 +97,58 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 <script>
-    function getQueryVariable(variable) {
-        var query = window.location.search.substring(1);
-        var vars = query.split("&");
-        for (var i=0;i<vars.length;i++) {
-            var pair = vars[i].split("=");
-            if (pair[0] == variable) {
-                console.log("cats param = "+pair[1]);
-                return pair[1];
-            }
-        } 
-        /* add cats-parameter, so the user notices it */
-        console.log("Added cats=false param");
-        insertParam('cats', 0);
+  function getQueryVariable(variable) {
+    var query = window.location.search.substring(1);
+    var vars = query.split("&");
+    for (var i=0;i<vars.length;i++) {
+      var pair = vars[i].split("=");
+      if (pair[0] == variable) {
+        console.log("cats param = "+pair[1]);
+        return pair[1];
+      }
+    } 
+    /* add cats-parameter, so the user notices it */
+    console.log("Added cats=false param");
+    insertParam('cats', 0);
+  }
+
+  function insertParam(key, value) {
+    key = encodeURI(key); value = encodeURI(value);
+
+    var kvp = document.location.search.substr(1).split('&');
+
+    var i=kvp.length; var x; while(i--) 
+    {
+      x = kvp[i].split('=');
+
+      if (x[0]==key)
+      {
+        x[1] = value;
+        kvp[i] = x.join('=');
+        break;
+      }
     }
 
-    function insertParam(key, value) {
-        key = encodeURI(key); value = encodeURI(value);
-
-        var kvp = document.location.search.substr(1).split('&');
-
-        var i=kvp.length; var x; while(i--) 
-        {
-            x = kvp[i].split('=');
-
-            if (x[0]==key)
-            {
-                x[1] = value;
-                kvp[i] = x.join('=');
-                break;
-            }
-        }
-
-        if(i<0) {kvp[kvp.length] = [key,value].join('=');}
+    if(i<0) {kvp[kvp.length] = [key,value].join('=');}
 
         //this will reload the page, it's likely better to store this until finished
         document.location.search = kvp.join('&'); 
-    }
+      }
 
-    var totalCount = 8;
-    var cats;
-    function pageLoaded() {
+      var totalCount = 8;
+      var cats;
+      function pageLoaded() {
         cats = getQueryVariable("cats");
         if (cats == false) {
-            console.log("sadly no cats this time");
-            return;
+          console.log("sadly no cats this time");
+          return;
         }
      /*   var num = Math.ceil( Math.random() * totalCount );
         document.body.background = '//media.disquscdn.com/errors/img/'+num+'.gif';
         document.body.style.backgroundRepeat = "repeat";// Background repeat */
         document.body.background = 'http://thecatapi.com/api/images/get?format=src&type=gif';
-    }
+      }
 
-    window.onload = pageLoaded;
-  </script
-</html>
+      window.onload = pageLoaded;
+      </script
+      </html>
