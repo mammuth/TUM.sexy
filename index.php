@@ -12,7 +12,8 @@
   <link rel="stylesheet" href="css/custom.css">
   <link rel="icon" type="image/png" href="favicon.png" />
 
-
+  <!-- TEST-IGNORE -->
+  
   <!-- Scripts at bottom -->
 </head>
 <body>
@@ -25,15 +26,15 @@
     <div class="row" style="margin-top: 10%">
 
       <h1 id="sexy-name">TUM<strong>.sexy</strong></h1>
-      
-      
+
+
       <p><br />What's this all about? Well first of all you find some nice <strong>subdomain-redirects</strong> which are a shorter and more memorable.</p>
 
       <p>In the future we are going to host some cool projects relating to TUM here.</p>
 
       <p>If you wanna have new redirects or have your project linked here, just drop a line at <a href="mailto:heilig@tum.sexy">heilig@tum.sexy</a>. Btw, because Open-Source is cool you find it at <a href="https://github.com/mammuth/TUM.sexy">Github</a></p>
       <br />
-      
+
     </div>
     <div class="row" style="margin-top:10%">
 
@@ -63,6 +64,7 @@
           <li>Moodle - <a href="http://m.tum.sexy">m.tum.sexy</a></li>
           <li>TEDxTUM - <a href="http://tedx.tum.sexy">tedx.tum.sexy</a></li>
         </ul>
+
 
         <h5>Lessons</h5>
 
@@ -106,7 +108,7 @@
         console.log("cats param = "+pair[1]);
         return pair[1];
       }
-    } 
+    }
     /* add cats-parameter, so the user notices it */
     console.log("Added cats=false param");
     insertParam('cats', 0);
@@ -117,7 +119,7 @@
 
     var kvp = document.location.search.substr(1).split('&');
 
-    var i=kvp.length; var x; while(i--) 
+    var i=kvp.length; var x; while(i--)
     {
       x = kvp[i].split('=');
 
@@ -132,7 +134,7 @@
     if(i<0) {kvp[kvp.length] = [key,value].join('=');}
 
         //this will reload the page, it's likely better to store this until finished
-        document.location.search = kvp.join('&'); 
+        document.location.search = kvp.join('&');
       }
 
       var totalCount = 8;
