@@ -12,8 +12,6 @@
   <link rel="stylesheet" href="css/custom.css">
   <link rel="icon" type="image/png" href="favicon.png" />
 
-  <!-- TEST IGNORE -->
-
   <!-- Scripts at bottom -->
 </head>
 <body>
