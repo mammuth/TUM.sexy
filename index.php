@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/custom.css">
   <link rel="icon" type="image/png" href="favicon.png" />
-<!-- TEST -->
+  
   <!-- Scripts at bottom -->
 </head>
 <body>
