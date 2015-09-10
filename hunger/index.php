@@ -5,33 +5,33 @@ header('Content-Type: text/html; charset=UTF-8');
 mb_internal_encoding('UTF-8');
 date_default_timezone_set('Europe/Berlin');
 
+//Some constants
+define('URL_MAIN', 'http://www.betriebsrestaurant-gmbh.de/');
+define('URL_PAGE_WITH_LINKS', URL_MAIN . 'index.php?id=91');
+
 //Include libs
 include 'vendor/autoload.php';
 
 
 function crawl_page($url){
-    $mylinks = array();     
-        //Create a new DOM document
+    //Create a new DOM document
     $dom = new DOMDocument;
-        //Parse the HTML. The @ is used to suppress any parsing errors
-        //that will be thrown if the $html string isn't valid XHTML.
+
+    //Parse the HTML. The @ is used to suppress any parsing errors
+    //that will be thrown if the $html string isn't valid XHTML.
     @$dom->loadHTMLFile($url);
-        //Get all links. You could also use any other tag name here,
-        //like 'img' or 'table', to extract other tags.
+
+    //Get all links. You could also use any other tag name here,
+    //like 'img' or 'table', to extract other tags.
     $links = $dom->getElementsByTagName('a');
 
-        //Iterate over the extracted links and display their URLs 
+    //Iterate over the extracted links and display their URLs 
+    $links = [];     
     foreach ($links as $link){
-            //Extract and save the "href" attribute.
-        array_push($mylinks, $link->getAttribute('href'));
+        array_push($links, $link->getAttribute('href')); //Extract and save the "href" attribute.
     }
 
-    return $mylinks;
-}
-
-function redirect($url, $statusCode = 303){
-   header('Location: ' . $url, true, $statusCode);
-   die();
+    return $links;
 }
 
 function pdfToString(){
@@ -43,27 +43,29 @@ function pdfToString(){
         return $text;
     }
 
-    $links = crawl_page("http://www.betriebsrestaurant-gmbh.de/index.php?id=91");
-    $pdfLink;
-
+    //Otherwise fetch all links
+    $links = crawl_page(URL_PAGE_WITH_LINKS);
+    $pdfLink = '';
     foreach ($links as $file) {
-        if (strpos(strtolower($file), '.pdf') !== FALSE && strpos($file, '_FMI_') !== FALSE) {
-            
-            if ($weekNumber === substr($file,16,2)){
-                // current link is MI pdf
-                $pdfLink = "http://www.betriebsrestaurant-gmbh.de/".$file;
-            }
+        if (strpos(strtolower($file), '.pdf') !== FALSE && strpos($file, '_FMI_') !== FALSE && $weekNumber === substr($file,16,2)) {
+            $pdfLink = URL_MAIN . $file;
         }
+    }
+
+    //Don't proceed when no link was found
+    if(empty($pdfLink)){
+        return;
     }
     
     // Parse pdf file and build necessary objects.
     $parser = new \Smalot\PdfParser\Parser();
     $pdf    = $parser->parseFile($pdfLink);
-    
     $text = $pdf->getText();
 
     //Store it in cache
     apc_store('hungertext' . $weekNumber, $text, 2*24*3600);
+
+    //return it
     return $text;    
 }
 ?>
@@ -81,7 +83,6 @@ function pdfToString(){
         <?php 
         $raw = preg_split("/\n\s*\n/", pdfToString()); //split the whole pdf string on the days
         $days = array_slice($raw, 4, count($raw)-7); // Remove unneded stuff
-
         $currentDayOfWeek = idate('w', time());// Only display today and future days
         
         $i = 1;
