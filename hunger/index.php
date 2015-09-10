@@ -82,28 +82,7 @@ function debug_to_console( $data ) {
     <title>Hunger!11!! - Speiseplan MI, TUM</title>
     <meta charset="UTF-8">
     <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-    <style media="screen" type="text/css">
-        h2, h3, h4, h5, h6 {
-            font-weight: 600;
-        }
-        html, body {
-            margin: 0px;
-            line-height: 1.6;
-            font-weight: 400;
-            font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-        }
-        h1 {
-            font-weight: 300;
-            background-image: linear-gradient(#FF9800 0%, #FF9800 100%);
-            background-image: webkit-linear-gradient(#FF9800 0%, #FF9800 100%);
-            color: white;
-            padding:5px;
-        }
-        .container {
-            padding: 10px;
-        }
-
-    </style>
+    <link href="/hunger/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <h1 style="font-size: 30px !important">Hunger | <a href="http://tum.sexy" style="color: #FFF !important; font-size:15px !important; text-decoration: none !important">TUM.<strong>sexy</strong></a></h1>

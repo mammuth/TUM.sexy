@@ -1,0 +1,19 @@
+h2, h3, h4, h5, h6 {
+    font-weight: 600;
+}
+html, body {
+    margin: 0px;
+    line-height: 1.6;
+    font-weight: 400;
+    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+h1 {
+    font-weight: 300;
+    background-image: linear-gradient(#FF9800 0%, #FF9800 100%);
+    background-image: webkit-linear-gradient(#FF9800 0%, #FF9800 100%);
+    color: white;
+    padding:5px;
+}
+.container {
+    padding: 10px;
+}
