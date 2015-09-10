@@ -16,8 +16,6 @@
 </head>
 <body>
 
-
-
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
@@ -41,7 +39,7 @@
 
         <h3>Projects / Links</h3>
         <ul>
-          <li><a href="calendar/">Calendar Proxy</a>
+          <li><a href="/calendar/">Calendar Proxy</a>
             <ul>
               <li>Nice and easy proxy to remove some clutter from the TUM online iCal export. E.g.: replaces 'Tutorübung' with 'TÜ' and Google Now readable locations</li>
             </ul>
@@ -49,7 +47,6 @@
           <li>FMI Bistro "Speiseplan" - <a href="http://hunger.tum.sexy">hunger.tum.sexy</a></li>
           <li>MI Raumbelegungen - <a href="http://rooms.tum.sexy">rooms.tum.sexy</a></li>
           <li><a href="https://sexipretschi.eu/Game/">Sexi Pretschi Game</a></li>
-          <li>...</li>
         </ul>
       </div>
 
@@ -96,59 +93,13 @@
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
-<script>
-  function getQueryVariable(variable) {
-    var query = window.location.search.substring(1);
-    var vars = query.split("&");
-    for (var i=0;i<vars.length;i++) {
-      var pair = vars[i].split("=");
-      if (pair[0] == variable) {
-        console.log("cats param = "+pair[1]);
-        return pair[1];
-      }
-    }
-    /* add cats-parameter, so the user notices it */
-    console.log("Added cats=false param");
-    insertParam('cats', 0);
-  }
-
-  function insertParam(key, value) {
-    key = encodeURI(key); value = encodeURI(value);
-
-    var kvp = document.location.search.substr(1).split('&');
-
-    var i=kvp.length; var x; while(i--)
-    {
-      x = kvp[i].split('=');
-
-      if (x[0]==key)
-      {
-        x[1] = value;
-        kvp[i] = x.join('=');
-        break;
-      }
-    }
-
-    if(i<0) {kvp[kvp.length] = [key,value].join('=');}
-
-        //this will reload the page, it's likely better to store this until finished
-        document.location.search = kvp.join('&');
-      }
-
-      var totalCount = 8;
-      var cats;
-      function pageLoaded() {
-        cats = getQueryVariable("cats");
-        if (cats == false) {
-          console.log("sadly no cats this time");
-          return;
-        }
-     /*   var num = Math.ceil( Math.random() * totalCount );
-        document.body.background = '//media.disquscdn.com/errors/img/'+num+'.gif';
-        document.body.style.backgroundRepeat = "repeat";// Background repeat */
-        document.body.background = 'http://thecatapi.com/api/images/get?format=src&type=gif';
-      }
-
-      window.onload = pageLoaded;
-      </script
-      </html>
+<?php
+if($_GET['cats']!=='0'){
+  ?>
+  <script>
+  window.onload = function () {
+    document.body.background = 'http://thecatapi.com/api/images/get?format=src&type=gif';
+  };
+  </script>
+<?php } ?>
+</html>
