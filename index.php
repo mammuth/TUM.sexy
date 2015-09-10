@@ -94,7 +94,6 @@ if (!isset($_GET['cats'])) {
 
       <div id="footer" style="margin-left:10px; font-size: smaller;"><a href="?cats=1">Gimme' cats!</a></div>
       <div id="footer"><p>Provided by Lukas K. and Max M.</p></div>
-      <?php include('googleanalytics.php') ?>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
