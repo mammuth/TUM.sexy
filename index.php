@@ -1,3 +1,9 @@
+<?php
+if (!isset($_GET['cats'])) {
+  header('Location: /index.php?cats=0');
+  die();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -94,7 +100,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 <?php
-if(ísset($_GET['cats']) && $_GET['cats']!=='0'){
+if(ísset($_GET['cats']) && $_GET['cats'] !== '0'){
   ?>
   <script>
   window.onload = function () {
@@ -102,8 +108,6 @@ if(ísset($_GET['cats']) && $_GET['cats']!=='0'){
   };
   </script>
 <?php 
-} else if (!isset($_GET['cats'])) {
-  header('Location: ?cats=0');
 }
 ?>
 </html>
