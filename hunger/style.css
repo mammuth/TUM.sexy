@@ -18,3 +18,8 @@ h1 {
 .container {
     padding: 10px;
 }
+a.logo{
+    color: #FFF; 
+    font-size:15px; 
+    text-decoration: none;
+}

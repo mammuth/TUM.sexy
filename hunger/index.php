@@ -66,17 +66,7 @@ function pdfToString(){
     apc_store('hungertext' . $weekNumber, $text, 2*24*3600);
     return $text;    
 }
-function debug_to_console( $data ) {
-
-    if ( is_array( $data ) )
-        $output = "<script>console.log( 'Debug Objects: " . implode( ',', $data) . "' );</script>";
-    else
-        $output = "<script>console.log( 'Debug Objects: " . $data . "' );</script>";
-
-    echo $output;
-}
 ?>
-
 <html>
 <head>
     <title>Hunger!11!! - Speiseplan MI, TUM</title>
@@ -85,7 +75,7 @@ function debug_to_console( $data ) {
     <link href="/hunger/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <h1 style="font-size: 30px !important">Hunger | <a href="http://tum.sexy" style="color: #FFF !important; font-size:15px !important; text-decoration: none !important">TUM.<strong>sexy</strong></a></h1>
+    <h1>Hunger | <a href="http://tum.sexy" class="logo">TUM.<strong>sexy</strong></a></h1>
     <div class="container">
         <p>This is the 'Speiseplan' of the current week in the Bistro of the Informatik Fakultät at TUM.</p>
         <?php 
