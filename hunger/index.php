@@ -1,6 +1,13 @@
 
 <?php
+//Send some important headers and setup php
+header('Content-Type: text/html; charset=UTF-8');
+mb_internal_encoding('UTF-8');
+date_default_timezone_set('Europe/Berlin');
+
+//Include libs
 include 'vendor/autoload.php';
+
 
 function crawl_page($url){
     $mylinks = array();     
@@ -28,12 +35,20 @@ function redirect($url, $statusCode = 303){
 }
 
 function pdfToString(){
+    $weekNumber = date("W"); 
+
+    //Check if we have the current week in cache
+    $text=apc_fetch('hungertext' . $weekNumber);
+    if($text !== false){
+        return $text;
+    }
+
     $links = crawl_page("http://www.betriebsrestaurant-gmbh.de/index.php?id=91");
     $pdfLink;
 
     foreach ($links as $file) {
         if (strpos(strtolower($file), '.pdf') !== FALSE && strpos($file, '_FMI_') !== FALSE) {
-            $weekNumber = date("W"); 
+            
             if ($weekNumber === substr($file,16,2)){
                 // current link is MI pdf
                 $pdfLink = "http://www.betriebsrestaurant-gmbh.de/".$file;
@@ -46,6 +61,9 @@ function pdfToString(){
     $pdf    = $parser->parseFile($pdfLink);
     
     $text = $pdf->getText();
+
+    //Store it in cache
+    apc_store('hungertext' . $weekNumber, $text, 2*24*3600);
     return $text;    
 }
 function debug_to_console( $data ) {
