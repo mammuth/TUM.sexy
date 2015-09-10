@@ -94,12 +94,16 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 <?php
-if($_GET['cats']!=='0'){
+if(ísset($_GET['cats']) && $_GET['cats']!=='0'){
   ?>
   <script>
   window.onload = function () {
     document.body.background = 'http://thecatapi.com/api/images/get?format=src&type=gif';
   };
   </script>
-<?php } ?>
+<?php 
+} else if (!isset($_GET['cats'])) {
+  header('Location: ?cats=0');
+}
+?>
 </html>
