@@ -13,6 +13,7 @@ h1 {
     background-image: webkit-linear-gradient(#FF9800 0%, #FF9800 100%);
     color: white;
     padding:5px;
+    font-size: 30px;
 }
 .container {
     padding: 10px;
