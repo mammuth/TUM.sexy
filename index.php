@@ -99,7 +99,7 @@ if (!isset($_GET['cats'])) {
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 <?php
-if(ísset($_GET['cats']) && $_GET['cats'] !== '0'){
+  if(isset($_GET['cats']) && $_GET['cats'] !== '0')
   ?>
   <script>
   window.onload = function () {
@@ -107,6 +107,6 @@ if(ísset($_GET['cats']) && $_GET['cats'] !== '0'){
   };
   </script>
 <?php 
-}
+  }
 ?>
 </html>
