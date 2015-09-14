@@ -23,12 +23,12 @@ function crawl_page($url){
 
     //Get all links. You could also use any other tag name here,
     //like 'img' or 'table', to extract other tags.
-    $links = $dom->getElementsByTagName('a');
+    $linksIn = $dom->getElementsByTagName('a');
 
     //Iterate over the extracted links and display their URLs 
     $links = [];     
-    foreach ($links as $link){
-        array_push($links, $link->getAttribute('href')); //Extract and save the "href" attribute.
+    foreach ($linksIn as $link){
+        $links[] = $link->getAttribute('href'); //Extract and save the "href" attribute.
     }
 
     return $links;
