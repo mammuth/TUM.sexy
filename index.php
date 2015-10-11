@@ -93,7 +93,7 @@ if (!isset($_GET['cats'])) {
       </div>
 
       <div id="footer" style="margin-left:10px; font-size: smaller;"><a href="?cats=1">Gimme' cats!</a></div>
-      <div id="footer"><p>Provided by Lukas K. and Max M.</p></div>
+      <div id="footer"><p>Provided by Lukas, Kordian & Max</p></div>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
