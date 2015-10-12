@@ -1,4 +1,3 @@
-RewriteEngine on
-RewriteCond %{HTTP_HOST} !^www\.tum.sexy
-RewriteCond %{HTTP_HOST} ^(.+).tum.sexy
-RewriteRule ^([^/]*)% http://tum.sexy/redirect.php?sub=%1 [P,L]
+RewriteCond %{HTTP_HOST} !www.tum.sexy [NC]
+RewriteCond %{HTTP_HOST} ^(www\.)?([a-z0-9-]+).tum.sexy [NC]
+RewriteRule ^(.*)$ ./redirects.php?sub=%2
