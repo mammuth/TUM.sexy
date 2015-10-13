@@ -1,28 +1,58 @@
 <?php
 class Route {
-  private $ROUTES_JSON_STRING = '{
+
+  private $ROUTES_JSON_STRING = '
+  {
     "Special Stuff": {
       "hunger": {
         "description": "FMI Bistro Speiseplan",
-        "target": "http://tum.sexy/hunger"
+        "target": "http://tum.sexy/hunger",
+        "display": true
       },
       "rooms": {
         "description": "MI Raumbelegungen",
-        "target": "http://tum.sexy/rooms"
-      }
+        "target": "http://tum.sexy/rooms",
+        "display": true
+      },
+      "c": {
+        "description": "TUM Online",
+        "target": "https://campus.tum.de/",
+        "display": true
+      },
+      "m": {
+        "description": "Moodle",
+        "target": "https://www.moodle.tum.de/",
+        "display": true
+      },
+      "stuff": {
+        "description": "Unistuff (ehemals Tumstuff)",
+        "target": "http://unistuff.org",
+        "display": true
+      },
+      "reddit": {
+        "description": "ReddiTUM",
+        "target": "https://reddit.com/r/redditum",
+        "display": true
+      },
+      "tedx": {
+        "description": "TEDxTUM Event-Seite",
+        "target": "http://tedxtum.com",
+        "display": false
+      },
     },
 
     "1. Semester": {
-      "abc": {
-        "description": "testestest",
-        "target": "http://tum.sexy/abc"
-      }
+      
     },
 
     "2. Semester": {
 
     }
-  }';
+  }
+  ';
+
+
+
   private $routes;
 
   public function __construct() {
