@@ -3,7 +3,11 @@ if (!isset($_GET['cats'])) {
   header('Location: /index.php?cats=0');
   die();
 }
+
+include('./redirect/routes.php');
+$Router = new Route();
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +21,7 @@ if (!isset($_GET['cats'])) {
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/custom.css">
   <link rel="icon" type="image/png" href="favicon.png" />
-  
+
   <!-- Scripts at bottom -->
 </head>
 <body>
@@ -57,36 +61,8 @@ if (!isset($_GET['cats'])) {
       </div>
 
       <div class="one-half column">
-        <h3>Simple Redirects</h3>
-        <h5>Special Stuff</h5>
-        <ul>
-          <li>TUM Online - <a href="http://c.tum.sexy">c.tum.sexy</a></li>
-          <li>ReddiTUM - <a href="http://reddi.tum.sexy">reddi.tum.sexy</a></li>
-          <li>Moodle - <a href="http://m.tum.sexy">m.tum.sexy</a></li>
-          <li>TEDxTUM - <a href="http://tedx.tum.sexy">tedx.tum.sexy</a></li>
-        </ul>
-
-
-        <h5>Lessons</h5>
-
-        1. Semester
-        <ul>
-          <li>Diskrete Strukturen - <a href="http://ds.tum.sexy">ds.tum.sexy</a>
-            <ul><li>carlos-camino.de ❤ (Tutor) - <a href="http://carlos.tum.sexy">carlos.tum.sexy</a></li></ul>
-          </li>
-        </ul>
-
-        2. Semester
-        <ul>
-        	<li>EIST - <a href="http://eist.tum.sexy">eist.tum.sexy</a></li>
-        </ul>
-
-        3. Semester
-        <ul>
-          <li>Analysis - <a href="http://anal.tum.sexy">anal.tum.sexy</a>
-            <li>Info2 - <a href="http://info2.tum.sexy">info2.tum.sexy</a></li>
-            <li>Algorithmische Diskrete Mathematik - <a href="http://adm.tum.sexy">adm.tum.sexy</a>
-            </ul>
+        <h3>Redirects</h3>
+              <?php echo $Router->getHtmlList(); ?>
           </div>
 
         </div>
@@ -106,7 +82,7 @@ if (!isset($_GET['cats'])) {
     document.body.background = 'http://thecatapi.com/api/images/get?format=src&type=gif';
   };
   </script>
-<?php 
+<?php
   }
 ?>
 </html>
