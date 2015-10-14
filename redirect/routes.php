@@ -48,20 +48,24 @@ class Route {
     "2. Semester": {
 
     },
+
     "3. Semester": {
 
     },
+
     "4. Semester": {
 
     },
+
     "5. Semester": {
       "numprog": {
         "description": "Numerisches Programmieren",
         "target": "http://www5.in.tum.de/wiki/index.php/Numerisches_Programmieren_-_Winter_15",
-        "display": false
+        "display": true
       }
 
     },
+    
     "6. Semester": {
 
     }
