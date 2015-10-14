@@ -65,7 +65,7 @@ class Route {
       }
 
     },
-    
+
     "6. Semester": {
 
     }
@@ -91,7 +91,7 @@ class Route {
         }
       }
     }
-    return "http://tum.sexy/404";
+    return "http://tum.sexy/";
   }
 
   public function getRoutes(){
