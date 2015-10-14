@@ -10,4 +10,4 @@ This is damn easy, man! Just do it!
 - The list on the frontpage (tum.sexy) updates automagically aswell :sunglasses:
 
 
-Hint: the display:[true|false] field is used to determine wether this redirect should be displayed on the frontpage or not.
+Hint: the display:[true|false] field is used to determine whether this redirect should be displayed on the frontpage or not.
