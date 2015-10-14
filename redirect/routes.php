@@ -38,7 +38,7 @@ class Route {
         "description": "TEDxTUM Event-Seite",
         "target": "http://tedxtum.com",
         "display": false
-      },
+      }
     },
 
     "1. Semester": {
