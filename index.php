@@ -39,7 +39,7 @@ $Router = new Route();
       <div class="one-half column">
         <h3>Redirects</h3>
         <p>No need for remembering long and ugly urls or bookmarks<br />
-        - Just use this redirects!</p>
+        - Just use these redirects!</p>
         
             <?php echo $Router->getHtmlList(); ?>
       </div>
