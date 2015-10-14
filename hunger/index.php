@@ -79,7 +79,7 @@ function pdfToString(){
 <body>
     <h1>Hunger | <a href="http://tum.sexy" class="logo">TUM.<strong>sexy</strong></a></h1>
     <div class="container">
-        <p>This is the 'Speiseplan' of the current week in the Bistro of the Informatik Fakultät at TUM.</p>
+        <p>This is the 'Speiseplan' of the current week in the FMI Bistro of the Informatik Fakultät at TUM.</p>
         <?php 
         $raw = preg_split("/\n\s*\n/", pdfToString()); //split the whole pdf string on the days
         $days = array_slice($raw, 4, count($raw)-7); // Remove unneded stuff
