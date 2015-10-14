@@ -8,3 +8,6 @@ This is damn easy, man! Just do it!
 ##### And then? :scream:
 - After we merged it, the changes get automagically deployed via a webhook
 - The list on the frontpage (tum.sexy) updates automagically aswell :sunglasses:
+
+
+Hint: the display:[true|false] field is used to determine wether this redirect should be displayed on the frontpage or not.
