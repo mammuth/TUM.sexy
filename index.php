@@ -33,19 +33,24 @@ $Router = new Route();
 
       <h1 id="sexy-name">TUM<strong>.sexy</strong></h1>
 
-
-      <p><br />What's this all about? Well first of all you find some nice <strong>subdomain-redirects</strong> which are a shorter and more memorable.</p>
-
-      <p>In the future we are going to host some cool projects relating to TUM here.</p>
-
-      <p>If you wanna have new redirects or have your project linked here, just drop a line at <a href="mailto:heilig@tum.sexy">heilig@tum.sexy</a>. Btw, because Open-Source is cool you find it at <a href="https://github.com/mammuth/TUM.sexy">Github</a></p>
-      <br />
-
     </div>
     <div class="row" style="margin-top:10%">
 
       <div class="one-half column">
+        <h3>Redirects</h3>
+        <p>No need for remembering long and ugly urls or bookmarks<br />
+        - Just use this redirects!</p>
+        
+            <?php echo $Router->getHtmlList(); ?>
+      </div>
 
+      <div class="one-half column">
+        <h3>About</h3>
+        <ul>
+          <li>If you want to <strong>update or add redirects</strong>, take a look at the instructions on the <a href="https://github.com/mammuth/TUM.sexy/tree/master/redirect" target="_blank">Github Repo!</a></li>
+          <li>You have an idea for how to improve this site? Feel free to <strong>contribute</strong> on our <a href="https://github.com/mammuth/TUM.sexy" target="_blank">GitHub Page</a>!
+          <li>Contact: <a href="mailto:heilig@tum.sexy">heilig@tum.sexy</a></li>
+        </ul>
 
         <h3>Projects / Links</h3>
         <ul>
@@ -59,11 +64,6 @@ $Router = new Route();
           <li><a href="https://sexipretschi.eu/Game/">Sexi Pretschi Game</a></li>
         </ul>
       </div>
-
-      <div class="one-half column">
-        <h3>Redirects</h3>
-              <?php echo $Router->getHtmlList(); ?>
-          </div>
 
         </div>
       </div>
