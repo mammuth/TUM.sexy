@@ -42,7 +42,7 @@ class Route {
     },
 
     "1. Semester": {
-      
+
     },
 
     "2. Semester": {
@@ -75,5 +75,19 @@ class Route {
 
   public function getRoutes(){
     return $this->routes;
+  }
+
+  public function getHtmlList() {
+    $htmlList;
+    foreach ($this->routes as $section => $subs) {
+      $htmlList .= "<h5>".$section."</h5><ul>";
+      foreach($subs as $sub => $data) {
+        if ($data['display']) {
+          $htmlList .= "<li>".$data['description']." - <a href='http://".$sub.".tum.sexy'>".$sub.".tum.sexy</a></li>";
+        }
+      }
+      $htmlList .= "</ul>";
+    }
+    return $htmlList;
   }
 }
