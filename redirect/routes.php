@@ -62,7 +62,7 @@ class Route {
     if(!isset($this->routes[$subdomain])){
       return "http://tum.sexy/";
     }
-    return $this->routes[$subdomain];
+    return $this->routes[$subdomain]['target'];
   }
 
   public function getHtmlList() {
