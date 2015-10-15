@@ -59,7 +59,7 @@ class Route {
   ];
 
   public function getTargetOfSub($subdomain){
-    if(!in_array($subdomain, $this->routes)){
+    if(!isset($this->routes[$subdomain])){
       return "http://tum.sexy/";
     }
     return $this->routes[$subdomain];
