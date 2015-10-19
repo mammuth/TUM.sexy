@@ -44,7 +44,7 @@ class Route {
     ],
 	"websec" => [
 	  "description" => "WebApplication Security Bachelor Praktikum WS1516",
-	  "target" => "websec.sec.in.tum.de",
+	  "target" => "http://websec.sec.in.tum.de",
 	  "display" => false
 	]
   ];
