@@ -41,12 +41,17 @@ class Route {
       "description"=> "Numerisches Programmieren",
       "target"=> "http://www5.in.tum.de/wiki/index.php/Numerisches_Programmieren_-_Winter_15",
       "display"=> true
-    ]
+    ],
+	"websec" => [
+	  "description" => "WebApplication Security Bachelor Praktikum WS1516",
+	  "target" => "websec.sec.in.tum.de",
+	  "display" => false
+	]
   ];
 
   private $sections = [
     "Special Stuff" => [
-      'hunger', 'rooms', 'c', 'm', 'stuff','reddit', 'tedx'
+      'hunger', 'rooms', 'c', 'm', 'stuff','reddit', 'tedx', 'websec'
     ],
     '1. Semester' => [],
     '2. Semester' => [],
