@@ -43,9 +43,14 @@ class Route {
       "display"=> true
     ],
 	"websec" => [
-	  "description" => "WebApplication Security Bachelor Praktikum WS1516",
+	  "description" => "WebApplication Security Bachelor Praktikum",
 	  "target" => "http://websec.sec.in.tum.de",
 	  "display" => false
+	],
+	"anal" => [
+	  "description" => "Analysis für Informatiker",
+	  "target" => "https://www-m14.ma.tum.de/lehre/ws15-16/analysis-fuer-informatik/",
+	  "display" => true
 	]
   ];
 
@@ -54,7 +59,9 @@ class Route {
       'hunger', 'rooms', 'c', 'm', 'stuff','reddit', 'tedx', 'websec'
     ],
     '1. Semester' => [],
-    '2. Semester' => [],
+    '2. Semester' => [
+      'anal'
+    ],
     '3. Semester' => [],
     '4. Semester' => [],
     '5. Semester' => [
