@@ -51,6 +51,16 @@ class Route {
 	  "description" => "Analysis für Informatiker",
 	  "target" => "https://www-m14.ma.tum.de/lehre/ws15-16/analysis-fuer-informatik/",
 	  "display" => true
+	],
+	"propa" => [
+	  "description" => "PGdP Gruppe 30",
+	  "target" => "http://home.in.tum.de/~szillat/",
+	  "display" => true
+	],
+	"carlos" => [
+	  "description" => "Carlos Camino",
+	  "target" => "http://carlos-camino.de",
+	  "display" => true
 	]
   ];
 
@@ -58,7 +68,9 @@ class Route {
     "Special Stuff" => [
       'hunger', 'rooms', 'c', 'm', 'stuff','reddit', 'tedx', 'websec'
     ],
-    '1. Semester' => [],
+    '1. Semester' => [
+    	'propa','carlos'
+    ],
     '2. Semester' => [
       'anal'
     ],
