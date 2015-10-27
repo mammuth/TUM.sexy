@@ -14,4 +14,4 @@ Hint: the display:[true|false] field is used to determine whether this redirect 
 
 ### Badass RULES everyone has to follow
 - **what to add?** Everything that is not misleading. DO: propra35.tum.sexy, which targets the website of the Tutorübung Group 30. **DON'T** propra.tum.sexy targeting that specific group page.
-- **what to hide from frontage?** Everything that does not affects "some more" people.
+- **what to hide from frontage?** Everything that does not affect "some more" people.
