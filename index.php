@@ -11,7 +11,6 @@ $Router = new Route();
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
   <meta charset="utf-8">
   <title>tum.sexy | Fancy stuff related to TUM</title>
   <meta name="description" content="Helpfull links, subdomains, redirects and tools for students of the Technical University Munich (TUM)">
