@@ -42,26 +42,26 @@ class Route {
       "target"=> "http://www5.in.tum.de/wiki/index.php/Numerisches_Programmieren_-_Winter_15",
       "display"=> true
     ],
-	"websec" => [
-	  "description" => "WebApplication Security Bachelor Praktikum",
-	  "target" => "http://websec.sec.in.tum.de",
-	  "display" => false
-	],
-	"anal" => [
-	  "description" => "Analysis für Informatiker",
-	  "target" => "https://www-m14.ma.tum.de/lehre/ws15-16/analysis-fuer-informatik/",
-	  "display" => true
-	],
-	"propa" => [
-	  "description" => "PGdP Gruppe 30",
-	  "target" => "http://home.in.tum.de/~szillat/",
-	  "display" => true
-	],
-	"carlos" => [
-	  "description" => "Carlos Camino",
-	  "target" => "http://carlos-camino.de",
-	  "display" => true
-	]
+    "websec" => [
+      "description" => "WebApplication Security Bachelor Praktikum",
+      "target" => "http://websec.sec.in.tum.de",
+      "display" => false
+    ],
+    "anal" => [
+      "description" => "Analysis für Informatiker",
+      "target" => "https://www-m14.ma.tum.de/lehre/ws15-16/analysis-fuer-informatik/",
+      "display" => true
+    ],
+    "propa" => [
+      "description" => "PGdP Gruppe 30",
+      "target" => "http://home.in.tum.de/~szillat/",
+      "display" => true
+    ],
+    "carlos" => [
+      "description" => "Carlos Camino",
+      "target" => "http://carlos-camino.de",
+      "display" => true
+    ]
   ];
 
   private $sections = [
@@ -71,10 +71,10 @@ class Route {
     '1. Semester' => [
     	'propa','carlos'
     ],
-    '2. Semester' => [
+    '2. Semester' => [],
+    '3. Semester' => [
       'anal'
     ],
-    '3. Semester' => [],
     '4. Semester' => [],
     '5. Semester' => [
       'numprog'
