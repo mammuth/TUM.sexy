@@ -52,10 +52,10 @@ class Route {
 	  "target" => "https://www-m14.ma.tum.de/lehre/ws15-16/analysis-fuer-informatik/",
 	  "display" => true
 	],
-	"propa" => [
+	"propra30" => [
 	  "description" => "PGdP Gruppe 30",
 	  "target" => "http://home.in.tum.de/~szillat/",
-	  "display" => true
+	  "display" => false
 	],
 	"carlos" => [
 	  "description" => "Carlos Camino",
@@ -69,7 +69,7 @@ class Route {
       'hunger', 'rooms', 'c', 'm', 'stuff','reddit', 'tedx', 'websec'
     ],
     '1. Semester' => [
-    	'propa','carlos'
+    	'carlos'
     ],
     '2. Semester' => [
       'anal'
