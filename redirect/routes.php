@@ -69,7 +69,7 @@ class Route {
       'hunger', 'rooms', 'c', 'm', 'stuff','reddit', 'tedx', 'websec'
     ],
     '1. Semester' => [
-    	'propa','carlos'
+    	'carlos'
     ],
     '2. Semester' => [
       'anal'
