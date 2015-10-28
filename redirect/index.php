@@ -1,8 +1,6 @@
 <?php
-include('./routes.php');
+
+include __DIR__ . '/routes.php';
 $routeHandler = new Route();
-
-echo "This is for testing purposes only <br />";
-
-header("Location: ".$routeHandler->getTargetOfSub($_GET['sub']));
+header('Location: ' . $routeHandler->getTargetOfSub($_GET['sub']));
 die();
