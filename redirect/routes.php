@@ -43,6 +43,10 @@ class Route {
             'description' => 'Analysis für Informatiker',
             'target' => 'https://www-m14.ma.tum.de/lehre/ws15-16/analysis-fuer-informatik/'
         ],
+        'eidi2' => [
+            'description' => 'Einführung in die Informatik 2',
+            'target' => 'http://www2.in.tum.de/hp/Main?nid=283'
+        ],
         'propra30' => [
             'description' => 'PGdP Gruppe 30',
             'target' => 'http://home.in.tum.de/~szillat/'
@@ -64,10 +68,10 @@ class Route {
         '1. Semester' => [
             'carlos'
         ],
-        '2. Semester' => [
-            'anal'
+        '2. Semester' => [],
+        '3. Semester' => [
+            'anal', 'eidi2'
         ],
-        '3. Semester' => [],
         '4. Semester' => [],
         '5. Semester' => [
             'numprog'
