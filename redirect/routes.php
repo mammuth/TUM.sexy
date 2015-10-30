@@ -62,6 +62,10 @@ class Route {
         'carlos' => [
             'description' => 'Carlos Camino',
             'target' => 'http://carlos-camino.de'
+        ],
+        'github' => [
+            'description' => 'Official TUM.sexy Github Repository',
+            'target' => 'https://github.com/mammuth/TUM.sexy'
         ]
     ];
 
