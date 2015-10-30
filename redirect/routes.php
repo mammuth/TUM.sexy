@@ -47,7 +47,15 @@ class Route {
             'description' => 'Einführung in die Informatik 2',
             'target' => 'http://www2.in.tum.de/hp/Main?nid=283'
         ],
-        'propra30' => [
+        'db' => [
+	    'description' => 'Grundlagen: Datenbanken',
+	    'target' => 'https://db.in.tum.de/teaching/ws1516/grundlagen/?lang=de'
+	],
+	'gbs' => [
+	    'description' => 'Grundlagen Betriebssystem und Systemsoftware',
+	    'target' => 'http://www11.in.tum.de/Veranstaltungen/GrundlagenBetriebssystemeundSystemsoftware%28WS1516%29?newlang=de'
+	],
+	'propra30' => [
             'description' => 'PGdP Gruppe 30',
             'target' => 'http://home.in.tum.de/~szillat/'
         ],
@@ -70,7 +78,7 @@ class Route {
         ],
         '2. Semester' => [],
         '3. Semester' => [
-            'anal', 'eidi2'
+            'anal', 'eidi2', 'db', 'gbs'
         ],
         '4. Semester' => [],
         '5. Semester' => [
