@@ -22,9 +22,10 @@ h1#sexy-name {
     background-color: rgba(255,255,255, 0.8);
 }
 #footer {
-    position: relative;
-    bottom: 0px;
+    position: fixed;
+    bottom: 5px;
     height: 20px;
+    width: 100%;
     
     font-size: smaller;
     color: grey;
