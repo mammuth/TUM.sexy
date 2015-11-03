@@ -20,25 +20,20 @@ $Router = new Route();
         <link rel="stylesheet" href="css/skeleton.css">
         <link rel="stylesheet" href="css/custom.css">
         <link rel="icon" type="image/png" href="favicon.png" />
-
-        <!-- Scripts at bottom -->
     </head>
     <body>
-
-        <!-- Primary Page Layout
-        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <div class="container">
             <div class="row" style="margin-top: 10%">
-
                 <h1 id="sexy-name">TUM<strong>.sexy</strong></h1>
-
             </div>
             <div class="row" style="margin-top:10%">
 
                 <div class="one-half column">
                     <h3>Redirects</h3>
-                    <p>No need for remembering long and ugly urls or bookmarks<br />
-                        - Just use these redirects!</p>
+                    <p>
+                        No need for remembering long and ugly urls or bookmarks<br />
+                        - Just use these redirects!
+                    </p>
 
                     <?php echo $Router->getHtmlList(); ?>
                 </div>
@@ -67,11 +62,14 @@ $Router = new Route();
             </div>
         </div>
 
-        <div id="footer" style="margin-left:10px; font-size: smaller;"><a href="?cats=1">Gimme' cats!</a></div>
-        <div id="footer"><p>Provided by Lukas, Kordian & Max</p></div>
-
-        <!-- End Document
-          –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <div id="footer">
+            <div class="left">
+                <a href="?cats=1">Gimme' cats!</a>
+            </div>
+            <div class="right">
+                Provided by Lukas, <a href="https://bruck.me">Kordian</a> &amp; Max
+            </div>
+        </div>
     </body>
     <?php
     if (isset($_GET['cats']) && $_GET['cats'] !== '0') {
