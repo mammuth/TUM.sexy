@@ -94,7 +94,11 @@ function pdfToString(){
                 echo "<h3>".$title."</h3>";
                 echo "<ul>";
                 foreach($dayArray as $meal) {
-                    echo "<li>".preg_replace("/\d([,]\d*)* oder B.n.W./", "", $meal)."€</li>";
+                  $meal = preg_replace("/ oder B.n.W. /", "", $meal);
+                  // Remove Zusatzstoffe numbers
+                  $meal = preg_replace("/((\d,\s*)+\d)/", "", $meal); // abc 1,2,3 xyz
+                  $meal = preg_replace("/(\s\d\s)/", "", $meal); // abc 1 xyz
+                  echo "<li>".$meal."€</li>";
                 }
                 echo "</ul>";
             }
