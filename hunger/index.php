@@ -28,14 +28,14 @@ function crawl_page($url){
     //Iterate over the extracted links and display their URLs 
     $links = [];     
     foreach ($linksIn as $link){
-        $links[] = $link->getAttribute('href'); //Extract and save the "href" attribute.
+        $links[] = $link->getAttribute('href'); //Extract and save the 'href' attribute.
     }
 
     return $links;
 }
 
 function pdfToString(){
-    $weekNumber = date("W"); 
+    $weekNumber = date('W'); 
 
     //Check if we have the current week in cache
     $text=apc_fetch('hungertext' . $weekNumber);
@@ -72,35 +72,35 @@ function pdfToString(){
 <html>
 <head>
     <title>Hunger!11!! - Speiseplan MI, TUM</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-    <link href="/hunger/style.css" rel="stylesheet" type="text/css">
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+    <link href='/hunger/style.css' rel='stylesheet' type='text/css'>
 </head>
 <body>
-    <h1>Hunger | <a href="http://tum.sexy" class="logo">TUM.<strong>sexy</strong></a></h1>
-    <div class="container">
+    <h1>Hunger | <a href='http://tum.sexy' class='logo'>TUM.<strong>sexy</strong></a></h1>
+    <div class='container'>
         <p>This is the 'Speiseplan' of the current week in the FMI Bistro of the Informatik Fakultät at TUM.</p>
         <?php 
-        $raw = preg_split("/\n\s*\n/", pdfToString()); //split the whole pdf string on the days
+        $raw = preg_split('/\n\s*\n/', pdfToString()); //split the whole pdf string on the days
         $days = array_slice($raw, 4, count($raw)-7); // Remove unneded stuff
         $currentDayOfWeek = idate('w', time());// Only display today and future days
         
         $i = 1;
         foreach($days as $day) {
             if ($i >= $currentDayOfWeek) {
-                $dayArray = preg_split("/\n\d[.]/", $day);
+                $dayArray = preg_split('/\n\d[.]/', $day);
                 $title = array_shift($dayArray);
-                echo "<h3>".$title."</h3>";
-                echo "<ul>";
+                echo '<h3>'.$title.'</h3>';
+                echo '<ul>';
                 foreach($dayArray as $meal) {
-                  $meal = preg_replace("/ oder B.n.W. /", "", $meal);
+                  $meal = preg_replace('/ oder B.n.W. /', '', $meal);
                   // Remove Zusatzstoffe numbers
-                  $meal = preg_replace("/((\d,\s*)+\d)/", "", $meal); // abc 1,2,3 xyz
-                  $meal = preg_replace("/(\s\d\s)/", "", $meal); // abc 1 xyz
-                  echo "<li>".$meal."€</li>";
+                  $meal = preg_replace('/((\d,\s*)+\d)/', '', $meal); // abc 1,2,3 xyz
+                  $meal = preg_replace('/(\s\d\s)/', '', $meal); // abc 1 xyz
+                  echo '<li>'.$meal.'€</li>';
                 }
-                echo "</ul>";
+                echo '</ul>';
             }
             $i += 1;
         }
