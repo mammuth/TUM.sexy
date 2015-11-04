@@ -73,6 +73,7 @@ function pdfToString(){
 <head>
     <title>Hunger!11!! - Speiseplan MI, TUM</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
     <link href="/hunger/style.css" rel="stylesheet" type="text/css">
 </head>
