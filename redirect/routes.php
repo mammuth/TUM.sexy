@@ -106,7 +106,7 @@ class Route {
 
             //Iterrate over all routes in current section
             foreach ($subs as $sub) {
-                $htmlList .= '<li>' . $this->routes[$sub]['description'] . ' - <a href="http://' . $sub . '.tum.sexy">' . $sub . '.tum.sexy</a></li>';
+                $htmlList .= '<li>' . $this->routes[$sub]['description'] . ' — <a href="http://' . $sub . '.tum.sexy">' . $sub . '.tum.sexy</a></li>';
             }
 
             $htmlList .= '</ul>';

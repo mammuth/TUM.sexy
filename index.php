@@ -32,7 +32,7 @@ $Router = new Route();
                     <h3>Redirects</h3>
                     <p>
                         No need for remembering long and ugly urls or bookmarks<br />
-                        - Just use these redirects!
+                        — Just use these redirects!
                     </p>
 
                     <?php echo $Router->getHtmlList(); ?>
@@ -53,8 +53,8 @@ $Router = new Route();
                                 <li>Nice and easy proxy to remove some clutter from the TUM online iCal export. E.g.: replaces 'Tutorübung' with 'TÜ' and Google Now readable locations</li>
                             </ul>
                         </li>
-                        <li>FMI Bistro "Speiseplan" - <a href="http://hunger.tum.sexy">hunger.tum.sexy</a></li>
-                        <li>MI Raumbelegungen - <a href="http://rooms.tum.sexy">rooms.tum.sexy</a></li>
+                        <li>FMI Bistro “Speiseplan” — <a href="http://hunger.tum.sexy">hunger.tum.sexy</a></li>
+                        <li>MI Raumbelegungen — <a href="http://rooms.tum.sexy">rooms.tum.sexy</a></li>
                         <li><a href="https://sexipretschi.eu/Game/">Sexi Pretschi Game</a></li>
                     </ul>
                 </div>
