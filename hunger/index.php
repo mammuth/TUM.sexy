@@ -21,14 +21,14 @@ function crawl_page($url) {
     //Iterate over the extracted links and display their URLs 
     $links = [];
     foreach ($linksIn as $link) {
-        $links[] = $link->getAttribute('href'); //Extract and save the "href" attribute.
+        $links[] = $link->getAttribute('href'); //Extract and save the 'href' attribute.
     }
 
     return $links;
 }
 
 function pdfToString() {
-    $weekNumber = date("W");
+    $weekNumber = date('W');
 
     //Check if we have the current week in cache
     $text = apc_fetch('hungertext' . $weekNumber);
@@ -61,7 +61,6 @@ function pdfToString() {
     //return it
     return $text;
 }
-
 
 //Process the PDF
 $raw = preg_split("/\n\s*\n/", pdfToString()); //split the whole pdf string on the days
