@@ -63,7 +63,7 @@ function pdfToString() {
 }
 
 //Process the PDF
-$raw = preg_split("/\n\s*\n/", pdfToString()); //split the whole pdf string on the days
+$raw = preg_split('/\n\s*\n/', pdfToString()); //split the whole pdf string on the days
 $days = array_slice($raw, 4, count($raw) - 7); // Remove unneded stuff
 $currentDayOfWeek = idate('w', time()); // Only display today and future days
 
@@ -72,7 +72,7 @@ $output = [];
 foreach ($days as $day) {
     //Only show future dates and today
     if ($i >= $currentDayOfWeek) {
-        $dayArray = preg_split("/\n\d[.]/", $day);
+        $dayArray = preg_split('/\n\d[.]/', $day);
         $title = array_shift($dayArray);
         $output[$title] = [];
 
@@ -81,7 +81,7 @@ foreach ($days as $day) {
             // Remove Zusatzstoffe numbers
             $meal = preg_replace('/((\d,\s*)+\d)/', '', $meal); // abc 1,2,3 xyz
             $meal = preg_replace('/(\s\d\s)/', '', $meal); // abc 1 xyz
-            $output[$title][] = preg_replace("/\d([,]\d*)* oder B.n.W./", "", $meal);
+            $output[$title][] = preg_replace('/\d([,]\d*)* oder B.n.W./', '', $meal);
         }
     }
     $i += 1;
