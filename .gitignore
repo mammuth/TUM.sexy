@@ -3,4 +3,5 @@ calendar/vendor/
 hunger/vendor/
 nbproject/
 vendor
-tmp/
+tmp/*
+!tmp/.htaccess
