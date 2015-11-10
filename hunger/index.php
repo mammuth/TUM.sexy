@@ -5,6 +5,7 @@ include __DIR__ . '/../setup.php';
 //Some constants
 define('URL_MAIN', 'http://www.betriebsrestaurant-gmbh.de/');
 define('URL_PAGE_WITH_LINKS', URL_MAIN . 'index.php?id=91');
+define('THE_REGEX', '/(\s?oder\sB.n.W.(?=\s))|(\s?\d\d*(\s?,\s?\d\d*)+(?=[\s)]))|(\s\d\d*\**,?(?=[\s)]))|(\*+(?=\s))|(\s?[VRSP](\+[VRSP])*(?=\s))/');
 
 function crawl_page($url) {
     //Create a new DOM document
@@ -77,11 +78,7 @@ foreach ($days as $day) {
         $output[$title] = [];
 
         foreach ($dayArray as $meal) {
-            $meal = preg_replace('/ oder B.n.W. /', '', $meal);
-            // Remove Zusatzstoffe numbers
-            $meal = preg_replace('/((\d,\s*)+\d)/', '', $meal); // abc 1,2,3 xyz
-            $meal = preg_replace('/(\s\d\s)/', '', $meal); // abc 1 xyz
-            $output[$title][] = preg_replace('/\d([,]\d*)* oder B.n.W./', '', $meal);
+            $output[$title][] = preg_replace(THE_REGEX, '', $meal);
         }
     }
     $i += 1;
