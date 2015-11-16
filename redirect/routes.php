@@ -47,6 +47,10 @@ class Route {
             'description' => 'Einführung in die Informatik 2',
             'target' => 'http://www2.in.tum.de/hp/Main?nid=283'
         ],
+        'e2ocaml' => [
+            'description' => 'Einführung in die Informatik 2 OCAML HA-Abgabe',
+            'target' => 'https://vmnipkow3.in.tum.de/'
+        ],
         'db' => [
 	    'description' => 'Grundlagen: Datenbanken',
 	    'target' => 'https://db.in.tum.de/teaching/ws1516/grundlagen/?lang=de'
