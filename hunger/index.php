@@ -5,7 +5,18 @@ include __DIR__ . '/../setup.php';
 //Some constants
 define('URL_MAIN', 'http://www.betriebsrestaurant-gmbh.de/');
 define('URL_PAGE_WITH_LINKS', URL_MAIN . 'index.php?id=91');
-define('THE_REGEX', '/(\s?oder\sB.n.W.(?=\s))|(\s?\d\d*(\s?,\s?\d\d*)+(?=[\s)]))|(\s\d\d*\**,?(?=[\s)]))|(\*+(?=\s))|(\s?[VRSP](\+[VRSP])*(?=\s))/');
+
+/**
+ * (\s?oder\sB.n.W.(?=\s))              strip B.n.W.
+ * (\s?\d\d*(\s?,\s?\d\d*)+(?=[\s)]))   strip additives
+ * (\s\d\d*\**,?(?=[\s)]))              strip random *s in the menu
+ * (\*+(?=\s))                          "
+ * (\s?[VKRSP](\+[VKRSP]                  strip V,K, R, S, P
+ * V = Vegetarisch K = mit Kalbfleisch R = mit Rindfleisch S = mit Schweinefleisch..P = mit Pute
+ * 
+ * 
+ */
+define('THE_REGEX', '/(\s?oder\sB.n.W.(?=\s))|(\s?\d\d*(\s?,\s?\d\d*)+(?=[\s)]))|(\s\d\d*\**,?(?=[\s)]))|(\*+(?=\s))|(\s?[VKRSP](\+[VKRSP])*(?=\s))/');
 
 function crawl_page($url) {
     //Create a new DOM document
