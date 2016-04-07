@@ -7,32 +7,41 @@ body {
 }
 
 h1#sexy-name {
-	margin-bottom: 5%;
-	text-align: center;
-	
+    margin-bottom: 5%;
+    text-align: center;
+
 }
 
 .container {
-	min-height:100% !important;
-	position:relative !important;
-	padding-bottom: 20px !important; /* Height of the Footer */
+    min-height:100% !important;
+    position:relative !important;
+    padding-bottom: 20px !important; /* Height of the Footer */
     /* for the gifs */
     opacity: 0.9;
     padding: 0px 20px 0px 20px;
     background-color: rgba(255,255,255, 0.8);
 }
 #footer {
-	bottom: 0px;
-	right: 10px;
-	height: 20px;
+    position: fixed;
+    bottom: 5px;
+    height: 20px;
+    width: 100%;
+    
+    font-size: smaller;
+    color: grey;
 }
-#footer p {
-	font-size: x-small !important;
-	color: grey;
-	text-align: right;
-	margin-right:5px;
+#footer a{
+    color: grey;
 }
-
+#footer .left{
+    position: absolute;
+    left: 10px;
+}
+#footer .right{
+    position: absolute;
+    right: 10px;
+    text-align: right;
+}
 
 .crumbs { display: block;  }  
 .crumbs li {  display: inline; }  

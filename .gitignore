@@ -1,3 +1,7 @@
 googleanalytics.php
 calendar/vendor/
 hunger/vendor/
+nbproject/
+vendor
+tmp/*
+!tmp/.htaccess

@@ -1,19 +1,24 @@
-
 <?php
-//Send some important headers and setup php
-header('Content-Type: text/html; charset=UTF-8');
-mb_internal_encoding('UTF-8');
-date_default_timezone_set('Europe/Berlin');
+
+include __DIR__ . '/../setup.php';
 
 //Some constants
 define('URL_MAIN', 'http://www.betriebsrestaurant-gmbh.de/');
 define('URL_PAGE_WITH_LINKS', URL_MAIN . 'index.php?id=91');
 
-//Include libs
-include 'vendor/autoload.php';
+/**
+ * (\s?oder\sB.n.W.(?=\s))              strip B.n.W.
+ * (\s?\d\d*(\s?,\s?\d\d*)+(?=[\s)]))   strip additives
+ * (\s\d\d*\**,?(?=[\s)]))              strip random *s in the menu
+ * (\*+(?=\s))                          "
+ * (\s?[VKRSP](\+[VKRSP]                  strip V,K, R, S, P
+ * V = Vegetarisch K = mit Kalbfleisch R = mit Rindfleisch S = mit Schweinefleisch..P = mit Pute
+ * 
+ * 
+ */
+define('THE_REGEX', '/(\s?oder\sB.n.W.(?=\s))|(\s?\d\d*(\s?,\s?\d\d*)+(?=[\s)]))|(\s\d\d*\**,?(?=[\s)]))|(\*+(?=\s))|(\s?[VKRSP](\+[VKRSP])*(?=\s))/');
 
-
-function crawl_page($url){
+function crawl_page($url) {
     //Create a new DOM document
     $dom = new DOMDocument;
 
@@ -26,20 +31,20 @@ function crawl_page($url){
     $linksIn = $dom->getElementsByTagName('a');
 
     //Iterate over the extracted links and display their URLs 
-    $links = [];     
-    foreach ($linksIn as $link){
-        $links[] = $link->getAttribute('href'); //Extract and save the "href" attribute.
+    $links = [];
+    foreach ($linksIn as $link) {
+        $links[] = $link->getAttribute('href'); //Extract and save the 'href' attribute.
     }
 
     return $links;
 }
 
-function pdfToString(){
-    $weekNumber = date("W"); 
+function pdfToString() {
+    $weekNumber = date('W');
 
     //Check if we have the current week in cache
-    $text=apc_fetch('hungertext' . $weekNumber);
-    if($text !== false){
+    $text = apc_fetch('hungertext' . $weekNumber);
+    if ($text !== false) {
         return $text;
     }
 
@@ -47,60 +52,48 @@ function pdfToString(){
     $links = crawl_page(URL_PAGE_WITH_LINKS);
     $pdfLink = '';
     foreach ($links as $file) {
-        if (strpos(strtolower($file), '.pdf') !== FALSE && strpos($file, '_FMI_') !== FALSE && $weekNumber === substr($file,16,2)) {
+        if (strpos(strtolower($file), '.pdf') !== FALSE && strpos($file, '_FMI_') !== FALSE && $weekNumber === substr($file, 16, 2)) {
             $pdfLink = URL_MAIN . $file;
         }
     }
 
     //Don't proceed when no link was found
-    if(empty($pdfLink)){
+    if (empty($pdfLink)) {
         return;
     }
-    
+
     // Parse pdf file and build necessary objects.
     $parser = new \Smalot\PdfParser\Parser();
-    $pdf    = $parser->parseFile($pdfLink);
+    $pdf = $parser->parseFile($pdfLink);
     $text = $pdf->getText();
 
     //Store it in cache
-    apc_store('hungertext' . $weekNumber, $text, 2*24*3600);
+    apc_store('hungertext' . $weekNumber, $text, 2 * 24 * 3600);
 
     //return it
-    return $text;    
+    return $text;
 }
-?>
-<html>
-<head>
-    <title>Hunger!11!! - Speiseplan MI, TUM</title>
-    <meta charset="UTF-8">
-    <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-    <link href="/hunger/style.css" rel="stylesheet" type="text/css">
-</head>
-<body>
-    <h1>Hunger | <a href="http://tum.sexy" class="logo">TUM.<strong>sexy</strong></a></h1>
-    <div class="container">
-        <p>This is the 'Speiseplan' of the current week in the FMI Bistro of the Informatik Fakultät at TUM.</p>
-        <?php 
-        $raw = preg_split("/\n\s*\n/", pdfToString()); //split the whole pdf string on the days
-        $days = array_slice($raw, 4, count($raw)-7); // Remove unneded stuff
-        $currentDayOfWeek = idate('w', time());// Only display today and future days
-        
-        $i = 1;
-        foreach($days as $day) {
-            if ($i >= $currentDayOfWeek) {
-                $dayArray = preg_split("/\n\d[.]/", $day);
-                $title = array_shift($dayArray);
-                echo "<h3>".$title."</h3>";
-                echo "<ul>";
-                foreach($dayArray as $meal) {
-                    echo "<li>".preg_replace("/\d([,]\d*)* oder B.n.W./", "", $meal)."€</li>";
-                }
-                echo "</ul>";
-            }
-            $i += 1;
-        }
-        ?>
-    </div>
-</body>
-</html>
 
+//Process the PDF
+$raw = preg_split('/\n\s*\n/', pdfToString()); //split the whole pdf string on the days
+$days = array_slice($raw, 4, count($raw) - 7); // Remove unneded stuff
+$currentDayOfWeek = idate('w', time()); // Only display today and future days
+
+$i = 1;
+$output = [];
+foreach ($days as $day) {
+    //Only show future dates and today
+    if ($i >= $currentDayOfWeek) {
+        $dayArray = preg_split('/\n\d[.]/', $day);
+        $title = array_shift($dayArray);
+        $output[$title] = [];
+
+        foreach ($dayArray as $meal) {
+            $output[$title][] = preg_replace(THE_REGEX, '', $meal);
+        }
+    }
+    $i += 1;
+}
+
+//Render the template
+echo $twig->render('hunger.twig', ['food' => $output]);
