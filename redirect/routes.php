@@ -59,8 +59,8 @@ class Route {
 	    'description' => 'Grundlagen Betriebssystem und Systemsoftware',
 	    'target' => 'http://www11.in.tum.de/Veranstaltungen/GrundlagenBetriebssystemeundSystemsoftware%28WS1516%29?newlang=de'
 	],
-	'propra30' => [
-            'description' => 'PGdP Gruppe 30',
+	'quintero' => [
+            'description' => 'Mathias Quintero',
             'target' => 'http://home.in.tum.de/~szillat/'
         ],
         'carlos' => [
