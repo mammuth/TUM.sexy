@@ -52,14 +52,14 @@ class Route {
             'target' => 'https://vmnipkow3.in.tum.de/'
         ],
         'db' => [
-	    'description' => 'Grundlagen: Datenbanken',
-	    'target' => 'https://db.in.tum.de/teaching/ws1516/grundlagen/?lang=de'
-	],
-	'gbs' => [
-	    'description' => 'Grundlagen Betriebssystem und Systemsoftware',
-	    'target' => 'http://www11.in.tum.de/Veranstaltungen/GrundlagenBetriebssystemeundSystemsoftware%28WS1516%29?newlang=de'
-	],
-	'quintero' => [
+    	    'description' => 'Grundlagen: Datenbanken',
+    	    'target' => 'https://db.in.tum.de/teaching/ws1516/grundlagen/?lang=de',
+    	],
+    	'gbs' => [
+    	    'description' => 'Grundlagen Betriebssystem und Systemsoftware',
+    	    'target' => 'http://www11.in.tum.de/Veranstaltungen/GrundlagenBetriebssystemeundSystemsoftware%28WS1516%29?newlang=de'
+    	],
+    	'quintero' => [
             'description' => 'Mathias Quintero',
             'target' => 'http://home.in.tum.de/~szillat/'
         ],
@@ -70,6 +70,14 @@ class Route {
         'github' => [
             'description' => 'Official TUM.sexy Github Repository',
             'target' => 'https://github.com/mammuth/TUM.sexy'
+        ],
+        'psa' => [
+            'description' => 'Praktikum Systemadministration',
+            'target' => 'http://www.net.in.tum.de/en/teaching/ss16/praktika/psa'
+        ],
+        'psa-wiki' => [
+            'description' => 'Praktikum Systemadministration Wiki',
+            'target' => 'https://wiki.rbg.tum.de/Informatik/RBG/PSA/'
         ]
     ];
 
