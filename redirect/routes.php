@@ -73,7 +73,7 @@ class Route {
         ],
         'psa' => [
             'description' => 'Praktikum Systemadministration',
-            'target' => 'http://www.net.in.tum.de/en/teaching/ss16/praktika/psa'
+            'target' => 'http://www.net.in.tum.de/de/teaching/ss16/praktika/psa'
         ],
         'psa-wiki' => [
             'description' => 'Praktikum Systemadministration Wiki',
