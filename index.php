@@ -67,7 +67,7 @@ $Router = new Route();
                 <a href="?cats=1">Gimme' cats!</a>
             </div>
             <div class="right">
-                Provided by Lukas, <a href="https://bruck.me">Kordian</a> &amp; Max
+                Provided by Lukas, <a href="https://bruck.me">Kordian</a> &amp; <a href="http://www.maxi-muth.de">Max</a>
             </div>
         </div>
     </body>
