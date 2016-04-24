@@ -78,6 +78,10 @@ class Route {
         'psa-wiki' => [
             'description' => 'Praktikum Systemadministration Wiki',
             'target' => 'https://wiki.rbg.tum.de/Informatik/RBG/PSA/'
+        ],
+        'dwt' => [
+            'description' => 'Diskrete Wahrscheinlichkeitstheorie',
+            'target' => 'http://wwwalbers.in.tum.de/lehre/2016SS/dwt/'
         ]
     ];
 
@@ -96,7 +100,9 @@ class Route {
         '3. Semester' => [
             'anal', 'eidi2', 'db', 'gbs'
         ],
-        '4. Semester' => [],
+        '4. Semester' => [
+            'dwt'
+        ],
         '5. Semester' => [
             'numprog'
         ],
