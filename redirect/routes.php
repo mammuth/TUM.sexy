@@ -33,7 +33,7 @@ class Route {
         ],
         'numprog' => [
             'description' => 'Numerisches Programmieren',
-            'target' => 'http://www5.in.tum.de/wiki/index.php/Numerisches_Programmieren_-_Winter_15'
+            'target' => 'http://www5.in.tum.de/wiki/index.php/Numerisches_Programmieren_-_Summer_16'
         ],
         'websec' => [
             'description' => 'WebApplication Security Bachelor Praktikum',
@@ -82,6 +82,10 @@ class Route {
         'dwt' => [
             'description' => 'Diskrete Wahrscheinlichkeitstheorie',
             'target' => 'http://wwwalbers.in.tum.de/lehre/2016SS/dwt/'
+        ],
+        'theo' => [
+            'description' => 'Einführung in die theoretische Informatik',
+            'target' => 'https://www7.in.tum.de/um/courses/theo/ss2016/index.php'
         ]
     ];
 
@@ -101,7 +105,7 @@ class Route {
             'anal', 'eidi2', 'db', 'gbs'
         ],
         '4. Semester' => [
-            'dwt'
+            'dwt', 'theo'
         ],
         '5. Semester' => [
             'numprog'
