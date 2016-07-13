@@ -19,6 +19,10 @@ class Route {
             'description' => 'Moodle',
             'target' => 'https://www.moodle.tum.de/'
         ],
+        'o' => [
+            'description' => 'TUM Opac',
+            'target' => 'https://www.ub.tum.de/tum-opac'
+        ],
         'stuff' => [
             'description' => 'Unistuff (ehemals Tumstuff)',
             'target' => 'http://unistuff.org'
