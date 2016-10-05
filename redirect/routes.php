@@ -90,6 +90,18 @@ class Route {
         'theo' => [
             'description' => 'Einführung in die theoretische Informatik',
             'target' => 'https://www7.in.tum.de/um/courses/theo/ss2016/index.php'
+        ],
+        'info1' => [
+            'description' => 'Einführung in die Informatik 1',
+            'target' => 'http://www14.in.tum.de/lehre/2016WS/info1/'
+        ],
+        'era' => [
+            'description' => 'Einführung in die Rechnerarchitektur',
+            'target' => 'http://www.lrr.in.tum.de/lehre/wintersemester-1617/vorlesungen/einfuehrung-in-die-rechnerarchitektur-era/'
+        ],
+        'ds' => [
+            'description' => 'Diskrete Strukturen',
+            'target' => 'http://www5.in.tum.de/wiki/index.php/Diskrete_Strukturen_-_Winter_16'
         ]
     ];
 
@@ -102,7 +114,7 @@ class Route {
             'hunger', 'rooms', 'c', 'm', 'stuff', 'reddit'
         ],
         '1. Semester' => [
-            'carlos'
+            'info1', 'era', 'ds', 'carlos'
         ],
         '2. Semester' => [],
         '3. Semester' => [
