@@ -102,7 +102,11 @@ class Route {
         'ds' => [
             'description' => 'Diskrete Strukturen',
             'target' => 'http://www5.in.tum.de/wiki/index.php/Diskrete_Strukturen_-_Winter_16'
-        ]
+        ],
+        'vorkurs' => [
+            'description' => 'Mathematik Vorkurs für Informatiker',
+            'target' => 'http://www.ma.tum.de/Vorkurse/Info/WebHome'
+        ],
     ];
 
     /**
@@ -111,7 +115,7 @@ class Route {
      */
     private $sections = [
         'Special Stuff' => [
-            'hunger', 'rooms', 'c', 'm', 'stuff', 'reddit'
+            'hunger', 'rooms', 'c', 'm', 'stuff', 'reddit', 'vorkurs'
         ],
         '1. Semester' => [
             'info1', 'era', 'ds', 'carlos'
