@@ -61,7 +61,7 @@ class Route {
     	],
     	'gbs' => [
     	    'description' => 'Grundlagen Betriebssystem und Systemsoftware',
-    	    'target' => 'http://www11.in.tum.de/Veranstaltungen/GrundlagenBetriebssystemeundSystemsoftware%28WS1516%29?newlang=de'
+    	    'target' => 'https://www.sec.in.tum.de/Grundlagen-Betriebssysteme-und-Systemsoftware-ws1617/'
     	],
     	'quintero' => [
             'description' => 'Mathias Quintero',
