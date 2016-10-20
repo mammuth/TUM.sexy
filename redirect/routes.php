@@ -57,7 +57,7 @@ class Route {
         ],
         'db' => [
     	    'description' => 'Grundlagen: Datenbanken',
-    	    'target' => 'https://db.in.tum.de/teaching/ws1516/grundlagen/?lang=de',
+    	    'target' => 'https://db.in.tum.de/teaching/ws1617/grundlagen/?lang=de',
     	],
     	'gbs' => [
     	    'description' => 'Grundlagen Betriebssystem und Systemsoftware',
