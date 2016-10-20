@@ -99,6 +99,10 @@ class Route {
             'description' => 'Einführung in die Rechnerarchitektur',
             'target' => 'http://www.lrr.in.tum.de/lehre/wintersemester-1617/vorlesungen/einfuehrung-in-die-rechnerarchitektur-era/'
         ],
+        'scivis' => [
+            'description' => 'Scientific Visualization',
+            'target' => 'http://wwwcg.in.tum.de/teaching/teaching/winter-term-1617/scientific-visualization.html'
+        ],
         'ds' => [
             'description' => 'Diskrete Strukturen',
             'target' => 'http://www5.in.tum.de/wiki/index.php/Diskrete_Strukturen_-_Winter_16'
