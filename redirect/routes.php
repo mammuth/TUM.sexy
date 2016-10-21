@@ -47,9 +47,9 @@ class Route {
             'description' => 'Analysis für Informatiker',
             'target' => 'https://www-m14.ma.tum.de/lehre/ws15-16/analysis-fuer-informatik/'
         ],
-        'eidi2' => [
+        'info2' => [
             'description' => 'Einführung in die Informatik 2',
-            'target' => 'http://www2.in.tum.de/hp/Main?nid=283'
+            'target' => 'https://www2.in.tum.de/hp/Main?nid=329'
         ],
         'e2ocaml' => [
             'description' => 'Einführung in die Informatik 2 OCAML HA-Abgabe',
