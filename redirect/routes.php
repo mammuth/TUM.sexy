@@ -126,7 +126,7 @@ class Route {
         ],
         '2. Semester' => [],
         '3. Semester' => [
-            'anal', 'eidi2', 'db', 'gbs'
+            'anal', 'info2', 'db', 'gbs'
         ],
         '4. Semester' => [
             'dwt', 'theo'
