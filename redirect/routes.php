@@ -111,6 +111,10 @@ class Route {
             'description' => 'Mathematik Vorkurs für Informatiker',
             'target' => 'http://www.ma.tum.de/Vorkurse/Info/WebHome'
         ],
+        'artemis' => [
+            'description' => 'ArTEMIS platform of the Prof. Brügge, Chair 1',
+            'target' => 'https://exercisebruegge.in.tum.de/#/courses'
+        ]
     ];
 
     /**
