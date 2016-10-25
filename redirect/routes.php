@@ -111,7 +111,11 @@ class Route {
             'description' => 'Mathematik Vorkurs für Informatiker',
             'target' => 'http://www.ma.tum.de/Vorkurse/Info/WebHome'
         ],
-        'artemis' => [
+        'csc' => [
+            'description' => 'Computational Social Choice',
+            'target' => 'http://dss.in.tum.de/33-teaching/semester/wintersemester-2016-17/153-computational-social-choice-ws-2016-17.html'
+        ], 
+       'artemis' => [
             'description' => 'ArTEMIS platform of the Prof. Brügge, Chair 1',
             'target' => 'https://exercisebruegge.in.tum.de/#/courses'
         ]
