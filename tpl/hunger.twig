@@ -18,7 +18,9 @@
                     {% endfor %}
                 </ul>
             {% endfor %}
-            <a href="{{pdfLink}}" target="_blank">Original Menu as PDF</a>
+            {% if pdfLink %}
+                <a href="{{pdfLink}}" target="_blank">Original Menu as PDF</a>
+            {% endif %}
         </div>
     </body>
 </html>
