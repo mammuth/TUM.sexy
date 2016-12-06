@@ -115,6 +115,10 @@ class Route {
             'description' => 'Computational Social Choice',
             'target' => 'http://dss.in.tum.de/33-teaching/semester/wintersemester-2016-17/153-computational-social-choice-ws-2016-17.html'
         ], 
+        'eval' => [
+            'description' => 'Evaluation of Lectures',
+            'target' => 'http://evasys.zv.tum.de/evasys/online.php'
+        ],
        'artemis' => [
             'description' => 'ArTEMIS platform of the Prof. Brügge, Chair 1',
             'target' => 'https://exercisebruegge.in.tum.de/#/courses'
