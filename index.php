@@ -19,6 +19,7 @@ $Router = new Route();
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/skeleton.css">
         <link rel="stylesheet" href="css/custom.css">
+	<link rel="search" href="opensearchdescription.xml" type="application/opensearchdescription+xml" title="tum.sexy" />
         <link rel="icon" type="image/png" href="favicon.png" />
     </head>
     <body>
