@@ -57,6 +57,7 @@ $Router = new Route();
                         <li>FMI Bistro “Speiseplan” — <a href="http://hunger.tum.sexy">hunger.tum.sexy</a></li>
                         <li>MI Raumbelegungen — <a href="http://rooms.tum.sexy">rooms.tum.sexy</a></li>
                         <li><a href="https://sexipretschi.eu/Game/">Sexi Pretschi Game</a></li>
+                        <li><a href="https://docs.google.com/document/d/1eW6DmvvKoolAWRMp6P3tMts-XWSb263Ap97LyRQ5Wno/edit?usp=sharing">Ersti Tipps</a></li>
                     </ul>
                 </div>
 
