@@ -122,6 +122,10 @@ class Route {
        'artemis' => [
             'description' => 'ArTEMIS platform of the Prof. Brügge, Chair 1',
             'target' => 'https://exercisebruegge.in.tum.de/#/courses'
+        ],
+        'sp' => [
+            'description' => 'Studienplan',
+            'target' => 'http://www.in.tum.de/fuer-studierende/bachelor-studiengaenge/informatik/studienplan/studienbeginn-ab-ws-201617.html'
         ]
     ];
 
@@ -131,7 +135,7 @@ class Route {
      */
     private $sections = [
         'Special Stuff' => [
-            'hunger', 'rooms', 'c', 'm', 'stuff', 'reddit', 'vorkurs'
+            'sp', 'hunger', 'rooms', 'c', 'm', 'stuff', 'reddit', 'vorkurs'
         ],
         '1. Semester' => [
             'info1', 'era', 'ds', 'carlos'
