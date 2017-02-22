@@ -8,8 +8,12 @@ class Route {
             'target' => 'http://tum.sexy/hunger'
         ],
         'rooms' => [
-            'description' => 'MI Raumbelegungen',
-            'target' => 'http://tum.sexy/rooms'
+            'description' => 'Lernräume',
+            'target' => 'https://www.devapp.it.tum.de/iris/app/'
+        ],
+        'room' => [
+            'description' => 'Lernräume',
+            'target' => 'https://www.devapp.it.tum.de/iris/app/'
         ],
         'c' => [
             'description' => 'TUM Online',
