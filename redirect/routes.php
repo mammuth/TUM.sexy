@@ -135,7 +135,7 @@ class Route {
      */
     private $sections = [
         'Special Stuff' => [
-            'sp', 'hunger', 'rooms', 'c', 'm', 'stuff', 'reddit', 'vorkurs'
+            'hunger', 'rooms', 'c', 'm', 'sp', 'stuff', 'reddit', 'vorkurs'
         ],
         '1. Semester' => [
             'info1', 'era', 'ds', 'carlos'
