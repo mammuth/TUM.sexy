@@ -7,7 +7,7 @@ class Route {
             'description' => 'FMI Bistro Speiseplan',
             'target' => 'http://tum.sexy/hunger'
         ],
-		'mensa' => [
+		'mensabot' => [
             'description' => 'TUMMensabot f&auml;r Telegram',
             'target' => 'https://t.me/TUMMensabot'
         ],
