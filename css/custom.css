@@ -15,7 +15,8 @@ h1#sexy-name {
     margin-bottom: 5%;
     display: inline-block;
 }
-#github-star-button {
+#github-star-container {
+    margin-left: 5px;
     display: inline-block;
 }
 

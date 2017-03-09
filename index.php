@@ -26,7 +26,9 @@ $Router = new Route();
         <div class="container">
             <div class="row" id="header-row">
                 <h1 id="sexy-name">TUM<strong>.sexy</strong></h1>
-                <a id="github-star-button" class="github-button" href="https://github.com/mammuth/TUM.sexy/" data-icon="octicon-star" data-style="mega" data-count-href="/mammuth/TUM.sexy/stargazers" data-count-api="/repos/mammuth/TUM.sexy#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star mammuth/TUM.sexy on GitHub">Star</a>
+                <div id="github-star-container">
+                    <a class="github-button" href="https://github.com/mammuth/TUM.sexy/" data-icon="octicon-star" data-style="mega" data-count-href="/mammuth/TUM.sexy/stargazers" data-count-api="/repos/mammuth/TUM.sexy#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star mammuth/TUM.sexy on GitHub">Star</a>
+                </div>
             </div>
             <div class="row" style="margin-top:10%">
 
