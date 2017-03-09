@@ -6,10 +6,17 @@ body {
     background-position: center center;
 }
 
+#header-row {
+    text-align: center;
+    margin-top: 10%;
+}
+
 h1#sexy-name {
     margin-bottom: 5%;
-    text-align: center;
-
+    display: inline-block;
+}
+#github-star-button {
+    display: inline-block;
 }
 
 .container {

@@ -24,8 +24,9 @@ $Router = new Route();
     </head>
     <body>
         <div class="container">
-            <div class="row" style="margin-top: 10%">
+            <div class="row" id="header-row">
                 <h1 id="sexy-name">TUM<strong>.sexy</strong></h1>
+                <a id="github-star-button" class="github-button" href="https://github.com/mammuth/TUM.sexy/" data-icon="octicon-star" data-style="mega" data-count-href="/mammuth/TUM.sexy/stargazers" data-count-api="/repos/mammuth/TUM.sexy#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star mammuth/TUM.sexy on GitHub">Star</a>
             </div>
             <div class="row" style="margin-top:10%">
 
@@ -72,6 +73,7 @@ $Router = new Route();
                 Provided by Lukas, <a href="https://bruck.me">Kordian</a> &amp; <a href="http://www.maxi-muth.de">Max</a>
             </div>
         </div>
+        <script async defer src="//buttons.github.io/buttons.js"></script>
     </body>
     <?php
     if (isset($_GET['cats']) && $_GET['cats'] !== '0') {
