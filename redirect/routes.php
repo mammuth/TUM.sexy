@@ -7,6 +7,10 @@ class Route {
             'description' => 'FMI Bistro Speiseplan',
             'target' => 'http://tum.sexy/hunger'
         ],
+		'mensa' => [
+            'description' => 'TUMMensabot f&auml;r Telegram',
+            'target' => 'https://t.me/TUMMensabot'
+        ],
         'rooms' => [
             'description' => 'Lernräume',
             'target' => 'https://www.devapp.it.tum.de/iris/app/'
@@ -139,7 +143,7 @@ class Route {
      */
     private $sections = [
         'Special Stuff' => [
-            'hunger', 'rooms', 'c', 'm', 'sp', 'stuff', 'reddit', 'vorkurs'
+            'hunger', 'mensa', 'rooms', 'c', 'm', 'sp', 'stuff', 'reddit', 'vorkurs'
         ],
         '1. Semester' => [
             'info1', 'era', 'ds', 'carlos'
