@@ -134,6 +134,10 @@ class Route {
         'sp' => [
             'description' => 'Studienplan',
             'target' => 'http://www.in.tum.de/fuer-studierende/bachelor-studiengaenge/informatik/studienplan/studienbeginn-ab-ws-201617.html'
+        ],
+        'app' => [
+            'description' => 'TUM Campus App',
+            'target' => 'https://tumcabe.in.tum.de/landing/'
         ]
     ];
 
@@ -143,7 +147,7 @@ class Route {
      */
     private $sections = [
         'Special Stuff' => [
-            'hunger', 'mensabot', 'rooms', 'c', 'm', 'sp', 'stuff', 'reddit', 'vorkurs'
+            'hunger', 'mensabot', 'rooms', 'app', 'c', 'm', 'sp', 'stuff', 'reddit', 'vorkurs'
         ],
         '1. Semester' => [
             'info1', 'era', 'ds', 'carlos'
