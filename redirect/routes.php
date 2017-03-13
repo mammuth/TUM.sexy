@@ -138,6 +138,10 @@ class Route {
         'app' => [
             'description' => 'TUM Campus App',
             'target' => 'https://tumcabe.in.tum.de/landing/'
+        ],
+        'eduroam' => [
+            'description' => 'HowTo: Setup eduroam securely!',
+            'target' => 'http://tum.sexy/eduroam.html'
         ]
     ];
 

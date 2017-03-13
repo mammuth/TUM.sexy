@@ -15,6 +15,10 @@ h1#sexy-name {
     margin-bottom: 5%;
     display: inline-block;
 }
+#sexy-name a {
+    text-decoration: none;
+    color: black;
+}
 #github-star-container {
     margin-left: 5px;
     display: inline-block;
