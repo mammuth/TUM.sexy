@@ -40,7 +40,7 @@ class Route {
             'target' => 'https://reddit.com/r/redditum'
         ],
 
-        'TUMeme' => [
+        'tumeme' => [
             'description' => 'TUMeme',
             'target' => 'http://tumeme.alpheca.uberspace.de'
         ],
@@ -156,7 +156,7 @@ class Route {
      */
     private $sections = [
         'Special Stuff' => [
-            'hunger', 'mensabot', 'rooms', 'app', 'c', 'm', 'sp', 'stuff', 'reddit', 'TUMeme', 'vorkurs'
+            'hunger', 'mensabot', 'rooms', 'app', 'c', 'm', 'sp', 'stuff', 'reddit', 'tumeme', 'vorkurs'
         ],
         '1. Semester' => [
             'info1', 'era', 'ds', 'carlos'
