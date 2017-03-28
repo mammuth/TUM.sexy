@@ -176,7 +176,7 @@ class Route {
 
     public function getTargetOfSub($subdomain) {
 	if($subdomain === 'json') {
-	    return json_encode($this->routes);	
+	    die(json_encode($this->routes));	
 	}
 	    
         if (!isset($this->routes[$subdomain])) {
