@@ -176,6 +176,7 @@ class Route {
 
     public function getTargetOfSub($subdomain) {
 	if($subdomain === 'json') {
+	    header('Content-type: application/json');
 	    die(json_encode($this->routes));	
 	}
 	    
