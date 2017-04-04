@@ -1,6 +1,6 @@
 {
-    "require": {
-        "smalot/pdfparser": "^0.9",
-        "twig/twig": "^1.23"
-    }
+  "require": {
+    "smalot/pdfparser": "^0.9",
+    "twig/twig": "^1.23"
+  }
 }

@@ -5,3 +5,4 @@ nbproject/
 vendor
 tmp/*
 !tmp/.htaccess
+.idea/

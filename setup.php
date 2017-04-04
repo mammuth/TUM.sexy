@@ -21,3 +21,10 @@ $twig = new Twig_Environment($loader, [
     'cache' => __DIR__ . '/tmp/compile',
     'debug' => true
 ]);
+
+
+function renderTemplate($tplName = 'start', $vars) {
+    global $twig;
+    $vars['main_tpl'] = $tplName . '.twig';
+    echo $twig->render('main.twig', $vars);
+}

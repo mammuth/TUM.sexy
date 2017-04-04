@@ -15,80 +15,94 @@ h1#sexy-name {
     margin-bottom: 5%;
     display: inline-block;
 }
+
 #sexy-name a {
     text-decoration: none;
     color: black;
 }
+
 #github-star-container {
     margin-left: 5px;
     display: inline-block;
 }
 
-.container {
-    min-height:100% !important;
-    position:relative !important;
-    padding-bottom: 20px !important; /* Height of the Footer */
-    /* for the gifs */
-    opacity: 0.9;
-    padding: 0px 20px 0px 20px;
-    background-color: rgba(255,255,255, 0.8);
+a.logo {
+    text-decoration: none;
 }
+
+.container {
+    min-height: 100% !important;
+    position: relative !important;
+    opacity: 0.9;
+    padding: 0 20px 20px 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
 #footer {
     position: fixed;
     bottom: 5px;
     height: 20px;
     width: 100%;
-    
     font-size: small;
     color: grey;
 }
-#footer a{
+
+#footer a {
     color: grey;
 }
-#footer .left{
+
+#footer .left {
     position: absolute;
     left: 10px;
 }
-#footer .right{
+
+#footer .right {
     position: absolute;
     right: 10px;
     text-align: right;
 }
 
-.crumbs { display: block;  }  
-.crumbs li {  display: inline; }  
-.crumbs li.first { padding-left: 8px; }  
-.crumbs li a,  
-.crumbs li a:link,  
-.crumbs li a:visited {  
-    color: #666;  
-    display: block;  
-    float: left;  
-    font-size: 12px;  
-    margin-left: -13px;  
-    padding: 7px 17px 11px 25px;  
-    position: relative;  
-    text-decoration: none;  
-}  
-.crumbs li a {  
-    background-repeat: no-repeat;  
-    background-position: 100% 0;  
-    position: relative;  
-}  
-.crumbs li a:hover {  
-    color: #333;  
-    background-position: 100% -48px;  
-    cursor: pointer;  
-}  
-.crumbs li a:active {  
-    color: #333;  
-    background-position: 100% -96px;  
-}  
-.crumbs li.first a span {  
-    height: 29px;  
-    width: 3px;  
-    border-left: 1px solid #d9d9d9;  
-    position: absolute;  
-    top: 0px;  
-    left: 0px;  
+.crumbs { display: block; }
+
+.crumbs li { display: inline; }
+
+.crumbs li.first { padding-left: 8px; }
+
+.crumbs li a,
+.crumbs li a:link,
+.crumbs li a:visited {
+    color: #666666;
+    display: block;
+    float: left;
+    font-size: 12px;
+    margin-left: -13px;
+    padding: 7px 17px 11px 25px;
+    position: relative;
+    text-decoration: none;
+}
+
+.crumbs li a {
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    position: relative;
+}
+
+.crumbs li a:hover {
+    color: #333333;
+    background-position: 100% -48px;
+    cursor: pointer;
+}
+
+.crumbs li a:active {
+    color: #333333;
+    background-position: 100% -96px;
+}
+
+.crumbs li.first a span {
+    height: 29px;
+    width: 3px;
+    border-left: 1px solid #d9d9d9;
+    position: absolute;
+    top: 0px;
+    left: 0px;
 }  

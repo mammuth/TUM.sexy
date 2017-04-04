@@ -17,7 +17,7 @@ define('URL_PAGE_WITH_LINKS', URL_MAIN . 'index.php?id=91');
  * 
  */
 define('THE_REGEX', '/(\s?oder\sB.n.W.(?=\s))|(\s?\d\d*(\s?,\s?\d\d*)+(?=[\s)]))|(\s\d\d*\**,?(?=[\s)]))|(\*+(?=\s))|(\s?[VKRSP](\+[VKRSP])*(?=\s))/');
-$PDF_LINK = '';  
+$pdfLink = '';
 
 function crawl_page($url) {
     //Create a new DOM document
@@ -51,21 +51,21 @@ function pdfToString() {
 
     //Otherwise fetch all links
     $links = crawl_page(URL_PAGE_WITH_LINKS);
-    global $PDF_LINK;
+    global $pdfLink;
     foreach ($links as $file) {
         if (strpos(strtolower($file), '.pdf') !== FALSE && strpos($file, '_FMI_') !== FALSE && $weekNumber === substr($file, 16, 2)) {
-            $PDF_LINK = URL_MAIN . $file;
+            $pdfLink = URL_MAIN . $file;
         }
     }
 
     //Don't proceed when no link was found
-    if (empty($PDF_LINK)) {
+    if (empty($pdfLink)) {
         return;
     }
 
     // Parse pdf file and build necessary objects.
     $parser = new \Smalot\PdfParser\Parser();
-    $pdf = $parser->parseFile($PDF_LINK);
+    $pdf = $parser->parseFile($pdfLink);
     $text = $pdf->getText();
 
     //Store it in cache
@@ -97,4 +97,4 @@ foreach ($days as $day) {
 }
 
 //Render the template
-echo $twig->render('hunger.twig', ['food' => $output, 'pdf' => $PDF_LINK]);
+renderTemplate('hunger', ['food' => $output, 'pdf' => $pdfLink, 'title' => 'Hunger!11!! - Speiseplan MI, TUM']);
