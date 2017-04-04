@@ -44,7 +44,7 @@ class Route {
             'description' => 'TUMeme',
             'target' => 'https://tumeme.alpheca.uberspace.de'
         ],
-        'tedx' => [
+        'ted' => [
             'description' => 'TEDxTUM Event-Seite',
             'target' => 'http://tedxtum.com',
         ],
