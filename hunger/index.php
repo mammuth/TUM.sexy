@@ -97,4 +97,4 @@ foreach ($days as $day) {
 }
 
 //Render the template
-renderTemplate('hunger', ['food' => $output, 'pdf' => $pdfLink, 'title' => 'Hunger!11!! - Speiseplan MI, TUM']);
+renderTemplate('hunger', ['food' => $output, 'pdfLink' => $pdfLink, 'title' => 'Hunger!11!! - Speiseplan MI, TUM']);
