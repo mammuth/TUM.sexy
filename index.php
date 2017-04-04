@@ -5,7 +5,7 @@ include __DIR__ . '/setup.php';
 //Init the router so we can show all routes on this page
 include __DIR__ . '/redirect/routes.php';
 $Router = new Route();
-$vars = ['routes' => $Router->getHtmlList()];
+$vars = ['routes' => $Router->getResolvedArrays()];
 
 //We always want the parameter in the URL
 if (!isset($_GET['cats'])) {

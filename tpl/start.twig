@@ -6,31 +6,41 @@
     </div>
 </div>
 <div class="row" style="margin-top:10%">
-    <div class="one-half column">
+    <div class="twelve column">
         <h3>Redirects</h3>
         <p>
-            No need for remembering long and ugly urls or bookmarks<br/>
-            — Just use these redirects!
+            No need for remembering long and ugly urls or bookmarks— Just use these redirects!
         </p>
 
-        {{ routes|raw }}
+        <div class="row">
+            <div class="one-half column">
+                {% for section,elements in routes %}
+                {% if loop.index % 2 == 0 %}
+            </div><div class="one-half column">
+                {% endif %}
+                {% if loop.index % 2 == 1 %}
+            </div></div><div class="row"><div class="one-half column">
+                {% endif %}
+                    <h4>{{ section }}</h4>
+                    {% for route in elements %}
+                        <li>{{ route.desc }} — <a href="http://{{ route.sub }}.tum.sexy">{{ route.sub }}.tum.sexy</a></li>
+                    {% endfor %}
+                {% endfor %}
+            </div>
+        </div>
     </div>
-
+</div>
+<div class="row" style="margin-top:10%">
     <div class="one-half column">
-        <h3>Projects / Links</h3>
+        <h3>About</h3>
         <ul>
-            <li><a href="https://cal.bruck.me">Calendar Proxy</a>
-                <ul>
-                    <li>Nice and easy proxy to remove some clutter from the TUM online iCal export. E.g.: replaces 'Tutorübung' with 'TÜ' and Google Now readable locations</li>
-                </ul>
-            </li>
-            <li>FMI Bistro “Speiseplan” — <a href="http://hunger.tum.sexy">hunger.tum.sexy</a></li>
-            <li>MI Raumbelegungen — <a href="http://rooms.tum.sexy">rooms.tum.sexy</a></li>
-            <li>HowTo: Configure eduroam securely - <a href="http://eduroam.tum.sexy">eduroam.tum.sexy</a></li>
-            <li><a href="https://sexipretschi.eu/Game/">Sexi Pretschi Game</a></li>
-            <li><a href="https://docs.google.com/document/d/1eW6DmvvKoolAWRMp6P3tMts-XWSb263Ap97LyRQ5Wno/edit?usp=sharing">Ersti Tipps</a></li>
+            <li>If you want to <strong>update or add redirects</strong>, take a look at the instructions on the <a href="https://github.com/mammuth/TUM.sexy/tree/master/redirect" target="_blank">Github
+                    Repo!</a></li>
+            <li>You have an idea for how to improve this site? Feel free to <strong>contribute</strong> on our <a href="https://github.com/mammuth/TUM.sexy" target="_blank">GitHub Page</a>!
+            <li>Contact: <a href="mailto:heilig@tum.sexy">heilig@tum.sexy</a></li>
         </ul>
-
+    </div>
+    <div class="one-half column">
         <h3>About</h3>
         <ul>
             <li>If you want to <strong>update or add redirects</strong>, take a look at the instructions on the <a href="https://github.com/mammuth/TUM.sexy/tree/master/redirect" target="_blank">Github

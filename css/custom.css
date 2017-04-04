@@ -103,6 +103,6 @@ a.logo {
     width: 3px;
     border-left: 1px solid #d9d9d9;
     position: absolute;
-    top: 0px;
-    left: 0px;
-}  
+    top: 0;
+    left: 0;
+}

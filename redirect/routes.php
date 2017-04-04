@@ -167,9 +167,6 @@ class Route {
      * @var mixed[][]
      */
     private $sections = [
-        'Special Stuff' => [
-            'hunger', 'mensabot', 'rooms', 'app', 'c', 'm', 'sp', 'ma-sp', 'wi-sp', 'wi-ma-sp', 'stuff', 'reddit', 'tumeme', 'vorkurs'
-        ],
         '1. Semester' => [
             'info1', 'era', 'ds', 'carlos'
         ],
@@ -184,6 +181,9 @@ class Route {
             'numprog'
         ],
         '6. Semester' => [],
+        'Special' => [
+            'hunger', 'mensabot', 'rooms', 'app', 'c', 'm', 'sp', 'ma-sp', 'wi-sp', 'wi-ma-sp', 'stuff', 'reddit', 'tumeme', 'vorkurs'
+        ],
     ];
 
     public function getTargetOfSub($subdomain) {
@@ -199,21 +199,21 @@ class Route {
         return $this->routes[$subdomain]['target'];
     }
 
-    public function getHtmlList() {
-        $htmlList = '';
+    public function getResolvedArrays() {
+        $ret = [];
 
         //Iterate over our sections which can contain any number of routes
         foreach ($this->sections as $section => $subs) {
-            $htmlList .= '<h5>' . $section . '</h5><ul>';
+            $ret[$section] = [];
 
             //Iterate over all routes in current section
             foreach ($subs as $sub) {
-                $htmlList .= '<li>' . $this->routes[$sub]['description'] . ' — <a href="http://' . $sub . '.tum.sexy">' . $sub . '.tum.sexy</a></li>';
-            }
 
-            $htmlList .= '</ul>';
+                //Resolve the route and add to final array
+                $ret[$section][] = ['desc' => $this->routes[$sub]['description'], 'sub' => $sub];
+            }
         }
-        return $htmlList;
+        return $ret;
     }
 
 }
