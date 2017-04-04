@@ -15,7 +15,6 @@ include __DIR__ . '/vendor/autoload.php';
 
 
 //Startup Twig
-Twig_Autoloader::register();
 $loader = new Twig_Loader_Filesystem(__DIR__ . '/tpl');
 $twig = new Twig_Environment($loader, [
     'cache' => __DIR__ . '/tmp/compile',
