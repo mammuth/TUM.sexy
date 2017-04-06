@@ -44,7 +44,7 @@ class Route {
             'description' => 'TUMeme',
             'target' => 'https://tumeme.alpheca.uberspace.de'
         ],
-        'tedx' => [
+        'ted' => [
             'description' => 'TEDxTUM Event-Seite',
             'target' => 'http://tedxtum.com',
         ],
@@ -132,7 +132,7 @@ class Route {
             'description' => 'Evaluation of Lectures',
             'target' => 'https://evasys.zv.tum.de/evasys/online.php'
         ],
-       'artemis' => [
+        'artemis' => [
             'description' => 'ArTEMIS platform of the Prof. Brügge, Chair 1',
             'target' => 'https://exercisebruegge.in.tum.de/#/courses'
         ],
@@ -144,7 +144,7 @@ class Route {
             'description' => 'Studienplan M.Sc. Informatik',
             'target' => 'https://www.in.tum.de/fuer-studierende/master-studiengaenge/informatik/studienplan/fpo-2007-und-fpsos-seit-2012.html'
         ],
-       'wi-sp' => [
+        'wi-sp' => [
             'description' => 'Studienplan B.Sc. Wirtschaftsinformatik',
             'target' => 'https://www.in.tum.de/fuer-studierende/bachelor-studiengaenge/wirtschaftsinformatik/studienplan/studienbeginn-ab-ws-20162017.html'
         ],
@@ -158,7 +158,7 @@ class Route {
         ],
         'eduroam' => [
             'description' => 'HowTo: Setup eduroam securely!',
-            'target' => 'http://tum.sexy/eduroam.html'
+            'target' => 'http://tum.sexy/eduroam.php'
         ]
     ];
 
@@ -167,9 +167,6 @@ class Route {
      * @var mixed[][]
      */
     private $sections = [
-        'Special Stuff' => [
-            'hunger', 'mensabot', 'rooms', 'app', 'c', 'm', 'sp', 'ma-sp', 'wi-sp', 'wi-ma-sp', 'stuff', 'reddit', 'tumeme', 'vorkurs'
-        ],
         '1. Semester' => [
             'info1', 'era', 'ds', 'carlos'
         ],
@@ -184,13 +181,16 @@ class Route {
             'numprog'
         ],
         '6. Semester' => [],
+        'Special' => [
+            'hunger', 'mensabot', 'rooms', 'app', 'c', 'm', 'sp', 'ma-sp', 'wi-sp', 'wi-ma-sp', 'stuff', 'reddit', 'tumeme', 'vorkurs'
+        ],
     ];
 
     public function getTargetOfSub($subdomain) {
-    if($subdomain === 'json') {
-        header('Content-type: application/json');
-        die(json_encode($this->routes));
-    }
+        if ($subdomain === 'json') {
+            header('Content-type: application/json');
+            die(json_encode($this->routes));
+        }
 
         if (!isset($this->routes[$subdomain])) {
             return 'http://tum.sexy/';
@@ -199,20 +199,21 @@ class Route {
         return $this->routes[$subdomain]['target'];
     }
 
-    public function getHtmlList() {
-        $htmlList = ''; //Init var
-        //Iterrate over our sections which can contain any number of routes
+    public function getResolvedArrays() {
+        $ret = [];
+
+        //Iterate over our sections which can contain any number of routes
         foreach ($this->sections as $section => $subs) {
-            $htmlList .= '<h5>' . $section . '</h5><ul>';
+            $ret[$section] = [];
 
-            //Iterrate over all routes in current section
+            //Iterate over all routes in current section
             foreach ($subs as $sub) {
-                $htmlList .= '<li>' . $this->routes[$sub]['description'] . ' — <a href="http://' . $sub . '.tum.sexy">' . $sub . '.tum.sexy</a></li>';
-            }
 
-            $htmlList .= '</ul>';
+                //Resolve the route and add to final array
+                $ret[$section][] = ['desc' => $this->routes[$sub]['description'], 'sub' => $sub];
+            }
         }
-        return $htmlList;
+        return $ret;
     }
 
 }
