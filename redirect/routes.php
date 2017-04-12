@@ -151,6 +151,14 @@ class Route {
         'eduroam' => [
             'description' => 'HowTo: Setup eduroam securely!',
             'target' => 'http://tum.sexy/eduroam.php'
+        ],
+        'eist' => [
+            'description' => 'Einführung in die Softwaretechnik',
+            'target' => 'https://www1.in.tum.de/lehrstuhl_1/component/content/article/118-teaching/st17/903-introduction-to-software-engineering-2017?Itemid=115'
+        ],
+        'gad' => [
+            'description' => 'Grundlegende Algorithmen und Datenstrukturen',
+            'target' => 'http://campar.in.tum.de/Chair/TeachingSs17GAD'
         ]
     ];
 
@@ -162,7 +170,9 @@ class Route {
         '1. Semester' => [
             'info1', 'era', 'ds', 'carlos'
         ],
-        '2. Semester' => [],
+        '2. Semester' => [
+            'eist', 'gad'
+        ],
         '3. Semester' => [
             'anal', 'info2', 'db', 'gbs'
         ],
