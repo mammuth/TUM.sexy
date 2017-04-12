@@ -88,21 +88,13 @@ class Route {
             'description' => 'Official TUM.sexy Github Repository',
             'target' => 'https://github.com/mammuth/TUM.sexy'
         ],
-        'psa' => [
-            'description' => 'Praktikum Systemadministration',
-            'target' => 'https://www.net.in.tum.de/de/teaching/ss16/praktika/psa'
-        ],
-        'psa-wiki' => [
-            'description' => 'Praktikum Systemadministration Wiki',
-            'target' => 'https://wiki.rbg.tum.de/Informatik/RBG/PSA/'
-        ],
         'dwt' => [
             'description' => 'Diskrete Wahrscheinlichkeitstheorie',
             'target' => 'http://wwwalbers.in.tum.de/lehre/2017SS/dwt/'
         ],
         'theo' => [
             'description' => 'Einführung in die theoretische Informatik',
-            'target' => 'https://www7.in.tum.de/um/courses/theo/ss2016/index.php'
+            'target' => 'https://www7.in.tum.de/um/courses/theo/ss2017/'
         ],
         'info1' => [
             'description' => 'Einführung in die Informatik 1',
