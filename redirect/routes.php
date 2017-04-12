@@ -98,7 +98,7 @@ class Route {
         ],
         'dwt' => [
             'description' => 'Diskrete Wahrscheinlichkeitstheorie',
-            'target' => 'http://wwwalbers.in.tum.de/lehre/2016SS/dwt/'
+            'target' => 'http://wwwalbers.in.tum.de/lehre/2017SS/dwt/'
         ],
         'theo' => [
             'description' => 'Einführung in die theoretische Informatik',
