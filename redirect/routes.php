@@ -159,6 +159,10 @@ class Route {
         'gad' => [
             'description' => 'Grundlegende Algorithmen und Datenstrukturen',
             'target' => 'http://campar.in.tum.de/Chair/TeachingSs17GAD'
+        ],
+        'grnvs' => [
+            'description' => 'Grundlagen Rechnernetze und Verteilte Systeme',
+            'target' => 'https://www.net.in.tum.de/teaching/ss17/grnvs.html'
         ]
     ];
 
@@ -177,7 +181,7 @@ class Route {
             'anal', 'info2', 'db', 'gbs'
         ],
         '4. Semester' => [
-            'dwt', 'theo'
+            'grnvs', 'theo', 'dwt'
         ],
         '5. Semester' => [
             'numprog'
