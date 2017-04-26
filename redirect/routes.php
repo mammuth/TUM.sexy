@@ -160,6 +160,10 @@ class Route {
             'description' => 'Grundlegende Algorithmen und Datenstrukturen',
             'target' => 'http://campar.in.tum.de/Chair/TeachingSs17GAD'
         ],
+	'gog' => [
+	    'description' => 'Games on Graphs',
+	    'targer' => 'https://www7.in.tum.de/um/courses/gog/ss17/index.php',
+	],
         'grnvs' => [
             'description' => 'Grundlagen Rechnernetze und Verteilte Systeme',
             'target' => 'https://www.net.in.tum.de/teaching/ss17/grnvs.html'
