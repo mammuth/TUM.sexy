@@ -162,7 +162,7 @@ class Route {
         ],
 	'gog' => [
 	    'description' => 'Games on Graphs',
-	    'targer' => 'https://www7.in.tum.de/um/courses/gog/ss17/index.php',
+	    'target' => 'https://www7.in.tum.de/um/courses/gog/ss17/index.php',
 	],
         'grnvs' => [
             'description' => 'Grundlagen Rechnernetze und Verteilte Systeme',
