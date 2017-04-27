@@ -167,7 +167,11 @@ class Route {
         'grnvs' => [
             'description' => 'Grundlagen Rechnernetze und Verteilte Systeme',
             'target' => 'https://www.net.in.tum.de/teaching/ss17/grnvs.html'
-        ]
+        ],
+	'pgm' => [
+	      'description' => "Probabilistic Graphical Models in Computer Vision",
+	      'target' => 'http://vision.in.tum.de/teaching/ss2017/pgmcv'
+	]
     ];
 
     /**
