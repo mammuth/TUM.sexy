@@ -171,7 +171,15 @@ class Route {
 	'pgm' => [
 	      'description' => "Probabilistic Graphical Models in Computer Vision",
 	      'target' => 'http://vision.in.tum.de/teaching/ss2017/pgmcv'
-	]
+	],
+        'erapraktikum' => [
+            'description' => 'Praktikum - Einführung in die Rechnerarchitektur',
+            'target' => 'https://www.lrr.in.tum.de/lehre/sommersemester-17/praktika/praktikum-rechnerarchitektur/'
+        ],
+	'ged' => [
+            'description' => 'Game Engine Design',
+            'target' => 'https://wwwcg.in.tum.de/teaching/teaching/summer-term-17/game-engine-design.html'
+        ]    
     ];
 
     /**
@@ -183,7 +191,7 @@ class Route {
             'info1', 'era', 'ds', 'carlos'
         ],
         '2. Semester' => [
-            'eist', 'gad'
+            'eist', 'gad', 'erapraktikum', 'ged'
         ],
         '3. Semester' => [
             'anal', 'info2', 'db', 'gbs'
