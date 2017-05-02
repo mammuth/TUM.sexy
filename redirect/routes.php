@@ -179,7 +179,11 @@ class Route {
 	'ged' => [
             'description' => 'Game Engine Design',
             'target' => 'https://wwwcg.in.tum.de/teaching/teaching/summer-term-17/game-engine-design.html'
-        ]    
+        ],
+	'gadunittests' => [
+            'description' => 'Unit - Tests: Grundlegende Algorithmen und Datenstrukturen',
+            'target' => 'https://github.com/Code-Connect/TUM_Homework/tree/master/src/gad17/'
+        ]
     ];
 
     /**
