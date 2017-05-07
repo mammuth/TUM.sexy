@@ -185,6 +185,10 @@ class Route {
             'target' => 'https://github.com/Code-Connect/TUM_Homework/tree/master/src/gad17/'
         ]
     ];
+	
+    private $synonyms = [
+        'erapra' => 'erapraktikum'
+    ];
 
     /**
      * Only items/routes listed in this will be shown on the front page of the website
@@ -217,6 +221,9 @@ class Route {
             header('Content-type: application/json');
             die(json_encode($this->routes));
         }
+	if(isset($this->synonyms[$subdomain])) {
+	    $subdomain = $this->synonyms[$subdomain];
+	}
 
         if (!isset($this->routes[$subdomain])) {
             return 'http://tum.sexy/';
