@@ -183,7 +183,11 @@ class Route {
 	'gadunittests' => [
             'description' => 'Unit - Tests: Grundlegende Algorithmen und Datenstrukturen',
             'target' => 'https://github.com/Code-Connect/TUM_Homework/tree/master/src/gad17/'
-        ]
+        ],
+	'conpra' => [
+	    'description' => 'Practical Course: Algorithms for Programming Contests',
+            'target' => 'https://www7.in.tum.de/um/courses/praktika/conpra/SS17/index.php?category=material'
+	]
     ];
 	
     private $synonyms = [
