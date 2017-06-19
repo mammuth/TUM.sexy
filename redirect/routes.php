@@ -25,7 +25,7 @@ class Route {
         ],
         'm' => [
             'description' => 'Moodle',
-            'target' => 'https://www.moodle.tum.de/'
+            'target' => 'https://www.moodle.tum.de/my/'
         ],
         'o' => [
             'description' => 'TUM Opac',
