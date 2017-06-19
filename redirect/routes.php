@@ -25,7 +25,7 @@ class Route {
         ],
         'm' => [
             'description' => 'Moodle',
-            'target' => 'https://www.moodle.tum.de/my/'
+            'target' => 'https://www.moodle.tum.de/auth/shibboleth/index.php'
         ],
         'o' => [
             'description' => 'TUM Opac',
