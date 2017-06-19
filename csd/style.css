@@ -1,0 +1,225 @@
+/* CSS declarations go here */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+html {
+	height: 100%;
+}
+body {
+	padding: 0;
+	text-align: center;
+	position: relative;
+	margin: 0;
+	height: 100%;
+	font-family: 'Open Sans', sans-serif;
+}
+
+section {
+	overflow: hidden;
+}
+
+.wrapper {
+	height: 100%;
+	margin: 0 auto;
+}
+
+.page_container {
+	height: 100%;
+	overflow: hidden;
+}
+
+.onepage-pagination {
+	display: inherit;
+}
+
+#titleContainer {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+}
+#title {
+	font-size: 7rem;
+	color: #F3F3F3;
+}
+#arrow {
+	position: relative;
+	bottom: 40px;
+	font-size: 7rem;
+	color: #F3F3F3;
+	animation: arrow 2s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes arrow {
+from {
+	bottom: 40px;
+}
+to {
+	bottom: 0px;
+}
+}
+
+/* Standard syntax */
+@keyframes arrow {
+from {
+	bottom: 40px;
+}
+to {
+	bottom: 0px;
+}
+}
+
+h1, h2, h3, h4, p {
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*Video*/
+video#bgvid {
+	position: fixed;
+	opacity: 1;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+}
+
+.ui.transparent.input input {
+	margin: 0;
+	font-size: inherit;
+	font-weight: bold;
+	color: white;
+}
+
+.ui.transparent.input.black input {
+	color: black;
+}
+
+.ui.segment {
+	transition: background .5s ease;
+	-moz-transition: background .5s ease;
+	-webkit-transition: background .5s ease;
+}
+
+.bottomrow {
+	position: absolute;
+	width: 100%;
+	bottom: 1em;
+}
+
+.leftPic{
+	position: absolute;
+	opacity: 1;
+	left: 0;
+	bottom: 0;
+	min-width: 50%;
+	max-width: 50%;
+	min-height: 100%;
+	width: 50%;
+	height: auto;
+	z-index: -10000;
+	background:black;
+	/*
+	background: url('him.jpg');
+		background-size: cover;*/
+	
+}
+
+.rightPic{
+	position: absolute;
+	opacity: 1;
+	right: 0;
+	bottom: 0;
+	min-width: 50%;
+	max-width: 50%;
+	min-height: 100%;
+	width: 50%;
+	height: auto;
+	z-index: -100;
+	background: white;
+	/*
+	background:url('her.jpg');
+		background-size: cover;*/
+}
+
+.blackbg{
+	position: absolute;
+	opacity: 1;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	max-width: 100%;
+	min-height: 100%;
+	width: 100%;
+	height: auto;
+	z-index: -100;
+	background: black;
+	/*
+	background:url('her.jpg');
+		background-size: cover;*/
+}
+
+.question{
+	font-size: 10em;
+	line-height: 1em;
+	color: white;
+}
+
+@media screen and (max-width: 992px) {
+    .question{
+		font-size: 4em;
+	}
+}
+
+.ui.segment.attached{
+	border:none;
+}
+
+
+.fullWidthPic{
+	position: absolute;
+	opacity: 1;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	max-width: 100%;
+	min-height: 100%;
+	width: 100%;
+	height: auto;
+	z-index: -100;
+	background:url('images/sky.jpg');
+	background-size: cover;
+}
+
+.fullWidthPic3{
+	position: absolute;
+	opacity: 1;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	max-width: 100%;
+	min-height: 100%;
+	width: 100%;
+	height: auto;
+	z-index: -100;
+	background:url('images/tum_rainbow.jpg');
+	background-size: cover;
+}
+
+.box {
+	background-color: rgba(255,255,255,0.8);
+	max-width: 800px;
+	margin: 20px auto;
+	padding: 20px;
+	font-size: 18px;
+}
+
+.ui.inverted.pink.segment {
+  background-color: #ACAB97!important;
+  color: #fff!important;
+}
+.ui.inverted.blue.segment {
+  background-color: #22444E!important;
+  color: #fff!important;
+}
