@@ -11,7 +11,7 @@ class Route {
             'description' => 'TUMMensabot für Telegram',
             'target' => 'https://t.me/TUMMensabot'
         ],
-            'mensabot2' => [
+        'mensabot2' => [
             'description' => 'Hübscher Telegram-MensaBot',
             'target' => 'https://t.me/MensaMUCBot'
         ],
