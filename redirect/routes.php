@@ -216,7 +216,7 @@ class Route {
         ],
         '6. Semester' => [],
         'Special' => [
-            'hunger', 'mensabot', 'rooms', 'app', 'c', 'm', 'sp', 'ma-sp', 'wi-sp', 'wi-ma-sp', 'stuff', 'reddit', 'tumeme', 'vorkurs'
+            'hunger', 'mensabot', 'mensabot2', 'rooms', 'app', 'c', 'm', 'sp', 'ma-sp', 'wi-sp', 'wi-ma-sp', 'stuff', 'reddit', 'tumeme', 'vorkurs'
         ],
     ];
 
