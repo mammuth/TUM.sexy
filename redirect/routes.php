@@ -54,7 +54,7 @@ class Route {
         ],
         'numprog' => [
             'description' => 'Numerisches Programmieren',
-            'target' => 'https://www5.in.tum.de/wiki/index.php/Numerisches_Programmieren_-_Summer_17'
+            'target' => 'https://www5.in.tum.de/wiki/index.php/Numerisches_Programmieren_-_Winter_17'
         ],
         'websec' => [
             'description' => 'WebApplication Security Bachelor Praktikum',
@@ -74,11 +74,11 @@ class Route {
         ],
         'db' => [
             'description' => 'Grundlagen: Datenbanken',
-            'target' => 'https://db.in.tum.de/teaching/ws1617/grundlagen/?lang=de',
+            'target' => 'https://db.in.tum.de/teaching/ws1718/grundlagen/',
         ],
         'gbs' => [
             'description' => 'Grundlagen Betriebssystem und Systemsoftware',
-            'target' => 'https://www.sec.in.tum.de/Grundlagen-Betriebssysteme-und-Systemsoftware-ws1617/'
+            'target' => 'https://www.sec.in.tum.de/i20/teaching/ws2017/grundlagen-betriebssysteme-und-systemsoftware'
         ],
         'quintero' => [
             'description' => 'Mathias Quintero',
@@ -102,11 +102,11 @@ class Route {
         ],
         'info1' => [
             'description' => 'Einführung in die Informatik 1',
-            'target' => 'http://www14.in.tum.de/lehre/2016WS/info1/'
+            'target' => 'http://www14.in.tum.de/lehre/2017WS/info1/index.html.de'
         ],
         'era' => [
             'description' => 'Einführung in die Rechnerarchitektur',
-            'target' => 'https://www.lrr.in.tum.de/lehre/wintersemester-1617/vorlesungen/einfuehrung-in-die-rechnerarchitektur-era/'
+            'target' => 'https://www.lrr.in.tum.de/lehre/wintersemester-1718/vorlesungen/einfuehrung-in-die-rechnerarchitektur-era/'
         ],
         'scivis' => [
             'description' => 'Scientific Visualization',
@@ -114,7 +114,7 @@ class Route {
         ],
         'ds' => [
             'description' => 'Diskrete Strukturen',
-            'target' => 'https://www5.in.tum.de/wiki/index.php/Diskrete_Strukturen_-_Winter_16'
+            'target' => 'https://www7.in.tum.de/um/courses/ds/ws1718/index.html'
         ],
         'vorkurs' => [
             'description' => 'Mathematik Vorkurs für Informatiker',
