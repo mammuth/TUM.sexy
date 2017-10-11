@@ -8,8 +8,12 @@ class Route {
             'target' => 'http://tum.sexy/hunger'
         ],
         'mensabot' => [
-            'description' => 'TUMMensabot f&auml;r Telegram',
+            'description' => 'TUMMensabot für Telegram',
             'target' => 'https://t.me/TUMMensabot'
+        ],
+	'mensabot2' => [
+            'description' => 'Hübscher Telegram-MensaBot',
+            'target' => 'https://t.me/MensaMUCBot'
         ],
         'rooms' => [
             'description' => 'Lernräume',
