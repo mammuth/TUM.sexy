@@ -8,8 +8,12 @@ class Route {
             'target' => 'http://tum.sexy/hunger'
         ],
         'mensabot' => [
-            'description' => 'TUMMensabot f&auml;r Telegram',
+            'description' => 'TUMMensabot für Telegram',
             'target' => 'https://t.me/TUMMensabot'
+        ],
+            'mensabot2' => [
+            'description' => 'Hübscher Telegram-MensaBot',
+            'target' => 'https://t.me/MensaMUCBot'
         ],
         'rooms' => [
             'description' => 'Lernräume',
@@ -216,7 +220,7 @@ class Route {
         ],
         '6. Semester' => [],
         'Special' => [
-            'hunger', 'mensabot', 'rooms', 'app', 'c', 'm', 'sp', 'ma-sp', 'wi-sp', 'wi-ma-sp', 'stuff', 'reddit', 'tumeme', 'vorkurs'
+            'hunger', 'mensabot', 'mensabot2', 'rooms', 'app', 'c', 'm', 'sp', 'ma-sp', 'wi-sp', 'wi-ma-sp', 'stuff', 'reddit', 'tumeme', 'vorkurs'
         ],
     ];
 
