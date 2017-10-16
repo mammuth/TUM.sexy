@@ -3,21 +3,8 @@
 include __DIR__ . '/../setup.php';
 
 //Some constants
-define('URL_MAIN', 'http://www.betriebsrestaurant-gmbh.de/');
-define('URL_PAGE_WITH_LINKS', URL_MAIN . 'index.php?id=91');
-
-/**
- * (\s?oder\sB.n.W.(?=\s))              strip B.n.W.
- * (\s?\d\d*(\s?,\s?\d\d*)+(?=[\s)]))   strip additives
- * (\s\d\d*\**,?(?=[\s)]))              strip random *s in the menu
- * (\*+(?=\s))                          "
- * (\s?[VKRSP](\+[VKRSP]                  strip V,K, R, S, P
- * V = Vegetarisch K = mit Kalbfleisch R = mit Rindfleisch S = mit Schweinefleisch..P = mit Pute
- * 
- * 
- */
-define('THE_REGEX', '/(\s?oder\sB.n.W.(?=\s))|(\s?\d\d*(\s?,\s?\d\d*)+(?=[\s)]))|(\s\d\d*\**,?(?=[\s)]))|(\*+(?=\s))|(\s?[VKRSP](\+[VKRSP])*(?=\s))/');
-$pdfLink = '';
+define('URL_MAIN', 'http://www.wilhelm-gastronomie.de/');
+define('URL_PAGE_WITH_LINKS', URL_MAIN . 'tum-garching');
 
 function crawl_page($url) {
     //Create a new DOM document
@@ -40,61 +27,23 @@ function crawl_page($url) {
     return $links;
 }
 
-function pdfToString() {
+function getPdfLink() {
     $weekNumber = date('W');
 
-    //Check if we have the current week in cache
-    $text = apc_fetch('hungertext' . $weekNumber);
-    if ($text !== false) {
-        return $text;
-    }
-
-    //Otherwise fetch all links
+    //Fetch all links
     $links = crawl_page(URL_PAGE_WITH_LINKS);
-    global $pdfLink;
+
     foreach ($links as $file) {
-        if (strpos(strtolower($file), '.pdf') !== FALSE && strpos($file, '_FMI_') !== FALSE && $weekNumber === substr($file, 16, 2)) {
-            $pdfLink = URL_MAIN . $file;
+        if (strpos(strtolower($file), '.pdf') !== FALSE
+            && strpos($file, 'Garching-Speiseplan') !== FALSE
+            && $weekNumber === substr($file, 83, 2)) {
+            return $file;
         }
     }
-
-    //Don't proceed when no link was found
-    if (empty($pdfLink)) {
-        return;
-    }
-
-    // Parse pdf file and build necessary objects.
-    $parser = new \Smalot\PdfParser\Parser();
-    $pdf = $parser->parseFile($pdfLink);
-    $text = $pdf->getText();
-
-    //Store it in cache
-    apc_store('hungertext' . $weekNumber, $text, 2 * 24 * 3600);
-
-    //return it
-    return $text;
+    return;
 }
 
-//Process the PDF
-$raw = preg_split('/\n\s*\n/', pdfToString()); //split the whole pdf string on the days
-$days = array_slice($raw, 4, count($raw) - 7); // Remove unneded stuff
-$currentDayOfWeek = idate('w', time()); // Only display today and future days
-
-$i = 1;
-$output = [];
-foreach ($days as $day) {
-    //Only show future dates and today
-    if ($i >= $currentDayOfWeek) {
-        $dayArray = preg_split('/\n\d[.]/', $day);
-        $title = array_shift($dayArray);
-        $output[$title] = [];
-
-        foreach ($dayArray as $meal) {
-            $output[$title][] = preg_replace(THE_REGEX, '', $meal);
-        }
-    }
-    $i += 1;
-}
+$output = getPdfLink();
 
 //Render the template
-renderTemplate('hunger', ['food' => $output, 'pdfLink' => $pdfLink, 'title' => 'Hunger!11!! - Speiseplan MI, TUM']);
+renderTemplate('hunger', ['pdfLink' => $output, 'linkPage' => URL_PAGE_WITH_LINKS, 'title' => 'Hunger!11!! - Speiseplan MI, TUM']);

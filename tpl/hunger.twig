@@ -7,18 +7,14 @@
     <p>This is the 'Speiseplan' of the current week in the FMI Bistro of the Informatik Fakultät at TUM.</p>
     <h1>Aw, Snap!</h1>
     <p>
-        The bistro is now run by a different leaseholder ("Pächter"), which did not yet publish any menus.<br />
-        Furthermore, our current implementation (which was based on parsing the weekly PDF menu) probably won't work anymore in the future. If you want to help out fixing it, head over to <a href="https://github.com/mammuth/TUM.sexy/issues/67">GitHub</a>.
+        Our implementation to display the menu eye-friendly (which was based on parsing the weekly PDF menu) doesn't work anymore. If you want to help out fixing it, head over to <a href="https://github.com/mammuth/TUM.sexy/issues/67">GitHub</a>.
     </p>
-    {% for title,foods in food %}
-        <h3>{{ title }}</h3>
-        <ul>
-            {% for e in foods %}
-                <li>{{ e }}€</li>
-            {% endfor %}
-        </ul>
-    {% endfor %}
+    <p>
     {% if pdfLink %}
-        <a href="{{ pdfLink }}" target="_blank">Original Menu as PDF</a>
+        <a href="{{ pdfLink }}" target="_blank">Original menu as PDF</a>
+    {% else %}
+        No menu for today 😭 <br />
+        Maybe check the <a href="{{ linkPage }}">Bistros page</a> and <a href="https://github.com/mammuth/TUM.sexy/issues">open a bug report</a> or redirect all complaints to <a href="mailto:info@wilhelm-gastronomie.de">the Bistro</a>.
     {% endif %}
+    </p>
 </div>
