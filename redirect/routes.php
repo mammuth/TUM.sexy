@@ -62,11 +62,11 @@ class Route {
         ],
         'anal' => [
             'description' => 'Analysis für Informatiker',
-            'target' => 'https://www-m14.ma.tum.de/lehre/ws15-16/analysis-fuer-informatik/'
+            'target' => 'https://www-m5.ma.tum.de/Allgemeines/MA0902_2017W'
         ],
         'info2' => [
             'description' => 'Einführung in die Informatik 2',
-            'target' => 'https://www2.in.tum.de/hp/Main?nid=329'
+            'target' => 'https://www2.in.tum.de/hp/Main?nid=354'
         ],
         'e2ocaml' => [
             'description' => 'Einführung in die Informatik 2 OCAML HA-Abgabe',
