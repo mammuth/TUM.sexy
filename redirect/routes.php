@@ -62,7 +62,7 @@ class Route {
         ],
         'anal' => [
             'description' => 'Analysis für Informatiker',
-            'target' => 'https://www-m14.ma.tum.de/lehre/ws15-16/analysis-fuer-informatik/'
+            'target' => 'https://www-m5.ma.tum.de/Allgemeines/MA0902_2017W'
         ],
         'info2' => [
             'description' => 'Einführung in die Informatik 2',
