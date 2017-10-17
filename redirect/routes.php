@@ -59,7 +59,7 @@ class Route {
         'websec' => [
             'description' => 'WebApplication Security Bachelor Praktikum',
             'target' => 'https://websec.sec.in.tum.de'
-        ]
+        ],
 	'netsec' => [
             'description' => 'Netzsicherheit',
             'target' => 'https://net.in.tum.de/teaching/ws1718/netsec.html'
