@@ -195,6 +195,14 @@ class Route {
 	'conpra' => [
 	    'description' => 'Practical Course: Algorithms for Programming Contests',
             'target' => 'https://www7.in.tum.de/um/courses/praktika/conpra/SS17/index.php?category=material'
+	],
+	'gki' => [
+	    'description' => 'Grundlagen der Künstlichen Intelligenz',
+            'target' => 'https://www6.in.tum.de/Main/TeachingWs2017KuenstlicheIntelligenz/'
+	],
+	'pl' => [
+	    'description' => 'Programming Languages',
+            'target' => 'https://www2.in.tum.de/hp/Main?nid=362'
 	]
     ];
 	
