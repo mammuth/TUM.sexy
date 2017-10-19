@@ -60,7 +60,7 @@ class Route {
             'description' => 'WebApplication Security Bachelor Praktikum',
             'target' => 'https://websec.sec.in.tum.de'
         ],
-	'netsec' => [
+	    'netsec' => [
             'description' => 'Netzsicherheit',
             'target' => 'https://net.in.tum.de/teaching/ws1718/netsec.html'
         ],
@@ -168,46 +168,47 @@ class Route {
             'description' => 'Grundlegende Algorithmen und Datenstrukturen',
             'target' => 'http://campar.in.tum.de/Chair/TeachingSs17GAD'
         ],
-	'gog' => [
-	    'description' => 'Games on Graphs',
-	    'target' => 'https://www7.in.tum.de/um/courses/gog/ss17/index.php',
-	],
+    	'gog' => [
+    	    'description' => 'Games on Graphs',
+    	    'target' => 'https://www7.in.tum.de/um/courses/gog/ss17/index.php',
+    	],
         'grnvs' => [
             'description' => 'Grundlagen Rechnernetze und Verteilte Systeme',
             'target' => 'https://www.net.in.tum.de/teaching/ss17/grnvs.html'
         ],
-	'pgm' => [
-	      'description' => "Probabilistic Graphical Models in Computer Vision",
-	      'target' => 'http://vision.in.tum.de/teaching/ss2017/pgmcv'
-	],
+    	'pgm' => [
+            'description' => "Probabilistic Graphical Models in Computer Vision",
+            'target' => 'http://vision.in.tum.de/teaching/ss2017/pgmcv'
+    	],
         'erapraktikum' => [
             'description' => 'Praktikum - Einführung in die Rechnerarchitektur',
             'target' => 'https://www.lrr.in.tum.de/lehre/sommersemester-17/praktika/praktikum-rechnerarchitektur/'
         ],
-	'ged' => [
+    	'ged' => [
             'description' => 'Game Engine Design',
             'target' => 'https://wwwcg.in.tum.de/teaching/teaching/summer-term-17/game-engine-design.html'
         ],
-	'gadunittests' => [
+    	'gadunittests' => [
             'description' => 'Unit - Tests: Grundlegende Algorithmen und Datenstrukturen',
             'target' => 'https://github.com/Code-Connect/TUM_Homework/tree/master/src/gad17/'
         ],
-	'conpra' => [
-	    'description' => 'Practical Course: Algorithms for Programming Contests',
+    	'conpra' => [
+    	    'description' => 'Practical Course: Algorithms for Programming Contests',
             'target' => 'https://www7.in.tum.de/um/courses/praktika/conpra/SS17/index.php?category=material'
-	],
-	'gki' => [
-	    'description' => 'Grundlagen der Künstlichen Intelligenz',
+    	],
+    	'gki' => [
+    	    'description' => 'Grundlagen der Künstlichen Intelligenz',
             'target' => 'https://www6.in.tum.de/Main/TeachingWs2017KuenstlicheIntelligenz/'
-	],
-	'pl' => [
-	    'description' => 'Programming Languages',
+    	],
+    	'pl' => [
+            'description' => 'Programming Languages',
             'target' => 'https://www2.in.tum.de/hp/Main?nid=362'
-	]
+    	]
     ];
 	
     private $synonyms = [
-        'erapra' => 'erapraktikum'
+        'erapra' => 'erapraktikum',
+        'ma-sp' => 'sp-ma'
     ];
 
     /**
@@ -234,6 +235,9 @@ class Route {
         'Special' => [
             'hunger', 'mensabot', 'mensabot2', 'rooms', 'app', 'c', 'm', 'sp', 'ma-sp', 'wi-sp', 'wi-ma-sp', 'stuff', 'reddit', 'tumeme', 'vorkurs'
         ],
+        'Electives' => [
+            'pl', 'gki', 'conpra', 'ged', 'pgm', 'gog', 'artemis', 'csc', 'scivis', 
+        ]
     ];
 
     public function getTargetOfSub($subdomain) {
