@@ -203,7 +203,11 @@ class Route {
     	'pl' => [
             'description' => 'Programming Languages',
             'target' => 'https://www2.in.tum.de/hp/Main?nid=362'
-    	]
+    	],
+        'ase' => [
+            'description' => 'Advanced Topics In Software Engineering',
+            'target' => 'https://www.moodle.tum.de/course/view.php?id=35023'
+        ]
     ];
 	
     private $synonyms = [
@@ -236,7 +240,7 @@ class Route {
             'hunger', 'mensabot', 'mensabot2', 'rooms', 'app', 'c', 'm', 'sp', 'ma-sp', 'wi-sp', 'wi-ma-sp', 'stuff', 'reddit', 'tumeme', 'vorkurs'
         ],
         'Electives' => [
-            'pl', 'gki', 'conpra', 'ged', 'pgm', 'gog', 'artemis', 'csc', 'scivis', 
+            'pl', 'gki', 'conpra', 'ged', 'pgm', 'gog', 'artemis', 'csc', 'scivis', 'ase',
         ]
     ];
 
