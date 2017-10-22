@@ -5,4 +5,6 @@ nbproject/
 vendor
 tmp/*
 !tmp/.htaccess
+!tmp/hunger/.gitkeep
 .idea/
+composer.lock

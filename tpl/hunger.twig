@@ -1,20 +1,24 @@
-
 <div class="row" id="header-row">
     <h1>Hunger | <a href="http://tum.sexy" class="logo">TUM.<strong>sexy</strong></a></h1>
 </div>
 
 <div class="container">
     <p>This is the 'Speiseplan' of the current week in the FMI Bistro of the Informatik Fakultät at TUM.</p>
+    <p>
+        {% if pdfImage %}
+            <img src="{{ pdfImage }}" class="img-responsive" style="max-width: 100%;"/>
+        {% elseif pdfLink %}
+            <a href="{{ pdfLink }}" target="_blank">Original menu as PDF</a>
+        {% else %}
+            No menu for today 😭 <br/>
+            Maybe check the <a href="{{ linkPage }}">Bistros page</a> and <a href="https://github.com/mammuth/TUM.sexy/issues">open a bug report</a> or redirect all complaints to <a
+                href="mailto:info@wilhelm-gastronomie.de">the Bistro</a>.
+        {% endif %}
+    </p>
+
     <h1>Aw, Snap!</h1>
     <p>
-        Our implementation to display the menu eye-friendly (which was based on parsing the weekly PDF menu) doesn't work anymore. If you want to help out fixing it, head over to <a href="https://github.com/mammuth/TUM.sexy/issues/67">GitHub</a>.
-    </p>
-    <p>
-    {% if pdfLink %}
-        <a href="{{ pdfLink }}" target="_blank">Original menu as PDF</a>
-    {% else %}
-        No menu for today 😭 <br />
-        Maybe check the <a href="{{ linkPage }}">Bistros page</a> and <a href="https://github.com/mammuth/TUM.sexy/issues">open a bug report</a> or redirect all complaints to <a href="mailto:info@wilhelm-gastronomie.de">the Bistro</a>.
-    {% endif %}
+        Our implementation to display the menu eye-friendly (which was based on parsing the weekly PDF menu) doesn't work anymore. If you want to help out fixing it, head over to <a
+                href="https://github.com/mammuth/TUM.sexy/issues/67">GitHub</a>.
     </p>
 </div>
