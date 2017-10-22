@@ -1,6 +1,7 @@
 {
   "require": {
-    "twig/twig": "^1.33"
+    "twig/twig": "^1.33",
+    "spatie/pdf-to-image": "^1.4"
   },
   "require-dev": {
     "phpunit/phpunit": "6.4.*"
