@@ -1,6 +1,16 @@
 language: php
+
+cache:
+  directories:
+    - $HOME/.composer/cache
+
 php:
   - 7.1
+
+before_install:
+  - pecl list
+  - php -i
+  - printf "\n" | pecl install imagick
 
 install:
    - composer install
