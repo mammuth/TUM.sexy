@@ -74,13 +74,17 @@ $filenamePDF = __DIR__ . '/../tmp/hunger/' . getWeekNumber() . '.pdf';
 $filenameImage = __DIR__ . '/../tmp/hunger/' . getWeekNumber() . '.png';
 
 $output = ['linkPage' => URL_PAGE_WITH_LINKS, 'title' => 'Hunger!11!! - Speiseplan MI, TUM'];
-$link = getPdfLink();
-if (!empty($link) && dowloadAndConvert($link, $filenamePDF, $filenameImage)) {
-    $output['pdfImage'] = '/tmp/hunger/' . getWeekNumber() . '.png';
-} else if (!empty($link)) {
-    $output['pdfLink'] = $link;
-}
 
+if (file_exists($filenameImage)) {
+    $output['pdfImage'] = '/tmp/hunger/' . getWeekNumber() . '.png';
+} else {
+    $link = getPdfLink();
+    if (!empty($link) && dowloadAndConvert($link, $filenamePDF, $filenameImage)) {
+        $output['pdfImage'] = '/tmp/hunger/' . getWeekNumber() . '.png';
+    } else if (!empty($link)) {
+        $output['pdfLink'] = $link;
+    }
+}
 
 //Render the template
 renderTemplate('hunger', $output);
