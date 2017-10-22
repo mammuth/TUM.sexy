@@ -1,10 +1,9 @@
 googleanalytics.php
-calendar/vendor/
-hunger/vendor/
+calendar
 nbproject/
 vendor
 tmp/*
 !tmp/.htaccess
-!tmp/hunger/.gitkeep
 .idea/
 composer.lock
+!/tmp/hunger/.htaccess
