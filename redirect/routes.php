@@ -3,216 +3,216 @@
 class Route {
 
     private $routes = [
-        'hunger' => [
+        'hunger'    => [
             'description' => 'FMI Bistro Speiseplan',
-            'target' => 'http://tum.sexy/hunger'
+            'target'      => 'http://tum.sexy/hunger',
         ],
-        'mensabot' => [
+        'mensabot'  => [
             'description' => 'TUMMensabot für Telegram',
-            'target' => 'https://t.me/TUMMensabot'
+            'target'      => 'https://t.me/TUMMensabot',
         ],
         'mensabot2' => [
             'description' => 'Hübscher Telegram-MensaBot',
-            'target' => 'https://t.me/MensaMUCBot'
+            'target'      => 'https://t.me/MensaMUCBot',
         ],
-        'rooms' => [
+        'rooms'     => [
             'description' => 'Lernräume',
-            'target' => 'https://www.devapp.it.tum.de/iris/app/'
+            'target'      => 'https://www.devapp.it.tum.de/iris/app/',
         ],
-        'room' => [
+        'room'      => [
             'description' => 'Lernräume',
-            'target' => 'https://www.devapp.it.tum.de/iris/app/'
+            'target'      => 'https://www.devapp.it.tum.de/iris/app/',
         ],
-        'c' => [
+        'c'         => [
             'description' => 'TUM Online',
-            'target' => 'https://campus.tum.de/'
+            'target'      => 'https://campus.tum.de/',
         ],
-        'm' => [
+        'm'         => [
             'description' => 'Moodle',
-            'target' => 'https://www.moodle.tum.de/auth/shibboleth/index.php'
+            'target'      => 'https://www.moodle.tum.de/auth/shibboleth/index.php',
         ],
-        'o' => [
+        'o'         => [
             'description' => 'TUM Opac',
-            'target' => 'https://www.ub.tum.de/tum-opac'
+            'target'      => 'https://www.ub.tum.de/tum-opac',
         ],
-        'stuff' => [
+        'stuff'     => [
             'description' => 'Unistuff (ehemals Tumstuff)',
-            'target' => 'https://unistuff.org'
+            'target'      => 'https://unistuff.org',
         ],
-        'reddit' => [
+        'reddit'    => [
             'description' => 'ReddiTUM',
-            'target' => 'https://reddit.com/r/redditum'
+            'target'      => 'https://reddit.com/r/redditum',
         ],
 
-        'tumeme' => [
+        'tumeme'       => [
             'description' => 'TUMeme',
-            'target' => 'https://tumeme.alpheca.uberspace.de'
+            'target'      => 'https://tumeme.alpheca.uberspace.de',
         ],
-        'ted' => [
+        'ted'          => [
             'description' => 'TEDxTUM Event-Seite',
-            'target' => 'http://tedxtum.com',
+            'target'      => 'http://tedxtum.com',
         ],
-        'numprog' => [
+        'numprog'      => [
             'description' => 'Numerisches Programmieren',
-            'target' => 'https://www5.in.tum.de/wiki/index.php/Numerisches_Programmieren_-_Winter_17'
+            'target'      => 'https://www5.in.tum.de/wiki/index.php/Numerisches_Programmieren_-_Winter_17',
         ],
-        'websec' => [
+        'websec'       => [
             'description' => 'WebApplication Security Bachelor Praktikum',
-            'target' => 'https://websec.sec.in.tum.de'
+            'target'      => 'https://websec.sec.in.tum.de',
         ],
-	    'netsec' => [
+        'netsec'       => [
             'description' => 'Netzsicherheit',
-            'target' => 'https://net.in.tum.de/teaching/ws1718/netsec.html'
+            'target'      => 'https://net.in.tum.de/teaching/ws1718/netsec.html',
         ],
-        'anal' => [
+        'anal'         => [
             'description' => 'Analysis für Informatiker',
-            'target' => 'https://www-m5.ma.tum.de/Allgemeines/MA0902_2017W'
+            'target'      => 'https://www-m5.ma.tum.de/Allgemeines/MA0902_2017W',
         ],
-        'info2' => [
+        'info2'        => [
             'description' => 'Einführung in die Informatik 2',
-            'target' => 'https://www2.in.tum.de/hp/Main?nid=354'
+            'target'      => 'https://www2.in.tum.de/hp/Main?nid=354',
         ],
-        'e2ocaml' => [
+        'e2ocaml'      => [
             'description' => 'Einführung in die Informatik 2 OCAML HA-Abgabe',
-            'target' => 'https://vmnipkow3.in.tum.de/'
+            'target'      => 'https://vmnipkow3.in.tum.de/',
         ],
-        'db' => [
+        'db'           => [
             'description' => 'Grundlagen: Datenbanken',
-            'target' => 'https://db.in.tum.de/teaching/ws1718/grundlagen/',
+            'target'      => 'https://db.in.tum.de/teaching/ws1718/grundlagen/',
         ],
-        'gbs' => [
+        'gbs'          => [
             'description' => 'Grundlagen Betriebssystem und Systemsoftware',
-            'target' => 'https://www.sec.in.tum.de/i20/teaching/ws2017/grundlagen-betriebssysteme-und-systemsoftware'
+            'target'      => 'https://www.sec.in.tum.de/i20/teaching/ws2017/grundlagen-betriebssysteme-und-systemsoftware',
         ],
-        'quintero' => [
+        'quintero'     => [
             'description' => 'Mathias Quintero',
-            'target' => 'http://home.in.tum.de/~szillat/'
+            'target'      => 'http://home.in.tum.de/~szillat/',
         ],
-        'carlos' => [
+        'carlos'       => [
             'description' => 'Carlos Camino',
-            'target' => 'http://carlos-camino.de'
+            'target'      => 'http://carlos-camino.de',
         ],
-        'github' => [
+        'github'       => [
             'description' => 'Official TUM.sexy Github Repository',
-            'target' => 'https://github.com/mammuth/TUM.sexy'
+            'target'      => 'https://github.com/mammuth/TUM.sexy',
         ],
-        'dwt' => [
+        'dwt'          => [
             'description' => 'Diskrete Wahrscheinlichkeitstheorie',
-            'target' => 'http://wwwalbers.in.tum.de/lehre/2017SS/dwt/'
+            'target'      => 'http://wwwalbers.in.tum.de/lehre/2017SS/dwt/',
         ],
-        'theo' => [
+        'theo'         => [
             'description' => 'Einführung in die theoretische Informatik',
-            'target' => 'https://www7.in.tum.de/um/courses/theo/ss2017/'
+            'target'      => 'https://www7.in.tum.de/um/courses/theo/ss2017/',
         ],
-        'info1' => [
+        'info1'        => [
             'description' => 'Einführung in die Informatik 1',
-            'target' => 'http://www14.in.tum.de/lehre/2017WS/info1/index.html.de'
+            'target'      => 'http://www14.in.tum.de/lehre/2017WS/info1/index.html.de',
         ],
-        'era' => [
+        'era'          => [
             'description' => 'Einführung in die Rechnerarchitektur',
-            'target' => 'https://www.lrr.in.tum.de/lehre/wintersemester-1718/vorlesungen/einfuehrung-in-die-rechnerarchitektur-era/'
+            'target'      => 'https://www.lrr.in.tum.de/lehre/wintersemester-1718/vorlesungen/einfuehrung-in-die-rechnerarchitektur-era/',
         ],
-        'scivis' => [
+        'scivis'       => [
             'description' => 'Scientific Visualization',
-            'target' => 'https://wwwcg.in.tum.de/teaching/teaching/winter-term-1617/scientific-visualization.html'
+            'target'      => 'https://wwwcg.in.tum.de/teaching/teaching/winter-term-1617/scientific-visualization.html',
         ],
-        'ds' => [
+        'ds'           => [
             'description' => 'Diskrete Strukturen',
-            'target' => 'https://www7.in.tum.de/um/courses/ds/ws1718/index.html'
+            'target'      => 'https://www7.in.tum.de/um/courses/ds/ws1718/index.html',
         ],
-        'vorkurs' => [
+        'vorkurs'      => [
             'description' => 'Mathematik Vorkurs für Informatiker',
-            'target' => 'https://www.ma.tum.de/Vorkurse/Info/WebHome'
+            'target'      => 'https://www.ma.tum.de/Vorkurse/Info/WebHome',
         ],
-        'csc' => [
+        'csc'          => [
             'description' => 'Computational Social Choice',
-            'target' => 'http://dss.in.tum.de/33-teaching/semester/wintersemester-2016-17/153-computational-social-choice-ws-2016-17.html'
+            'target'      => 'http://dss.in.tum.de/33-teaching/semester/wintersemester-2016-17/153-computational-social-choice-ws-2016-17.html',
         ],
-        'eval' => [
+        'eval'         => [
             'description' => 'Evaluation of Lectures',
-            'target' => 'https://evasys.zv.tum.de/evasys/online.php'
+            'target'      => 'https://evasys.zv.tum.de/evasys/online.php',
         ],
-        'artemis' => [
+        'artemis'      => [
             'description' => 'ArTEMIS platform of the Prof. Brügge, Chair 1',
-            'target' => 'https://exercisebruegge.in.tum.de/#/courses'
+            'target'      => 'https://exercisebruegge.in.tum.de/#/courses',
         ],
-        'sp' => [
+        'sp'           => [
             'description' => 'Studienplan B.Sc. Informatik',
-            'target' => 'https://www.in.tum.de/fuer-studierende/bachelor-studiengaenge/informatik/studienplan/studienbeginn-ab-ws-201617.html'
+            'target'      => 'https://www.in.tum.de/fuer-studierende/bachelor-studiengaenge/informatik/studienplan/studienbeginn-ab-ws-201617.html',
         ],
-        'ma-sp' => [
+        'ma-sp'        => [
             'description' => 'Studienplan M.Sc. Informatik',
-            'target' => 'https://www.in.tum.de/fuer-studierende/master-studiengaenge/informatik/studienplan/fpo-2007-und-fpsos-seit-2012.html'
+            'target'      => 'https://www.in.tum.de/fuer-studierende/master-studiengaenge/informatik/studienplan/fpo-2007-und-fpsos-seit-2012.html',
         ],
-        'wi-sp' => [
+        'wi-sp'        => [
             'description' => 'Studienplan B.Sc. Wirtschaftsinformatik',
-            'target' => 'https://www.in.tum.de/fuer-studierende/bachelor-studiengaenge/wirtschaftsinformatik/studienplan/studienbeginn-ab-ws-20162017.html'
+            'target'      => 'https://www.in.tum.de/fuer-studierende/bachelor-studiengaenge/wirtschaftsinformatik/studienplan/studienbeginn-ab-ws-20162017.html',
         ],
-        'wi-ma-sp' => [
+        'wi-ma-sp'     => [
             'description' => 'Studienplan M.Sc. Wirtschaftsinformatik',
-            'target' => 'https://www.in.tum.de/fuer-studierende/master-studiengaenge/wirtschaftsinformatik/studienplan/ab-ss-2014.html'
+            'target'      => 'https://www.in.tum.de/fuer-studierende/master-studiengaenge/wirtschaftsinformatik/studienplan/ab-ss-2014.html',
         ],
-        'app' => [
+        'app'          => [
             'description' => 'TUM Campus App',
-            'target' => 'https://tumcabe.in.tum.de/landing/'
+            'target'      => 'https://tumcabe.in.tum.de/landing/',
         ],
-        'eduroam' => [
+        'eduroam'      => [
             'description' => 'HowTo: Setup eduroam securely!',
-            'target' => 'http://tum.sexy/eduroam.php'
+            'target'      => 'http://tum.sexy/eduroam.php',
         ],
-        'eist' => [
+        'eist'         => [
             'description' => 'Einführung in die Softwaretechnik',
-            'target' => 'https://www1.in.tum.de/lehrstuhl_1/component/content/article/118-teaching/st17/903-introduction-to-software-engineering-2017?Itemid=115'
+            'target'      => 'https://www1.in.tum.de/lehrstuhl_1/component/content/article/118-teaching/st17/903-introduction-to-software-engineering-2017?Itemid=115',
         ],
-        'gad' => [
+        'gad'          => [
             'description' => 'Grundlegende Algorithmen und Datenstrukturen',
-            'target' => 'http://campar.in.tum.de/Chair/TeachingSs17GAD'
+            'target'      => 'http://campar.in.tum.de/Chair/TeachingSs17GAD',
         ],
-    	'gog' => [
-    	    'description' => 'Games on Graphs',
-    	    'target' => 'https://www7.in.tum.de/um/courses/gog/ss17/index.php',
-    	],
-        'grnvs' => [
+        'gog'          => [
+            'description' => 'Games on Graphs',
+            'target'      => 'https://www7.in.tum.de/um/courses/gog/ss17/index.php',
+        ],
+        'grnvs'        => [
             'description' => 'Grundlagen Rechnernetze und Verteilte Systeme',
-            'target' => 'https://www.net.in.tum.de/teaching/ss17/grnvs.html'
+            'target'      => 'https://www.net.in.tum.de/teaching/ss17/grnvs.html',
         ],
-    	'pgm' => [
+        'pgm'          => [
             'description' => "Probabilistic Graphical Models in Computer Vision",
-            'target' => 'http://vision.in.tum.de/teaching/ss2017/pgmcv'
-    	],
+            'target'      => 'http://vision.in.tum.de/teaching/ss2017/pgmcv',
+        ],
         'erapraktikum' => [
             'description' => 'Praktikum - Einführung in die Rechnerarchitektur',
-            'target' => 'https://www.lrr.in.tum.de/lehre/sommersemester-17/praktika/praktikum-rechnerarchitektur/'
+            'target'      => 'https://www.lrr.in.tum.de/lehre/sommersemester-17/praktika/praktikum-rechnerarchitektur/',
         ],
-    	'ged' => [
+        'ged'          => [
             'description' => 'Game Engine Design',
-            'target' => 'https://wwwcg.in.tum.de/teaching/teaching/summer-term-17/game-engine-design.html'
+            'target'      => 'https://wwwcg.in.tum.de/teaching/teaching/summer-term-17/game-engine-design.html',
         ],
-    	'gadunittests' => [
+        'gadunittests' => [
             'description' => 'Unit - Tests: Grundlegende Algorithmen und Datenstrukturen',
-            'target' => 'https://github.com/Code-Connect/TUM_Homework/tree/master/src/gad17/'
+            'target'      => 'https://github.com/Code-Connect/TUM_Homework/tree/master/src/gad17/',
         ],
-    	'conpra' => [
-    	    'description' => 'Practical Course: Algorithms for Programming Contests',
-            'target' => 'https://www7.in.tum.de/um/courses/praktika/conpra/SS17/index.php?category=material'
-    	],
-    	'gki' => [
-    	    'description' => 'Grundlagen der Künstlichen Intelligenz',
-            'target' => 'https://www6.in.tum.de/Main/TeachingWs2017KuenstlicheIntelligenz/'
-    	],
-    	'pl' => [
+        'conpra'       => [
+            'description' => 'Practical Course: Algorithms for Programming Contests',
+            'target'      => 'https://www7.in.tum.de/um/courses/praktika/conpra/SS17/index.php?category=material',
+        ],
+        'gki'          => [
+            'description' => 'Grundlagen der Künstlichen Intelligenz',
+            'target'      => 'https://www6.in.tum.de/Main/TeachingWs2017KuenstlicheIntelligenz/',
+        ],
+        'pl'           => [
             'description' => 'Programming Languages',
-            'target' => 'https://www2.in.tum.de/hp/Main?nid=362'
-    	],
-        'ase' => [
+            'target'      => 'https://www2.in.tum.de/hp/Main?nid=362',
+        ],
+        'ase'          => [
             'description' => 'Advanced Topics In Software Engineering',
-            'target' => 'https://www.moodle.tum.de/course/view.php?id=35023'
-        ]
+            'target'      => 'https://www.moodle.tum.de/course/view.php?id=35023',
+        ],
     ];
-	
+
     private $synonyms = [
         'erapra' => 'erapraktikum',
-        'ma-sp' => 'sp-ma'
+        'ma-sp'  => 'sp-ma',
     ];
 
     /**
@@ -221,27 +221,27 @@ class Route {
      */
     private $sections = [
         '1. Semester' => [
-            'info1', 'era', 'ds', 'carlos'
+            'info1', 'era', 'ds', 'carlos',
         ],
         '2. Semester' => [
-            'eist', 'gad', 'erapraktikum', 'ged'
+            'eist', 'gad', 'erapraktikum', 'ged',
         ],
         '3. Semester' => [
-            'anal', 'info2', 'db', 'gbs'
+            'anal', 'info2', 'db', 'gbs',
         ],
         '4. Semester' => [
-            'grnvs', 'theo', 'dwt'
+            'grnvs', 'theo', 'dwt',
         ],
         '5. Semester' => [
-            'numprog'
+            'numprog',
         ],
         '6. Semester' => [],
-        'Special' => [
-            'hunger', 'mensabot', 'mensabot2', 'rooms', 'app', 'c', 'm', 'sp', 'ma-sp', 'wi-sp', 'wi-ma-sp', 'stuff', 'reddit', 'tumeme', 'vorkurs'
+        'Special'     => [
+            'hunger', 'mensabot', 'mensabot2', 'rooms', 'app', 'c', 'm', 'sp', 'ma-sp', 'wi-sp', 'wi-ma-sp', 'stuff', 'reddit', 'tumeme', 'vorkurs',
         ],
-        'Electives' => [
+        'Electives'   => [
             'pl', 'gki', 'conpra', 'ged', 'pgm', 'gog', 'artemis', 'csc', 'scivis', 'ase',
-        ]
+        ],
     ];
 
     public function getTargetOfSub($subdomain) {
@@ -249,15 +249,15 @@ class Route {
             header('Content-type: application/json');
             die(json_encode($this->routes));
         }
-	if(isset($this->synonyms[$subdomain])) {
-	    $subdomain = $this->synonyms[$subdomain];
-	}
+        if (isset($this->synonyms[ $subdomain ])) {
+            $subdomain = $this->synonyms[ $subdomain ];
+        }
 
-        if (!isset($this->routes[$subdomain])) {
+        if (!isset($this->routes[ $subdomain ])) {
             return 'http://tum.sexy/';
         }
 
-        return $this->routes[$subdomain]['target'];
+        return $this->routes[ $subdomain ]['target'];
     }
 
     public function getResolvedArrays() {
@@ -265,15 +265,16 @@ class Route {
 
         //Iterate over our sections which can contain any number of routes
         foreach ($this->sections as $section => $subs) {
-            $ret[$section] = [];
+            $ret[ $section ] = [];
 
             //Iterate over all routes in current section
             foreach ($subs as $sub) {
 
                 //Resolve the route and add to final array
-                $ret[$section][] = ['desc' => $this->routes[$sub]['description'], 'sub' => $sub];
+                $ret[ $section ][] = ['desc' => $this->routes[ $sub ]['description'], 'sub' => $sub];
             }
         }
+
         return $ret;
     }
 
