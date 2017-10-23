@@ -208,6 +208,10 @@ class Route {
             'description' => 'Advanced Topics In Software Engineering',
             'target'      => 'https://www.moodle.tum.de/course/view.php?id=35023',
         ],
+        'qo'          => [
+            'description' => 'Query Optimization',
+            'target'      => 'https://db.in.tum.de/teaching/ws1718/queryopt/',
+        ]
     ];
 
     private $synonyms = [
@@ -240,7 +244,7 @@ class Route {
             'hunger', 'mensabot', 'mensabot2', 'rooms', 'app', 'c', 'm', 'sp', 'ma-sp', 'wi-sp', 'wi-ma-sp', 'stuff', 'reddit', 'tumeme', 'vorkurs',
         ],
         'Electives'   => [
-            'pl', 'gki', 'conpra', 'ged', 'pgm', 'gog', 'artemis', 'csc', 'scivis', 'ase',
+            'pl', 'gki', 'conpra', 'ged', 'pgm', 'gog', 'artemis', 'csc', 'scivis', 'ase', 'qo'
         ],
     ];
 
