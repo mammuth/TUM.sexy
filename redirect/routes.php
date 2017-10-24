@@ -211,12 +211,18 @@ class Route {
         'qo'          => [
             'description' => 'Query Optimization',
             'target'      => 'https://db.in.tum.de/teaching/ws1718/queryopt/',
+        ],
+        'geo'          => [
+            'description' => 'Geometriekalküle',
+            'target'      => 'https://www-m10.ma.tum.de/bin/view/Lehre/WS1718/GeometrieKalkueleWS1718',
         ]
     ];
 
     private $synonyms = [
         'erapra' => 'erapraktikum',
         'ma-sp'  => 'sp-ma',
+        'eidi'  =>  'info1',
+        'eidi2' =>  'info2',
     ];
 
     /**
@@ -244,7 +250,7 @@ class Route {
             'hunger', 'mensabot', 'mensabot2', 'rooms', 'app', 'c', 'm', 'sp', 'ma-sp', 'wi-sp', 'wi-ma-sp', 'stuff', 'reddit', 'tumeme', 'vorkurs',
         ],
         'Electives'   => [
-            'pl', 'gki', 'conpra', 'ged', 'pgm', 'gog', 'artemis', 'csc', 'scivis', 'ase', 'qo'
+            'pl', 'gki', 'conpra', 'ged', 'pgm', 'gog', 'artemis', 'csc', 'scivis', 'ase', 'qo', 'netsec'
         ],
     ];
 
