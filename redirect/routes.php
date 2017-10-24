@@ -198,7 +198,7 @@ class Route {
         ],
         'gki'          => [
             'description' => 'Grundlagen der Künstlichen Intelligenz',
-            'target'      => 'https://www6.in.tum.de/Main/TeachingWs2017KuenstlicheIntelligenz/',
+            'target'      => 'http://www.i6.in.tum.de/Main/TeachingWs2017KuenstlicheIntelligenz',
         ],
         'pl'           => [
             'description' => 'Programming Languages',
