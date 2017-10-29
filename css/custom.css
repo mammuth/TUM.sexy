@@ -106,3 +106,24 @@ a.logo {
     top: 0;
     left: 0;
 }
+
+#searchbox {
+    width: 96%;
+    margin-bottom: 0px;
+}
+
+.row.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.row.flex .column {
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 20px;
+}
+
+div.padding {
+    height:300px;
+}
