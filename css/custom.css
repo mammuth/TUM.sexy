@@ -9,11 +9,14 @@ body {
 #header-row {
     text-align: center;
     margin-top: 10%;
+    justify-content: center;
+    align-items: baseline;
+    margin-bottom: 40px;
 }
 
 h1#sexy-name {
-    margin-bottom: 5%;
     display: inline-block;
+    margin-bottom: 0px;
 }
 
 #sexy-name a {
@@ -105,4 +108,13 @@ a.logo {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+#searchbox {
+    width: 96%;
+    margin-bottom: 0px;
+}
+
+div.padding {
+    height:300px;
 }
