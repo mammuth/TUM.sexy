@@ -9,11 +9,14 @@ body {
 #header-row {
     text-align: center;
     margin-top: 10%;
+    justify-content: center;
+    align-items: baseline;
+    margin-bottom: 40px;
 }
 
 h1#sexy-name {
-    margin-bottom: 5%;
     display: inline-block;
+    margin-bottom: 0px;
 }
 
 #sexy-name a {
@@ -110,18 +113,6 @@ a.logo {
 #searchbox {
     width: 96%;
     margin-bottom: 0px;
-}
-
-.row.flex {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.row.flex .column {
-    margin-left: 1%;
-    margin-right: 1%;
-    margin-bottom: 20px;
 }
 
 div.padding {
