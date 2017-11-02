@@ -64,7 +64,6 @@
 <script type="text/javascript" src="/js/staticsearch.js"></script>
 <script type="text/javascript">
     (function(){
-<<<<<<< HEAD
         function patNorm(str) {
             return str.normalize("NFKD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
         }
@@ -75,10 +74,6 @@
         let mysearch = staticsearch(document.getElementById("main"), {tomark:true, transformPattern:patNorm, transformStr:strNorm});
         let searchbox = document.getElementById("searchbox");
        
-=======
-        let mysearch = staticsearch(document.getElementById("main"), {tomark:true});
-        let searchbox = document.getElementById("searchbox")
->>>>>>> upstream/master
         searchbox.addEventListener('input', function(evt) {
             let pattern = this.value;
             mysearch.filter(pattern);
