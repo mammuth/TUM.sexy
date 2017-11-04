@@ -108,6 +108,10 @@ class Route {
             'description' => 'Einführung in die Informatik 1',
             'target'      => 'http://www14.in.tum.de/lehre/2017WS/info1/index.html.de',
         ],
+        'pgdp'        => [
+            'description' => 'Praktikum Grundlagen der Programmierung (Moodle-Kurs)',
+            'target'      => 'https://www.moodle.tum.de/course/view.php?id=35284',
+        ],
         'era'          => [
             'description' => 'Einführung in die Rechnerarchitektur',
             'target'      => 'https://www.lrr.in.tum.de/lehre/wintersemester-1718/vorlesungen/einfuehrung-in-die-rechnerarchitektur-era/',
@@ -231,7 +235,7 @@ class Route {
      */
     private $sections = [
         '1. Semester' => [
-            'info1', 'era', 'ds', 'carlos',
+            'info1', 'pgdp', 'era', 'ds', 'carlos',
         ],
         '2. Semester' => [
             'eist', 'gad', 'erapraktikum', 'ged',
