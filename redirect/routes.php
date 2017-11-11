@@ -15,6 +15,10 @@ class Route {
             'description' => 'Hübscher Telegram-MensaBot',
             'target'      => 'https://t.me/MensaMUCBot',
         ],
+        'roombot' => [
+            'description' => 'Roomfinder als Telegram Bot',
+            'target'      => 'https://t.me/tumroomsbot',
+        ],
         'rooms'     => [
             'description' => 'Lernräume',
             'target'      => 'https://www.devapp.it.tum.de/iris/app/',
@@ -251,7 +255,7 @@ class Route {
         ],
         '6. Semester' => [],
         'Special'     => [
-            'hunger', 'mensabot', 'mensabot2', 'rooms', 'app', 'c', 'm', 'sp', 'ma-sp', 'wi-sp', 'wi-ma-sp', 'stuff', 'reddit', 'tumeme', 'vorkurs',
+            'hunger', 'mensabot', 'mensabot2', 'roombot', 'rooms', 'app', 'c', 'm', 'sp', 'ma-sp', 'wi-sp', 'wi-ma-sp', 'stuff', 'reddit', 'tumeme', 'vorkurs',
         ],
         'Electives'   => [
             'pl', 'gki', 'conpra', 'ged', 'pgm', 'gog', 'artemis', 'csc', 'scivis', 'ase', 'qo', 'netsec'
