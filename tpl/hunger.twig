@@ -14,12 +14,14 @@
             <p>An error occured while fetching the FMI Bistro menu.</p>
         {% else %}
             {% for day in fmiBistroWeek %}
-                <strong>{{day.getDate() | date("l, F j")}}<sup>{{day.getDate() | date("S")}}</sup></strong>
-                <ul>
-                {% for dish in day %}
-                    <li>{{ dish.getName() }} ({{ dish.getPrice() | number_format(2, '.', ',') }} €)</li>
-                {% endfor %}
-                </ul>
+                {% if  day.getDate() | date('Y-m-d') >= "now" | date('Y-m-d') %}
+                    <strong>{{day.getDate() | date("l, F j")}}<sup>{{day.getDate() | date("S")}}</sup></strong>
+                    <ul>
+                    {% for dish in day %}
+                        <li>{{ dish.getName() }} ({{ dish.getPrice() | number_format(2, '.', ',') }} €)</li>
+                    {% endfor %}
+                    </ul>
+                {% endif %}
             {% endfor %}
         {% endif %}
     </div>
@@ -31,12 +33,14 @@
             <p>An error occured while fetching the Mensa Garching menu.</p>
         {% else %}
             {% for day in mensaGarchingWeek %}
-                <strong>{{day.getDate() | date("l, F j")}}<sup>{{day.getDate() | date("S")}}</sup></strong>
-                <ul>
-                {% for dish in day %}
-                    <li>{{ dish.getName() }} ({{ dish.getPrice() | number_format(2, '.', ',') }} €)</li>
-                {% endfor %}
-                </ul>
+                {% if  day.getDate() | date('Y-m-d') >= "now" | date('Y-m-d') %}
+                    <strong>{{day.getDate() | date("l, F j")}}<sup>{{day.getDate() | date("S")}}</sup></strong>
+                    <ul>
+                    {% for dish in day %}
+                        <li>{{ dish.getName() }} ({{ dish.getPrice() | number_format(2, '.', ',') }} €)</li>
+                    {% endfor %}
+                    </ul>
+                {% endif %}
             {% endfor %}
         {% endif %}
     </div>
