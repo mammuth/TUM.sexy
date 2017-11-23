@@ -2,9 +2,26 @@
 
 include __DIR__ . '/../setup.php';
 
-$FMeatClient = new \JPBernius\FMeat\FMeatClient();
-$week = $FMeatClient->getCurrentWeek();
-$output = ['week' => $week];
+use JPBernius\FMeat\FMeatClient;
+use JPBernius\FMeat\Configurations\Locations;
+use JPBernius\FMeat\Exeptions\NetworkingException;
+
+$FMeatClient = new FMeatClient(true);
+
+try {
+    $fmiBistroWeek = $FMeatClient->getCurrentWeekForLocation(Locations::FMI_BISTRO);
+} catch (NetworkingException $e) {
+    $fmiBistroWeek = null;
+}
+
+try {
+    $mensaGarchingWeek = $FMeatClient->getCurrentWeekForLocation(Locations::MENSA_GARCHING);
+} catch (NetworkingException $e) {
+    $mensaGarchingWeek = null;
+}
 
 //Render the template
-renderTemplate('hunger', ['week' => $week]);
+renderTemplate('hunger', [
+    'fmiBistroWeek' => $fmiBistroWeek,
+    'mensaGarchingWeek' => $mensaGarchingWeek
+]);

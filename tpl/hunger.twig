@@ -2,17 +2,42 @@
     <h1>Hunger | <a href="http://tum.sexy" class="logo">TUM.<strong>sexy</strong></a></h1>
 </div>
 
-<div class="container">
-    <p>This is the 'Speiseplan' of the current week in the FMI Bistro of the Informatik Fakultät at TUM.</p>
 
-    {% for day in week %}
-        <h3>{{day.getDate() | date("l, F j")}}<sup>{{day.getDate() | date("S")}}</sup></h3>
-        <ul>
-        {% for dish in day %}
-            <li>{{ dish.getName() }} ({{ dish.getPrice() | number_format(2, '.', ',') }} €)</li>
-        {% endfor %}
-        </ul>
-    {% endfor %}
 
-    <p>Powered by <a href="https://github.com/FMeat">FMeat</a></p>
+<p>This is the 'Speiseplan' of the current week in the FMI Bistro of the Informatik Fakultät at TUM as well as the Mensa Garching.</p>
+
+<div class="row" style="margin-top:10%">
+    <div class="one-half column">
+        <h3>FMI Bistro</h3>
+
+        {% if fmiBistroWeek == null %}
+            <p>An error occured while fetching the FMI Bistro menu.</p>
+        {% else %}
+            {% for day in fmiBistroWeek %}
+                <strong>{{day.getDate() | date("l, F j")}}<sup>{{day.getDate() | date("S")}}</sup></strong>
+                <ul>
+                {% for dish in day %}
+                    <li>{{ dish.getName() }} ({{ dish.getPrice() | number_format(2, '.', ',') }} €)</li>
+                {% endfor %}
+                </ul>
+            {% endfor %}
+        {% endif %}
+    </div>
+
+    <div class="one-half column">
+        <h3>Mensa Garching</h3>
+
+        {% if mensaGarchingWeek == null %}
+            <p>An error occured while fetching the Mensa Garching menu.</p>
+        {% else %}
+            {% for day in mensaGarchingWeek %}
+                <strong>{{day.getDate() | date("l, F j")}}<sup>{{day.getDate() | date("S")}}</sup></strong>
+                <ul>
+                {% for dish in day %}
+                    <li>{{ dish.getName() }} ({{ dish.getPrice() | number_format(2, '.', ',') }} €)</li>
+                {% endfor %}
+                </ul>
+            {% endfor %}
+        {% endif %}
+    </div>
 </div>
