@@ -1,0 +1,16 @@
+<h3>{{ title }}</h3>
+
+{% if week == null %}
+    <p>An error occured while fetching the {{ title }} menu.</p>
+{% else %}
+    {% for day in week %}
+        {% if  day.getDate() | date('Y-m-d') >= "now" | date('Y-m-d') %}
+            <strong>{{day.getDate() | date("l, F j")}}<sup>{{day.getDate() | date("S")}}</sup></strong>
+            <ul>
+            {% for dish in day %}
+                <li>{{ dish.getName() }} ({{ dish.getPrice() | number_format(2, '.', ',') }} €)</li>
+            {% endfor %}
+            </ul>
+        {% endif %}
+    {% endfor %}
+{% endif %}

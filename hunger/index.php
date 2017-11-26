@@ -8,20 +8,21 @@ use JPBernius\FMeat\Exeptions\NetworkingException;
 
 $FMeatClient = new FMeatClient(true);
 
-try {
-    $fmiBistroWeek = $FMeatClient->getCurrentWeekForLocation(Locations::FMI_BISTRO);
-} catch (NetworkingException $e) {
-    $fmiBistroWeek = null;
-}
+$locations = [
+    'fmiBistroWeek' => Locations::FMI_BISTRO,
+    'ippBistroWeek' => Locations::IPP_BISTRO,
+    'mensaGarchingWeek' => Locations::MENSA_GARCHING
+];
 
-try {
-    $mensaGarchingWeek = $FMeatClient->getCurrentWeekForLocation(Locations::MENSA_GARCHING);
-} catch (NetworkingException $e) {
-    $mensaGarchingWeek = null;
+$output = [];
+
+foreach ($locations as $viewKey => $apiName) {
+    try {
+        $output[$viewKey] = $FMeatClient->getCurrentWeekForLocation($apiName);
+    } catch (NetworkingException $e) {
+        $output[$viewKey] = null;
+    }
 }
 
 //Render the template
-renderTemplate('hunger', [
-    'fmiBistroWeek' => $fmiBistroWeek,
-    'mensaGarchingWeek' => $mensaGarchingWeek
-]);
+renderTemplate('hunger', $output);
