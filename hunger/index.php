@@ -11,7 +11,8 @@ $FMeatClient = new FMeatClient(true);
 $locations = [
     'fmiBistroWeek' => Locations::FMI_BISTRO,
     'ippBistroWeek' => Locations::IPP_BISTRO,
-    'mensaGarchingWeek' => Locations::MENSA_GARCHING
+    'mensaWeek' => Locations::MENSA_GARCHING,
+    'stucafeMaschbauWeek' => Locations::STUCAFE_BOLTZMANNSTRASSE
 ];
 
 $output = [];
