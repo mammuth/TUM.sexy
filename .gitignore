@@ -7,3 +7,4 @@ tmp/*
 .idea/
 composer.lock
 !/tmp/hunger/.htaccess
+donateInfos.php

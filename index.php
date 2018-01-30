@@ -15,4 +15,7 @@ if (!isset($_GET['cats'])) {
     $vars['cats'] = true; //Enables the script in the template
 }
 
+//Donation Key
+$vars['stripe_publishable_key'] = $stripe['publishable_key'];
+
 renderTemplate($tplName = 'start', $vars);
