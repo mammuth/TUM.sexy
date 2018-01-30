@@ -27,3 +27,7 @@ function renderTemplate($tplName = 'start', $vars) {
     $vars['main_tpl'] = $tplName . '.twig';
     echo $twig->render('main.twig', $vars);
 }
+
+//Add Donation info
+include __DIR__ . '/donateInfos.php';
+\Stripe\Stripe::setApiKey($stripe['secret_key']);

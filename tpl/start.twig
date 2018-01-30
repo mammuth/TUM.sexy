@@ -42,6 +42,22 @@
                 <li>You have an idea for how to improve this site? Feel free to <strong>contribute</strong> on our <a href="https://github.com/mammuth/TUM.sexy" target="_blank">GitHub Page</a>!
                 <li>Contact: <a href="mailto:heilig@tum.sexy">heilig@tum.sexy</a></li>
             </ul>
+            <h3>Kauf uns ein Bier</h3>
+            <div>
+                Programmieren macht durstig. Unsere Server laufen auch mit Bier.
+                <form action="donate.php" method="post">
+                    <span id="moneyField">
+                        <i>€</i>
+                        <input class="form-control" value="3" type="number" name="amount" id="moneyFieldInput" />
+                    </span>
+                    <script src="https://checkout.stripe.com/checkout.js" class="stripe-button" id="stripeField"
+                            data-key="{{ stripe_publishable_key }}"
+                            data-description="TUM.sexy Spende"
+                            data-locale="auto"
+                            data-label="Spenden!"
+                            data-currency="eur"></script>
+                </form>
+            </div>
         </div>
         <div class="one-half column">
             <h3>Projects / Links</h3>
@@ -70,15 +86,15 @@
         function strNorm(str) {
             return str.trim().normalize("NFKD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
         }
-        
+
         let mysearch = staticsearch(document.getElementById("main"), {tomark:true, transformPattern:patNorm, transformStr:strNorm});
         let searchbox = document.getElementById("searchbox");
-       
+
         searchbox.addEventListener('input', function(evt) {
             let pattern = this.value;
             mysearch.filter(pattern);
         });
-        
+
         searchbox.focus();
         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
             let offtop = searchbox.getBoundingClientRect().top + document.body.scrollTop;

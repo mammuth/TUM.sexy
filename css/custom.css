@@ -118,3 +118,24 @@ a.logo {
 div.padding {
     height:300px;
 }
+#moneyField { position: relative; }
+#moneyField > i {
+    position: absolute;
+    display: block;
+    transform: translate(0, -50%);
+    top: 50%;
+    pointer-events: none;
+    width: 25px;
+    text-align: center;
+    font-style: normal;
+    right: 0;
+}
+#moneyField input {
+    height: 26px;
+    border: 1px solid #D1D1D1;
+    border-radius: 4px;
+    box-shadow: none;
+    background: #fff;
+    padding: 6px 15px 6px 0;
+    text-align: right;
+}
