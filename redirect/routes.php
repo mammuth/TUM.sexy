@@ -71,10 +71,12 @@ class Route {
         'anal'         => [
             'description' => 'Analysis für Informatiker',
             'target'      => 'https://www-m5.ma.tum.de/Allgemeines/MA0902_2017W',
+            'moodle_id'   => '36704',
         ],
         'info2'        => [
             'description' => 'Einführung in die Informatik 2',
             'target'      => 'https://www2.in.tum.de/hp/Main?nid=354',
+            'moodle_id'   => '35319',
         ],
         'e2ocaml'      => [
             'description' => 'Einführung in die Informatik 2 OCAML HA-Abgabe',
@@ -83,10 +85,12 @@ class Route {
         'db'           => [
             'description' => 'Grundlagen: Datenbanken',
             'target'      => 'https://db.in.tum.de/teaching/ws1718/grundlagen/',
+            'moodle_id'   => '38031',
         ],
         'gbs'          => [
             'description' => 'Grundlagen Betriebssystem und Systemsoftware',
             'target'      => 'https://www.sec.in.tum.de/i20/teaching/ws2017/grundlagen-betriebssysteme-und-systemsoftware',
+            'moodle_id'   => '35140',
         ],
         'quintero'     => [
             'description' => 'Mathias Quintero',
@@ -263,6 +267,7 @@ class Route {
     ];
 
     public function getTargetOfSub($subdomain) {
+        $key = 'target';
         if ($subdomain === 'json') {
             header('Content-type: application/json');
             die(json_encode($this->routes));
@@ -270,12 +275,21 @@ class Route {
         if (isset($this->synonyms[ $subdomain ])) {
             $subdomain = $this->synonyms[ $subdomain ];
         }
-
+        if (!isset($this->routes[ $subdomain ])) {
+            switch (substr($subdomain, 0, 1)) {
+                case 'x' :  
+                    $subdomain = 'https://www.moodle.tum.de/course/view.php?id=' . $this->substr($subdomain, 1);
+                    $key = 'moodle_id';
+                    break;
+                default: 
+                    break;
+            }
+        }
         if (!isset($this->routes[ $subdomain ])) {
             return 'http://tum.sexy/';
         }
 
-        return $this->routes[ $subdomain ]['target'];
+        return $this->routes[ $subdomain ][ $key ];
     }
 
     public function getResolvedArrays() {
