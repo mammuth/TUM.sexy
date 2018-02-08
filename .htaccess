@@ -1,4 +1,3 @@
-
 #Turn on the magic
 RewriteEngine On
 
@@ -7,7 +6,5 @@ RewriteRule ^redirect - [L,NC]
 
 #Rewrite any subdomains to the correct script whichs checks where to forward to
 RewriteCond %{HTTP_HOST} !www.tum.sexy [NC]
-RewriteCond %{HTTP_HOST} ^(www\.)?([a-z0-9-]+).tum.sexy [NC]
-RewriteRule ^(.*)$ /redirect/index.php?sub=%2 [L]
-
-
+RewriteCond %{HTTP_HOST} ^(?:www\.)?(?:([a-z0-9-]+)\.)?([a-z0-9-]+).tum.sexy [NC]
+RewriteRule ^(.*)$ /redirect/index.php?sub=%3&subsub=%1 [L]
