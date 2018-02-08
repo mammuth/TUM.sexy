@@ -4,7 +4,7 @@ class MainTest extends \PHPUnit\Framework\TestCase {
 
     public function testRouteResolving() {
         $router = new Route();
-        $this->assertEquals('http://tum.sexy/hunger', $router->getTargetOfSub('hunger'));
+        $this->assertEquals('http://tum.sexy/hunger', $router->getTargetOfSub('hunger', null));
     }
 
     public function testJsonOutput() {
