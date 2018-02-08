@@ -266,30 +266,34 @@ class Route {
         ],
     ];
 
-    public function getTargetOfSub($subdomain) {
-        $key = 'target';
+    public function getTargetOfSub($subdomain, $subsub) {
+
         if ($subdomain === 'json') {
             header('Content-type: application/json');
             die(json_encode($this->routes));
         }
+
         if (isset($this->synonyms[ $subdomain ])) {
             $subdomain = $this->synonyms[ $subdomain ];
         }
-        if (!isset($this->routes[ $subdomain ])) {
-            switch (substr($subdomain, 0, 1)) {
-                case 'x' :  
-                    $subdomain = 'https://www.moodle.tum.de/course/view.php?id=' . $this->substr($subdomain, 1);
-                    $key = 'moodle_id';
-                    break;
-                default: 
-                    break;
-            }
+
+        switch ($subsub) {
+            case 'm' :  
+                // This is a moodle redirect like m.info1.tum.sexy
+                $moodle_id = $this->routes[ $subdomain ][ 'moodle_id' ];
+                if (!isset($moodle_id)) {
+                    return $this->routes[ $subdomain ][ 'target' ];  // Fallback to target if moodle id is unknown
+                }
+                return 'https://www.moodle.tum.de/course/view.php?id=' . $moodle_id;
+            default: 
+                break;
         }
+
         if (!isset($this->routes[ $subdomain ])) {
             return 'http://tum.sexy/';
         }
 
-        return $this->routes[ $subdomain ][ $key ];
+        return $this->routes[ $subdomain ][ 'target' ];
     }
 
     public function getResolvedArrays() {
