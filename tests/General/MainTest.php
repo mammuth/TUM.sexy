@@ -7,7 +7,7 @@ class MainTest extends \PHPUnit\Framework\TestCase {
         // Normal redirect
         $this->assertEquals('http://tum.sexy/hunger', $router->getTargetOfSub('hunger', null));
         // Subsubdomain redirect to moodle
-        $this->assertContains('https://www.moodle.tum.de/course/view.php?id=', $router->getTargetOfSub('anal', 'm'));
+        $this->assertContains('https://www.moodle.tum.de/course/view.php?id=36704', $router->getTargetOfSub('anal', 'm'));
     }
 
     public function testJsonOutput() {
