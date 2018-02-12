@@ -223,7 +223,12 @@ class Route {
         'geo'          => [
             'description' => 'Geometriekalküle',
             'target'      => 'https://www-m10.ma.tum.de/bin/view/Lehre/WS1718/GeometrieKalkueleWS1718',
+        ],
+        'satellite'          => [
+            'description' => 'The TUM Satellite',
+            'target'      => 'https://www.move2space.de/',
         ]
+
     ];
 
     private $synonyms = [
