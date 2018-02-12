@@ -71,6 +71,8 @@ class Route {
         'anal'         => [
             'description' => 'Analysis für Informatiker',
             'target'      => 'https://www-m5.ma.tum.de/Allgemeines/MA0902_2017W',
+             // If you change this moodle_id please also change in the MainTest.php, 
+             // since this url is also used for testing!
             'moodle_id'   => '36704',
         ],
         'info2'        => [
