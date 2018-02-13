@@ -275,25 +275,25 @@ class Route {
             die(json_encode($this->routes));
         }
 
-        if (isset($this->synonyms[ $siteType ])) {
-            $siteType = $this->synonyms[ $siteType ];
+        if (isset($this->synonyms[$siteType])) {
+            $siteType = $this->synonyms[$siteType];
         }
 
         switch ($redirectUrl) {
             case 'm' :  
                 // This is a moodle redirect like m.info1.tum.sexy
-                $moodle_id = $this->routes[ $siteType ]['moodle_id'];
+                $moodle_id = $this->routes[$siteType]['moodle_id'];
                 if (!isset($moodle_id)) {
-                    return $this->routes[ $siteType ]['target'];  // Fallback to target if moodle id is unknown
+                    return $this->routes[$siteType]['target'];  // Fallback to target if moodle id is unknown
                 }
                 return 'https://www.moodle.tum.de/course/view.php?id=' . $moodle_id;
         }
 
-        if (!isset($this->routes[ $siteType ])) {
+        if (!isset($this->routes[$siteType])) {
             return 'http://tum.sexy/';
         }
 
-        return $this->routes[ $siteType ]['target'];
+        return $this->routes[$siteType]['target'];
     }
 
     public function getResolvedArrays() {
@@ -301,13 +301,13 @@ class Route {
 
         //Iterate over our sections which can contain any number of routes
         foreach ($this->sections as $section => $subs) {
-            $ret[ $section ] = [];
+            $ret[$section] = [];
 
             //Iterate over all routes in current section
             foreach ($subs as $sub) {
 
                 //Resolve the route and add to final array
-                $ret[ $section ][] = ['desc' => $this->routes[ $sub ]['description'], 'sub' => $sub];
+                $ret[$section][] = ['desc' => $this->routes[$sub]['description'], 'sub' => $sub];
             }
         }
 
