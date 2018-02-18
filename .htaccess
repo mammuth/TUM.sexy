@@ -4,7 +4,13 @@ RewriteEngine On
 #Ignore direct access to the redirect folder
 RewriteRule ^redirect - [L,NC]
 
-#Rewrite any subdomains to the correct script whichs checks where to forward to
+RewriteEngine on
 RewriteCond %{HTTP_HOST} !www.tum.sexy [NC]
-RewriteCond %{HTTP_HOST} ^(?:www\.)?(?:([a-z0-9-]+)\.)?([a-z0-9-]+).tum.sexy [NC]
-RewriteRule ^(.*)$ /redirect/index.php?redirectUrl=%3&siteType=%1 [L]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ /redirect/index.php [L]
+
+#Rewrite any subdomains to the correct script whichs checks where to forward to
+#RewriteCond %{HTTP_HOST} !www.tum.sexy [NC]
+#RewriteCond %{HTTP_HOST} ^(?:www\.)?(?:([a-z0-9-]+)\.)?([a-z0-9-]+).tum.sexy [NC]
+#RewriteRule ^(.*)$ /redirect/index.php?redirectUrl=%3&siteType=%1 [L]
