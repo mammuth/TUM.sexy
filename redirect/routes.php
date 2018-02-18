@@ -66,8 +66,6 @@ class Route {
         'anal'         => [
             'description' => 'Analysis für Informatiker',
             'target'      => 'https://www-m5.ma.tum.de/Allgemeines/MA0902_2017W',
-             // If you change this moodle_id please also change in the MainTest.php, 
-             // since this url is also used for testing!
             'moodle_id'   => '36704',
         ],
         'info2'        => [
@@ -268,7 +266,16 @@ class Route {
         ],
     ];
 
-    public function getTargetOfSub($siteType, $redirectUrl=null) {
+    public function getTargetOfSub($host) {
+        $domain = explode('.', $host);
+        $domain = array_filter($domain, function($e){
+            return $e !== 'sexy' && $e !== 'tum' && $e !== 'www';
+        });
+        preg_match('/(?:www\.)?(?:([a-z0-9-]+)\.)?([a-z0-9-]+)/', $domain, $matches);
+
+        var_dump($matches, $domain);
+        die();
+
 
         if ($siteType === 'json') {
             header('Content-type: application/json');
