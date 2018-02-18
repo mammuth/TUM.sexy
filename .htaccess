@@ -5,7 +5,7 @@ RewriteEngine On
 RewriteRule ^redirect - [L,NC]
 
 RewriteEngine on
-RewriteCond %{HTTP_HOST} !tum.sexy [NC]
-RewriteCond %{HTTP_HOST} !www.tum.sexy [NC]
+RewriteCond %{HTTP_HOST} !^tum.sexy [NC]
+RewriteCond %{HTTP_HOST} !^www.tum.sexy [NC]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^(.*)$ /redirect/index.php?url=$1 [L]
