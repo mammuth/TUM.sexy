@@ -4,10 +4,18 @@ class MainTest extends \PHPUnit\Framework\TestCase {
 
     public function testRouteResolving() {
         $router = new Route();
+
         // Normal redirect
-        $this->assertEquals('http://tum.sexy/hunger', $router->getTargetOfSub('hunger'));
-        // Subsubdomain redirect to moodle
-        $this->assertContains('https://www.moodle.tum.de/course/view.php?id=36704', $router->getTargetOfSub('anal', 'm'));
+        $this->assertEquals('http://tum.sexy/hunger', $router->getTargetOfSub('hunger.tum.sexy'));
+
+        // Not found redirect
+        $this->assertEquals('http://tum.sexy/', $router->getTargetOfSub('kjhdsfjkdfsgkjldsfgkjl.tum.sexy'));
+
+        // SiteType redirect to moodle
+        $this->assertContains('https://www.moodle.tum.de/course/view.php?id=36704', $router->getTargetOfSub('m.anal.tum.sexy'));
+
+        // Normal redirect still works, even if it has moodle type assigned
+        $this->assertContains('https://www-m5.ma.tum.de/Allgemeines/MA0902_2017W', $router->getTargetOfSub('anal.tum.sexy'));
     }
 
     public function testJsonOutput() {

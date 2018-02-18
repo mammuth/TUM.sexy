@@ -1,7 +1,6 @@
 <?php
 
 class Route {
-
     private $routes = [
         'hunger'    => [
             'description' => 'FMI Bistro Speiseplan',
@@ -267,40 +266,47 @@ class Route {
     ];
 
     public function getTargetOfSub($host) {
+        //Split up the requested host into parts and filter out unneeded info
         $domain = explode('.', $host);
         $domain = array_filter($domain, function($e){
             return $e !== 'sexy' && $e !== 'tum' && $e !== 'www';
         });
-        preg_match('/(?:www\.)?(?:([a-z0-9-]+)\.)?([a-z0-9-]+)/', $domain, $matches);
 
-        var_dump($matches, $domain);
-        die();
+        //First item should be a site type: tutor, moodle or other
+        $siteType = null;
+        if(count($domain) > 1) {
+            $siteType = array_shift($domain);
+        }
+        $redirectUrl = array_shift($domain);
 
-
-        if ($siteType === 'json') {
+        //Static route to return the route array as json
+        if ($redirectUrl === 'json') {
             header('Content-type: application/json');
             die(json_encode($this->routes));
         }
 
-        if (isset($this->synonyms[$siteType])) {
-            $siteType = $this->synonyms[$siteType];
+        //Yea, we have multiple names for the same thing
+        if (isset($this->synonyms[$redirectUrl])) {
+            $redirectUrl = $this->synonyms[$redirectUrl];
         }
 
-        switch ($redirectUrl) {
+        //If it does not exist? Go to main page
+        if (!isset($this->routes[$redirectUrl])) {
+            return 'http://tum.sexy/';
+        }
+
+        //In case we actually want to go to a different target than the actual redirect
+        switch ($siteType) {
             case 'm' :  
                 // This is a moodle redirect like m.info1.tum.sexy
-                $moodle_id = $this->routes[$siteType]['moodle_id'];
+                $moodle_id = $this->routes[$redirectUrl]['moodle_id'];
                 if (!isset($moodle_id)) {
-                    return $this->routes[$siteType]['target'];  // Fallback to target if moodle id is unknown
+                    return $this->routes[$redirectUrl]['target'];  // Fallback to target if moodle id is unknown
                 }
                 return 'https://www.moodle.tum.de/course/view.php?id=' . $moodle_id;
         }
 
-        if (!isset($this->routes[$siteType])) {
-            return 'http://tum.sexy/';
-        }
-
-        return $this->routes[$siteType]['target'];
+        return $this->routes[$redirectUrl]['target'];
     }
 
     public function getResolvedArrays() {
