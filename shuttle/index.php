@@ -1,7 +1,8 @@
 <?php
 use ThauEx\SimpleHtmlDom\SHD;
 
-$html = file_get_html('http://wzw.tum.de/index.php?id=416');
+SHD::$fileCacheDir = "cache";
+$html = SHD::fileGetHtml('http://wzw.tum.de/index.php?id=416');
 
 $links = array();
 
