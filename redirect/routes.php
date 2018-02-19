@@ -225,6 +225,10 @@ class Route {
         'satellite'          => [
             'description' => 'The TUM Satellite',
             'target'      => 'https://www.move2space.de/',
+        ],
+        'shuttle'          => [
+            'description' => 'Wochenfahrpläne Shuttlebus WZW-GAR-MUC',
+            'target'      => 'http://wzw.tum.de/index.php?id=416',
         ]
 
     ];
@@ -258,7 +262,7 @@ class Route {
         ],
         '6. Semester' => [],
         'Special'     => [
-            'hunger', 'mensabot', 'mensabot2', 'roombot', 'rooms', 'app', 'c', 'm', 'sp', 'ma-sp', 'wi-sp', 'wi-ma-sp', 'stuff', 'reddit', 'vorkurs',
+            'hunger', 'mensabot', 'mensabot2', 'roombot', 'rooms', 'app', 'c', 'm', 'shuttle', 'sp', 'ma-sp', 'wi-sp', 'wi-ma-sp', 'stuff', 'reddit', 'vorkurs',
         ],
         'Electives'   => [
             'pl', 'gki', 'conpra', 'ged', 'pgm', 'gog', 'artemis', 'csc', 'scivis', 'ase', 'qo', 'netsec'
