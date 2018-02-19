@@ -29,5 +29,5 @@ if ($links[$load] == "") {
 	$load = 0;
 }
 
-header('Location: http://www.wzw.tum.de/'.$links[$load]);
+header('Location: http://www.wzw.tum.de/' . $links[$load]);
 die();
