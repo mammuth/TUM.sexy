@@ -1,5 +1,5 @@
 <?php
-use 'simple_html_dom.php';
+use ThauEx\SimpleHtmlDom\SHD;
 
 $html = file_get_html('http://wzw.tum.de/index.php?id=416');
 
