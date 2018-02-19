@@ -225,6 +225,10 @@ class Route {
         'satellite'          => [
             'description' => 'The TUM Satellite',
             'target'      => 'https://www.move2space.de/',
+        ],
+        'shuttle'          => [
+            'description' => 'Wochenfahrpläne Shuttlebus WZW-GAR-MUC',
+            'target'      => 'http://wzw.tum.de/index.php?id=416',
         ]
 
     ];
