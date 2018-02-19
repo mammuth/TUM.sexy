@@ -10,9 +10,22 @@ foreach($html->find('div[id=c2489]') as $element)
        		$links[] = $element2->href;
 
 // The load variable allows the user to load the schedule for the upcoming week using '?load=1'
-$load = $_GET['load'];
+if(empty($_GET['load'])) {
+    $load = 0;    
+} else {
+    $load = $_GET['load'];    
+}
+
+if (empty($links)) {
+	// not getting any links? Faculty reconstructed the page? 
+	// redirect to overview page than
+	header('Location: http://wzw.tum.de/index.php?id=416');
+	die();
+}
 
 if ($links[$load] == "") {
+	// provided an load variable that is not in the array
+	// load default than
 	$load = 0;
 }
 
