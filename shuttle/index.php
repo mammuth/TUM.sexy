@@ -6,9 +6,11 @@ $html = SHD::fileGetHtml('http://wzw.tum.de/index.php?id=416');
 
 $links = array();
 
-foreach($html->find('div[id=c2489]') as $element) 
-	foreach($element->find('a') as $element2) 
+foreach($html->find('div[id=c2489]') as $element) {
+	foreach($element->find('a') as $element2) {
        		$links[] = $element2->href;
+	}
+}
 
 // The load variable allows the user to load the schedule for the upcoming week using '?load=1'
 if(empty($_GET['load'])) {
