@@ -6,7 +6,7 @@ use JPBernius\FMeat\FMeatClient;
 use JPBernius\FMeat\Configurations\Locations;
 use JPBernius\FMeat\Exeptions\NetworkingException;
 
-$FMeatClient = new FMeatClient(true);
+$fmeat = new FMeatClient(true);
 
 $locations = [
     'fmiBistroWeek' => Locations::FMI_BISTRO,
@@ -16,10 +16,12 @@ $locations = [
 ];
 
 $output = [];
-
 foreach ($locations as $viewKey => $apiName) {
     try {
-        $output[$viewKey] = $FMeatClient->getCurrentWeekForLocation($apiName);
+        $output[$viewKey] = $fmeat->getCurrentWeekForLocation($apiName);
+        if(empty($output[$viewKey])) {
+            $output[$viewKey] = $fmeat->getNextWeekForLocation($apiName);
+        }
     } catch (NetworkingException $e) {
         $output[$viewKey] = null;
     }

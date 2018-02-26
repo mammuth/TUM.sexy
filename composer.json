@@ -1,7 +1,7 @@
 {
   "require": {
     "twig/twig": "^1.33",
-    "jpbernius/fmeat": "~1.1.2",
+    "jpbernius/fmeat": "~1.2.0",
     "stripe/stripe-php": "^5.9"
   },
   "require-dev": {
