@@ -2,8 +2,7 @@
   "require": {
     "twig/twig": "^1.33",
     "jpbernius/fmeat": "~1.1.2",
-    "stripe/stripe-php": "^5.9",
-    "thauex/simple-html-dom": "dev-master"
+    "stripe/stripe-php": "^5.9"
   },
   "require-dev": {
     "phpunit/phpunit": "6.4.*"
