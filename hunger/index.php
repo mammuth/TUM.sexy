@@ -4,7 +4,7 @@ include __DIR__ . '/../setup.php';
 
 use JPBernius\FMeat\FMeatClient;
 use JPBernius\FMeat\Configurations\Locations;
-use JPBernius\FMeat\Exeptions\NetworkingException;
+use JPBernius\FMeat\Exeptions\{NetworkingException, DayNotFoundException};
 
 $fmeat = new FMeatClient(true);
 
@@ -19,10 +19,10 @@ $output = [];
 foreach ($locations as $viewKey => $apiName) {
     try {
         $output[$viewKey] = $fmeat->getCurrentWeekForLocation($apiName);
-        if(empty($output[$viewKey])) {
+        if($output[$viewKey]->getDay(5)->getDate()->format("Y-m-d") < date("Y-m-d")) {
             $output[$viewKey] = $fmeat->getNextWeekForLocation($apiName);
         }
-    } catch (NetworkingException $e) {
+    } catch (NetworkingException|DayNotFoundException $e) {
         $output[$viewKey] = null;
     }
 }
