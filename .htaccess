@@ -5,7 +5,13 @@ RewriteEngine On
 RewriteRule ^redirect - [L,NC]
 
 RewriteEngine on
+RewriteCond %{HTTP_HOST} hunger.tum.sexy [NC]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ /hunger/index.php [END]
+
 RewriteCond %{HTTP_HOST} !^tum.sexy [NC]
 RewriteCond %{HTTP_HOST} !^www.tum.sexy [NC]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^(.*)$ /redirect/index.php?url=$1 [L]
+
+RewriteRule ^cats$ /index.php?cats=1 [L]

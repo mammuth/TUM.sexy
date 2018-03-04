@@ -102,10 +102,6 @@
         }
     })();
 </script>
-{% if cats %}
-    <script>
-        window.onload = function () {
-            document.body.background = 'http://thecatapi.com/api/images/get?format=src&type=gif';
-        };
-    </script>
+{% if cats == "show" %}
+    <script async defer src="/js/cats.js"></script>
 {% endif %}
