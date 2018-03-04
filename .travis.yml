@@ -1,4 +1,5 @@
 language: php
+sudo: reqiured
 
 cache:
   directories:
@@ -13,10 +14,6 @@ matrix:
   allow_failures:
     - php: 7.3
 
-before_install:
-  - pecl list
-  - php -i
-  - printf "\n" | pecl install imagick
-
 install:
    - composer install
+   - docker build -t mammuth/TUM.sexy .
