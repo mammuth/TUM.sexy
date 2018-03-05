@@ -4,7 +4,7 @@ WORKDIR /app
 COPY ./composer.json /app
 COPY ./composer.lock /app
 
-RUN composer install
+RUN composer install --no-dev
 
 
 FROM php:7.2.2-apache
