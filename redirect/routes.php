@@ -233,8 +233,11 @@ class Route {
         'statista' => [
             'description' => 'Statista',
             'target'      => 'https://de-statista-com.eaccess.ub.tum.de',
-        ]
-
+        ],
+        'sharelatex' => [
+            'description' => 'ShareLaTeX@TUM',
+            'target'      => 'https://sharelatex.tum.de/',
+        ],
     ];
 
     private $synonyms = [
@@ -242,6 +245,7 @@ class Route {
         'ma-sp'  => 'sp-ma',
         'eidi'  =>  'info1',
         'eidi2' =>  'info2',
+        'sharelatex' =>  'latex',
     ];
 
     /**
@@ -266,7 +270,7 @@ class Route {
         ],
         '6. Semester' => [],
         'Special'     => [
-            'hunger', 'mensabot', 'mensabot2', 'roombot', 'rooms', 'app', 'c', 'm', 'sp', 'ma-sp', 'wi-sp', 'wi-ma-sp', 'stuff', 'reddit', 'vorkurs', 'statista', 'shuttle',
+            'hunger', 'mensabot', 'mensabot2', 'roombot', 'rooms', 'app', 'c', 'm', 'sp', 'ma-sp', 'wi-sp', 'wi-ma-sp', 'stuff', 'reddit', 'vorkurs', 'statista', 'shuttle', 'sharelatex',
         ],
         'Electives'   => [
             'pl', 'gki', 'conpra', 'ged', 'pgm', 'gog', 'artemis', 'csc', 'scivis', 'ase', 'qo', 'netsec'
