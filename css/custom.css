@@ -41,6 +41,11 @@ a.logo {
     background-color: rgba(255, 255, 255, 0.8);
 }
 
+ul.hunger-menu {
+    margin-left: 1em;
+    list-style-position: outside;
+}
+
 #footer {
     position: fixed;
     bottom: 5px;
