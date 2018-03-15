@@ -1,6 +1,9 @@
+sudo: required
 language: php
 
-# Run tests
+services:
+  - docker
+
 cache:
   directories:
     - $HOME/.composer/cache
@@ -18,11 +21,6 @@ matrix:
 
 install:
    - composer install
-
-# Build Docker image after running and passing tests
-sudo: required
-services:
-  - docker
 
 script:
   - composer test
