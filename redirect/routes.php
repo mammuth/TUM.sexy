@@ -245,7 +245,8 @@ class Route {
         'ma-sp'  => 'sp-ma',
         'eidi'  =>  'info1',
         'eidi2' =>  'info2',
-        'sharelatex' =>  'latex',
+        'latex' =>  'sharelatex',
+        'tex' =>  'sharelatex',
     ];
 
     /**
