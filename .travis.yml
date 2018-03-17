@@ -1,4 +1,8 @@
+sudo: required
 language: php
+
+services:
+  - docker
 
 cache:
   directories:
@@ -8,15 +12,25 @@ php:
   - 7.1
   - 7.2
   - 7.3
+  - nightly
 
 matrix:
   allow_failures:
     - php: 7.3
-
-before_install:
-  - pecl list
-  - php -i
-  - printf "\n" | pecl install imagick
+    - php: nightly
 
 install:
    - composer install
+
+script:
+  - composer test
+  - docker build -t tumsexy .
+
+before_deploy: docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+
+deploy:
+  provider: script
+  script: ./.travis/dockerhub
+  on:
+    tags: true
+    php: 7.2

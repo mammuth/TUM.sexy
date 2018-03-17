@@ -1,0 +1,9 @@
+#!/bin/bash
+
+push_to_repo() {
+  docker tag tumsexy $1
+  docker push $1
+}
+
+push_to_repo "$DOCKER_USERNAME/tum.sexy:latest"
+push_to_repo "$DOCKER_USERNAME/tum.sexy:$TRAVIS_TAG"
