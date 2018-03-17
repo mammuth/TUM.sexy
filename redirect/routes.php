@@ -98,6 +98,10 @@ class Route {
             'description' => 'Official TUM.sexy Github Repository',
             'target'      => 'https://github.com/mammuth/TUM.sexy',
         ],
+        'docker'       => [
+            'description' => 'Official TUM.sexy Docker Hub Repository',
+            'target'      => 'https://hub.docker.com/r/mammuth/tum.sexy',
+        ],
         'dwt'          => [
             'description' => 'Diskrete Wahrscheinlichkeitstheorie',
             'target'      => 'http://wwwalbers.in.tum.de/lehre/2017SS/dwt/',

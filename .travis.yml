@@ -8,6 +8,10 @@ cache:
   directories:
     - $HOME/.composer/cache
 
+env:
+  global:
+    - DOCKER_REPOSITORY=$DOCKER_USERNAME/tum.sexy
+
 php:
   - 7.1
   - 7.2
@@ -32,5 +36,5 @@ deploy:
   provider: script
   script: ./.travis/dockerhub
   on:
-    tags: true
+    branch: master
     php: 7.2
