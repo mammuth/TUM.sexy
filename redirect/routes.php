@@ -242,6 +242,10 @@ class Route {
             'description' => 'ShareLaTeX@TUM',
             'target'      => 'https://sharelatex.tum.de/',
         ],
+        'modsim' => [
+            'description' => 'Modellbildung und Simulation',
+            'target'      => 'https://www5.in.tum.de/wiki/index.php/Modeling_and_Simulation_-_Summer_18',
+        ],
     ];
 
     private $synonyms = [
@@ -251,6 +255,7 @@ class Route {
         'eidi2' =>  'info2',
         'latex' =>  'sharelatex',
         'tex' =>  'sharelatex',
+        'netz' => 'grnvs',
     ];
 
     /**
@@ -278,7 +283,7 @@ class Route {
             'hunger', 'mensabot', 'mensabot2', 'roombot', 'rooms', 'app', 'c', 'm', 'sp', 'ma-sp', 'wi-sp', 'wi-ma-sp', 'stuff', 'reddit', 'vorkurs', 'statista', 'shuttle', 'sharelatex',
         ],
         'Electives'   => [
-            'pl', 'gki', 'conpra', 'ged', 'pgm', 'gog', 'artemis', 'csc', 'scivis', 'ase', 'qo', 'netsec'
+            'pl', 'gki', 'conpra', 'ged', 'pgm', 'gog', 'artemis', 'csc', 'scivis', 'ase', 'qo', 'netsec', 'modsim'
         ],
     ];
 
