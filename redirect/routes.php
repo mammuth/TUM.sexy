@@ -52,7 +52,7 @@ class Route {
         ],
         'numprog'      => [
             'description' => 'Numerisches Programmieren',
-            'target'      => 'https://www5.in.tum.de/wiki/index.php/Numerisches_Programmieren_-_Winter_17',
+            'target'      => 'https://www5.in.tum.de/wiki/index.php/Numerisches_Programmieren_-_Summer_18',
         ],
         'websec'       => [
             'description' => 'WebApplication Security Bachelor Praktikum',
