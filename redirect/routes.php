@@ -250,6 +250,10 @@ class Route {
             'description' => 'Modellbildung und Simulation',
             'target'      => 'https://www5.in.tum.de/wiki/index.php/Modeling_and_Simulation_-_Summer_18',
         ],
+        'pp' => [
+            'description' => 'Protein Prediction 1',
+            'target'      => 'https://www.rostlab.org/teaching/ss18/pp1cs',
+        ]
     ];
 
     private $synonyms = [
@@ -287,7 +291,7 @@ class Route {
             'hunger', 'mensabot', 'mensabot2', 'roombot', 'rooms', 'app', 'c', 'm', 'sp', 'ma-sp', 'wi-sp', 'wi-ma-sp', 'stuff', 'reddit', 'vorkurs', 'statista', 'shuttle', 'sharelatex',
         ],
         'Electives'   => [
-            'pl', 'gki', 'conpra', 'ged', 'pgm', 'gog', 'artemis', 'csc', 'scivis', 'ase', 'qo', 'netsec', 'modsim'
+            'pl', 'gki', 'conpra', 'ged', 'pgm', 'gog', 'artemis', 'csc', 'scivis', 'ase', 'qo', 'netsec', 'modsim', 'pp'
         ],
     ];
 
