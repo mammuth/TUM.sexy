@@ -291,6 +291,7 @@ class Route {
         'protein' => 'pp',
         'queer'   => 'diversity',
         'rooms'   => 'rooms',
+        'la' => 'linalg',
     ];
 
     /**
