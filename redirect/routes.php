@@ -253,6 +253,10 @@ class Route {
         'pp' => [
             'description' => 'Protein Prediction 1',
             'target'      => 'https://www.rostlab.org/teaching/ss18/pp1cs',
+        ],
+        'mvs' => [
+            'description' => 'Mobile Verteilte Systeme',
+            'target'      => 'https://www.os.in.tum.de/studium-und-lehre/ss18/mobile-verteilte-systeme/',
         ]
     ];
 
@@ -264,6 +268,7 @@ class Route {
         'latex' =>  'sharelatex',
         'tex' =>  'sharelatex',
         'netz' => 'grnvs',
+        'protein' => 'pp',
     ];
 
     /**
@@ -291,7 +296,7 @@ class Route {
             'hunger', 'mensabot', 'mensabot2', 'roombot', 'rooms', 'app', 'c', 'm', 'sp', 'ma-sp', 'wi-sp', 'wi-ma-sp', 'stuff', 'reddit', 'vorkurs', 'statista', 'shuttle', 'sharelatex',
         ],
         'Electives'   => [
-            'pl', 'gki', 'conpra', 'ged', 'pgm', 'gog', 'artemis', 'csc', 'scivis', 'ase', 'qo', 'netsec', 'modsim', 'pp'
+            'pl', 'gki', 'conpra', 'ged', 'pgm', 'gog', 'artemis', 'csc', 'scivis', 'ase', 'qo', 'netsec', 'modsim', 'pp', 'mvs',
         ],
     ];
 
