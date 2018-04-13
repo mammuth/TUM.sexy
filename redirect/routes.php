@@ -257,7 +257,8 @@ class Route {
         'mvs' => [
             'description' => 'Mobile Verteilte Systeme',
             'target'      => 'https://www.os.in.tum.de/studium-und-lehre/ss18/mobile-verteilte-systeme/',
-        ]
+            'moodle_id'   => '38940',
+        ],
     ];
 
     private $synonyms = [
