@@ -2,6 +2,7 @@
 
 define('SHUTTLE_URL', 'https://wzw.tum.de/index.php?id=416');
 define('SHUTTLE_CACHE_KEY', 'SHUTTLE_CACHE_HTML');
+libxml_use_internal_errors(true);
 
 if (apcu_exists(SHUTTLE_CACHE_KEY)) {
     $html = apcu_fetch(SHUTTLE_CACHE_KEY);
