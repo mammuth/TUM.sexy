@@ -252,7 +252,7 @@ class Route {
         ],
         'pp' => [
             'description' => 'Protein Prediction 1',
-            'target'      => 'https://www.rostlab.org/teaching/ss18/pp1cs',
+            'target'      => 'https://www.rostlab.org/teaching/sose18/pp1cs',
         ],
         'mvs' => [
             'description' => 'Mobile Verteilte Systeme',
