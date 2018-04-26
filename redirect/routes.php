@@ -144,7 +144,7 @@ class Route {
         ],
         'artemis'      => [
             'description' => 'ArTEMIS platform of the Prof. Brügge, Chair 1',
-            'target'      => 'https://exercisebruegge.in.tum.de/#/courses',
+            'target'      => 'https://artemis.ase.in.tum.de',
         ],
         'sp'           => [
             'description' => 'Studienplan B.Sc. Informatik',
