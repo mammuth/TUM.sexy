@@ -173,18 +173,12 @@ class Route {
         'eist'         => [
             'description' => 'Einführung in die Softwaretechnik',
             'target'      => 'https://www1.in.tum.de/lehrstuhl_1/teaching/summer-2018/121-teaching/st18/963-eist-2018',
-        ],
-        'meist'         => [
-            'description' => 'Einführung in die Softwaretechnik Moodle Kurs',
-            'target'      => 'https://www.moodle.tum.de/course/view.php?id=39072',
+            'moodle_id'   => '39072'
         ],
         'gad'          => [
             'description' => 'Grundlegende Algorithmen und Datenstrukturen',
             'target'      => 'http://campar.in.tum.de/Chair/TeachingSs18GAD',
-        ],
-        'mgad'          =>[
-            'description' =>'Grundlagen: Algorithmen und Datenstrukturen Moodle Kurs',
-            'target'      => 'https://www.moodle.tum.de/course/view.php?id=40888',
+            'moodle_id'   => '40888'
         ],
         'linalg'          => [
             'description' => 'Lineare Algebra für Informatik',
@@ -293,7 +287,7 @@ class Route {
             'info1', 'pgdp', 'era', 'ds', 'carlos',
         ],
         '2. Semester' => [
-            'eist', 'meist', 'gad', 'mgad', 'erapraktikum', 'linalg', 'ged',
+            'eist', 'gad', 'erapraktikum', 'linalg', 'ged',
         ],
         '3. Semester' => [
             'anal', 'info2', 'db', 'gbs',
