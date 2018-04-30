@@ -173,10 +173,12 @@ class Route {
         'eist'         => [
             'description' => 'Einführung in die Softwaretechnik',
             'target'      => 'https://www1.in.tum.de/lehrstuhl_1/teaching/summer-2018/121-teaching/st18/963-eist-2018',
+            'moodle_id'   => '39072'
         ],
         'gad'          => [
             'description' => 'Grundlegende Algorithmen und Datenstrukturen',
             'target'      => 'http://campar.in.tum.de/Chair/TeachingSs18GAD',
+            'moodle_id'   => '40888'
         ],
         'linalg'          => [
             'description' => 'Lineare Algebra für Informatik',
