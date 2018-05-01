@@ -331,14 +331,12 @@ class Route {
         if (isset($this->synonyms[$redirectUrl])) {
             $redirectUrl = $this->synonyms[$redirectUrl];
         }
-        //moodle support; example: mgad.tum.sexy
-        elseif (strlen($redirectUrl) > 1 && substr($redirectUrl, 0, 1) === 'm' && !isset($this->routes[$redirectUrl])){
-            $tmp = substr($redirectUrl, 1);
-            if (isset($this->synonyms[$tmp])) {
-                $redirectUrl = $this->synonyms[$tmp];
-            }
-            else {
-                $redirectUrl = $tmp;
+        //Moodle support; Example: mgad.tum.sexy
+        elseif (strlen($redirectUrl) > 1 && $redirectUrl[0] == 'm' && !isset($this->routes[$redirectUrl])){
+            $redirectUrl = substr($redirectUrl, 1);
+            //Allow for synonyms as well in moodle redirects
+            if (isset($this->synonyms[$redirectUrl])) {
+                $redirectUrl = $this->synonyms[$redirectUrl];
             }
             $siteType = 'm';
         }
