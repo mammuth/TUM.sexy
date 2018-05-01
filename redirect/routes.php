@@ -332,15 +332,15 @@ class Route {
             $redirectUrl = $this->synonyms[$redirectUrl];
         }
         //moodle support; example: mgad.tum.sexy
-        elseif ( strlen($redirectUrl)>1 && substr($redirectUrl,0,1)==='m' && !isset($this->routes[$redirectUrl])){
-            $tmp= substr($redirectUrl, 1);
+        elseif (strlen($redirectUrl) > 1 && substr($redirectUrl, 0, 1) === 'm' && !isset($this->routes[$redirectUrl])){
+            $tmp = substr($redirectUrl, 1);
             if (isset($this->synonyms[$tmp])) {
                 $redirectUrl = $this->synonyms[$tmp];
             }
-            else{
-                $redirectUrl=$tmp;
+            else {
+                $redirectUrl = $tmp;
             }
-            $siteType='m';
+            $siteType = 'm';
         }
 
         //If it does not exist? Go to main page
