@@ -269,7 +269,7 @@ class Route {
 
     private $synonyms = [
         'erapra' => 'erapraktikum',
-        'ma-sp'  => 'sp-ma',
+        'sp-ma'  => 'ma-sp',
         'eidi'  =>  'info1',
         'eidi2' =>  'info2',
         'latex' =>  'sharelatex',
@@ -330,6 +330,15 @@ class Route {
         //Yea, we have multiple names for the same thing
         if (isset($this->synonyms[$redirectUrl])) {
             $redirectUrl = $this->synonyms[$redirectUrl];
+        }
+        //Moodle support; Example: mgad.tum.sexy
+        elseif (strlen($redirectUrl) > 1 && $redirectUrl[0] == 'm' && !isset($this->routes[$redirectUrl])){
+            $redirectUrl = substr($redirectUrl, 1);
+            //Allow for synonyms as well in moodle redirects
+            if (isset($this->synonyms[$redirectUrl])) {
+                $redirectUrl = $this->synonyms[$redirectUrl];
+            }
+            $siteType = 'm';
         }
 
         //If it does not exist? Go to main page
