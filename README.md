@@ -3,7 +3,7 @@ TUM.sexy
 
 [![Build Status](https://travis-ci.org/mammuth/TUM.sexy.svg?branch=master)](https://travis-ci.org/mammuth/TUM.sexy)
 
-Code of http://tum.sexy. A website providing some links, redirects and tools regarding the Technical University Munich
+Code of https://tum.sexy. A website providing some links, redirects and tools regarding the Technical University Munich
 
 
 **Redirects** like
@@ -13,7 +13,7 @@ Code of http://tum.sexy. A website providing some links, redirects and tools reg
 * ...
 
 **Projects** like
-* CalProxy: Removes clutter from TUMOnline Calendar and optimizes it (https://tum.sexy/calendar/)
+* CalProxy: Removes clutter from TUMOnline Calendar and optimizes it (https://cal.bruck.me/)
 
 ### Contributing
 
