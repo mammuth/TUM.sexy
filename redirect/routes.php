@@ -110,6 +110,10 @@ class Route {
             'description' => 'Einführung in die theoretische Informatik',
             'target'      => 'https://www7.in.tum.de/um/courses/theo/ss2018/',
         ],
+        'theojudge'    => [
+            'description' => 'TUMjudge - Einführung in die theoretische Informatik',
+            'target'      => 'https://judge.in.tum.de/theo/public/',
+        ],
         'info1'        => [
             'description' => 'Einführung in die Informatik 1',
             'target'      => 'http://www14.in.tum.de/lehre/2017WS/info1/index.html.de',
@@ -293,7 +297,7 @@ class Route {
             'anal', 'info2', 'db', 'gbs',
         ],
         '4. Semester' => [
-            'grnvs', 'theo', 'dwt',
+            'grnvs', 'theo', 'theojudge', 'dwt',
         ],
         '5. Semester' => [
             'numprog',
