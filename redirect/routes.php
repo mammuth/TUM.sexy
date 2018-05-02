@@ -2,47 +2,43 @@
 
 class Route {
     private $routes = [
-        'hunger'    => [
+        'hunger'       => [
             'description' => 'FMI Bistro Speiseplan',
-            'target'      => 'http://tum.sexy/hunger',
+            'target'      => 'https://tum.sexy/hunger',
         ],
-        'mensabot'  => [
+        'mensabot'     => [
             'description' => 'TUMMensabot für Telegram',
             'target'      => 'https://t.me/TUMMensabot',
         ],
-        'mensabot2' => [
+        'mensabot2'    => [
             'description' => 'Hübscher Telegram-MensaBot',
             'target'      => 'https://t.me/MensaMUCBot',
         ],
-        'roombot' => [
+        'roombot'      => [
             'description' => 'Roomfinder als Telegram Bot',
             'target'      => 'https://t.me/tumroomsbot',
         ],
-        'rooms'     => [
+        'room'         => [
             'description' => 'Lernräume',
             'target'      => 'https://www.devapp.it.tum.de/iris/app/',
         ],
-        'room'      => [
-            'description' => 'Lernräume',
-            'target'      => 'https://www.devapp.it.tum.de/iris/app/',
-        ],
-        'c'         => [
+        'c'            => [
             'description' => 'TUM Online',
             'target'      => 'https://campus.tum.de/',
         ],
-        'm'         => [
+        'm'            => [
             'description' => 'Moodle',
             'target'      => 'https://www.moodle.tum.de/auth/shibboleth/index.php',
         ],
-        'o'         => [
+        'o'            => [
             'description' => 'TUM Opac',
             'target'      => 'https://www.ub.tum.de/tum-opac',
         ],
-        'stuff'     => [
+        'stuff'        => [
             'description' => 'Unistuff (ehemals Tumstuff)',
             'target'      => 'https://unistuff.org',
         ],
-        'reddit'    => [
+        'reddit'       => [
             'description' => 'ReddiTUM',
             'target'      => 'https://reddit.com/r/redditum',
         ],
@@ -118,7 +114,7 @@ class Route {
             'description' => 'Einführung in die Informatik 1',
             'target'      => 'http://www14.in.tum.de/lehre/2017WS/info1/index.html.de',
         ],
-        'pgdp'        => [
+        'pgdp'         => [
             'description' => 'Praktikum Grundlagen der Programmierung (Moodle-Kurs)',
             'target'      => 'https://www.moodle.tum.de/course/view.php?id=35284',
         ],
@@ -172,19 +168,19 @@ class Route {
         ],
         'eduroam'      => [
             'description' => 'HowTo: Setup eduroam securely!',
-            'target'      => 'http://tum.sexy/eduroam.php',
+            'target'      => 'https://tum.sexy/eduroam.php',
         ],
         'eist'         => [
             'description' => 'Einführung in die Softwaretechnik',
             'target'      => 'https://www1.in.tum.de/lehrstuhl_1/teaching/summer-2018/121-teaching/st18/963-eist-2018',
-            'moodle_id'   => '39072'
+            'moodle_id'   => '39072',
         ],
         'gad'          => [
             'description' => 'Grundlegende Algorithmen und Datenstrukturen',
             'target'      => 'http://campar.in.tum.de/Chair/TeachingSs18GAD',
-            'moodle_id'   => '40888'
+            'moodle_id'   => '40888',
         ],
-        'linalg'          => [
+        'linalg'       => [
             'description' => 'Lineare Algebra für Informatik',
             'target'      => 'https://www.moodle.tum.de/course/view.php?id=41011',
         ],
@@ -228,7 +224,7 @@ class Route {
             'description' => 'Advanced Topics In Software Engineering',
             'target'      => 'https://www.moodle.tum.de/course/view.php?id=35023',
         ],
-        'qo'          => [
+        'qo'           => [
             'description' => 'Query Optimization',
             'target'      => 'https://db.in.tum.de/teaching/ws1718/queryopt/',
         ],
@@ -236,48 +232,48 @@ class Route {
             'description' => 'Geometriekalküle',
             'target'      => 'https://www-m10.ma.tum.de/bin/view/Lehre/WS1718/GeometrieKalkueleWS1718',
         ],
-        'satellite'          => [
+        'satellite'    => [
             'description' => 'The TUM Satellite',
             'target'      => 'https://www.move2space.de/',
         ],
-        'shuttle'          => [
+        'shuttle'      => [
             'description' => 'WZW-GAR-MUC shuttle schedule',
-            'target'      => 'http://tum.sexy/shuttle/',
+            'target'      => 'https://tum.sexy/shuttle/',
         ],
-        'statista' => [
+        'statista'     => [
             'description' => 'Statista',
             'target'      => 'https://de-statista-com.eaccess.ub.tum.de',
         ],
-        'sharelatex' => [
+        'sharelatex'   => [
             'description' => 'ShareLaTeX@TUM',
             'target'      => 'https://sharelatex.tum.de/',
         ],
-        'modsim' => [
+        'modsim'       => [
             'description' => 'Modellbildung und Simulation',
             'target'      => 'https://www5.in.tum.de/wiki/index.php/Modeling_and_Simulation_-_Summer_18',
         ],
-        'pp' => [
+        'pp'           => [
             'description' => 'Protein Prediction 1',
             'target'      => 'https://www.rostlab.org/teaching/sose18/pp1cs',
         ],
-        'mvs' => [
+        'mvs'          => [
             'description' => 'Mobile Verteilte Systeme',
             'target'      => 'https://www.os.in.tum.de/studium-und-lehre/ss18/mobile-verteilte-systeme/',
             'moodle_id'   => '38940',
         ],
-        'adlr' => [
+        'adlr'         => [
             'description' => 'Advanced Deep Learning for Robotics',
             'target'      => 'https://bbaeuml.github.io/ss18-advanced-dl-for-robotics/docs/index.html',
         ],
-        'diversity' => [
+        'diversity'    => [
             'description' => 'Diversity & Queer Referat',
             'target'      => 'https://www.asta.tum.de/studentische-vertretung/asta/aemter/diversityqueer/',
         ],
-        'asta' => [
+        'asta'         => [
             'description' => 'Studentische Vertretung – AStA',
             'target'      => 'https://www.asta.tum.de',
         ],
-        'slam' => [
+        'slam'         => [
             'description' => 'TUM Hörsaal Slam',
             'target'      => 'https://www.facebook.com/events/112801979587860/',
         ],
@@ -285,15 +281,16 @@ class Route {
 
     // Format is: <source / synonym> => <target> - the target must be present in the $routes array
     private $synonyms = [
-        'erapra' => 'erapraktikum',
-        'sp-ma'  => 'ma-sp',
-        'eidi'  =>  'info1',
-        'eidi2' =>  'info2',
-        'latex' =>  'sharelatex',
-        'tex' =>  'sharelatex',
-        'netz' => 'grnvs',
+        'erapra'  => 'erapraktikum',
+        'sp-ma'   => 'ma-sp',
+        'eidi'    => 'info1',
+        'eidi2'   => 'info2',
+        'latex'   => 'sharelatex',
+        'tex'     => 'sharelatex',
+        'netz'    => 'grnvs',
         'protein' => 'pp',
-        'queer' => 'diversity',
+        'queer'   => 'diversity',
+        'rooms'   => 'rooms',
     ];
 
     /**
@@ -328,13 +325,13 @@ class Route {
     public function getTargetOfSub($host) {
         //Split up the requested host into parts and filter out unneeded info
         $domain = explode('.', $host);
-        $domain = array_filter($domain, function($e){
+        $domain = array_filter($domain, function ($e) {
             return $e !== 'sexy' && $e !== 'tum' && $e !== 'www';
         });
 
         //First item should be a site type: tutor, moodle or other
         $siteType = null;
-        if(count($domain) > 1) {
+        if (count($domain) > 1) {
             $siteType = array_shift($domain);
         }
         $redirectUrl = array_shift($domain);
@@ -348,30 +345,32 @@ class Route {
         //Yea, we have multiple names for the same thing
         if (isset($this->synonyms[$redirectUrl])) {
             $redirectUrl = $this->synonyms[$redirectUrl];
-        }
-        //Moodle support; Example: mgad.tum.sexy
-        elseif (strlen($redirectUrl) > 1 && $redirectUrl[0] == 'm' && !isset($this->routes[$redirectUrl])){
-            $redirectUrl = substr($redirectUrl, 1);
-            //Allow for synonyms as well in moodle redirects
-            if (isset($this->synonyms[$redirectUrl])) {
-                $redirectUrl = $this->synonyms[$redirectUrl];
+        } //Moodle support; Example: mgad.tum.sexy
+        else {
+            if (strlen($redirectUrl) > 1 && $redirectUrl[0] == 'm' && !isset($this->routes[$redirectUrl])) {
+                $redirectUrl = substr($redirectUrl, 1);
+                $siteType = 'm';
+                //Allow for synonyms as well in moodle redirects
+                if (isset($this->synonyms[$redirectUrl])) {
+                    $redirectUrl = $this->synonyms[$redirectUrl];
+                }
             }
-            $siteType = 'm';
         }
 
         //If it does not exist? Go to main page
         if (!isset($this->routes[$redirectUrl])) {
-            return 'http://tum.sexy/';
+            return 'https://tum.sexy/';
         }
 
         //In case we actually want to go to a different target than the actual redirect
         switch ($siteType) {
-            case 'm' :  
+            case 'm' :
                 // This is a moodle redirect like m.info1.tum.sexy
                 $moodle_id = $this->routes[$redirectUrl]['moodle_id'];
                 if (!isset($moodle_id)) {
                     return $this->routes[$redirectUrl]['target'];  // Fallback to target if moodle id is unknown
                 }
+
                 return 'https://www.moodle.tum.de/course/view.php?id=' . $moodle_id;
         }
 

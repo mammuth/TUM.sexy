@@ -6,10 +6,10 @@ class MainTest extends \PHPUnit\Framework\TestCase {
         $router = new Route();
 
         // Normal redirect
-        $this->assertEquals('http://tum.sexy/hunger', $router->getTargetOfSub('hunger.tum.sexy'));
+        $this->assertEquals('https://tum.sexy/hunger', $router->getTargetOfSub('hunger.tum.sexy'));
 
         // Not found redirect
-        $this->assertEquals('http://tum.sexy/', $router->getTargetOfSub('kjhdsfjkdfsgkjldsfgkjl.tum.sexy'));
+        $this->assertEquals('https://tum.sexy/', $router->getTargetOfSub('kjhdsfjkdfsgkjldsfgkjl.tum.sexy'));
 
         // SiteType redirect to moodle
         $this->assertContains('https://www.moodle.tum.de/course/view.php?id=36704', $router->getTargetOfSub('m.anal.tum.sexy'));
