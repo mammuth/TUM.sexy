@@ -269,8 +269,21 @@ class Route {
             'description' => 'Advanced Deep Learning for Robotics',
             'target'      => 'https://bbaeuml.github.io/ss18-advanced-dl-for-robotics/docs/index.html',
         ],
+        'diversity' => [
+            'description' => 'Diversity & Queer Referat',
+            'target'      => 'https://www.asta.tum.de/studentische-vertretung/asta/aemter/diversityqueer/',
+        ],
+        'asta' => [
+            'description' => 'Studentische Vertretung – AStA',
+            'target'      => 'https://www.asta.tum.de',
+        ],
+        'slam' => [
+            'description' => 'TUM Hörsaal Slam',
+            'target'      => 'https://www.facebook.com/events/112801979587860/',
+        ],
     ];
 
+    // Format is: <source / synonym> => <target> - the target must be present in the $routes array
     private $synonyms = [
         'erapra' => 'erapraktikum',
         'sp-ma'  => 'ma-sp',
@@ -280,6 +293,7 @@ class Route {
         'tex' =>  'sharelatex',
         'netz' => 'grnvs',
         'protein' => 'pp',
+        'queer' => 'diversity',
     ];
 
     /**
