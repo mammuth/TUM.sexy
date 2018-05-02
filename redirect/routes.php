@@ -269,7 +269,7 @@ class Route {
 
     private $synonyms = [
         'erapra' => 'erapraktikum',
-        'ma-sp'  => 'sp-ma',
+        'sp-ma'  => 'ma-sp',
         'eidi'  =>  'info1',
         'eidi2' =>  'info2',
         'latex' =>  'sharelatex',
