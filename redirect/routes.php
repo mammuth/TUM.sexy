@@ -329,7 +329,7 @@ class Route {
             return $e !== 'sexy' && $e !== 'tum' && $e !== 'www';
         });
 
-        //First item should be a site type: tutor, moodle or other
+        //DEPRECATED - First item should be a site type: tutor, moodle or other
         $siteType = null;
         if (count($domain) > 1) {
             $siteType = array_shift($domain);
