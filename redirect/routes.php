@@ -277,6 +277,14 @@ class Route {
             'description' => 'TUM Hörsaal Slam',
             'target'      => 'https://www.facebook.com/events/112801979587860/',
         ],
+        'sbrml'        => [
+            'description' => 'Sensorbased Robotic Manipulation and Locomotion',
+            'target'      => 'http://www23.in.tum.de/index.php?id=6598'
+        ],
+        'rpchi'        => [
+            'description' => 'Robot Programming and Control for Human Interaction',
+            'target'      => 'http://www23.in.tum.de/index.php?id=6680'
+        ],
     ];
 
     // Format is: <source / synonym> => <target> - the target must be present in the $routes array
@@ -318,7 +326,7 @@ class Route {
             'hunger', 'mensabot', 'mensabot2', 'roombot', 'room', 'app', 'c', 'm', 'sp', 'ma-sp', 'wi-sp', 'wi-ma-sp', 'stuff', 'reddit', 'vorkurs', 'statista', 'shuttle', 'sharelatex',
         ],
         'Electives'   => [
-            'pl', 'gki', 'conpra', 'ged', 'pgm', 'gog', 'artemis', 'csc', 'scivis', 'ase', 'qo', 'netsec', 'modsim', 'pp', 'mvs', 'adlr',
+            'pl', 'gki', 'conpra', 'ged', 'pgm', 'gog', 'artemis', 'csc', 'scivis', 'ase', 'qo', 'netsec', 'modsim', 'pp', 'mvs', 'adlr', 'sbrml', 'rpchi'
         ],
     ];
 
