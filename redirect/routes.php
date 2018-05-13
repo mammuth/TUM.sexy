@@ -285,6 +285,10 @@ class Route {
             'description' => 'Robot Programming and Control for Human Interaction',
             'target'      => 'http://www23.in.tum.de/index.php?id=6680'
         ],
+        'wahl'        => [
+            'description' => 'Hochschulwahlen',
+            'target'      => 'https://www.asta.tum.de/wahl/'
+        ],
     ];
 
     // Format is: <source / synonym> => <target> - the target must be present in the $routes array
