@@ -293,6 +293,10 @@ class Route {
             'description' => 'Algorithmic Game Theory',
             'target'      => 'http://dss.in.tum.de/teaching/36-teaching/semester/sommersemster-2018/183-algorithmic-game-theory-ss2018.html'
         ],
+        'io' => [
+            'description' => 'Information Officer',
+            'target'      => 'https://www.asta.tum.de/studentische-vertretung/asta/aemter/information-office-io/',
+        ],
     ];
 
     // Format is: <source / synonym> => <target> - the target must be present in the $routes array
