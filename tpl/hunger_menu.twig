@@ -3,16 +3,14 @@
 {% if week == null %}
     <p>An error occured while fetching the {{ title }} menu.</p>
 {% else %}
-    {% for day in week %}
-        {% if  day.getDate() | date('Y-m-d') >= "now" | date('Y-m-d') %}
-            <strong>{{day.getDate() | date("l, F j")}}<sup>{{day.getDate() | date("S")}}</sup></strong>
-            <ul class="hunger-menu">
-            {% for dish in day %}
-                <li data-balloon="{{ dish.getPrice() | number_format(2, '.', ',') }} €" data-balloon-pos="up" onclick="void(0)">
-                    {{ dish.getName() }}
-                </li>
-            {% endfor %}
-            </ul>
-        {% endif %}
+    {% for day in week[:5] %}
+        <strong>{{day.getDate() | date("l, F j")}}<sup>{{day.getDate() | date("S")}}</sup></strong>
+        <ul class="hunger-menu">
+        {% for dish in day %}
+            <li data-balloon="{{ dish.getPrice() | number_format(2, '.', ',') }} €" data-balloon-pos="up" onclick="void(0)">
+                {{ dish.getName() }}
+            </li>
+        {% endfor %}
+        </ul>
     {% endfor %}
 {% endif %}
