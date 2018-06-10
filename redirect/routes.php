@@ -297,6 +297,10 @@ class Route {
             'description' => 'Information Officer',
             'target'      => 'https://www.asta.tum.de/studentische-vertretung/asta/aemter/information-office-io/',
         ],
+        'csd' => [
+            'description' => 'CSD Parade',
+            'target'      => 'https://pride.tum.sexy',
+        ],
     ];
 
     // Format is: <source / synonym> => <target> - the target must be present in the $routes array
