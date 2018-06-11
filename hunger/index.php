@@ -13,7 +13,7 @@ $locations = [
     'fmiBistroWeek' => Locations::FMI_BISTRO,
     'ippBistroWeek' => Locations::IPP_BISTRO,
     'mensaWeek' => Locations::MENSA_GARCHING,
-    'stucafeMaschbauWeek' => Locations::STUCAFE_BOLTZMANNSTRASSE
+    // 'stucafeMaschbauWeek' => Locations::STUCAFE_BOLTZMANNSTRASSE
 ];
 
 $output = [];
