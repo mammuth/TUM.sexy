@@ -136,7 +136,7 @@ class Route {
         ],
         'csc'          => [
             'description' => 'Computational Social Choice',
-            'target'      => 'http://dss.in.tum.de/33-teaching/semester/wintersemester-2016-17/153-computational-social-choice-ws-2016-17.html',
+            'target'      => 'http://dss.in.tum.de/teaching/ws-18-19/37-teaching/semester/wintersemster-2018-19/193-computational-social-choice-2018-19.html',
         ],
         'eval'         => [
             'description' => 'Evaluation of Lectures',
