@@ -13,7 +13,7 @@ $locations = [
     'fmiBistroWeek' => Locations::FMI_BISTRO,
     'ippBistroWeek' => Locations::IPP_BISTRO,
     'mensaWeek' => Locations::MENSA_GARCHING,
-    // 'stucafeMaschbauWeek' => Locations::STUCAFE_BOLTZMANNSTRASSE
+    'stucafeMaschbauWeek' => Locations::STUCAFE_BOLTZMANNSTRASSE
 ];
 
 $output = [];
@@ -23,13 +23,13 @@ foreach ($locations as $viewKey => $apiName) {
         $thisWeek = array_filter($thisWeek, function (Day $day) {
             return $day->getDate() > new DateTime('today midnight');
         });
-    } catch (NetworkingException|DayNotFoundException $e) {
+    } catch (NetworkingException|DayNotFoundException|TypeError $e) {
         $thisWeek = [];
     }
 
     try {
         $nextWeek = iterator_to_array($fmeat->getNextWeekForLocation($apiName));
-    } catch (NetworkingException|DayNotFoundException $e) {
+    } catch (NetworkingException|DayNotFoundException|TypeError $e) {
         $nextWeek = [];
     }
 
