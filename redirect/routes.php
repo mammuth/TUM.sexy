@@ -319,6 +319,7 @@ class Route {
         'protein' => 'pp',
         'queer'   => 'diversity',
         'rooms'   => 'room',
+        'match'   => 'matching',
     ];
 
     /**
