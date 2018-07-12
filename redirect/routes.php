@@ -303,7 +303,7 @@ class Route {
         ],
         'matching'       => [
             'description' => 'IN.TUM-Matching-System',
-            'target'      => 'https://matching.in.tum.de/',
+            'target'      => 'https://matching.in.tum.de/saml2/login/',
         ],
     ];
 
