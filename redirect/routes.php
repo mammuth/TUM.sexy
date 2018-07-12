@@ -136,7 +136,7 @@ class Route {
         ],
         'csc'          => [
             'description' => 'Computational Social Choice',
-            'target'      => 'http://dss.in.tum.de/33-teaching/semester/wintersemester-2016-17/153-computational-social-choice-ws-2016-17.html',
+            'target'      => 'http://dss.in.tum.de/teaching/ws-18-19/37-teaching/semester/wintersemster-2018-19/193-computational-social-choice-2018-19.html',
         ],
         'eval'         => [
             'description' => 'Evaluation of Lectures',
@@ -198,7 +198,7 @@ class Route {
         ],
         'erapraktikum' => [
             'description' => 'Praktikum - Einführung in die Rechnerarchitektur',
-            'target'      => 'https://www.lrr.in.tum.de/lehre/sommersemester-18/praktika/praktikum-rechnerarchitektur/',
+            'target'      => 'https://www.caps.in.tum.de/lehre/ss18/praktika/praktikum-rechnerarchitektur/',
         ],
         'ged'          => [
             'description' => 'Game Engine Design',
@@ -277,6 +277,34 @@ class Route {
             'description' => 'TUM Hörsaal Slam',
             'target'      => 'https://www.facebook.com/events/112801979587860/',
         ],
+        'sbrml'        => [
+            'description' => 'Sensorbased Robotic Manipulation and Locomotion',
+            'target'      => 'http://www23.in.tum.de/index.php?id=6598'
+        ],
+        'rpchi'        => [
+            'description' => 'Robot Programming and Control for Human Interaction',
+            'target'      => 'http://www23.in.tum.de/index.php?id=6680'
+        ],
+        'wahl'        => [
+            'description' => 'Hochschulwahlen',
+            'target'      => 'https://www.asta.tum.de/wahl/'
+        ],
+        'agt'        => [
+            'description' => 'Algorithmic Game Theory',
+            'target'      => 'http://dss.in.tum.de/teaching/36-teaching/semester/sommersemster-2018/183-algorithmic-game-theory-ss2018.html'
+        ],
+        'io' => [
+            'description' => 'Information Officer',
+            'target'      => 'https://www.asta.tum.de/studentische-vertretung/asta/aemter/information-office-io/',
+        ],
+        'csd' => [
+            'description' => 'CSD Parade',
+            'target'      => 'https://pride.tum.sexy',
+        ],
+        'matching'       => [
+            'description' => 'IN.TUM-Matching-System',
+            'target'      => 'https://matching.in.tum.de/saml2/login/',
+        ],
     ];
 
     // Format is: <source / synonym> => <target> - the target must be present in the $routes array
@@ -290,7 +318,8 @@ class Route {
         'netz'    => 'grnvs',
         'protein' => 'pp',
         'queer'   => 'diversity',
-        'rooms'   => 'rooms',
+        'rooms'   => 'room',
+        'match'   => 'matching',
         'la' => 'linalg',
     ];
 
@@ -316,10 +345,10 @@ class Route {
         ],
         '6. Semester' => [],
         'Special'     => [
-            'hunger', 'mensabot', 'mensabot2', 'roombot', 'rooms', 'app', 'c', 'm', 'sp', 'ma-sp', 'wi-sp', 'wi-ma-sp', 'stuff', 'reddit', 'vorkurs', 'statista', 'shuttle', 'sharelatex',
+            'hunger', 'mensabot', 'mensabot2', 'roombot', 'room', 'app', 'c', 'm', 'sp', 'ma-sp', 'wi-sp', 'wi-ma-sp', 'stuff', 'reddit', 'vorkurs', 'statista', 'shuttle', 'sharelatex', 'matching',
         ],
         'Electives'   => [
-            'pl', 'gki', 'conpra', 'ged', 'pgm', 'gog', 'artemis', 'csc', 'scivis', 'ase', 'qo', 'netsec', 'modsim', 'pp', 'mvs', 'adlr',
+            'pl', 'gki', 'conpra', 'ged', 'pgm', 'gog', 'artemis', 'csc', 'scivis', 'ase', 'qo', 'netsec', 'modsim', 'pp', 'mvs', 'adlr', 'sbrml', 'rpchi', 'agt'
         ],
     ];
 
@@ -330,7 +359,7 @@ class Route {
             return $e !== 'sexy' && $e !== 'tum' && $e !== 'www';
         });
 
-        //First item should be a site type: tutor, moodle or other
+        //DEPRECATED - First item should be a site type: tutor, moodle or other
         $siteType = null;
         if (count($domain) > 1) {
             $siteType = array_shift($domain);
