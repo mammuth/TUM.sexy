@@ -301,6 +301,10 @@ class Route {
             'description' => 'CSD Parade',
             'target'      => 'https://pride.tum.sexy',
         ],
+        'matching'       => [
+            'description' => 'IN.TUM-Matching-System',
+            'target'      => 'https://matching.in.tum.de/',
+        ],
     ];
 
     // Format is: <source / synonym> => <target> - the target must be present in the $routes array
