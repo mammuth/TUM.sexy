@@ -320,6 +320,7 @@ class Route {
         'queer'   => 'diversity',
         'rooms'   => 'room',
         'match'   => 'matching',
+        'la' => 'linalg',
     ];
 
     /**
