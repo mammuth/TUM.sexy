@@ -154,6 +154,14 @@ class Route {
             'description' => 'Studienplan M.Sc. Informatik',
             'target'      => 'https://www.in.tum.de/fuer-studierende/master-studiengaenge/informatik/studienplan/fpo-2007-und-fpsos-seit-2012.html',
         ],
+        'ge-sp'        => [
+            'description' => 'Studienplan B.Sc. Informatik: Games Engineering',
+            'target'      => 'https://www.in.tum.de/fuer-studierende/bachelor-studiengaenge/informatik-games-engineering/studienplan-games/studienbeginn-ab-ws-201617-games/',
+        ],
+        'ge-ma-sp'     => [
+            'description' => 'Studienplan M.Sc. Informatik: Games Engineering',
+            'target'      => 'https://www.in.tum.de/de/fuer-studierende/master-studiengaenge/informatik-games-engineering/curriculum/',
+        ],
         'wi-sp'        => [
             'description' => 'Studienplan B.Sc. Wirtschaftsinformatik',
             'target'      => 'https://www.in.tum.de/fuer-studierende/bachelor-studiengaenge/wirtschaftsinformatik/studienplan/studienbeginn-ab-ws-20162017.html',
@@ -345,7 +353,7 @@ class Route {
         ],
         '6. Semester' => [],
         'Special'     => [
-            'hunger', 'mensabot', 'mensabot2', 'roombot', 'room', 'app', 'c', 'm', 'sp', 'ma-sp', 'wi-sp', 'wi-ma-sp', 'stuff', 'reddit', 'vorkurs', 'statista', 'shuttle', 'sharelatex', 'matching',
+            'hunger', 'mensabot', 'mensabot2', 'roombot', 'room', 'app', 'c', 'm', 'sp', 'ma-sp', 'ge-sp', 'ge-ma-sp', 'wi-sp', 'wi-ma-sp', 'stuff', 'reddit', 'vorkurs', 'statista', 'shuttle', 'sharelatex', 'matching',
         ],
         'Electives'   => [
             'pl', 'gki', 'conpra', 'ged', 'pgm', 'gog', 'artemis', 'csc', 'scivis', 'ase', 'qo', 'netsec', 'modsim', 'pp', 'mvs', 'adlr', 'sbrml', 'rpchi', 'agt'
