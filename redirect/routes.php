@@ -164,11 +164,11 @@ class Route {
         ],
         'wi-sp'        => [
             'description' => 'Studienplan B.Sc. Wirtschaftsinformatik',
-            'target'      => 'https://www.in.tum.de/fuer-studierende/bachelor-studiengaenge/wirtschaftsinformatik/studienplan/studienbeginn-ab-ws-20162017.html',
+            'target'      => 'https://www.in.tum.de/fuer-studierende/bachelor-studiengaenge/wirtschaftsinformatik/studienplan/studienbeginn-ab-ws-20182019/',
         ],
         'wi-ma-sp'     => [
             'description' => 'Studienplan M.Sc. Wirtschaftsinformatik',
-            'target'      => 'https://www.in.tum.de/fuer-studierende/master-studiengaenge/wirtschaftsinformatik/studienplan/ab-ss-2014.html',
+            'target'      => 'https://www.in.tum.de/fuer-studierende/master-studiengaenge/wirtschaftsinformatik/studienplan/ab-sose-2018/',
         ],
         'app'          => [
             'description' => 'TUM Campus App',
