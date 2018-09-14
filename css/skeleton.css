@@ -40,17 +40,19 @@
   width: 100%; 
   box-sizing: border-box; }
 .row { 
-  margin-bottom: 2rem; }
-.row .column:first-child,        
-.row .columns:first-child { 
-  margin-left: 0; }
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
 
 /* For devices larger than 550px */
 @media (min-width: 550px) {
   
   .container .column,
   .container .columns {
-    margin-left: 4%; }
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 20px; }
   
   .container .one.column,
   .container .one.columns          { width: 4.66666666667%; }

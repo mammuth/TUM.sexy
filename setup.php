@@ -15,9 +15,19 @@ include __DIR__ . '/vendor/autoload.php';
 
 
 //Startup Twig
-Twig_Autoloader::register();
 $loader = new Twig_Loader_Filesystem(__DIR__ . '/tpl');
 $twig = new Twig_Environment($loader, [
     'cache' => __DIR__ . '/tmp/compile',
     'debug' => true
 ]);
+
+
+function renderTemplate($tplName = 'start', $vars) {
+    global $twig;
+    $vars['main_tpl'] = $tplName . '.twig';
+    echo $twig->render('main.twig', $vars);
+}
+
+//Add Donation info
+include __DIR__ . '/donateInfos.php';
+\Stripe\Stripe::setApiKey($stripe['secret_key']);

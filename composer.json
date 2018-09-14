@@ -1,6 +1,13 @@
 {
-    "require": {
-        "smalot/pdfparser": "^0.9",
-        "twig/twig": "^1.23"
-    }
+  "scripts": {
+    "test": "phpunit"
+  },
+  "require": {
+    "twig/twig": "^1.33",
+    "jpbernius/fmeat": "~1.2.0",
+    "stripe/stripe-php": "^5.9"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "6.4.*"
+  }
 }
