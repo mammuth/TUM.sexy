@@ -79,8 +79,7 @@ class Route {
         ],
         'gbs'          => [
             'description' => 'Grundlagen Betriebssystem und Systemsoftware',
-            'target'      => 'https://www.sec.in.tum.de/i20/teaching/ws2017/grundlagen-betriebssysteme-und-systemsoftware',
-            'moodle_id'   => '35140',
+            'target'      => 'https://www.cm.in.tum.de/teaching/gbs-1819/',
         ],
         'quintero'     => [
             'description' => 'Mathias Quintero',
@@ -293,23 +292,23 @@ class Route {
             'description' => 'Robot Programming and Control for Human Interaction',
             'target'      => 'http://www23.in.tum.de/index.php?id=6680'
         ],
-        'wahl'        => [
+        'wahl'         => [
             'description' => 'Hochschulwahlen',
             'target'      => 'https://www.asta.tum.de/wahl/'
         ],
-        'agt'        => [
+        'agt'          => [
             'description' => 'Algorithmic Game Theory',
             'target'      => 'http://dss.in.tum.de/teaching/36-teaching/semester/sommersemster-2018/183-algorithmic-game-theory-ss2018.html'
         ],
-        'io' => [
+        'io'           => [
             'description' => 'Information Officer',
             'target'      => 'https://www.asta.tum.de/studentische-vertretung/asta/aemter/information-office-io/',
         ],
-        'csd' => [
+        'csd'          => [
             'description' => 'CSD Parade',
             'target'      => 'https://pride.tum.sexy',
         ],
-        'matching'       => [
+        'matching'     => [
             'description' => 'IN.TUM-Matching-System',
             'target'      => 'https://matching.in.tum.de/saml2/login/',
         ],
@@ -328,7 +327,7 @@ class Route {
         'queer'   => 'diversity',
         'rooms'   => 'room',
         'match'   => 'matching',
-        'la' => 'linalg',
+        'la'      => 'linalg',
     ];
 
     /**
