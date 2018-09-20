@@ -79,8 +79,7 @@ class Route {
         ],
         'gbs'          => [
             'description' => 'Grundlagen Betriebssystem und Systemsoftware',
-            'target'      => 'https://www.sec.in.tum.de/i20/teaching/ws2017/grundlagen-betriebssysteme-und-systemsoftware',
-            'moodle_id'   => '35140',
+            'target'      => 'https://www.cm.in.tum.de/teaching/gbs-1819/',
         ],
         'quintero'     => [
             'description' => 'Mathias Quintero',
