@@ -312,6 +312,10 @@ class Route {
             'description' => 'IN.TUM-Matching-System',
             'target'      => 'https://matching.in.tum.de/saml2/login/',
         ],
+        'esn'          => [
+            'description' => 'ESN TUMi München',
+            'target'      => 'https://portal.mytum.de/veranstaltungen/ic/termine-tumi/index_html',
+        ],
     ];
 
     // Format is: <source / synonym> => <target> - the target must be present in the $routes array
