@@ -80,6 +80,7 @@ class Route {
         'gbs'          => [
             'description' => 'Grundlagen Betriebssystem und Systemsoftware',
             'target'      => 'https://www.cm.in.tum.de/teaching/gbs-1819/',
+            'moodle_id'   => '42019',
         ],
         'quintero'     => [
             'description' => 'Mathias Quintero',
