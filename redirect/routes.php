@@ -132,7 +132,7 @@ class Route {
         ],
         'vorkurs'      => [
             'description' => 'Mathematik Vorkurs für Informatiker',
-            'target'      => 'https://www.ma.tum.de/Vorkurse/Info/WebHome',
+            'target'      => 'https://vorkurse.ma.tum.de/Vorkurse/Info/WebHome',
         ],
         'csc'          => [
             'description' => 'Computational Social Choice',
