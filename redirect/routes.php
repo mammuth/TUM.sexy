@@ -65,8 +65,7 @@ class Route {
         ],
         'info2'        => [
             'description' => 'Einführung in die Informatik 2',
-            'target'      => 'https://www2.in.tum.de/hp/Main?nid=354',
-            'moodle_id'   => '35319',
+            'target'      => 'http://www2.in.tum.de/hp/Main?nid=380',
         ],
         'e2ocaml'      => [
             'description' => 'Einführung in die Informatik 2 OCAML HA-Abgabe',
