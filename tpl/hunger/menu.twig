@@ -1,7 +1,8 @@
 <h3>{{ title }}</h3>
 
 {% if week == null %}
-    <p>An error occured while fetching the {{ title }} menu.</p>
+    <p>An error occured while fetching the {{ title }} menu.<br />
+    <a href="https://www.wilhelm-gastronomie.de/tum-garching">Menu by bistro owner (PDF)</a></p>
 {% else %}
     {% for day in week[:5] %}
         <strong>{{day.getDate() | date("l, F j")}}<sup>{{day.getDate() | date("S")}}</sup></strong>
