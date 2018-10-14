@@ -119,7 +119,7 @@ class Route {
         ],
         'era'          => [
             'description' => 'Einführung in die Rechnerarchitektur',
-            'target'      => 'https://www.lrr.in.tum.de/lehre/wintersemester-1718/vorlesungen/einfuehrung-in-die-rechnerarchitektur-era/',
+            'target'      => 'http://www.caps.in.tum.de/lehre/ws18/vorlesungen/era/',
         ],
         'scivis'       => [
             'description' => 'Scientific Visualization',
@@ -127,7 +127,7 @@ class Route {
         ],
         'ds'           => [
             'description' => 'Diskrete Strukturen',
-            'target'      => 'https://www7.in.tum.de/um/courses/ds/ws1718/index.html',
+            'target'      => 'https://www7.in.tum.de/um/courses/ds/ws1819/index.html',
         ],
         'vorkurs'      => [
             'description' => 'Mathematik Vorkurs für Informatiker',
