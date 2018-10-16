@@ -115,7 +115,7 @@ class Route {
         ],
         'pgdp'         => [
             'description' => 'Praktikum Grundlagen der Programmierung (Moodle-Kurs)',
-            'target'      => 'https://www.moodle.tum.de/course/view.php?id=35284',
+            'target'      => 'https://www.moodle.tum.de/course/view.php?id=42050',
         ],
         'era'          => [
             'description' => 'Einführung in die Rechnerarchitektur',
