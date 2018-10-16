@@ -308,6 +308,10 @@ class Route {
             'description' => 'CSD Parade',
             'target'      => 'https://pride.tum.sexy',
         ],
+        'pride'          => [
+            'description' => 'TUM Diversity & Queer',
+            'target'      => 'https://www.facebook.com/qrtum/',
+        ],
         'matching'     => [
             'description' => 'IN.TUM-Matching-System',
             'target'      => 'https://matching.in.tum.de/saml2/login/',
