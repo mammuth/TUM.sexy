@@ -120,6 +120,7 @@ class Route {
         'era'          => [
             'description' => 'Einführung in die Rechnerarchitektur',
             'target'      => 'http://www.caps.in.tum.de/lehre/ws18/vorlesungen/era/',
+            'moodle_id'   => '45072'
         ],
         'scivis'       => [
             'description' => 'Scientific Visualization',
