@@ -73,7 +73,7 @@ class Route {
         ],
         'db'           => [
             'description' => 'Grundlagen: Datenbanken',
-            'target'      => 'https://db.in.tum.de/teaching/ws1718/grundlagen/',
+            'target'      => 'https://db.in.tum.de/teaching/ws1819/grundlagen/',
             'moodle_id'   => '38031',
         ],
         'gbs'          => [
