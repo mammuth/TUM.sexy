@@ -320,6 +320,22 @@ class Route {
             'description' => 'ESN TUMi München',
             'target'      => 'https://portal.mytum.de/veranstaltungen/ic/termine-tumi/index_html',
         ],
+        'adm'          => [
+            'description' => 'Algorithmische Diskrete Mathematik',
+            'target'      => 'https://www-m9.ma.tum.de/WS2018/ADM',
+        ],
+        'crypto'          => [
+            'description' => 'Kryptographie',
+            'target'      => 'https://www7.in.tum.de/um/courses/crypto/ws1819/',
+        ],
+        'markov'          => [
+            'description' => 'Markovketten',
+            'target'      => 'https://www-m5.ma.tum.de/Allgemeines/MA2404_2018W',
+        ],
+        'androidsec'          => [
+            'description' => 'Praktikum: Android Security',
+            'target'      => 'https://www22.in.tum.de/en/teaching/android-security-lab/',
+        ],
     ];
 
     // Format is: <source / synonym> => <target> - the target must be present in the $routes array
@@ -363,7 +379,7 @@ class Route {
             'hunger', 'mensabot', 'mensabot2', 'roombot', 'room', 'app', 'c', 'm', 'sp', 'ma-sp', 'ge-sp', 'ge-ma-sp', 'wi-sp', 'wi-ma-sp', 'stuff', 'reddit', 'vorkurs', 'statista', 'shuttle', 'sharelatex', 'matching',
         ],
         'Electives'   => [
-            'pl', 'gki', 'conpra', 'ged', 'pgm', 'gog', 'artemis', 'csc', 'scivis', 'ase', 'qo', 'netsec', 'modsim', 'pp', 'mvs', 'adlr', 'sbrml', 'rpchi', 'agt'
+            'pl', 'gki', 'conpra', 'ged', 'pgm', 'gog', 'artemis', 'csc', 'scivis', 'ase', 'qo', 'netsec', 'modsim', 'pp', 'mvs', 'adlr', 'sbrml', 'rpchi', 'agt', 'adm', 'crypto'
         ],
     ];
 
