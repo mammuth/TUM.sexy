@@ -236,10 +236,6 @@ class Route {
             'description' => 'Query Optimization',
             'target'      => 'https://db.in.tum.de/teaching/ws1718/queryopt/',
         ],
-        'geo'          => [
-            'description' => 'Geometriekalküle',
-            'target'      => 'https://www-m10.ma.tum.de/bin/view/Lehre/WS1718/GeometrieKalkueleWS1718',
-        ],
         'satellite'    => [
             'description' => 'The TUM Satellite',
             'target'      => 'https://www.move2space.de/',
@@ -366,6 +362,7 @@ class Route {
         'match'   => 'matching',
         'la'      => 'linalg',
         'geokal'  => 'geokalkuele',
+        'geo'     => 'geokalkuele',
     ];
 
     /**
