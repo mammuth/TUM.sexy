@@ -309,7 +309,7 @@ class Route {
             'description' => 'CSD Parade',
             'target'      => 'https://pride.tum.sexy',
         ],
-        'pride'          => [
+        'pride'        => [
             'description' => 'TUM Diversity & Queer',
             'target'      => 'https://www.facebook.com/qrtum/',
         ],
@@ -325,17 +325,29 @@ class Route {
             'description' => 'Algorithmische Diskrete Mathematik',
             'target'      => 'https://www-m9.ma.tum.de/WS2018/ADM',
         ],
-        'crypto'          => [
+        'crypto'       => [
             'description' => 'Kryptographie',
             'target'      => 'https://www7.in.tum.de/um/courses/crypto/ws1819/',
         ],
-        'markov'          => [
+        'markov'       => [
             'description' => 'Markovketten',
             'target'      => 'https://www-m5.ma.tum.de/Allgemeines/MA2404_2018W',
         ],
-        'androidsec'          => [
+        'androidsec'   => [
             'description' => 'Praktikum: Android Security',
             'target'      => 'https://www22.in.tum.de/en/teaching/android-security-lab/',
+        ],
+        'itsec'        => [
+            'description' => 'IT-Sicherheit',
+            'target'      => 'https://www.sec.in.tum.de/i20/teaching/ws2018/it-sicherheit',
+        ],
+        'geokalkuele'  => [
+            'description' => 'Geometriekalküle',
+            'target'      => 'https://www-m10.ma.tum.de/bin/view/Lehre/WS1819/GeometrieKalkueleWS1819',
+        ],
+        'automata'     => [
+            'description' => 'Automata and Formal Languages',
+            'target'      => 'https://www7.in.tum.de/um/courses/auto/ws1819/',
         ],
     ];
 
@@ -353,6 +365,7 @@ class Route {
         'rooms'   => 'room',
         'match'   => 'matching',
         'la'      => 'linalg',
+        'geokal'  => 'geokalkuele',
     ];
 
     /**
@@ -380,7 +393,7 @@ class Route {
             'hunger', 'mensabot', 'mensabot2', 'roombot', 'room', 'app', 'c', 'm', 'sp', 'ma-sp', 'ge-sp', 'ge-ma-sp', 'wi-sp', 'wi-ma-sp', 'stuff', 'reddit', 'vorkurs', 'statista', 'shuttle', 'sharelatex', 'matching',
         ],
         'Electives'   => [
-            'pl', 'gki', 'conpra', 'ged', 'pgm', 'gog', 'artemis', 'csc', 'scivis', 'ase', 'qo', 'netsec', 'modsim', 'pp', 'mvs', 'adlr', 'sbrml', 'rpchi', 'agt', 'adm', 'crypto'
+            'pl', 'gki', 'conpra', 'ged', 'pgm', 'gog', 'artemis', 'csc', 'scivis', 'ase', 'qo', 'itsec', 'netsec', 'modsim', 'pp', 'mvs', 'adlr', 'sbrml', 'rpchi', 'agt', 'adm', 'crypto', 'geokalkuele', 'automata',
         ],
     ];
 
