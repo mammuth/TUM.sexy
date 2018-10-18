@@ -345,6 +345,11 @@ class Route {
             'description' => 'Automata and Formal Languages',
             'target'      => 'https://www7.in.tum.de/um/courses/auto/ws1819/',
         ],
+        'sd' => [
+            'description' => 'Signaldarstellung',
+            'target'      => 'https://www.mmk.ei.tum.de/lehre/signaldarstellung-ab-ws1415/',
+            'moodle_id'   => '44034',
+        ],
     ];
 
     // Format is: <source / synonym> => <target> - the target must be present in the $routes array
