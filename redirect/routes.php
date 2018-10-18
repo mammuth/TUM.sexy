@@ -345,7 +345,7 @@ class Route {
             'description' => 'Automata and Formal Languages',
             'target'      => 'https://www7.in.tum.de/um/courses/auto/ws1819/',
         ],
-        'sd' => [
+        'sd'           => [
             'description' => 'Signaldarstellung',
             'target'      => 'https://www.mmk.ei.tum.de/lehre/signaldarstellung-ab-ws1415/',
             'moodle_id'   => '44034',
