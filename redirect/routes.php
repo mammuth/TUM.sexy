@@ -61,7 +61,7 @@ class Route {
         'anal'         => [
             'description' => 'Analysis für Informatiker',
             'target'      => 'https://www-m5.ma.tum.de/Allgemeines/MA0902_2017W',
-            'moodle_id'   => '36704',
+            'moodle_id'   => '43628',
         ],
         'info2'        => [
             'description' => 'Einführung in die Informatik 2',
