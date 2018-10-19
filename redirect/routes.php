@@ -65,7 +65,7 @@ class Route {
         ],
         'info2'        => [
             'description' => 'Einführung in die Informatik 2',
-            'target'      => 'http://www2.in.tum.de/hp/Main?nid=380',
+            'target'      => 'https://www.in.tum.de/i02/lehre/wintersemester-1819/vorlesungen/functional-programming-and-verification/',
         ],
         'e2ocaml'      => [
             'description' => 'Einführung in die Informatik 2 OCAML HA-Abgabe',
