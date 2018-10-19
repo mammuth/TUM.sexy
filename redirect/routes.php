@@ -61,7 +61,7 @@ class Route {
         'anal'         => [
             'description' => 'Analysis für Informatiker',
             'target'      => 'https://www-m5.ma.tum.de/Allgemeines/MA0902_2017W',
-            'moodle_id'   => '36704',
+            'moodle_id'   => '43628',
         ],
         'info2'        => [
             'description' => 'Einführung in die Informatik 2 / Functional Programming and Verification',
@@ -345,6 +345,11 @@ class Route {
             'description' => 'Automata and Formal Languages',
             'target'      => 'https://www7.in.tum.de/um/courses/auto/ws1819/',
         ],
+        'sd'           => [
+            'description' => 'Signaldarstellung',
+            'target'      => 'https://www.mmk.ei.tum.de/lehre/signaldarstellung-ab-ws1415/',
+            'moodle_id'   => '44034',
+        ],
     ];
 
     // Format is: <source / synonym> => <target> - the target must be present in the $routes array
@@ -390,7 +395,7 @@ class Route {
             'hunger', 'mensabot', 'mensabot2', 'roombot', 'room', 'app', 'c', 'm', 'sp', 'ma-sp', 'ge-sp', 'ge-ma-sp', 'wi-sp', 'wi-ma-sp', 'stuff', 'reddit', 'vorkurs', 'statista', 'shuttle', 'sharelatex', 'matching',
         ],
         'Electives'   => [
-            'pl', 'gki', 'conpra', 'ged', 'pgm', 'gog', 'artemis', 'csc', 'scivis', 'ase', 'qo', 'itsec', 'netsec', 'modsim', 'pp', 'mvs', 'adlr', 'sbrml', 'rpchi', 'agt', 'adm', 'crypto', 'geokalkuele', 'automata',
+            'pl', 'gki', 'conpra', 'ged', 'pgm', 'gog', 'artemis', 'csc', 'scivis', 'ase', 'qo', 'itsec', 'netsec', 'modsim', 'pp', 'mvs', 'adlr', 'sbrml', 'rpchi', 'agt', 'adm', 'crypto', 'geokalkuele', 'automata', 'sd',
         ],
     ];
 
