@@ -336,6 +336,7 @@ class Route {
         'itsec'        => [
             'description' => 'IT-Sicherheit',
             'target'      => 'https://www.sec.in.tum.de/i20/teaching/ws2018/it-sicherheit',
+            'moodle_id'   => '42097',
         ],
         'geokalkuele'  => [
             'description' => 'Geometriekalküle',
@@ -349,6 +350,11 @@ class Route {
             'description' => 'Signaldarstellung',
             'target'      => 'https://www.mmk.ei.tum.de/lehre/signaldarstellung-ab-ws1415/',
             'moodle_id'   => '44034',
+        ],
+        'markov'       => [
+            'description' => 'Markovketten',
+            'target'      => 'http://www-m5.ma.tum.de/Allgemeines/MA2404_2018W',
+            'moodle_id'   => '44962',
         ],
     ];
 
@@ -395,7 +401,7 @@ class Route {
             'hunger', 'mensabot', 'mensabot2', 'roombot', 'room', 'app', 'c', 'm', 'sp', 'ma-sp', 'ge-sp', 'ge-ma-sp', 'wi-sp', 'wi-ma-sp', 'stuff', 'reddit', 'vorkurs', 'statista', 'shuttle', 'sharelatex', 'matching',
         ],
         'Electives'   => [
-            'pl', 'gki', 'conpra', 'ged', 'pgm', 'gog', 'artemis', 'csc', 'scivis', 'ase', 'qo', 'itsec', 'netsec', 'modsim', 'pp', 'mvs', 'adlr', 'sbrml', 'rpchi', 'agt', 'adm', 'crypto', 'geokalkuele', 'automata', 'sd',
+            'pl', 'gki', 'conpra', 'ged', 'pgm', 'gog', 'artemis', 'csc', 'scivis', 'ase', 'qo', 'itsec', 'netsec', 'modsim', 'pp', 'mvs', 'adlr', 'sbrml', 'rpchi', 'agt', 'adm', 'crypto', 'geokalkuele', 'automata', 'sd', 'markov',
         ],
     ];
 
