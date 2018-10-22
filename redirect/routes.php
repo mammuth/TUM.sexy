@@ -111,7 +111,7 @@ class Route {
         ],
         'info1'        => [
             'description' => 'Einführung in die Informatik 1',
-            'target'      => 'http://www14.in.tum.de/lehre/2017WS/info1/index.html.de',
+            'target'      => 'https://www.moodle.tum.de/course/view.php?id=42050',
         ],
         'pgdp'         => [
             'description' => 'Praktikum Grundlagen der Programmierung (Moodle-Kurs)',
