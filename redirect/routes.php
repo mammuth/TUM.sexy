@@ -456,6 +456,8 @@ class Route {
 
     public function getResolvedArrays() {
         $ret = [];
+        
+        sort($section['Electives']);
 
         //Iterate over our sections which can contain any number of routes
         foreach ($this->sections as $section => $subs) {
