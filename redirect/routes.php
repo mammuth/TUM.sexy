@@ -48,7 +48,8 @@ class Route {
         ],
         'numprog'      => [
             'description' => 'Numerisches Programmieren',
-            'target'      => 'https://www5.in.tum.de/wiki/index.php/Numerisches_Programmieren_-_Summer_18',
+            'target'      => 'https://www.moodle.tum.de/course/view.php?id=41992',
+            'moodle_id'   => '41992',
         ],
         'websec'       => [
             'description' => 'WebApplication Security Bachelor Praktikum',
@@ -60,7 +61,7 @@ class Route {
         ],
         'anal'         => [
             'description' => 'Analysis für Informatiker',
-            'target'      => 'https://www-m5.ma.tum.de/Allgemeines/MA0902_2017W',
+            'target'      => 'https://www.moodle.tum.de/course/view.php?id=43628',
             'moodle_id'   => '43628',
         ],
         'info2'        => [
@@ -350,6 +351,22 @@ class Route {
             'target'      => 'https://www.mmk.ei.tum.de/lehre/signaldarstellung-ab-ws1415/',
             'moodle_id'   => '44034',
         ],
+        'progopt'      => [
+            'description' => 'Program Optimization',
+            'target'      => 'https://www.in.tum.de/i02/lehre/wintersemester-1819/vorlesungen/program-optimization/',
+        ],
+        'advalgs'      => [
+            'description' => 'Advanced Algorithms',
+            'target'      => 'http://www14.in.tum.de/lehre/2018WS/ada/index.html.en',
+        ],
+        'ea'           => [
+            'description' => 'Efficient Algorithms',
+            'target'      => 'http://www14.in.tum.de/lehre/2018WS/ea/index.html.en',
+        ],
+        'algebra1'     => [
+            'description' => 'Algebra 1',
+            'target'      => 'https://www.moodle.tum.de/course/view.php?idnumber=950370507',
+        ],
     ];
 
     // Format is: <source / synonym> => <target> - the target must be present in the $routes array
@@ -368,6 +385,8 @@ class Route {
         'la'      => 'linalg',
         'geokal'  => 'geokalkuele',
         'geo'     => 'geokalkuele',
+        'ada'     => 'advalgs',
+        'algebra' => 'algebra1',
     ];
 
     /**
@@ -395,7 +414,7 @@ class Route {
             'hunger', 'mensabot', 'mensabot2', 'roombot', 'room', 'app', 'c', 'm', 'sp', 'ma-sp', 'ge-sp', 'ge-ma-sp', 'wi-sp', 'wi-ma-sp', 'stuff', 'reddit', 'vorkurs', 'statista', 'shuttle', 'sharelatex', 'matching',
         ],
         'Electives'   => [
-            'pl', 'gki', 'conpra', 'ged', 'pgm', 'gog', 'artemis', 'csc', 'scivis', 'ase', 'qo', 'itsec', 'netsec', 'modsim', 'pp', 'mvs', 'adlr', 'sbrml', 'rpchi', 'agt', 'adm', 'crypto', 'geokalkuele', 'automata', 'sd',
+            'pl', 'gki', 'conpra', 'ged', 'pgm', 'gog', 'artemis', 'csc', 'scivis', 'ase', 'qo', 'itsec', 'netsec', 'modsim', 'pp', 'mvs', 'adlr', 'sbrml', 'rpchi', 'agt', 'adm', 'crypto', 'geokalkuele', 'automata', 'sd', 'progopt', 'advalgs', 'ea', 'algebra1',
         ],
     ];
 
