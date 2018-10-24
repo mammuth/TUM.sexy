@@ -356,6 +356,7 @@ class Route {
             'description' => 'Markovketten',
             'target'      => 'http://www-m5.ma.tum.de/Allgemeines/MA2404_2018W',
             'moodle_id'   => '44962',
+        ],
         'progopt'      => [
             'description' => 'Program Optimization',
             'target'      => 'https://www.in.tum.de/i02/lehre/wintersemester-1819/vorlesungen/program-optimization/',
@@ -481,7 +482,7 @@ class Route {
     public function getResolvedArrays() {
         $ret = [];
         
-        sort($section['Electives']);
+        sort($this->sections['Electives']);
 
         //Iterate over our sections which can contain any number of routes
         foreach ($this->sections as $section => $subs) {
