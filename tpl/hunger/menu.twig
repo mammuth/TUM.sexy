@@ -1,4 +1,10 @@
 <h3>{{ title }}</h3>
+{% if feeding_hours is defined %}
+    <h5 class="opening-hours" data-hours="{{ opening_hours }}">Open {{ opening_hours }}</h5>
+    <h5 class="feeding-hours" data-hours="{{ feeding_hours }}">Food {{ feeding_hours }}</h5>
+{% else %}
+    <h5 class="opening-feeding-hours" data-hours="{{ opening_hours }}">Open & Food {{ opening_hours }}</h5>
+{% endif %}
 
 {% if week == null %}
     <p>An error occured while fetching the {{ title }} menu.<br />

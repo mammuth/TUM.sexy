@@ -8,20 +8,43 @@
 
 <div class="row" style="margin-top:10%">
     <div class="one-half column">
-        {% include 'hunger/menu.twig' with {'title': 'FMI Bistro', 'week': fmiBistroWeek, 'fallback_url': 'https://www.wilhelm-gastronomie.de/tum-garching'} only %}
+        {% include 'hunger/menu.twig' with {
+            'title': 'FMI Bistro',
+            'week': fmiBistroWeek,
+            'opening_hours': 'Mo-Fr 07:00-19:00',
+            'feeding_hours': 'Mo-Fr 11:30-19:00',
+            'fallback_url': 'https://www.wilhelm-gastronomie.de/tum-garching'
+        } only %}
     </div>
 
     <div class="one-half column">
-        {% include 'hunger/menu.twig' with {'title': 'Mensa Garching', 'week': mensaWeek, 'fallback_url': 'https://www.studentenwerk-muenchen.de/mensa/speiseplan/speiseplan_422_-de.html#heute'} only %}
+        {% include 'hunger/menu.twig' with {
+            'title': 'Mensa Garching',
+            'week': mensaWeek,
+            'opening_hours': 'Mo-Th 11:00-14:00, Fr 11:00-13:45, 2018 Oct 14-2019 Feb 09,2019 Apr 23-2019 Jul 27: Mo-Th 11:00-16:00; PH off',
+            'fallback_url': 'https://www.studentenwerk-muenchen.de/mensa/speiseplan/speiseplan_422_-de.html#heute'
+        } only %}
     </div>
 </div>
 <div class="row" style="margin-top:10%">
     <div class="one-half column">
-        {% include 'hunger/menu.twig' with {'title': 'IPP Bistro', 'week': ippBistroWeek, 'fallback_url': 'https://konradhof-catering.de/ipp/'} only %}
+        {% include 'hunger/menu.twig' with {
+            'title': 'IPP Bistro',
+            'week': ippBistroWeek,
+            'opening_hours': 'Mo-Th 08:30-11:00,11:30-16:30; Fr 08:30-11:00,11:30-13:30',
+            'feeding_hours': 'Mo-Th 11:30-16:30; Fr 11:30-13:30',
+            'fallback_url': 'https://konradhof-catering.de/ipp/'
+        } only %}
     </div>
 
     <div class="one-half column">
-        {% include 'hunger/menu.twig' with {'title': 'StuCafé Mechanical Engineering', 'week': stucafeMaschbauWeek, 'fallback_url': 'https://www.studentenwerk-muenchen.de/mensa/speiseplan/speiseplan_527_-de.html#heute'} only %}
+        {% include 'hunger/menu.twig' with {
+            'title': 'StuCafé Mechanical Engineering',
+            'week': stucafeMaschbauWeek,
+            'opening_hours': 'Mo-Th 08:00-18:00; Fr 08:00-17:00',
+            'feeding_hours': 'Mo-Th 11:00-18:00; Fr 08:00-17:00',
+            'fallback_url': 'https://www.studentenwerk-muenchen.de/mensa/speiseplan/speiseplan_527_-de.html#heute'
+        } only %} {# TODO get feeding hours #}
     </div>
 </div>
 <div class="row" style="margin-top:10%">
@@ -34,4 +57,6 @@
     </div>
 </div>
 
+<script async defer src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+<script async defer src="//openingh.openstreetmap.de/opening_hours.js/opening_hours+deps.min.js"></script>
 <script async defer src="/js/hunger.js"></script>
