@@ -48,7 +48,6 @@ class Route {
         ],
         'numprog'      => [
             'description' => 'Numerisches Programmieren',
-            'target'      => 'https://www.moodle.tum.de/course/view.php?id=41992',
             'moodle_id'   => '41992',
         ],
         'websec'       => [
@@ -61,7 +60,6 @@ class Route {
         ],
         'anal'         => [
             'description' => 'Analysis für Informatiker',
-            'target'      => 'https://www.moodle.tum.de/course/view.php?id=43628',
             'moodle_id'   => '43628',
         ],
         'info2'        => [
@@ -113,11 +111,11 @@ class Route {
         ],
         'info1'        => [
             'description' => 'Einführung in die Informatik 1',
-            'target'      => 'https://www.moodle.tum.de/course/view.php?id=42050',
+            'moodle_id'   => '42050',
         ],
         'pgdp'         => [
             'description' => 'Praktikum Grundlagen der Programmierung (Moodle-Kurs)',
-            'target'      => 'https://www.moodle.tum.de/course/view.php?id=42050',
+            'moodle_id'   => '42050',
         ],
         'era'          => [
             'description' => 'Einführung in die Rechnerarchitektur',
