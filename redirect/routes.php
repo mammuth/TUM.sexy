@@ -372,12 +372,12 @@ class Route {
         ],
         'algebra1'     => [
             'description' => 'Algebra 1',
-	    'target'      => 'https://www.moodle.tum.de/course/view.php?idnumber=950370507',
-   	],
-	'rts'	       => [
-	    'description' => 'Echtzeitsysteme / Real Time Systems',
-	    'moodle_id'   => '42138',
-	],
+	        'target'      => 'https://www.moodle.tum.de/course/view.php?idnumber=950370507',
+   	    ],
+	    'rts'	       => [
+	        'description' => 'Echtzeitsysteme / Real Time Systems',
+	        'moodle_id'   => '42138',
+	    ],
     ];
 
     // Format is: <source / synonym> => <target> - the target must be present in the $routes array
@@ -421,7 +421,8 @@ class Route {
         '5. Semester' => [
             'numprog',
         ],
-        '6. Semester' => [],
+        '6. Semester' => [
+        ],
         'Special'     => [
             'hunger', 'mensabot', 'mensabot2', 'roombot', 'room', 'app', 'c', 'm', 'sp', 'ma-sp', 'ge-sp', 'ge-ma-sp', 'wi-sp', 'wi-ma-sp', 'stuff', 'reddit', 'vorkurs', 'statista', 'shuttle', 'sharelatex', 'matching',
         ],
