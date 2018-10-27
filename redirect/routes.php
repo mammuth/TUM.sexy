@@ -66,7 +66,8 @@ class Route {
         ],
         'info2'        => [
             'description' => 'Einführung in die Informatik 2 / Functional Programming and Verification',
-            'target'      => 'https://www.in.tum.de/i02/lehre/wintersemester-1819/vorlesungen/functional-programming-and-verification/',
+	    'target'      => 'https://www.in.tum.de/i02/lehre/wintersemester-1819/vorlesungen/functional-programming-and-verification/',
+	    'moodle_id'   => '44932',
         ],
         'e2ocaml'      => [
             'description' => 'Einführung in die Informatik 2 OCAML HA-Abgabe',
@@ -371,8 +372,12 @@ class Route {
         ],
         'algebra1'     => [
             'description' => 'Algebra 1',
-            'target'      => 'https://www.moodle.tum.de/course/view.php?idnumber=950370507',
-        ],
+	    'target'      => 'https://www.moodle.tum.de/course/view.php?idnumber=950370507',
+   	],
+	'rts'	       => [
+	    'description' => 'Echtzeitsysteme / Real Time Systems',
+	    'moodle_id'   => '42138',
+	],
     ];
 
     // Format is: <source / synonym> => <target> - the target must be present in the $routes array
@@ -392,7 +397,8 @@ class Route {
         'geokal'  => 'geokalkuele',
         'geo'     => 'geokalkuele',
         'ada'     => 'advalgs',
-        'algebra' => 'algebra1',
+	'algebra' => 'algebra1',
+	'ezs'	  => 'rts',
     ];
 
     /**
@@ -420,7 +426,7 @@ class Route {
             'hunger', 'mensabot', 'mensabot2', 'roombot', 'room', 'app', 'c', 'm', 'sp', 'ma-sp', 'ge-sp', 'ge-ma-sp', 'wi-sp', 'wi-ma-sp', 'stuff', 'reddit', 'vorkurs', 'statista', 'shuttle', 'sharelatex', 'matching',
         ],
         'Electives'   => [
-            'pl', 'gki', 'conpra', 'ged', 'pgm', 'gog', 'artemis', 'csc', 'scivis', 'ase', 'qo', 'itsec', 'netsec', 'modsim', 'pp', 'mvs', 'adlr', 'sbrml', 'rpchi', 'agt', 'adm', 'crypto', 'geokalkuele', 'automata', 'sd', 'markov', 'progopt', 'advalgs', 'ea', 'algebra1',
+            'pl', 'gki', 'conpra', 'ged', 'pgm', 'gog', 'artemis', 'csc', 'scivis', 'ase', 'qo', 'itsec', 'netsec', 'modsim', 'pp', 'mvs', 'adlr', 'sbrml', 'rpchi', 'agt', 'adm', 'crypto', 'geokalkuele', 'automata', 'sd', 'markov', 'progopt', 'advalgs', 'ea', 'algebra1', 'rts',
         ],
     ];
 
