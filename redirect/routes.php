@@ -66,8 +66,8 @@ class Route {
         ],
         'info2'        => [
             'description' => 'Einführung in die Informatik 2 / Functional Programming and Verification',
-	    'target'      => 'https://www.in.tum.de/i02/lehre/wintersemester-1819/vorlesungen/functional-programming-and-verification/',
-	    'moodle_id'   => '44932',
+	        'target'      => 'https://www.in.tum.de/i02/lehre/wintersemester-1819/vorlesungen/functional-programming-and-verification/',
+	        'moodle_id'   => '44932',
         ],
         'e2ocaml'      => [
             'description' => 'Einführung in die Informatik 2 OCAML HA-Abgabe',
@@ -397,8 +397,8 @@ class Route {
         'geokal'  => 'geokalkuele',
         'geo'     => 'geokalkuele',
         'ada'     => 'advalgs',
-	'algebra' => 'algebra1',
-	'ezs'	  => 'rts',
+	    'algebra' => 'algebra1',
+	    'ezs'	  => 'rts',
     ];
 
     /**
