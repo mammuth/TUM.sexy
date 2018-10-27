@@ -469,6 +469,16 @@ class Route {
         if (!isset($this->routes[$redirectUrl])) {
             return 'https://tum.sexy/';
         }
+        //If target does not exist? Try moodle course
+        else if (!isset($this->routes[$redirectUrl]['target'])){
+            if (isset($this->routes[$redirectUrl]['moodle_id'])){
+                $siteType = 'm';
+            }
+            //If target and moodle course does not exist? Go to main page
+            else {
+                return 'https://tum.sexy/';
+            }
+        } 
 
         //In case we actually want to go to a different target than the actual redirect
         switch ($siteType) {
