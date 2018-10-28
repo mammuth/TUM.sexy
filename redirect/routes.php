@@ -378,6 +378,10 @@ class Route {
             'description' => 'Echtzeitsysteme / Real Time Systems',
             'moodle_id'   => '42138',
         ],
+        'ezp'          => [
+            'description' => 'Von der Erfindung zum Patent',
+            'target'      => 'https://campus.tum.de/tumonline/wbLv.wbShowLVDetail?pStpSpNr=950372125',
+        ],
     ];
 
     // Format is: <source / synonym> => <target> - the target must be present in the $routes array
