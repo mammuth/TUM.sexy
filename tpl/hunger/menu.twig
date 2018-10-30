@@ -14,7 +14,7 @@
                 </li>
             {% endfor %}
             {% if fixed_dishes != null and fixed_dishes[loop.index0] != null %}
-                {% for dish in fixed_dishes %}
+                {% for dish in fixed_dishes[loop.index0] %}
                     <li data-balloon="{{ dish.price | number_format(2, '.', ',') }} €" data-balloon-pos="up"
                         onclick="void(0)">
                         <i>Special</i> {{ dish.name }}
