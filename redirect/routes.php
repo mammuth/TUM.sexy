@@ -224,11 +224,12 @@ class Route {
         ],
         'gki'          => [
             'description' => 'Grundlagen der Künstlichen Intelligenz',
-            'target'      => 'http://www.i6.in.tum.de/Main/TeachingWs2017KuenstlicheIntelligenz',
+            'target'      => 'https://www.moodle.tum.de/course/view.php?id=41898',
+            'moodle_id'   => '41898',
         ],
         'pl'           => [
             'description' => 'Programming Languages',
-            'target'      => 'https://www2.in.tum.de/hp/Main?nid=362',
+            'target'      => 'https://www.in.tum.de/i02/lehre/wintersemester-1819/vorlesungen/programming-languages/',
         ],
         'ase'          => [
             'description' => 'Advanced Topics In Software Engineering',
