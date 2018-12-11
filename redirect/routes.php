@@ -57,7 +57,7 @@ class Route {
         ],
         'netsec'       => [
             'description' => 'Netzsicherheit',
-            'target'      => 'https://net.in.tum.de/teaching/ws1718/netsec.html',
+            'target'      => 'https://net.in.tum.de/teaching/ws1819/netsec.html',
         ],
         'anal'         => [
             'description' => 'Analysis für Informatiker',
