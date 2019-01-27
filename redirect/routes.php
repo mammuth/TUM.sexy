@@ -387,6 +387,10 @@ class Route {
             'description' => 'E-Mobility der Zukunft: Ingenieurspraxis, Forschungspraxis & Co.',
             'target'      => 'https://www.ecarus.ei.tum.de',
         ],
+        'ja'          => [
+            'description' => 'Junge Akademie',
+            'target'      => 'https://www.jungeakademie.tum.de/',
+        ],
     ];
 
     // Format is: <source / synonym> => <target> - the target must be present in the $routes array
