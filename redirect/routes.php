@@ -148,11 +148,11 @@ class Route {
         ],
         'sp'           => [
             'description' => 'Studienplan B.Sc. Informatik',
-            'target'      => 'https://www.in.tum.de/fuer-studierende/bachelor-studiengaenge/informatik/studienplan/studienbeginn-ab-ws-201617.html',
+            'target'      => 'https://www.in.tum.de/fuer-studierende/bachelor-studiengaenge/informatik/studienplan/studienbeginn-wise-201617-bis-sose-2018/',
         ],
         'ma-sp'        => [
             'description' => 'Studienplan M.Sc. Informatik',
-            'target'      => 'https://www.in.tum.de/fuer-studierende/master-studiengaenge/informatik/studienplan/fpo-2007-und-fpsos-seit-2012.html',
+            'target'      => 'https://www.in.tum.de/fuer-studierende/master-studiengaenge/informatik/studienplan/fpso-2018/',
         ],
         'ge-sp'        => [
             'description' => 'Studienplan B.Sc. Informatik: Games Engineering',
@@ -384,6 +384,10 @@ class Route {
         'ecarus'          => [
             'description' => 'E-Mobility der Zukunft: Ingenieurspraxis, Forschungspraxis & Co.',
             'target'      => 'https://www.ecarus.ei.tum.de',
+        ],
+        'ja'          => [
+            'description' => 'Junge Akademie',
+            'target'      => 'https://www.jungeakademie.tum.de/',
         ],
     ];
 
