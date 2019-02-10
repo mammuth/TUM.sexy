@@ -282,7 +282,7 @@ class Route {
         ],
         'slam'         => [
             'description' => 'TUM Hörsaal Slam',
-            'target'      => 'https://www.facebook.com/events/1892789647682641/',
+            'target'      => 'https://www.facebook.com/events/235050653938605/',
         ],
         'sbrml'        => [
             'description' => 'Sensorbased Robotic Manipulation and Locomotion',
