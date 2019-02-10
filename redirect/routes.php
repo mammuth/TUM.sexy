@@ -57,7 +57,7 @@ class Route {
         ],
         'netsec'       => [
             'description' => 'Netzsicherheit',
-            'target'      => 'https://net.in.tum.de/teaching/ws1718/netsec.html',
+            'target'      => 'https://net.in.tum.de/teaching/ws1819/netsec.html',
         ],
         'anal'         => [
             'description' => 'Analysis für Informatiker',
@@ -150,11 +150,11 @@ class Route {
         ],
         'sp'           => [
             'description' => 'Studienplan B.Sc. Informatik',
-            'target'      => 'https://www.in.tum.de/fuer-studierende/bachelor-studiengaenge/informatik/studienplan/studienbeginn-ab-ws-201617.html',
+            'target'      => 'https://www.in.tum.de/fuer-studierende/bachelor-studiengaenge/informatik/studienplan/studienbeginn-wise-201617-bis-sose-2018/',
         ],
         'ma-sp'        => [
             'description' => 'Studienplan M.Sc. Informatik',
-            'target'      => 'https://www.in.tum.de/fuer-studierende/master-studiengaenge/informatik/studienplan/fpo-2007-und-fpsos-seit-2012.html',
+            'target'      => 'https://www.in.tum.de/fuer-studierende/master-studiengaenge/informatik/studienplan/fpso-2018/',
         ],
         'ge-sp'        => [
             'description' => 'Studienplan B.Sc. Informatik: Games Engineering',
@@ -224,11 +224,12 @@ class Route {
         ],
         'gki'          => [
             'description' => 'Grundlagen der Künstlichen Intelligenz',
-            'target'      => 'http://www.i6.in.tum.de/Main/TeachingWs2017KuenstlicheIntelligenz',
+            'target'      => 'https://www.moodle.tum.de/course/view.php?id=41898',
+            'moodle_id'   => '41898',
         ],
         'pl'           => [
             'description' => 'Programming Languages',
-            'target'      => 'https://www2.in.tum.de/hp/Main?nid=362',
+            'target'      => 'https://www.in.tum.de/i02/lehre/wintersemester-1819/vorlesungen/programming-languages/',
         ],
         'ase'          => [
             'description' => 'Advanced Topics In Software Engineering',
@@ -281,7 +282,7 @@ class Route {
         ],
         'slam'         => [
             'description' => 'TUM Hörsaal Slam',
-            'target'      => 'https://www.facebook.com/events/1892789647682641/',
+            'target'      => 'https://www.facebook.com/events/235050653938605/',
         ],
         'sbrml'        => [
             'description' => 'Sensorbased Robotic Manipulation and Locomotion',
@@ -382,6 +383,14 @@ class Route {
             'description' => 'Von der Erfindung zum Patent',
             'target'      => 'https://campus.tum.de/tumonline/wbLv.wbShowLVDetail?pStpSpNr=950372125',
         ],
+        'ecarus'          => [
+            'description' => 'E-Mobility der Zukunft: Ingenieurspraxis, Forschungspraxis & Co.',
+            'target'      => 'https://www.ecarus.ei.tum.de',
+        ],
+        'ja'          => [
+            'description' => 'Junge Akademie',
+            'target'      => 'https://www.jungeakademie.tum.de/',
+        ],
     ];
 
     // Format is: <source / synonym> => <target> - the target must be present in the $routes array
@@ -403,6 +412,7 @@ class Route {
         'ada'     => 'advalgs',
         'algebra' => 'algebra1',
         'ezs'     => 'rts',
+        'urban-mobility'=> 'ecarus'
     ];
 
     /**
@@ -423,11 +433,11 @@ class Route {
             'grnvs', 'theo', 'theojudge', 'dwt',
         ],
         '5. Semester' => [
-            'numprog',
+            'numprog', 
         ],
         '6. Semester' => [],
         'Special'     => [
-            'hunger', 'mensabot', 'mensabot2', 'roombot', 'room', 'app', 'c', 'm', 'sp', 'ma-sp', 'ge-sp', 'ge-ma-sp', 'wi-sp', 'wi-ma-sp', 'stuff', 'reddit', 'vorkurs', 'statista', 'shuttle', 'sharelatex', 'matching',
+            'hunger', 'mensabot', 'mensabot2', 'roombot', 'room', 'app', 'c', 'm', 'sp', 'ma-sp', 'ge-sp', 'ge-ma-sp', 'wi-sp', 'wi-ma-sp', 'stuff', 'reddit', 'vorkurs', 'statista', 'shuttle', 'sharelatex', 'matching', 'ecarus'
         ],
         'Electives'   => [
             'pl', 'gki', 'conpra', 'ged', 'pgm', 'gog', 'artemis', 'csc', 'scivis', 'ase', 'qo', 'itsec', 'netsec', 'modsim', 'pp', 'mvs', 'adlr', 'sbrml', 'rpchi', 'agt', 'adm', 'crypto', 'geokalkuele', 'automata', 'sd', 'markov', 'progopt', 'advalgs', 'ea', 'algebra1', 'rts',
