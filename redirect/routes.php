@@ -148,7 +148,7 @@ class Route {
         ],
         'sp'           => [
             'description' => 'Studienplan B.Sc. Informatik',
-            'target'      => 'https://www.in.tum.de/fuer-studierende/bachelor-studiengaenge/informatik/studienplan/studienbeginn-wise-201617-bis-sose-2018/',
+            'target'      => 'https://www.in.tum.de/fuer-studierende/bachelor-studiengaenge/informatik/studienplan/studienbeginn-ab-ws-201819/',
         ],
         'ma-sp'        => [
             'description' => 'Studienplan M.Sc. Informatik',
