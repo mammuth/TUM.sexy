@@ -1,17 +1,26 @@
 <h3>{{ title }}</h3>
 
 {% if week == null %}
-    <p>An error occured while fetching the {{ title }} menu.<br />
-    <a href="https://www.wilhelm-gastronomie.de/tum-garching">Menu by bistro owner (PDF)</a></p>
+    <p>An error occured while fetching the {{ title }} menu.<br/>
+        <a href="{{ fallback_url }}">Menu by bistro owner (PDF)</a></p>
 {% else %}
     {% for day in week[:5] %}
-        <strong>{{day.getDate() | date("l, F j")}}<sup>{{day.getDate() | date("S")}}</sup></strong>
+        <strong>{{ day.getDate() | date("l, F j") }}<sup>{{ day.getDate() | date("S") }}</sup></strong>
         <ul class="hunger-menu">
-        {% for dish in day %}
-            <li data-balloon="{{ dish.getPrice() | number_format(2, '.', ',') }} €" data-balloon-pos="up" onclick="void(0)">
-                {{ dish.getName() }}
-            </li>
-        {% endfor %}
+            {% for dish in day %}
+                <li data-balloon="{{ dish.getPrice() | number_format(2, '.', ',') }} €" data-balloon-pos="up"
+                    onclick="void(0)">
+                    {{ dish.getName() }}
+                </li>
+            {% endfor %}
+            {% if fixed_dishes != null and fixed_dishes[loop.index0] != null %}
+                {% for dish in fixed_dishes[loop.index0] %}
+                    <li data-balloon="{{ dish.price | number_format(2, '.', ',') }} €" data-balloon-pos="up"
+                        onclick="void(0)">
+                        <i>Special</i> {{ dish.name }}
+                    </li>
+                {% endfor %}
+            {% endif %}
         </ul>
     {% endfor %}
 {% endif %}

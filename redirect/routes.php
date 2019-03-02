@@ -48,7 +48,7 @@ class Route {
         ],
         'numprog'      => [
             'description' => 'Numerisches Programmieren',
-            'target'      => 'https://www5.in.tum.de/wiki/index.php/Numerisches_Programmieren_-_Summer_18',
+            'moodle_id'   => '41992',
         ],
         'websec'       => [
             'description' => 'WebApplication Security Bachelor Praktikum',
@@ -56,16 +56,16 @@ class Route {
         ],
         'netsec'       => [
             'description' => 'Netzsicherheit',
-            'target'      => 'https://net.in.tum.de/teaching/ws1718/netsec.html',
+            'target'      => 'https://net.in.tum.de/teaching/ws1819/netsec.html',
         ],
         'anal'         => [
             'description' => 'Analysis für Informatiker',
-            'target'      => 'https://www-m5.ma.tum.de/Allgemeines/MA0902_2017W',
             'moodle_id'   => '43628',
         ],
         'info2'        => [
             'description' => 'Einführung in die Informatik 2 / Functional Programming and Verification',
             'target'      => 'https://www.in.tum.de/i02/lehre/wintersemester-1819/vorlesungen/functional-programming-and-verification/',
+            'moodle_id'   => '44932',
         ],
         'e2ocaml'      => [
             'description' => 'Einführung in die Informatik 2 OCAML HA-Abgabe',
@@ -111,11 +111,11 @@ class Route {
         ],
         'info1'        => [
             'description' => 'Einführung in die Informatik 1',
-            'target'      => 'http://www14.in.tum.de/lehre/2017WS/info1/index.html.de',
+            'moodle_id'   => '42050',
         ],
         'pgdp'         => [
             'description' => 'Praktikum Grundlagen der Programmierung (Moodle-Kurs)',
-            'target'      => 'https://www.moodle.tum.de/course/view.php?id=42050',
+            'moodle_id'   => '42050',
         ],
         'era'          => [
             'description' => 'Einführung in die Rechnerarchitektur',
@@ -148,11 +148,11 @@ class Route {
         ],
         'sp'           => [
             'description' => 'Studienplan B.Sc. Informatik',
-            'target'      => 'https://www.in.tum.de/fuer-studierende/bachelor-studiengaenge/informatik/studienplan/studienbeginn-ab-ws-201617.html',
+            'target'      => 'https://www.in.tum.de/fuer-studierende/bachelor-studiengaenge/informatik/studienplan/studienbeginn-wise-201617-bis-sose-2018/',
         ],
         'ma-sp'        => [
             'description' => 'Studienplan M.Sc. Informatik',
-            'target'      => 'https://www.in.tum.de/fuer-studierende/master-studiengaenge/informatik/studienplan/fpo-2007-und-fpsos-seit-2012.html',
+            'target'      => 'https://www.in.tum.de/fuer-studierende/master-studiengaenge/informatik/studienplan/fpso-2018/',
         ],
         'ge-sp'        => [
             'description' => 'Studienplan B.Sc. Informatik: Games Engineering',
@@ -206,7 +206,7 @@ class Route {
         ],
         'erapraktikum' => [
             'description' => 'Praktikum - Einführung in die Rechnerarchitektur',
-            'target'      => 'https://www.caps.in.tum.de/lehre/ss18/praktika/praktikum-rechnerarchitektur/',
+            'target'      => 'https://www.caps.in.tum.de/lehre/ws18/praktika/praktikum-rechnerarchitektur/',
         ],
         'ged'          => [
             'description' => 'Game Engine Design',
@@ -222,11 +222,12 @@ class Route {
         ],
         'gki'          => [
             'description' => 'Grundlagen der Künstlichen Intelligenz',
-            'target'      => 'http://www.i6.in.tum.de/Main/TeachingWs2017KuenstlicheIntelligenz',
+            'target'      => 'https://www.moodle.tum.de/course/view.php?id=41898',
+            'moodle_id'   => '41898',
         ],
         'pl'           => [
             'description' => 'Programming Languages',
-            'target'      => 'https://www2.in.tum.de/hp/Main?nid=362',
+            'target'      => 'https://www.in.tum.de/i02/lehre/wintersemester-1819/vorlesungen/programming-languages/',
         ],
         'ase'          => [
             'description' => 'Advanced Topics In Software Engineering',
@@ -279,7 +280,7 @@ class Route {
         ],
         'slam'         => [
             'description' => 'TUM Hörsaal Slam',
-            'target'      => 'https://www.facebook.com/events/1892789647682641/',
+            'target'      => 'https://www.facebook.com/events/235050653938605/',
         ],
         'sbrml'        => [
             'description' => 'Sensorbased Robotic Manipulation and Locomotion',
@@ -336,6 +337,7 @@ class Route {
         'itsec'        => [
             'description' => 'IT-Sicherheit',
             'target'      => 'https://www.sec.in.tum.de/i20/teaching/ws2018/it-sicherheit',
+            'moodle_id'   => '42097',
         ],
         'geokalkuele'  => [
             'description' => 'Geometriekalküle',
@@ -349,6 +351,43 @@ class Route {
             'description' => 'Signaldarstellung',
             'target'      => 'https://www.mmk.ei.tum.de/lehre/signaldarstellung-ab-ws1415/',
             'moodle_id'   => '44034',
+        ],
+        'markov'       => [
+            'description' => 'Markovketten',
+            'target'      => 'http://www-m5.ma.tum.de/Allgemeines/MA2404_2018W',
+            'moodle_id'   => '44962',
+        ],
+        'progopt'      => [
+            'description' => 'Program Optimization',
+            'target'      => 'https://www.in.tum.de/i02/lehre/wintersemester-1819/vorlesungen/program-optimization/',
+        ],
+        'advalgs'      => [
+            'description' => 'Advanced Algorithms',
+            'target'      => 'http://www14.in.tum.de/lehre/2018WS/ada/index.html.en',
+        ],
+        'ea'           => [
+            'description' => 'Efficient Algorithms',
+            'target'      => 'http://www14.in.tum.de/lehre/2018WS/ea/index.html.en',
+        ],
+        'algebra1'     => [
+            'description' => 'Algebra 1',
+            'target'      => 'https://www.moodle.tum.de/course/view.php?idnumber=950370507',
+        ],
+        'rts'          => [
+            'description' => 'Echtzeitsysteme / Real Time Systems',
+            'moodle_id'   => '42138',
+        ],
+        'ezp'          => [
+            'description' => 'Von der Erfindung zum Patent',
+            'target'      => 'https://campus.tum.de/tumonline/wbLv.wbShowLVDetail?pStpSpNr=950372125',
+        ],
+        'ecarus'          => [
+            'description' => 'E-Mobility der Zukunft: Ingenieurspraxis, Forschungspraxis & Co.',
+            'target'      => 'https://www.ecarus.ei.tum.de',
+        ],
+        'ja'          => [
+            'description' => 'Junge Akademie',
+            'target'      => 'https://www.jungeakademie.tum.de/',
         ],
     ];
 
@@ -368,6 +407,10 @@ class Route {
         'la'      => 'linalg',
         'geokal'  => 'geokalkuele',
         'geo'     => 'geokalkuele',
+        'ada'     => 'advalgs',
+        'algebra' => 'algebra1',
+        'ezs'     => 'rts',
+        'urban-mobility'=> 'ecarus'
     ];
 
     /**
@@ -388,14 +431,14 @@ class Route {
             'grnvs', 'theo', 'theojudge', 'dwt',
         ],
         '5. Semester' => [
-            'numprog',
+            'numprog', 
         ],
         '6. Semester' => [],
         'Special'     => [
-            'hunger', 'mensabot', 'mensabot2', 'roombot', 'room', 'app', 'c', 'm', 'sp', 'ma-sp', 'ge-sp', 'ge-ma-sp', 'wi-sp', 'wi-ma-sp', 'stuff', 'reddit', 'vorkurs', 'statista', 'shuttle', 'sharelatex', 'matching',
+            'hunger', 'mensabot', 'mensabot2', 'roombot', 'room', 'app', 'c', 'm', 'sp', 'ma-sp', 'ge-sp', 'ge-ma-sp', 'wi-sp', 'wi-ma-sp', 'stuff', 'reddit', 'vorkurs', 'statista', 'shuttle', 'sharelatex', 'matching', 'ecarus'
         ],
         'Electives'   => [
-            'pl', 'gki', 'conpra', 'ged', 'pgm', 'gog', 'artemis', 'csc', 'scivis', 'ase', 'qo', 'itsec', 'netsec', 'modsim', 'pp', 'mvs', 'adlr', 'sbrml', 'rpchi', 'agt', 'adm', 'crypto', 'geokalkuele', 'automata', 'sd',
+            'pl', 'gki', 'conpra', 'ged', 'pgm', 'gog', 'artemis', 'csc', 'scivis', 'ase', 'qo', 'itsec', 'netsec', 'modsim', 'pp', 'mvs', 'adlr', 'sbrml', 'rpchi', 'agt', 'adm', 'crypto', 'geokalkuele', 'automata', 'sd', 'markov', 'progopt', 'advalgs', 'ea', 'algebra1', 'rts',
         ],
     ];
 
@@ -438,6 +481,16 @@ class Route {
         if (!isset($this->routes[$redirectUrl])) {
             return 'https://tum.sexy/';
         }
+        //If target does not exist? Try moodle course
+        else if (!isset($this->routes[$redirectUrl]['target'])){
+            if (isset($this->routes[$redirectUrl]['moodle_id'])){
+                $siteType = 'm';
+            }
+            //If target and moodle course does not exist? Go to main page
+            else {
+                return 'https://tum.sexy/';
+            }
+        } 
 
         //In case we actually want to go to a different target than the actual redirect
         switch ($siteType) {
@@ -456,6 +509,8 @@ class Route {
 
     public function getResolvedArrays() {
         $ret = [];
+        
+        sort($this->sections['Electives']);
 
         //Iterate over our sections which can contain any number of routes
         foreach ($this->sections as $section => $subs) {
