@@ -29,5 +29,5 @@ function renderTemplate($tplName = 'start', $vars) {
 }
 
 //Add Donation info
-include __DIR__ . '/donateInfos.php';
-\Stripe\Stripe::setApiKey($stripe['secret_key']);
+/*include __DIR__ . '/donateInfos.php';
+\Stripe\Stripe::setApiKey($stripe['secret_key']);*/
