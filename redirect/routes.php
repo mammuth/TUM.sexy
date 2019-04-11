@@ -393,6 +393,10 @@ class Route {
             'description' => 'Junge Akademie',
             'target'      => 'https://www.jungeakademie.tum.de/',
         ],
+        'film'          => [
+            'description' => 'tu film',
+            'target'      => 'https://tu-film.de/',
+        ],
     ];
 
     // Format is: <source / synonym> => <target> - the target must be present in the $routes array
@@ -414,7 +418,8 @@ class Route {
         'ada'     => 'advalgs',
         'algebra' => 'algebra1',
         'ezs'     => 'rts',
-        'urban-mobility'=> 'ecarus'
+        'urban-mobility'=> 'ecarus',
+        'kino'=> 'film',
     ];
 
     /**
