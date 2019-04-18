@@ -180,8 +180,8 @@ class Route {
         ],
         'eist'         => [
             'description' => 'Einführung in die Softwaretechnik',
-            'target'      => 'https://www1.in.tum.de/lehrstuhl_1/teaching/summer-2018/121-teaching/st18/963-eist-2018',
-            'moodle_id'   => '39072',
+            'target'      => 'https://ase.in.tum.de/lehrstuhl_1/teaching/summer-2019/123-teaching/st19/1032-eist-2019',
+            'moodle_id'   => '46061',
         ],
         'gad'          => [
             'description' => 'Grundlegende Algorithmen und Datenstrukturen',
