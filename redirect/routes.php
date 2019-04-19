@@ -99,7 +99,7 @@ class Route {
         ],
         'dwt'          => [
             'description' => 'Diskrete Wahrscheinlichkeitstheorie',
-            'target'      => 'http://wwwalbers.in.tum.de/lehre/2018SS/dwt/',
+            'target'      => 'http://wwwalbers.in.tum.de/lehre/2019SS/dwt/',
         ],
         'theo'         => [
             'description' => 'Einführung in die theoretische Informatik',
@@ -190,7 +190,7 @@ class Route {
         ],
         'linalg'       => [
             'description' => 'Lineare Algebra für Informatik',
-            'target'      => 'https://www.moodle.tum.de/course/view.php?id=41011',
+            'target'      => 'https://www.moodle.tum.de/course/view.php?id=47866',
         ],
         'gog'          => [
             'description' => 'Games on Graphs',
@@ -198,7 +198,7 @@ class Route {
         ],
         'grnvs'        => [
             'description' => 'Grundlagen Rechnernetze und Verteilte Systeme',
-            'target'      => 'https://www.net.in.tum.de/teaching/ss18/grnvs.html',
+            'target'      => 'https://www.net.in.tum.de/teaching/ss19/grnvs.html',
         ],
         'pgm'          => [
             'description' => "Probabilistic Graphical Models in Computer Vision",
@@ -380,10 +380,6 @@ class Route {
         'rts'          => [
             'description' => 'Echtzeitsysteme / Real Time Systems',
             'moodle_id'   => '42138',
-        ],
-        'ezp'          => [
-            'description' => 'Von der Erfindung zum Patent',
-            'target'      => 'https://campus.tum.de/tumonline/wbLv.wbShowLVDetail?pStpSpNr=950372125',
         ],
         'ecarus'          => [
             'description' => 'E-Mobility der Zukunft: Ingenieurspraxis, Forschungspraxis & Co.',
