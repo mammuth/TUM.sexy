@@ -188,6 +188,10 @@ class Route {
             'target'      => 'http://campar.in.tum.de/Chair/TeachingSs18GAD',
             'moodle_id'   => '40888',
         ],
+        'gadjudge'          => [
+            'description' => 'TUMJudge - Grundlegende Algorithmen und Datenstrukturen',
+            'target'      => 'https://judge.in.tum.de/gad/public/',
+        ],
         'linalg'       => [
             'description' => 'Lineare Algebra für Informatik',
             'target'      => 'https://www.moodle.tum.de/course/view.php?id=41011',
@@ -422,7 +426,7 @@ class Route {
             'info1', 'pgdp', 'era', 'ds', 'carlos',
         ],
         '2. Semester' => [
-            'eist', 'gad', 'erapraktikum', 'linalg', 'ged',
+            'eist', 'gad', 'gadjudge', 'erapraktikum', 'linalg', 'ged',
         ],
         '3. Semester' => [
             'anal', 'info2', 'db', 'gbs',
