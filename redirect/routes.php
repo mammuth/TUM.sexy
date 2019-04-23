@@ -185,7 +185,7 @@ class Route {
         ],
         'gad'          => [
             'description' => 'Grundlegende Algorithmen und Datenstrukturen',
-            'target'      => 'http://campar.in.tum.de/Chair/TeachingSs18GAD',
+            'target'      => 'https://www.in.tum.de/cg/teaching/summer-term-19/grundlagen-algorithmen-und-datenstrukturen-in0007/',
             'moodle_id'   => '40888',
         ],
         'gadjudge'          => [
@@ -210,7 +210,7 @@ class Route {
         ],
         'erapraktikum' => [
             'description' => 'Praktikum - Einführung in die Rechnerarchitektur',
-            'target'      => 'https://www.caps.in.tum.de/lehre/ws18/praktika/praktikum-rechnerarchitektur/',
+            'target'      => 'https://www.caps.in.tum.de/lehre/ss19/praktika/era/',
         ],
         'ged'          => [
             'description' => 'Game Engine Design',
