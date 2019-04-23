@@ -48,7 +48,7 @@ class Route {
         ],
         'numprog'      => [
             'description' => 'Numerisches Programmieren',
-            'moodle_id'   => '41992',
+            'moodle_id'   => '45799',
         ],
         'websec'       => [
             'description' => 'WebApplication Security Bachelor Praktikum',
