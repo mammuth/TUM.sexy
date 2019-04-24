@@ -103,7 +103,7 @@ class Route {
         ],
         'theo'         => [
             'description' => 'Einführung in die theoretische Informatik',
-            'target'      => 'https://www7.in.tum.de/um/courses/theo/ss2018/',
+            'target'      => 'https://www21.in.tum.de/teaching/theo/SS19/',
         ],
         'theojudge'    => [
             'description' => 'TUMjudge - Einführung in die theoretische Informatik',
