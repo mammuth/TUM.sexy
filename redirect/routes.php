@@ -76,6 +76,10 @@ class Route {
             'target'      => 'https://db.in.tum.de/teaching/ws1819/grundlagen/',
             'moodle_id'   => '38031',
         ],
+        'erdb'         => [
+            'description' => 'Einsatz und Realisierung von Datenbanksystemen',
+            'target'      => 'https://db.in.tum.de/teaching/ss19/impldb/'
+        ],
         'gbs'          => [
             'description' => 'Grundlagen Betriebssystem und Systemsoftware',
             'target'      => 'https://www.cm.in.tum.de/teaching/gbs-1819/',
@@ -397,6 +401,10 @@ class Route {
             'description' => 'tu film',
             'target'      => 'https://tu-film.de/',
         ],
+        'fds'         => [
+            'description' => 'Functional Data Structures',
+            'target'      => 'https://www21.in.tum.de/teaching/FDS/SS19/',
+        ],
     ];
 
     // Format is: <source / synonym> => <target> - the target must be present in the $routes array
@@ -420,6 +428,7 @@ class Route {
         'ezs'     => 'rts',
         'urban-mobility'=> 'ecarus',
         'kino'=> 'film',
+        'gdb'     => 'db'
     ];
 
     /**
@@ -447,7 +456,7 @@ class Route {
             'hunger', 'mensabot', 'mensabot2', 'roombot', 'room', 'app', 'c', 'm', 'sp', 'ma-sp', 'ge-sp', 'ge-ma-sp', 'wi-sp', 'wi-ma-sp', 'stuff', 'reddit', 'vorkurs', 'statista', 'shuttle', 'sharelatex', 'matching', 'ecarus'
         ],
         'Electives'   => [
-            'pl', 'gki', 'conpra', 'ged', 'pgm', 'gog', 'artemis', 'csc', 'scivis', 'ase', 'qo', 'itsec', 'netsec', 'modsim', 'pp', 'mvs', 'adlr', 'sbrml', 'rpchi', 'agt', 'adm', 'crypto', 'geokalkuele', 'automata', 'sd', 'markov', 'progopt', 'advalgs', 'ea', 'algebra1', 'rts',
+            'pl', 'gki', 'conpra', 'ged', 'pgm', 'gog', 'artemis', 'csc', 'scivis', 'ase', 'qo', 'itsec', 'netsec', 'modsim', 'pp', 'mvs', 'adlr', 'sbrml', 'rpchi', 'agt', 'adm', 'crypto', 'geokalkuele', 'automata', 'sd', 'markov', 'progopt', 'advalgs', 'ea', 'algebra1', 'rts', 'erdb'
         ],
     ];
 
