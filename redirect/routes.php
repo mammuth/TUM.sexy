@@ -76,6 +76,10 @@ class Route {
             'target'      => 'https://db.in.tum.de/teaching/ws1819/grundlagen/',
             'moodle_id'   => '38031',
         ],
+        'erdb'         => [
+            'description' => 'Einsatz und Realisierung von Datenbanksystemen',
+            'target'      => 'https://db.in.tum.de/teaching/ss19/impldb/'
+        ],
         'gbs'          => [
             'description' => 'Grundlagen Betriebssystem und Systemsoftware',
             'target'      => 'https://www.cm.in.tum.de/teaching/gbs-1819/',
