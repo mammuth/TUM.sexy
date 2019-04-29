@@ -405,6 +405,10 @@ class Route {
             'description' => 'Functional Data Structures',
             'target'      => 'https://www21.in.tum.de/teaching/FDS/SS19/',
         ],
+        'langenacht'         => [
+            'description' => 'Lange Nacht der Univeristäten',
+            'target'      => 'https://www.facebook.com/events/317775388894810/',
+        ],
     ];
 
     // Format is: <source / synonym> => <target> - the target must be present in the $routes array
