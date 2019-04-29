@@ -407,7 +407,7 @@ class Route {
         ],
         'langenacht'         => [
             'description' => 'Lange Nacht der Univeristäten',
-            'target'      => 'https://www.facebook.com/events/317775388894810/',
+            'target'      => 'https://www.facebook.com/events/2681178088623650/',
         ],
     ];
 
