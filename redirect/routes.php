@@ -304,7 +304,7 @@ class Route {
         ],
         'agt'          => [
             'description' => 'Algorithmic Game Theory',
-            'target'      => 'http://dss.in.tum.de/teaching/36-teaching/semester/sommersemster-2018/183-algorithmic-game-theory-ss2018.html'
+            'target'      => 'https://dss.in.tum.de/teaching/38-teaching/semester/sommersemster-2019/203-algorithmic-game-theory-ss2019.html'
         ],
         'io'           => [
             'description' => 'Information Officer',
@@ -409,6 +409,10 @@ class Route {
             'description' => 'Lange Nacht der Univeristäten',
             'target'      => 'https://www.facebook.com/events/2681178088623650/',
         ],
+        'compiler'         => [
+            'description' => 'Compiler Construction',
+            'target'      => 'http://www.in.tum.de/i02/lehre/sommersemester-19/vorlesungen/compiler-construction/',
+        ],
     ];
 
     // Format is: <source / synonym> => <target> - the target must be present in the $routes array
@@ -460,7 +464,7 @@ class Route {
             'hunger', 'mensabot', 'mensabot2', 'roombot', 'room', 'app', 'c', 'm', 'sp', 'ma-sp', 'ge-sp', 'ge-ma-sp', 'wi-sp', 'wi-ma-sp', 'stuff', 'reddit', 'vorkurs', 'statista', 'shuttle', 'sharelatex', 'matching', 'ecarus'
         ],
         'Electives'   => [
-            'pl', 'gki', 'conpra', 'ged', 'pgm', 'gog', 'artemis', 'csc', 'scivis', 'ase', 'qo', 'itsec', 'netsec', 'modsim', 'pp', 'mvs', 'adlr', 'sbrml', 'rpchi', 'agt', 'adm', 'crypto', 'geokalkuele', 'automata', 'sd', 'markov', 'progopt', 'advalgs', 'ea', 'algebra1', 'rts', 'erdb'
+            'pl', 'gki', 'conpra', 'ged', 'pgm', 'gog', 'artemis', 'csc', 'scivis', 'ase', 'qo', 'itsec', 'netsec', 'modsim', 'pp', 'mvs', 'adlr', 'sbrml', 'rpchi', 'agt', 'adm', 'crypto', 'geokalkuele', 'automata', 'sd', 'markov', 'progopt', 'advalgs', 'ea', 'algebra1', 'rts', 'erdb', 'compiler'
         ],
     ];
 
