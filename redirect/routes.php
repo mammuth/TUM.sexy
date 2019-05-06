@@ -417,7 +417,7 @@ class Route {
             'description' => 'Practical Course: iLab1 - Build your own Internet',
             'target'      => 'https://ilab.net.in.tum.de',
         ],
-        'llab2'           => [
+        'ilab2'           => [
             'description' => 'Practical Course: iLab2 - You set the Focus',
             'target'      => 'https://ilab2.net.in.tum.de',
         ],
