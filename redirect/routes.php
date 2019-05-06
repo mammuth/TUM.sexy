@@ -413,6 +413,18 @@ class Route {
             'description' => 'Compiler Construction',
             'target'      => 'http://www.in.tum.de/i02/lehre/sommersemester-19/vorlesungen/compiler-construction/',
         ],
+        'ilab1'           => [
+            'description' => 'Practical Course: iLab1 - Build your own Internet',
+            'target'      => 'https://ilab.net.in.tum.de',
+        ],
+        'lLab2'           => [
+            'description' => 'Practical Course: iLab2 - You set the Focus',
+            'target'      => 'https://ilab2.net.in.tum.de',
+        ],
+        'ilabx'           => [
+            'description' => 'Practical Course: iLabX - The Virtual Internet Laboratory (block)',
+            'target'      => 'https://ilabx.net.in.tum.de',
+        ]
     ];
 
     // Format is: <source / synonym> => <target> - the target must be present in the $routes array
@@ -464,7 +476,7 @@ class Route {
             'hunger', 'mensabot', 'mensabot2', 'roombot', 'room', 'app', 'c', 'm', 'sp', 'ma-sp', 'ge-sp', 'ge-ma-sp', 'wi-sp', 'wi-ma-sp', 'stuff', 'reddit', 'vorkurs', 'statista', 'shuttle', 'sharelatex', 'matching', 'ecarus'
         ],
         'Electives'   => [
-            'pl', 'gki', 'conpra', 'ged', 'pgm', 'gog', 'artemis', 'csc', 'scivis', 'ase', 'qo', 'itsec', 'netsec', 'modsim', 'pp', 'mvs', 'adlr', 'sbrml', 'rpchi', 'agt', 'adm', 'crypto', 'geokalkuele', 'automata', 'sd', 'markov', 'progopt', 'advalgs', 'ea', 'algebra1', 'rts', 'erdb', 'compiler'
+            'pl', 'gki', 'conpra', 'ged', 'pgm', 'gog', 'artemis', 'csc', 'scivis', 'ase', 'qo', 'itsec', 'netsec', 'modsim', 'pp', 'mvs', 'adlr', 'sbrml', 'rpchi', 'agt', 'adm', 'crypto', 'geokalkuele', 'automata', 'sd', 'markov', 'progopt', 'advalgs', 'ea', 'algebra1', 'rts', 'erdb', 'compiler','ilab1','ilab2','ilabx'
         ],
     ];
 
