@@ -160,7 +160,7 @@ class Route {
         ],
         'ge-sp'        => [
             'description' => 'Studienplan B.Sc. Informatik: Games Engineering',
-            'target'      => 'https://www.in.tum.de/fuer-studierende/bachelor-studiengaenge/informatik-games-engineering/studienplan-games/studienbeginn-ab-ws-201617-games/',
+            'target'      => 'https://www.in.tum.de/de/fuer-studierende/bachelor-studiengaenge/informatik-games-engineering/studienplan-games/studienbeginn-ab-ws-201819-games/',
         ],
         'ge-ma-sp'     => [
             'description' => 'Studienplan M.Sc. Informatik: Games Engineering',
@@ -218,7 +218,7 @@ class Route {
         ],
         'ged'          => [
             'description' => 'Game Engine Design',
-            'target'      => 'https://wwwcg.in.tum.de/teaching/teaching/summer-term-18/game-engine-design.html',
+            'target'      => 'https://www.in.tum.de/cg/teaching/summer-term-19/echtzeit-computergrafik/',
         ],
         'gadunittests' => [
             'description' => 'Unit - Tests: Grundlegende Algorithmen und Datenstrukturen',
@@ -453,7 +453,8 @@ class Route {
         'urban-mobility'=> 'ecarus',
         'kino'    => 'film',
         'gdb'     => 'db',
-        'complexity' => 'comp'
+        'complexity' => 'comp',
+		'sp-ge' => 'ge-sp'
     ];
 
     /**
