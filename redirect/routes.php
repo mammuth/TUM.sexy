@@ -113,6 +113,10 @@ class Route {
             'description' => 'TUMjudge - Einführung in die theoretische Informatik',
             'target'      => 'https://judge.in.tum.de/theo/public/',
         ],
+        'theoauto'    => [
+            'description' => 'Automata Tutor für Theohausaufgaben / Übungen'
+            'target'      => 'https://automata.model.in.tum.de/'
+        ],
         'info1'        => [
             'description' => 'Einführung in die Informatik 1',
             'moodle_id'   => '42050',
@@ -454,7 +458,8 @@ class Route {
         'kino'    => 'film',
         'gdb'     => 'db',
         'complexity' => 'comp',
-		'sp-ge' => 'ge-sp'
+		    'sp-ge' => 'ge-sp',
+        'automata' => 'theoauto'
     ];
 
     /**
@@ -472,7 +477,7 @@ class Route {
             'anal', 'info2', 'db', 'gbs',
         ],
         '4. Semester' => [
-            'grnvs', 'theo', 'theojudge', 'dwt',
+            'grnvs', 'theo', 'theojudge', 'theoauto', 'dwt',
         ],
         '5. Semester' => [
             'numprog',
@@ -534,7 +539,7 @@ class Route {
             else {
                 return 'https://tum.sexy/';
             }
-        } 
+        }
 
         //In case we actually want to go to a different target than the actual redirect
         switch ($siteType) {
@@ -553,7 +558,7 @@ class Route {
 
     public function getResolvedArrays() {
         $ret = [];
-        
+
         sort($this->sections['Electives']);
 
         //Iterate over our sections which can contain any number of routes
