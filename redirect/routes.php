@@ -310,13 +310,9 @@ class Route {
             'description' => 'Information Officer',
             'target'      => 'https://www.asta.tum.de/studentische-vertretung/asta/aemter/information-office-io/',
         ],
-        'csd'          => [
-            'description' => 'CSD Parade',
-            'target'      => 'https://pride.tum.sexy',
-        ],
         'pride'        => [
             'description' => 'TUM Diversity & Queer',
-            'target'      => 'https://www.facebook.com/qrtum/',
+            'target'      => 'https://www.facebook.com/events/599246697252806/',
         ],
         'mario'          => [
             'description' => 'Mario im tu film',
@@ -433,6 +429,7 @@ class Route {
 
     // Format is: <source / synonym> => <target> - the target must be present in the $routes array
     private $synonyms = [
+	'csd'     => 'pride',
         'erapra'  => 'erapraktikum',
         'sp-ma'   => 'ma-sp',
         'eidi'    => 'info1',
