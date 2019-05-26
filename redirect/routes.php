@@ -425,6 +425,10 @@ class Route {
             'description' => 'Computational Complexity',
             'target'      => 'https://www7.in.tum.de/um/courses/complexity/SS19/',
         ],
+	 'future'            => [
+            'description' => 'TUM4Future',
+            'target'      => 'https://tum4future.de',
+        ],    
     ];
 
     // Format is: <source / synonym> => <target> - the target must be present in the $routes array
