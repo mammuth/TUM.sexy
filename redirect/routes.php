@@ -428,13 +428,14 @@ class Route {
 	 'future'            => [
             'description' => 'TUM4Future',
             'target'      => 'https://tum4future.de',
-        ],    
+        ],
     ];
 
     // Format is: <source / synonym> => <target> - the target must be present in the $routes array
     private $synonyms = [
 	'csd'     => 'pride',
         'erapra'  => 'erapraktikum',
+        'erap'    => 'erapraktikum',
         'sp-ma'   => 'ma-sp',
         'eidi'    => 'info1',
         'eidi2'   => 'info2',
@@ -535,7 +536,7 @@ class Route {
             else {
                 return 'https://tum.sexy/';
             }
-        } 
+        }
 
         //In case we actually want to go to a different target than the actual redirect
         switch ($siteType) {
@@ -554,7 +555,7 @@ class Route {
 
     public function getResolvedArrays() {
         $ret = [];
-        
+
         sort($this->sections['Electives']);
 
         //Iterate over our sections which can contain any number of routes
