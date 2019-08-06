@@ -324,7 +324,7 @@ class Route {
         ],
         'esn'          => [
             'description' => 'ESN TUMi München',
-            'target'      => 'https://portal.mytum.de/veranstaltungen/ic/termine-tumi/index_html',
+            'target'      => 'https://esn-tumi.de',
         ],
         'adm'          => [
             'description' => 'Algorithmische Diskrete Mathematik',
@@ -455,6 +455,7 @@ class Route {
         'urban-mobility'=> 'ecarus',
         'kino'    => 'film',
         'gdb'     => 'db',
+	'tumi'    => 'esn',
         'complexity' => 'comp',
 		'sp-ge' => 'ge-sp'
     ];
