@@ -429,6 +429,10 @@ class Route {
             'description' => 'TUM4Future',
             'target'      => 'https://tum4future.de',
         ],
+        'restplaetze'     => [
+            'description' => 'Liste der Restplätze in Seminaren und Praktika',
+            'target'      => 'https://www.in.tum.de/fuer-studierende/module-und-veranstaltungen/praktika-und-seminare/',
+        ],
     ];
 
     // Format is: <source / synonym> => <target> - the target must be present in the $routes array
