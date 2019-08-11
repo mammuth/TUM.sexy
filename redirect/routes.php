@@ -441,7 +441,7 @@ class Route {
         'eidi2'   => 'info2',
         'latex'   => 'sharelatex',
         'tex'     => 'sharelatex',
-        'bs'      => 'gbs'
+        'bs'      => 'gbs',
         'netz'    => 'grnvs',
         'protein' => 'pp',
         'queer'   => 'diversity',
