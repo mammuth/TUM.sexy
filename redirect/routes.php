@@ -425,7 +425,7 @@ class Route {
             'description' => 'Computational Complexity',
             'target'      => 'https://www7.in.tum.de/um/courses/complexity/SS19/',
         ],
-	 'future'            => [
+        'future'          => [
             'description' => 'TUM4Future',
             'target'      => 'https://tum4future.de',
         ],
@@ -433,7 +433,7 @@ class Route {
 
     // Format is: <source / synonym> => <target> - the target must be present in the $routes array
     private $synonyms = [
-	'csd'     => 'pride',
+        'csd'     => 'pride',
         'erapra'  => 'erapraktikum',
         'erap'    => 'erapraktikum',
         'sp-ma'   => 'ma-sp',
@@ -456,7 +456,7 @@ class Route {
         'kino'    => 'film',
         'gdb'     => 'db',
         'complexity' => 'comp',
-		'sp-ge' => 'ge-sp'
+        'sp-ge' => 'ge-sp'
     ];
 
     /**
