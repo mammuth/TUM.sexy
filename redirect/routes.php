@@ -295,12 +295,12 @@ class Route {
             'target'      => 'https://www.facebook.com/events/235050653938605/',
         ],
         'sbrml'        => [
-            'description' => 'Sensorbased Robotic Manipulation and Locomotion',
-            'target'      => 'http://www23.in.tum.de/index.php?id=6598'
+            'description' => 'Sensor-based Robotic Manipulation and Locomotion',
+            'target'      => 'https://www.in.tum.de/i23/teaching/sensor-based-robotic-manipulation-and-locomotion/',
         ],
         'rpchi'        => [
             'description' => 'Robot Programming and Control for Human Interaction',
-            'target'      => 'http://www23.in.tum.de/index.php?id=6680'
+            'target'      => 'https://www.in.tum.de/i23/teaching/robot-programming-and-control-for-human-interaction/',
         ],
         'wahl'         => [
             'description' => 'Hochschulwahlen',
