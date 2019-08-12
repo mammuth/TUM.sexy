@@ -81,9 +81,9 @@ class Route {
             'target'      => 'https://db.in.tum.de/teaching/ss19/impldb/'
         ],
         'gbs'          => [
-            'description' => 'Grundlagen Betriebssystem und Systemsoftware',
-            'target'      => 'https://www.cm.in.tum.de/teaching/gbs-1819/',
-            'moodle_id'   => '42019',
+            'description' => 'Grundlagen: Betriebssysteme und Systemsoftware',
+            'target'      => 'https://www.cm.in.tum.de/teaching/gbs/',
+            'moodle_id'   => '49592',
         ],
         'quintero'     => [
             'description' => 'Mathias Quintero',
@@ -445,6 +445,7 @@ class Route {
         'eidi2'   => 'info2',
         'latex'   => 'sharelatex',
         'tex'     => 'sharelatex',
+        'bs'      => 'gbs',
         'netz'    => 'grnvs',
         'protein' => 'pp',
         'queer'   => 'diversity',
