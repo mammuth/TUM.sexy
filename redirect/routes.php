@@ -34,6 +34,10 @@ class Route {
             'description' => 'TUM Opac',
             'target'      => 'https://www.ub.tum.de/tum-opac',
         ],
+        'live'         => [
+            'description' => 'Livestreams und Aufzeichnungen von Vorlesungen',
+            'target'      => 'https://live.rbg.tum.de',
+        ],
         'stuff'        => [
             'description' => 'Unistuff (ehemals Tumstuff)',
             'target'      => 'https://unistuff.org',
