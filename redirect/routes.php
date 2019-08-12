@@ -48,7 +48,7 @@ class Route {
         ],
         'ted'          => [
             'description' => 'TEDxTUM Event-Seite',
-            'target'      => 'http://tedxtum.com',
+            'target'      => 'https://tedxtum.com',
         ],
         'numprog'      => [
             'description' => 'Numerisches Programmieren',
@@ -91,11 +91,11 @@ class Route {
         ],
         'quintero'     => [
             'description' => 'Mathias Quintero',
-            'target'      => 'http://home.in.tum.de/~szillat/',
+            'target'      => 'https://home.in.tum.de/~szillat/',
         ],
         'carlos'       => [
             'description' => 'Carlos Camino',
-            'target'      => 'http://carlos-camino.de',
+            'target'      => 'https://carlos-camino.de',
         ],
         'github'       => [
             'description' => 'Official TUM.sexy Github Repository',
@@ -127,7 +127,7 @@ class Route {
         ],
         'era'          => [
             'description' => 'Einführung in die Rechnerarchitektur',
-            'target'      => 'http://www.caps.in.tum.de/lehre/ws18/vorlesungen/era/',
+            'target'      => 'https://www.caps.in.tum.de/lehre/ws18/vorlesungen/era/',
             'moodle_id'   => '45072',
         ],
         'scivis'       => [
@@ -144,7 +144,7 @@ class Route {
         ],
         'csc'          => [
             'description' => 'Computational Social Choice',
-            'target'      => 'http://dss.in.tum.de/teaching/ws-18-19/37-teaching/semester/wintersemster-2018-19/193-computational-social-choice-2018-19.html',
+            'target'      => 'https://dss.in.tum.de/teaching/ws-18-19/37-teaching/semester/wintersemster-2018-19/193-computational-social-choice-2018-19.html',
         ],
         'eval'         => [
             'description' => 'Evaluation of Lectures',
@@ -214,7 +214,7 @@ class Route {
         ],
         'pgm'          => [
             'description' => "Probabilistic Graphical Models in Computer Vision",
-            'target'      => 'http://vision.in.tum.de/teaching/ss2017/pgmcv',
+            'target'      => 'https://vision.in.tum.de/teaching/ss2017/pgmcv',
         ],
         'erapraktikum' => [
             'description' => 'Praktikum - Einführung in die Rechnerarchitektur',
@@ -366,7 +366,7 @@ class Route {
         ],
         'markov'       => [
             'description' => 'Markovketten',
-            'target'      => 'http://www-m5.ma.tum.de/Allgemeines/MA2404_2018W',
+            'target'      => 'https://www-m5.ma.tum.de/Allgemeines/MA2404_2018W',
             'moodle_id'   => '44962',
         ],
         'progopt'      => [
@@ -411,7 +411,7 @@ class Route {
         ],
         'compiler'         => [
             'description' => 'Compiler Construction',
-            'target'      => 'http://www.in.tum.de/i02/lehre/sommersemester-19/vorlesungen/compiler-construction/',
+            'target'      => 'https://www.in.tum.de/i02/lehre/sommersemester-19/vorlesungen/compiler-construction/',
         ],
         'ilab1'           => [
             'description' => 'Practical Course: iLab1 - Build your own Internet',
