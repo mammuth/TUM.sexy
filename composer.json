@@ -1,13 +1,16 @@
 {
+  "name": "mammuth/tum.sexy",
+  "description": "A website providing links, redirects and tools related to the Technical University Munich 💃📚",
+  "homepage": "https://tum.sexy",
   "scripts": {
     "test": "phpunit"
   },
   "require": {
     "twig/twig": "^1.33",
-    "jpbernius/fmeat": "~1.2.0",
+    "jpbernius/fmeat": "~2.0",
     "stripe/stripe-php": "^5.9"
   },
   "require-dev": {
-    "phpunit/phpunit": "6.4.*"
+    "phpunit/phpunit": "~8.2"
   }
 }
