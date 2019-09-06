@@ -136,7 +136,7 @@ class Route {
         ],
         'ds'           => [
             'description' => 'Diskrete Strukturen',
-            'target'      => 'https://www7.in.tum.de/um/courses/ds/ws1819/index.html',
+            'target'      => 'https://www7.in.tum.de/um/courses/ds/ws1920/index.html',
         ],
         'vorkurs'      => [
             'description' => 'Mathematik Vorkurs für Informatiker',
