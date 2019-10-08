@@ -292,7 +292,7 @@ class Route {
         ],
         'slam'         => [
             'description' => 'TUM Hörsaal Slam',
-            'target'      => 'https://www.facebook.com/events/235050653938605/',
+            'target'      => 'https://www.facebook.com/events/400633344170175/',
         ],
         'sbrml'        => [
             'description' => 'Sensor-based Robotic Manipulation and Locomotion',
@@ -504,7 +504,7 @@ class Route {
         ],
         '6. Semester' => [],
         'Special'     => [
-            'hunger', 'mensabot', 'mensabot2', 'roombot', 'finder', 'room', 'app', 'c', 'm', 'sp', 'ma-sp', 'ge-sp', 'ge-ma-sp', 'wi-sp', 'wi-ma-sp', 'stuff', 'reddit', 'vorkurs', 'statista', 'shuttle', 'sharelatex', 'matching', 'ecarus', 'film', 'set'
+            'hunger', 'mensabot', 'mensabot2', 'roombot', 'finder', 'room', 'app', 'c', 'm', 'sp', 'ma-sp', 'ge-sp', 'ge-ma-sp', 'wi-sp', 'wi-ma-sp', 'stuff', 'reddit', 'vorkurs', 'statista', 'shuttle', 'sharelatex', 'matching', 'ecarus', 'film'
         ],
         'Electives'   => [
             'pl', 'gki', 'conpra', 'ged', 'pgm', 'gog', 'artemis', 'csc', 'scivis', 'ase', 'qo', 'itsec', 'netsec', 'modsim', 'pp', 'mvs', 'adlr', 'sbrml', 'rpchi', 'agt', 'adm', 'crypto', 'geokalkuele', 'automata', 'sd', 'markov', 'progopt', 'advalgs', 'ea', 'algebra1', 'rts', 'erdb', 'compiler', 'ilab1', 'ilab2', 'ilabx', 'comp', 'tms'
