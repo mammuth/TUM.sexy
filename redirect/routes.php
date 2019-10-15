@@ -64,7 +64,8 @@ class Route {
         ],
         'anal'         => [
             'description' => 'Analysis für Informatiker',
-            'moodle_id'   => '43628',
+	    'target'	  => 'https://www-m5.ma.tum.de/Allgemeines/MA0902_2019W',
+            'moodle_id'   => '50842',
         ],
         'info2'        => [
             'description' => 'Einführung in die Informatik 2 / Functional Programming and Verification',
