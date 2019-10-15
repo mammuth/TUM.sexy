@@ -64,7 +64,7 @@ class Route {
         ],
         'anal'         => [
             'description' => 'Analysis für Informatiker',
-            'moodle_id'   => '43628',
+            'moodle_id'   => '50842',
         ],
         'info2'        => [
             'description' => 'Einführung in die Informatik 2 / Functional Programming and Verification',
