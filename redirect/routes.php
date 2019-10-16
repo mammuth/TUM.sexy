@@ -77,8 +77,8 @@ class Route {
         ],
         'db'           => [
             'description' => 'Grundlagen: Datenbanken',
-            'target'      => 'https://db.in.tum.de/teaching/ws1819/grundlagen/',
-            'moodle_id'   => '38031',
+            'target'      => 'https://db.in.tum.de/teaching/ws1920/grundlagen/?lang=de',
+            'moodle_id'   => '49531',
         ],
         'erdb'         => [
             'description' => 'Einsatz und Realisierung von Datenbanksystemen',
