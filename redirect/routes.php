@@ -59,12 +59,12 @@ class Route {
             'target'      => 'https://websec.sec.in.tum.de',
         ],
         'netsec'       => [
-            'description' => 'Netzsicherheit',
-            'target'      => 'https://net.in.tum.de/teaching/ws1819/netsec.html',
+            'description' => 'Network Security - Netzsicherheit',
+            'target'      => 'https://www.net.in.tum.de/teaching/ws1920/netsec.html',
         ],
         'anal'         => [
             'description' => 'Analysis für Informatiker',
-	    'target'	  => 'https://www-m5.ma.tum.de/Allgemeines/MA0902_2019W',
+      	    'target'	    => 'https://www-m5.ma.tum.de/Allgemeines/MA0902_2019W',
             'moodle_id'   => '50842',
         ],
         'info2'        => [
@@ -78,8 +78,8 @@ class Route {
         ],
         'db'           => [
             'description' => 'Grundlagen: Datenbanken',
-            'target'      => 'https://db.in.tum.de/teaching/ws1819/grundlagen/',
-            'moodle_id'   => '38031',
+            'target'      => 'https://db.in.tum.de/teaching/ws1920/grundlagen/?lang=de',
+            'moodle_id'   => '49531',
         ],
         'erdb'         => [
             'description' => 'Einsatz und Realisierung von Datenbanksystemen',
@@ -442,13 +442,21 @@ class Route {
             'description' => 'Support Elective: Think. Make. Start.',
             'target'      => 'https://www.thinkmakestart.com/',
         ],
-	'finder'     => [
+        'finder'     => [
             'description' => 'Roomfinder',
             'target'      => 'https://www.ph.tum.de/about/visit/roomfinder/',
         ],
         'set'     => [
             'description' => 'Studieneinführungstage der FSMPI',
             'target'      => 'https://www.fsmpi.de/set',
+        ],
+        'ml'     => [
+            'description' => 'Machine Learning',
+            'target'      => 'https://piazza.com/tum.de/fall2019/in2064/resources',
+        ],
+        'asp'     => [
+            'description' => 'Aspekte der systemnahen Programmierung bei der Spieleentwicklung',
+            'target'      => 'https://www.caps.in.tum.de/lehre/ws19/praktika/asp/',
         ],
     ];
 
@@ -477,10 +485,10 @@ class Route {
         'urban-mobility'=> 'ecarus',
         'kino'    => 'film',
         'gdb'     => 'db',
-	'tumi'    => 'esn',
+    'tumi'    => 'esn',
         'complexity' => 'comp',
         'sp-ge' => 'ge-sp',
-	'roomfinder' => 'finder'
+    'roomfinder' => 'finder'
     ];
 
     /**
@@ -508,7 +516,7 @@ class Route {
             'hunger', 'mensabot', 'mensabot2', 'roombot', 'finder', 'room', 'app', 'c', 'm', 'sp', 'ma-sp', 'ge-sp', 'ge-ma-sp', 'wi-sp', 'wi-ma-sp', 'stuff', 'reddit', 'vorkurs', 'statista', 'shuttle', 'sharelatex', 'matching', 'ecarus', 'film', 'set', 'slam'
         ],
         'Electives'   => [
-            'pl', 'gki', 'conpra', 'ged', 'pgm', 'gog', 'artemis', 'csc', 'scivis', 'ase', 'qo', 'itsec', 'netsec', 'modsim', 'pp', 'mvs', 'adlr', 'sbrml', 'rpchi', 'agt', 'adm', 'crypto', 'geokalkuele', 'automata', 'sd', 'markov', 'progopt', 'advalgs', 'ea', 'algebra1', 'rts', 'erdb', 'compiler', 'ilab1', 'ilab2', 'ilabx', 'comp', 'tms'
+            'pl', 'gki', 'conpra', 'ged', 'pgm', 'gog', 'artemis', 'csc', 'scivis', 'ase', 'qo', 'itsec', 'netsec', 'modsim', 'pp', 'mvs', 'adlr', 'sbrml', 'rpchi', 'agt', 'adm', 'crypto', 'geokalkuele', 'automata', 'sd', 'markov', 'progopt', 'advalgs', 'ea', 'algebra1', 'rts', 'erdb', 'compiler', 'ilab1', 'ilab2', 'ilabx', 'comp', 'tms', 'ml'
         ],
     ];
 
