@@ -64,6 +64,7 @@ class Route {
         ],
         'anal'         => [
             'description' => 'Analysis für Informatiker',
+      	    'target'	    => 'https://www-m5.ma.tum.de/Allgemeines/MA0902_2019W',
             'moodle_id'   => '50842',
         ],
         'info2'        => [
