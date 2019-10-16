@@ -453,6 +453,10 @@ class Route {
             'description' => 'Machine Learning',
             'target'      => 'https://piazza.com/tum.de/fall2019/in2064/resources',
         ],
+        'asp'     => [
+            'description' => 'Aspekte der systemnahen Programmierung bei der Spieleentwicklung',
+            'target'      => 'https://www.caps.in.tum.de/lehre/ws19/praktika/asp/',
+        ],
     ];
 
     // Format is: <source / synonym> => <target> - the target must be present in the $routes array
