@@ -120,16 +120,16 @@ class Route {
         ],
         'info1'        => [
             'description' => 'Einführung in die Informatik 1',
-            'moodle_id'   => '42050',
+            'moodle_id'   => '49563',
         ],
         'pgdp'         => [
             'description' => 'Praktikum Grundlagen der Programmierung (Moodle-Kurs)',
-            'moodle_id'   => '42050',
+            'moodle_id'   => '49563',
         ],
         'era'          => [
             'description' => 'Einführung in die Rechnerarchitektur',
-            'target'      => 'https://www.caps.in.tum.de/lehre/ws18/vorlesungen/era/',
-            'moodle_id'   => '45072',
+            'target'      => 'https://www.caps.in.tum.de/lehre/ws19/vorlesungen/era/',
+            'moodle_id'   => '49305',
         ],
         'scivis'       => [
             'description' => 'Scientific Visualization',
