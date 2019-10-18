@@ -67,7 +67,7 @@ class Route {
       	    'target'	    => 'https://www-m5.ma.tum.de/Allgemeines/MA0902_2019W',
             'moodle_id'   => '50842',
         ],
-        'info2'        => [
+        'fpv'        => [
             'description' => 'Einführung in die Informatik 2 / Functional Programming and Verification',
             'target'      => 'https://www.in.tum.de/i02/lehre/wintersemester-1819/vorlesungen/functional-programming-and-verification/',
             'moodle_id'   => '44932',
@@ -467,7 +467,8 @@ class Route {
         'erap'    => 'erapraktikum',
         'sp-ma'   => 'ma-sp',
         'eidi'    => 'info1',
-        'eidi2'   => 'info2',
+        'eidi2'   => 'fpv',
+        'info2'   => 'fpv',
         'latex'   => 'sharelatex',
         'tex'     => 'sharelatex',
         'bs'      => 'gbs',
@@ -503,7 +504,7 @@ class Route {
             'eist', 'gad', 'gadjudge', 'erapraktikum', 'linalg', 'ged',
         ],
         '3. Semester' => [
-            'anal', 'info2', 'db', 'gbs',
+            'anal', 'fpv', 'db', 'gbs',
         ],
         '4. Semester' => [
             'grnvs', 'theo', 'theojudge', 'dwt',
