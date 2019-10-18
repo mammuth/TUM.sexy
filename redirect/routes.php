@@ -68,9 +68,9 @@ class Route {
             'moodle_id'   => '50842',
         ],
         'fpv'        => [
-            'description' => 'Einführung in die Informatik 2 / Functional Programming and Verification',
-            'target'      => 'https://www.in.tum.de/i02/lehre/wintersemester-1819/vorlesungen/functional-programming-and-verification/',
-            'moodle_id'   => '44932',
+            'description' => 'Functional Programming and Verification',
+            'target'      => 'http://www21.in.tum.de/teaching/fpv/WS1920/',
+            'moodle_id'   => '52268',
         ],
         'e2ocaml'      => [
             'description' => 'Einführung in die Informatik 2 OCAML HA-Abgabe',
