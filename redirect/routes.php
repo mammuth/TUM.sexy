@@ -68,9 +68,9 @@ class Route {
             'moodle_id'   => '50842',
         ],
         'info2'        => [
-            'description' => 'Einführung in die Informatik 2 / Functional Programming and Verification',
-            'target'      => 'https://www.in.tum.de/i02/lehre/wintersemester-1819/vorlesungen/functional-programming-and-verification/',
-            'moodle_id'   => '44932',
+            'description' => 'Functional Programming and Verification',
+            'target'      => 'http://www21.in.tum.de/teaching/fpv/WS1920/',
+            'moodle_id'   => '52268',
         ],
         'e2ocaml'      => [
             'description' => 'Einführung in die Informatik 2 OCAML HA-Abgabe',
@@ -87,7 +87,7 @@ class Route {
         ],
         'gbs'          => [
             'description' => 'Grundlagen: Betriebssysteme und Systemsoftware',
-            'target'      => 'https://www.cm.in.tum.de/teaching/gbs/',
+            'target'      => 'https://www.cm.in.tum.de/teaching/winter-term-20192020/gbs-1920/',
             'moodle_id'   => '49592',
         ],
         'quintero'     => [
@@ -468,6 +468,7 @@ class Route {
         'sp-ma'   => 'ma-sp',
         'eidi'    => 'info1',
         'eidi2'   => 'info2',
+        'fpv'     => 'info2',
         'latex'   => 'sharelatex',
         'tex'     => 'sharelatex',
         'bs'      => 'gbs',
