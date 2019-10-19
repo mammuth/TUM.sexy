@@ -52,7 +52,7 @@ class Route {
         ],
         'numprog'      => [
             'description' => 'Numerisches Programmieren',
-            'moodle_id'   => '45799',
+            'moodle_id'   => '49337',
         ],
         'websec'       => [
             'description' => 'WebApplication Security Bachelor Praktikum',
@@ -454,9 +454,22 @@ class Route {
             'description' => 'Machine Learning',
             'target'      => 'https://piazza.com/tum.de/fall2019/in2064/resources',
         ],
+        'ki'    => [
+            'description' => 'Grundlagen der künstlichen Intelligenz',
+            'moodle_id' => '49273',
+        ],
         'asp'     => [
             'description' => 'Aspekte der systemnahen Programmierung bei der Spieleentwicklung',
             'target'      => 'https://www.caps.in.tum.de/lehre/ws19/praktika/asp/',
+        ],
+        'pat'     => [
+            'description' => 'Patterns',
+            'target'      => 'https://ase.in.tum.de/lehrstuhl_1/teaching/winter-2018-19?id=998',
+            'moodle_id'   => '49541',
+        ],
+        'med1'   => [
+            'description' => 'Medizin 1',
+            'moodle_id'      => '52166',
         ],
     ];
 
@@ -469,6 +482,7 @@ class Route {
         'eidi'    => 'info1',
         'eidi2'   => 'fpv',
         'info2'   => 'fpv',
+        'zweidi'  => 'fpv',
         'latex'   => 'sharelatex',
         'tex'     => 'sharelatex',
         'bs'      => 'gbs',
@@ -486,10 +500,12 @@ class Route {
         'urban-mobility'=> 'ecarus',
         'kino'    => 'film',
         'gdb'     => 'db',
-    'tumi'    => 'esn',
+        'tumi'    => 'esn',
         'complexity' => 'comp',
         'sp-ge' => 'ge-sp',
-    'roomfinder' => 'finder'
+        'roomfinder' => 'finder',
+        'patterns' => 'pat',
+        'ai'      => 'ki'
     ];
 
     /**
@@ -517,7 +533,7 @@ class Route {
             'hunger', 'mensabot', 'mensabot2', 'roombot', 'finder', 'room', 'app', 'c', 'm', 'sp', 'ma-sp', 'ge-sp', 'ge-ma-sp', 'wi-sp', 'wi-ma-sp', 'stuff', 'reddit', 'vorkurs', 'statista', 'shuttle', 'sharelatex', 'matching', 'ecarus', 'film', 'set', 'slam'
         ],
         'Electives'   => [
-            'pl', 'gki', 'conpra', 'ged', 'pgm', 'gog', 'artemis', 'csc', 'scivis', 'ase', 'qo', 'itsec', 'netsec', 'modsim', 'pp', 'mvs', 'adlr', 'sbrml', 'rpchi', 'agt', 'adm', 'crypto', 'geokalkuele', 'automata', 'sd', 'markov', 'progopt', 'advalgs', 'ea', 'algebra1', 'rts', 'erdb', 'compiler', 'ilab1', 'ilab2', 'ilabx', 'comp', 'tms', 'ml'
+            'pl', 'gki', 'conpra', 'ged', 'pgm', 'gog', 'artemis', 'csc', 'scivis', 'ase', 'qo', 'itsec', 'netsec', 'modsim', 'pp', 'mvs', 'adlr', 'sbrml', 'rpchi', 'agt', 'adm', 'crypto', 'geokalkuele', 'automata', 'sd', 'markov', 'progopt', 'advalgs', 'ea', 'algebra1', 'rts', 'erdb', 'compiler', 'ilab1', 'ilab2', 'ilabx', 'comp', 'tms', 'ml', 'ki', 'pat'
         ],
     ];
 
