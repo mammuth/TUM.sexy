@@ -87,7 +87,7 @@ class Route {
         ],
         'gbs'          => [
             'description' => 'Grundlagen: Betriebssysteme und Systemsoftware',
-            'target'      => 'https://www.cm.in.tum.de/teaching/winter-term-20192020/gbs-1920/',
+            'target'      => 'https://www.moodle.tum.de/course/view.php?id=49592',
             'moodle_id'   => '49592',
         ],
         'quintero'     => [
