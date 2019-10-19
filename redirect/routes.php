@@ -380,7 +380,7 @@ class Route {
         ],
         'ea'           => [
             'description' => 'Efficient Algorithms',
-            'target'      => 'http://www14.in.tum.de/lehre/2018WS/ea/index.html.en',
+            'target'      => 'http://www14.in.tum.de/lehre/2019WS/ea/index.html.en',
         ],
         'algebra1'     => [
             'description' => 'Algebra 1',
