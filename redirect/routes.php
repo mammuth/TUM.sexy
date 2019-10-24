@@ -333,7 +333,7 @@ class Route {
         ],
         'adm'          => [
             'description' => 'Algorithmische Diskrete Mathematik',
-            'target'      => 'https://www-m9.ma.tum.de/WS2018/ADM',
+            'target'      => 'https://agdm.ma.tum.de/teaching/2019W/adm.html',
         ],
         'crypto'       => [
             'description' => 'Kryptographie',
@@ -349,8 +349,12 @@ class Route {
         ],
         'itsec'        => [
             'description' => 'IT-Sicherheit',
-            'target'      => 'https://www.sec.in.tum.de/i20/teaching/ws2018/it-sicherheit',
+            'target'      => 'https://www.sec.in.tum.de/i20/teaching/ws2019/it-sicherheit',
             'moodle_id'   => '42097',
+        ],
+        'ausitsec'        => [
+            'description' => 'ausgewählte Themen der IT-Sicherheit',
+            'target'      => 'https://www.sec.in.tum.de/i20/teaching/ws2019/ausgewahlte-themen-aus-dem-bereich-it-sicherheit',
         ],
         'geokalkuele'  => [
             'description' => 'Geometriekalküle',
@@ -358,7 +362,7 @@ class Route {
         ],
         'automata'     => [
             'description' => 'Automata and Formal Languages',
-            'target'      => 'https://www7.in.tum.de/um/courses/auto/ws1819/',
+            'target'      => 'https://www7.in.tum.de/um/courses/auto/ws1920/index.php?category=uebungen',
         ],
         'sd'           => [
             'description' => 'Signaldarstellung',
