@@ -475,6 +475,10 @@ class Route {
             'description' => 'Medizin 1',
             'moodle_id'      => '52166',
         ],
+        'cvvm'     => [
+            'description' => 'Computer Vision I: Variational Methods',
+            'target'      => 'https://vision.in.tum.de/teaching/ws2019/cvvm_ws19',
+        ],
     ];
 
     // Format is: <source / synonym> => <target> - the target must be present in the $routes array
@@ -537,7 +541,7 @@ class Route {
             'hunger', 'mensabot', 'mensabot2', 'roombot', 'finder', 'room', 'app', 'c', 'm', 'sp', 'ma-sp', 'ge-sp', 'ge-ma-sp', 'wi-sp', 'wi-ma-sp', 'stuff', 'reddit', 'vorkurs', 'statista', 'shuttle', 'sharelatex', 'matching', 'ecarus', 'film', 'set', 'slam'
         ],
         'Electives'   => [
-            'pl', 'gki', 'conpra', 'ged', 'pgm', 'gog', 'artemis', 'csc', 'scivis', 'ase', 'qo', 'itsec', 'netsec', 'modsim', 'pp', 'mvs', 'adlr', 'sbrml', 'rpchi', 'agt', 'adm', 'crypto', 'geokalkuele', 'automata', 'sd', 'markov', 'progopt', 'advalgs', 'ea', 'algebra1', 'rts', 'erdb', 'compiler', 'ilab1', 'ilab2', 'ilabx', 'comp', 'tms', 'ml', 'ki', 'pat'
+            'pl', 'gki', 'conpra', 'ged', 'pgm', 'gog', 'artemis', 'csc', 'scivis', 'ase', 'qo', 'itsec', 'netsec', 'modsim', 'pp', 'mvs', 'adlr', 'sbrml', 'rpchi', 'agt', 'adm', 'crypto', 'geokalkuele', 'automata', 'sd', 'markov', 'progopt', 'advalgs', 'ea', 'algebra1', 'rts', 'erdb', 'compiler', 'ilab1', 'ilab2', 'ilabx', 'comp', 'tms', 'ml', 'ki', 'pat', 'cvvm'
         ],
     ];
 
