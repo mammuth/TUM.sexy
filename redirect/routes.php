@@ -358,7 +358,7 @@ class Route {
         ],
         'geokalkuele'  => [
             'description' => 'Geometriekalküle',
-            'target'      => 'https://www-m10.ma.tum.de/bin/view/Lehre/WS1819/GeometrieKalkueleWS1819',
+            'target'      => 'https://geo.ma.tum.de/de/lehre/geometriekalkuele.html',
         ],
         'automata'     => [
             'description' => 'Automata and Formal Languages',
