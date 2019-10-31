@@ -479,6 +479,10 @@ class Route {
             'description' => 'Computer Vision I: Variational Methods',
             'target'      => 'https://vision.in.tum.de/teaching/ws2019/cvvm_ws19',
         ],
+        'vt'    => [
+            'description' => 'Virtualization Techniques',
+            'targets'     => 'https://www.caps.in.tum.de/lehre/ws19/vorlesungen/virtualization-techniques/',
+        ],
     ];
 
     // Format is: <source / synonym> => <target> - the target must be present in the $routes array
