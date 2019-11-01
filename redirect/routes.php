@@ -240,7 +240,7 @@ class Route {
         ],
         'pl'           => [
             'description' => 'Programming Languages',
-            'target'      => 'https://www.in.tum.de/i02/lehre/wintersemester-1819/vorlesungen/programming-languages/',
+            'target'      => 'https://www.in.tum.de/i02/lehre/wintersemester-1920/vorlesungen/programming-languages/',
         ],
         'ase'          => [
             'description' => 'Advanced Topics In Software Engineering',
@@ -482,6 +482,14 @@ class Route {
         'vt'    => [
             'description' => 'Virtualization Techniques',
             'targets'     => 'https://www.caps.in.tum.de/lehre/ws19/vorlesungen/virtualization-techniques/',
+        ],
+        'imgtech'    => [
+            'description' => 'Medical Imaging Technology',
+            'target'      => 'https://www.moodle.tum.de/course/view.php?id=52208',
+        ],
+        'ibmi'    => [
+            'description' => 'Introduction to Biological and Medical Imaging',
+            'target'      => 'http://www.cbi.ei.tum.de/courses/course-in-biological-imaging/',
         ],
     ];
 
