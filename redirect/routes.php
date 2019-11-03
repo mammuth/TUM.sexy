@@ -87,7 +87,7 @@ class Route {
         ],
         'gbs'          => [
             'description' => 'Grundlagen: Betriebssysteme und Systemsoftware',
-            'target'      => 'https://www.cm.in.tum.de/teaching/gbs/',
+            'target'      => 'https://www.moodle.tum.de/course/view.php?id=49592',
             'moodle_id'   => '49592',
         ],
         'quintero'     => [
