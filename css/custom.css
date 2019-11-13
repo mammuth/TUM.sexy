@@ -38,7 +38,6 @@ a.logo {
     position: relative !important;
     opacity: 0.9;
     padding: 0 20px 20px 20px;
-    background-color: rgba(255, 255, 255, 0.8);
 }
 
 ul.hunger-menu {
@@ -144,3 +143,77 @@ div.padding {
     padding: 6px 15px 6px 0;
     text-align: right;
 }
+
+.section-header {
+    margin-left: 1%;
+    margin-right: 1%;
+}
+.semester>li {
+    list-style-type: none;
+    border-bottom: 1px solid #dedede;
+    margin: 0;
+    padding: 1rem 1rem 1rem 1rem;
+    position: relative;
+    left: -1rem;
+}
+.semester>li:last-child {
+    margin-bottom: 3rem;
+}
+.semester>li:hover {
+    background-color: #f6f6f6;
+}
+
+h3 {
+    font-weight: 300;
+    font-size: 2.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #222;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+h4 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #0b0c10;
+        color: #e5e6e7;
+    }
+    #searchbox {
+        color: #e5e6e7;
+        background-color: #1f2833;
+        border-color: #45a29e; 
+    }
+    #searchbox:focus {
+        border-color: #66fcf1; 
+    }
+    h3 {
+        border-bottom-color: #888;
+    }
+    .semester>li {
+        border-color: #45a29e;
+    }
+    .semester>li:hover {
+        background-color: #1f2833;
+    }
+    mark {
+        background-color: #66fcf1;
+    }
+    #sexy-name {
+        color: #fff;
+    }
+    a, a:link, a:visited {
+        color: #66fcf1;
+    }
+    a:hover, a:active, a:focus {
+        color: #ccfffc;
+    }
+    img {
+        filter: grayscale(30%);
+    }
+  }

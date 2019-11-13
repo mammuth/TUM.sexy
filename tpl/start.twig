@@ -9,20 +9,20 @@
 <main id="main">
     <div class="row" style="margin-top:10%">
         <div class="twelve column">
-            <div>
+            <div class="section-header">
                 <h3 data-ss-nofilter>Redirects</h3>
                 <p data-ss-nofilter>
-                    No need for remembering long and ugly urls or bookmarks— Just use these redirects!
+                    No need for remembering long and ugly urls or bookmarks &ndash; Just use these redirects!
                 </p>
             </div>
 
             <div class="row">
                     {% for section,elements in routes %}
                         {% if loop.index % 2 == 0 %}
-                            </div><div class="one-half column" data-ss-forceadditional="{{ section }}">
+                            </div><div class="one-half column semester" data-ss-forceadditional="{{ section }}">
                         {% endif %}
                         {% if loop.index % 2 == 1 %}
-                            {% if loop.index != 1 %}</div>{%endif%}<div class="one-half column" data-ss-forceadditional="{{ section }}">
+                            {% if loop.index != 1 %}</div>{%endif%}<div class="one-half column semester" data-ss-forceadditional="{{ section }}">
                         {% endif %}
                         <h4>{{ section }}</h4>
                         {% for route in elements %}
