@@ -145,22 +145,34 @@ div.padding {
 }
 
 .section-header {
-    margin-left: 1%;
-    margin-right: 1%;
+    margin: 0 1rem;
 }
+
+#searchbox {
+    box-sizing: border-box;
+    height: 48px;
+    width: 100%;
+}
+#searchbox-wrapper {
+    margin: 0 1rem;
+    display: block;
+}
+
 .semester>li {
     list-style-type: none;
     border-bottom: 1px solid #dedede;
     margin: 0;
     padding: 1rem 1rem 1rem 1rem;
     position: relative;
-    left: -1rem;
 }
 .semester>li:last-child {
     margin-bottom: 3rem;
 }
 .semester>li:hover {
     background-color: #f6f6f6;
+}
+.semester>h4 {
+    padding: 0 1rem;
 }
 
 h3 {
@@ -177,6 +189,17 @@ h4 {
     text-transform: uppercase;
     letter-spacing: 3px;
     font-weight: 700;
+}
+
+@media (min-width: 550px) {
+    .section-header {
+        margin: 0 1%;
+        padding: 0 1rem;
+    }
+    #searchbox-wrapper {
+        margin: 0 1rem;
+        padding: 0 2%;
+    }
 }
 
 @media (prefers-color-scheme: dark) {
