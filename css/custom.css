@@ -191,10 +191,17 @@ h4 {
     font-weight: 700;
 }
 
+.subsection {
+    padding: 0 1rem;
+}
+
 @media (min-width: 550px) {
     .section-header {
         margin: 0 1%;
         padding: 0 1rem;
+    }
+    .subsection {
+        padding: 0 2%;
     }
     #searchbox-wrapper {
         margin: 0 1rem;
