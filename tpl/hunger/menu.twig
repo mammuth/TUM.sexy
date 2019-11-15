@@ -5,19 +5,22 @@
         <a href="{{ fallback_url }}">Menu by bistro owner (PDF)</a></p>
 {% else %}
     {% for day in week[:5] %}
-        <strong>{{ day.getDate() | date("l, F j") }}<sup>{{ day.getDate() | date("S") }}</sup></strong>
+
+        <h5>{{ day.getDate() | date("l, F j") }}<sup>{{ day.getDate() | date("S") }}</sup></h5>
         <ul class="hunger-menu">
             {% for dish in day %}
-                <li data-balloon="{{ dish.getPrice() | number_format(2, '.', ',') }} €" data-balloon-pos="up"
+                <li 
                     onclick="void(0)">
-                    {{ dish.getName() }}
+                    <span class="item-title">{{ dish.getName() }}</span>
+                    <span class="item-price">{{ dish.getPrice() | number_format(2, '.', ',') }}€</span>
                 </li>
             {% endfor %}
             {% if fixed_dishes != null and fixed_dishes[loop.index0] != null %}
                 {% for dish in fixed_dishes[loop.index0] %}
-                    <li data-balloon="{{ dish.price | number_format(2, '.', ',') }} €" data-balloon-pos="up"
-                        onclick="void(0)">
-                        <i>Special</i> {{ dish.name }}
+                    <li onclick="void(0)">
+                        <span class="item-special"></span>
+                        <span class="item-title">{{ dish.getName() }}</span>
+                        <span class="item-price">{{ dish.getPrice() | number_format(2, '.', ',') }} €</span>
                     </li>
                 {% endfor %}
             {% endif %}

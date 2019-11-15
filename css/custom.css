@@ -38,12 +38,7 @@ a.logo {
     position: relative !important;
     opacity: 0.9;
     padding: 0 20px 20px 20px;
-}
-
-ul.hunger-menu {
-    margin-left: 1em;
-    list-style-position: outside;
-}
+} 
 
 #footer {
     position: fixed;
@@ -158,6 +153,63 @@ div.padding {
     display: block;
 }
 
+.hunger-block {
+    padding: 0 1rem;
+}
+
+.hunger-block h5 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin: 3rem 0 0.5rem 0;
+}
+
+ul.hunger-menu>li {
+    list-style-type: none;
+    border-bottom: 1px solid #dedede;
+    margin: 0;
+    padding: 1rem 1rem 1rem 1rem;
+    position: relative;
+    left: -1rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+ul.hunger-menu>li:last-child {
+    border-bottom: none;
+}
+ul.hunger-menu>li:hover {
+    background-color: #f6f6f6;
+}
+
+ul.hunger-menu .item-special::after {
+    content: "S";
+    display: inline-block;
+    border-radius: 10%;
+    background-color: #1EAEDB;
+    color: #fff;
+    padding: 0.3rem 0.75rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    margin-right: 1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+ul.hunger-menu .item-title {
+    margin-right: auto;
+}
+
+ul.hunger-menu .item-price {
+    display: block;
+    color: #1EAEDB;
+    white-space: nowrap;
+    margin-left: 0.75rem;
+    justify-self: end;
+    text-align: center;
+}
+
 .semester>li {
     list-style-type: none;
     border-bottom: 1px solid #dedede;
@@ -166,6 +218,7 @@ div.padding {
     position: relative;
 }
 .semester>li:last-child {
+    border-bottom: none;
     margin-bottom: 3rem;
 }
 .semester>li:hover {
@@ -173,6 +226,10 @@ div.padding {
 }
 .semester>h4 {
     padding: 0 1rem;
+}
+
+h1 > sup, h2 > sup, h3 > sup, h4 > sup, h5 > sup {
+    text-transform: none;
 }
 
 h3 {
@@ -209,6 +266,12 @@ h4 {
     }
 }
 
+@media (min-width: 850px) {
+    ul.hunger-menu .item-special::after {
+        content: 'Special';
+    }
+}
+
 @media (prefers-color-scheme: dark) {
     body {
         background-color: #0b0c10;
@@ -224,6 +287,20 @@ h4 {
     }
     h3 {
         border-bottom-color: #888;
+    }
+    ul.hunger-menu>li {
+        border-color: #45a29e;
+    }
+    ul.hunger-menu>li:hover {
+        background-color: #1f2833;
+    }
+    ul.hunger-menu>li>span.item-price {
+        color: #66fcf1;
+    }
+    ul.hunger-menu .item-special::after {
+        border: 1px solid #66fcf1;
+        background-color: rgba(0,0,0,0);
+        color: #e5e6e7;
     }
     .semester>li {
         border-color: #45a29e;
