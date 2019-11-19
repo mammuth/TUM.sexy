@@ -219,7 +219,7 @@ class Route {
         ],
         'erapraktikum' => [
             'description' => 'Praktikum - Einführung in die Rechnerarchitektur',
-            'target'      => 'https://www.caps.in.tum.de/lehre/ss19/praktika/era/',
+            'target'      => 'https://www.caps.in.tum.de/lehre/ws19/praktika/rechnerarchitektur/',
         ],
         'ged'          => [
             'description' => 'Game Engine Design',
