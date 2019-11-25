@@ -590,7 +590,7 @@ class Route {
             'ecarus',
             'film',
             'set',
-            'slam'
+            'slam',
         ],
         'Electives'   => [
             'pl',
@@ -635,7 +635,7 @@ class Route {
             'ki',
             'pat',
             'cvvm',
-            'vt'
+            'vt',
         ],
     ];
 
