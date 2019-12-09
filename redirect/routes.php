@@ -64,10 +64,10 @@ class Route {
         ],
         'anal'         => [
             'description' => 'Analysis für Informatiker',
-      	    'target'	    => 'https://www-m5.ma.tum.de/Allgemeines/MA0902_2019W',
+            'target'      => 'https://www-m5.ma.tum.de/Allgemeines/MA0902_2019W',
             'moodle_id'   => '50842',
         ],
-        'fpv'        => [
+        'fpv'          => [
             'description' => 'Functional Programming and Verification',
             'target'      => 'http://www21.in.tum.de/teaching/fpv/WS1920/',
             'moodle_id'   => '52268',
@@ -83,7 +83,7 @@ class Route {
         ],
         'erdb'         => [
             'description' => 'Einsatz und Realisierung von Datenbanksystemen',
-            'target'      => 'https://db.in.tum.de/teaching/ss19/impldb/'
+            'target'      => 'https://db.in.tum.de/teaching/ss19/impldb/',
         ],
         'gbs'          => [
             'description' => 'Grundlagen: Betriebssysteme und Systemsoftware',
@@ -197,7 +197,7 @@ class Route {
             'target'      => 'https://www.in.tum.de/cg/teaching/summer-term-19/grundlagen-algorithmen-und-datenstrukturen-in0007/',
             'moodle_id'   => '40888',
         ],
-        'gadjudge'          => [
+        'gadjudge'     => [
             'description' => 'TUMJudge - Grundlegende Algorithmen und Datenstrukturen',
             'target'      => 'https://judge.in.tum.de/gad/public/',
         ],
@@ -305,11 +305,11 @@ class Route {
         ],
         'wahl'         => [
             'description' => 'Hochschulwahlen',
-            'target'      => 'https://www.asta.tum.de/wahl/'
+            'target'      => 'https://www.asta.tum.de/wahl/',
         ],
         'agt'          => [
             'description' => 'Algorithmic Game Theory',
-            'target'      => 'https://dss.in.tum.de/teaching/38-teaching/semester/sommersemster-2019/203-algorithmic-game-theory-ss2019.html'
+            'target'      => 'https://dss.in.tum.de/teaching/38-teaching/semester/sommersemster-2019/203-algorithmic-game-theory-ss2019.html',
         ],
         'io'           => [
             'description' => 'Information Officer',
@@ -319,7 +319,7 @@ class Route {
             'description' => 'TUM Diversity & Queer',
             'target'      => 'https://www.facebook.com/events/599246697252806/',
         ],
-        'mario'          => [
+        'mario'        => [
             'description' => 'Mario im tu film',
             'target'      => 'https://www.facebook.com/events/2186204174962290/',
         ],
@@ -352,7 +352,7 @@ class Route {
             'target'      => 'https://www.sec.in.tum.de/i20/teaching/ws2019/it-sicherheit',
             'moodle_id'   => '42097',
         ],
-        'ausitsec'        => [
+        'ausitsec'     => [
             'description' => 'ausgewählte Themen der IT-Sicherheit',
             'target'      => 'https://www.sec.in.tum.de/i20/teaching/ws2019/ausgewahlte-themen-aus-dem-bereich-it-sicherheit',
         ],
@@ -394,104 +394,104 @@ class Route {
             'description' => 'Echtzeitsysteme / Real Time Systems',
             'moodle_id'   => '42138',
         ],
-        'ecarus'          => [
+        'ecarus'       => [
             'description' => 'E-Mobility der Zukunft: Ingenieurspraxis, Forschungspraxis & Co.',
             'target'      => 'https://www.ecarus.ei.tum.de',
         ],
-        'ja'          => [
+        'ja'           => [
             'description' => 'Junge Akademie',
             'target'      => 'https://www.jungeakademie.tum.de/',
         ],
-        'film'          => [
+        'film'         => [
             'description' => 'tu film',
             'target'      => 'https://www.tu-film.de/',
         ],
-        'fds'         => [
+        'fds'          => [
             'description' => 'Functional Data Structures',
             'target'      => 'https://www21.in.tum.de/teaching/FDS/SS19/',
         ],
-        'langenacht'         => [
+        'langenacht'   => [
             'description' => 'Lange Nacht der Univeristäten',
             'target'      => 'https://www.facebook.com/events/2681178088623650/',
         ],
-        'compiler'         => [
+        'compiler'     => [
             'description' => 'Compiler Construction',
             'target'      => 'https://www.in.tum.de/i02/lehre/sommersemester-19/vorlesungen/compiler-construction/',
         ],
-        'ilab1'           => [
+        'ilab1'        => [
             'description' => 'Practical Course: iLab1 - Build your own Internet',
             'target'      => 'https://ilab.net.in.tum.de',
         ],
-        'ilab2'           => [
+        'ilab2'        => [
             'description' => 'Practical Course: iLab2 - You set the Focus',
             'target'      => 'https://ilab2.net.in.tum.de',
         ],
-        'ilabx'           => [
+        'ilabx'        => [
             'description' => 'Practical Course: iLabX - The Virtual Internet Laboratory (block)',
             'target'      => 'https://ilabx.net.in.tum.de',
         ],
-        'comp'            => [
+        'comp'         => [
             'description' => 'Computational Complexity',
             'target'      => 'https://www7.in.tum.de/um/courses/complexity/SS19/',
         ],
-        'future'          => [
+        'future'       => [
             'description' => 'TUM4Future',
             'target'      => 'https://tum4future.de',
         ],
-        'restplaetze'     => [
+        'restplaetze'  => [
             'description' => 'Liste der Restplätze in Seminaren und Praktika',
             'target'      => 'https://www.in.tum.de/fuer-studierende/module-und-veranstaltungen/praktika-und-seminare/',
         ],
-        'tms'     => [
+        'tms'          => [
             'description' => 'Support Elective: Think. Make. Start.',
             'target'      => 'https://www.thinkmakestart.com/',
         ],
-        'finder'     => [
+        'finder'       => [
             'description' => 'Roomfinder',
             'target'      => 'https://www.ph.tum.de/about/visit/roomfinder/',
         ],
-        'set'     => [
+        'set'          => [
             'description' => 'Studieneinführungstage der FSMPI',
             'target'      => 'https://www.fsmpi.de/set',
         ],
-        'ml'     => [
+        'ml'           => [
             'description' => 'Machine Learning',
             'target'      => 'https://piazza.com/tum.de/fall2019/in2064/resources',
         ],
-        'ki'    => [
+        'ki'           => [
             'description' => 'Grundlagen der künstlichen Intelligenz',
-            'moodle_id' => '49273',
+            'moodle_id'   => '49273',
         ],
-        'asp'     => [
+        'asp'          => [
             'description' => 'Aspekte der systemnahen Programmierung bei der Spieleentwicklung',
             'target'      => 'https://www.caps.in.tum.de/lehre/ws19/praktika/asp/',
         ],
-        'pat'     => [
+        'pat'          => [
             'description' => 'Patterns',
             'target'      => 'https://ase.in.tum.de/lehrstuhl_1/teaching/winter-2018-19?id=998',
             'moodle_id'   => '49541',
         ],
-        'med1'   => [
+        'med1'         => [
             'description' => 'Medizin 1',
-            'moodle_id'      => '52166',
+            'moodle_id'   => '52166',
         ],
-        'cvvm'     => [
+        'cvvm'         => [
             'description' => 'Computer Vision I: Variational Methods',
             'target'      => 'https://vision.in.tum.de/teaching/ws2019/cvvm_ws19',
         ],
-        'vt'    => [
+        'vt'           => [
             'description' => 'Virtualization Techniques',
-            'target'     => 'https://www.caps.in.tum.de/lehre/ws19/vorlesungen/virtualization-techniques/',
+            'target'      => 'https://www.caps.in.tum.de/lehre/ws19/vorlesungen/virtualization-techniques/',
         ],
-        'imgtech'    => [
+        'imgtech'      => [
             'description' => 'Medical Imaging Technology',
             'target'      => 'https://www.moodle.tum.de/course/view.php?id=52208',
         ],
-        'ibmi'    => [
+        'ibmi'         => [
             'description' => 'Introduction to Biological and Medical Imaging',
             'target'      => 'http://www.cbi.ei.tum.de/courses/course-in-biological-imaging/',
         ],
-        'pretschi'    => [
+        'pretschi'     => [
             'description' => 'Formerly                   KnownAsSexiPretschi.eu',
             'target'      => 'https://tum.sexy/pret/',
         ],
@@ -499,37 +499,37 @@ class Route {
 
     // Format is: <source / synonym> => <target> - the target must be present in the $routes array
     private $synonyms = [
-        'csd'     => 'pride',
-        'erapra'  => 'erapraktikum',
-        'erap'    => 'erapraktikum',
-        'sp-ma'   => 'ma-sp',
-        'eidi'    => 'info1',
-        'eidi2'   => 'fpv',
-        'info2'   => 'fpv',
-        'zweidi'  => 'fpv',
-        'latex'   => 'sharelatex',
-        'tex'     => 'sharelatex',
-        'bs'      => 'gbs',
-        'netz'    => 'grnvs',
-        'protein' => 'pp',
-        'queer'   => 'diversity',
-        'rooms'   => 'room',
-        'match'   => 'matching',
-        'la'      => 'linalg',
-        'geokal'  => 'geokalkuele',
-        'geo'     => 'geokalkuele',
-        'ada'     => 'advalgs',
-        'algebra' => 'algebra1',
-        'ezs'     => 'rts',
-        'urban-mobility'=> 'ecarus',
-        'kino'    => 'film',
-        'gdb'     => 'db',
-        'tumi'    => 'esn',
-        'complexity' => 'comp',
-        'sp-ge' => 'ge-sp',
-        'roomfinder' => 'finder',
-        'patterns' => 'pat',
-        'ai'      => 'ki'
+        'csd'            => 'pride',
+        'erapra'         => 'erapraktikum',
+        'erap'           => 'erapraktikum',
+        'sp-ma'          => 'ma-sp',
+        'eidi'           => 'info1',
+        'eidi2'          => 'fpv',
+        'info2'          => 'fpv',
+        'zweidi'         => 'fpv',
+        'latex'          => 'sharelatex',
+        'tex'            => 'sharelatex',
+        'bs'             => 'gbs',
+        'netz'           => 'grnvs',
+        'protein'        => 'pp',
+        'queer'          => 'diversity',
+        'rooms'          => 'room',
+        'match'          => 'matching',
+        'la'             => 'linalg',
+        'geokal'         => 'geokalkuele',
+        'geo'            => 'geokalkuele',
+        'ada'            => 'advalgs',
+        'algebra'        => 'algebra1',
+        'ezs'            => 'rts',
+        'urban-mobility' => 'ecarus',
+        'kino'           => 'film',
+        'gdb'            => 'db',
+        'tumi'           => 'esn',
+        'complexity'     => 'comp',
+        'sp-ge'          => 'ge-sp',
+        'roomfinder'     => 'finder',
+        'patterns'       => 'pat',
+        'ai'             => 'ki',
     ];
 
     /**
@@ -681,13 +681,11 @@ class Route {
         //If it does not exist? Go to main page
         if (!isset($this->routes[$redirectUrl])) {
             return 'https://tum.sexy/';
-        }
-        //If target does not exist? Try moodle course
-        else if (!isset($this->routes[$redirectUrl]['target'])){
-            if (isset($this->routes[$redirectUrl]['moodle_id'])){
+        } //If target does not exist? Try moodle course
+        else if (!isset($this->routes[$redirectUrl]['target'])) {
+            if (isset($this->routes[$redirectUrl]['moodle_id'])) {
                 $siteType = 'm';
-            }
-            //If target and moodle course does not exist? Go to main page
+            } //If target and moodle course does not exist? Go to main page
             else {
                 return 'https://tum.sexy/';
             }
