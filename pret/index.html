@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-dark">
+<head>
+    <meta charset="utf-8" />
+    <title>Show me some love!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="robots" content="INDEX,FOLLOW" />
+    <script src="jquery.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <script src="confetti.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" type="text/css" />
+</head>
+<body>
+<style type="text/css" media="screen">
+    html,body{ margin:0;padding:0;overflow:hidden; position: relative;font-family: 'Roboto', sans-serif;width:100%;height:100%;}
+    #nyanbox div{ position:absolute; z-index: 150;}
+    .nyancat{ position:absolute;}
+    div#nyanfeet{ position:fixed;position:absolute;right:0;bottom:0;padding:0;margin:0; width:100%;background:#ccc;text-align:left;}
+    div#nyanfeet a{ margin:0;}
+    #nyanfeetpic,#nyanfeetgen{ float:left}
+    #nyanfronds{ float:right;margin:6px 5px 0}
+    #nyanfeetpic{ padding:6px 50px 0 12px}
+    #nyanfeetgen{ padding:3px 0 0}
+    #nyanfeetgen input[type="text"]{ width:332px}
+
+    #score,#modus a,#modus,#desc,#music,#music a{ color: #fff;font-size: 40px; text-decoration: none;  z-index: 999}
+    #score { position: absolute; top: 10px; right: 20px;font-weight: bold;text-align: right;}
+    #desc{ position: absolute; top: 10px; left: 20px;font-weight: bold;}
+    #music{ position: absolute; bottom: 20px; left: 20px; }
+    #modus{ position: absolute; bottom: 20px; right: 20px; text-align: right;}
+    #modus a{ font-size: 30px;}
+    #modus .sel,#music .sel{ font-weight:bolder;}
+    body {
+        animation: holyfuckrainbows 1s linear infinite;
+        -webkit-animation: holyfuckrainbows 1s linear infinite;
+    }
+    @keyframes holyfuckrainbows {
+        0% { background-color:#f00}
+        16% { background-color:#f80}
+        33% { background-color:#ff0}
+        50% { background-color:#0f0}
+        66% { background-color:#00f}
+        83% { background-color:#70f}
+        100% { background-color:#90f}
+    }
+    @-webkit-keyframes holyfuckrainbows {
+        0% { background-color:#f00}
+        16% { background-color:#f80}
+        33% { background-color:#ff0}
+        50% { background-color:#0f0}
+        66% { background-color:#00f}
+        83% { background-color:#70f}
+        100% { background-color:#90f}
+    }
+    .star{
+        font-size:0.5em;position:absolute;
+    }
+    .star .wrapper{
+        position:relative;height:10em;width:10em;
+    }
+    .star .dot{
+        background:white;height:1em;width:1em;position:absolute;display:none;top:50%;left:50%;}
+    .star.frame-1 .wrapper{ right:5em;}
+    .star.frame-2 .wrapper{ right:10em;}
+    .star.frame-3 .wrapper{ right:15em;}
+    .star.frame-4 .wrapper{ right:20em;}
+    .star.frame-5 .wrapper{ right:25em;}
+    .star.frame-1 .dot-1,.star.frame-2 .dot-1,.star.frame-4 .dot-1{ margin-top:-.5em;margin-left:-.5em;display:block;}
+    .star.frame-2 .dot-2,.star.frame-3 .dot-2{ margin-top:-1.5em;margin-left:-1.5em;display:block;}
+    .star.frame-2 .dot-3,.star.frame-3 .dot-3{ margin-top:.5em;margin-left:.5em;display:block;}
+    .star.frame-2 .dot-4,.star.frame-3 .dot-4{ margin-top:.5em;margin-left:-1.5em;display:block;}
+    .star.frame-2 .dot-5,.star.frame-3 .dot-5{ margin-top:-1.5em;margin-left:.5em;display:block;}
+    .star.frame-3 .dot-6,.star.frame-4 .dot-6{ margin-top:-2.5em;margin-left:-2.5em;display:block;}
+    .star.frame-3 .dot-7,.star.frame-4 .dot-7{ margin-top:1.5em;margin-left:-2.5em;display:block;}
+    .star.frame-3 .dot-8,.star.frame-4 .dot-8{ margin-top:-2.5em;margin-left:1.5em;display:block;}
+    .star.frame-3 .dot-9,.star.frame-4 .dot-9{ margin-top:1.5em;margin-left:1.5em;display:block;}
+
+    .heart{
+        position: absolute;color: #fff;font-size: 40px;
+        animation: bw 0.1s linear infinite;
+        -webkit-animation: bw 0.1s linear infinite;
+    }
+    @keyframes bw {
+        0% { color:#fff}
+        50% { color:#FF00D4}
+    }
+    @-webkit-keyframes bw {
+        0% { color:#fff}
+        50% { color:#FF00D4}
+    }
+
+    body, a:hover {
+        cursor: url(http://cur.cursors-4u.net/symbols/sym-1/sym49.cur), progress !important;}
+    #background {
+        position: fixed;
+        left: 0em;
+        top:0em;
+        z-index: 100;
+        width: 100%;
+        height: 100%;
+    }
+</style>
+<div id="background" class="noselect"></div>
+<div id="nyanbox"></div>
+<div id="score">Score <span>0</span> </div>
+<div id="modus">
+    Mode<br />
+    <a href="#xxxEliteSnipaxxx_underground">Hardcore</a>
+    <a href="#easy" class="sel">Easy</a>
+</div>
+<div id="desc">
+    Turn up the volume!<br />
+    Click em!
+</div>
+<div id="music">
+    Music:
+    <a href="#musicOn" class="sel">on</a>
+    <a href="#musicOff">off</a>
+</div>
+<script>
+    flyspeed = 5000;
+    var flyright = function(next) {
+        lpos = -$(this).width() * 1.3;
+        lend = $(window).width();
+        tpos = Math.random() * ($(window).height() - $(this).height());
+        $(this).offset({
+            "left": lpos, "top": tpos});
+        $(this).delay(Math.random() * 3000).animate({
+                left: lend
+            }, {
+                queue: false,
+                duration: Math.floor(Math.random() * flyspeed) + flyspeed / 2,
+                easing: "linear",
+                complete: function() {
+                    moar($(this));
+                    next();
+                }
+            }
+        ).show().queue(flynext());
+    };
+
+    var flyleft = function(next) {
+        lpos = $(window).width();
+        lend = -$(this).width() * 1.3;
+        tpos = Math.random() * ($(window).height() - $(this).height());
+        if (Math.floor(Math.random() * 3) < 3) {
+            tend = tpos = Math.random() * ($(window).height());
+        } else {
+            tend = tpos
+        }
+        $(this).offset({
+            "left": lpos, "top": tpos});
+        $(this).delay(Math.random() * 3000).animate({
+                left: lend, "top": tend
+            }, {
+                queue: false,
+                duration: Math.floor(Math.random() * flyspeed) + flyspeed / 2,
+                easing: "linear",
+                complete: function() {
+                    moar($(this));
+                    next();
+                }
+            }
+        ).show().queue(flynext());
+    };
+
+    // array of animation functions
+    var fly = [flyright, flyleft];
+
+    // Don't ask me, probably was super drunk.
+    function moar(thiscat) {
+        if (thiscat.width() < 250) {
+            thiscat.width(thiscat.width() * 1.3);
+            thiscat.height(thiscat.height() * 1.3);
+        } else if (thiscat.width() < 500) {
+            thiscat.width(thiscat.width() * 1.2);
+            thiscat.height(thiscat.height() * 1.2);
+        } else if (thiscat.width() < 1000) { // slow down, barely
+            thiscat.width(thiscat.width() * 1.1);
+            thiscat.height(thiscat.height() * 1.1);
+        }
+    }
+
+    cats = 0;
+    quant = 0;
+    function flyflyfly() {
+        cats++;
+        newcatbox = $('<div></div>');
+        newcat = $('<img/>', {
+            src: "sexipretschi.gif",
+            //IE 8 chokes on the class here, NYAN
+            //class: "nyancat",
+            click: function() {
+                //Count up for score
+                $("#score span").html(parseInt($("#score span").html()) + 1);
+
+                //Awesome good stuff, shake it babe
+                $('body').effect("shake", {
+                    times: 4
+                }, 200);
+                $('.nyancat').effect("shake", {
+                    times: 2
+                }, 100);
+
+                //
+                for (var i = 0; i < 30; i++) {
+                    var heart = $('<div>♥</div>').addClass('heart').offset($(this).offset());
+                    heart.animate({
+                            left: Math.floor(Math.random() * $(window).width()), "top": Math.floor(Math.random() * $(window).height())
+                        },
+                        {
+                            queue: false,
+                            duration: Math.floor(Math.random() * 1000 + 200),
+                            easing: "easeInOutSine",
+                            complete: function() {
+                                $(this).remove();
+                            }
+                        }
+                    );
+                    $('#nyanbox').append(heart);
+                }
+
+                //play a sound: we have 10 sound files
+                sounds[Math.floor(Math.random() * maxsounds)].play();
+
+                //do other stuff
+                $(this).parent().remove();
+                cats--;
+                flyflyfly();
+                if ((Math.floor(Math.random() * 3)) < 1) {
+                    flyflyfly();
+                }
+            }
+        });
+
+        newcat.addClass("nyancat").hide();
+        newcatbox.append(newcat);
+        $('#nyanbox').append(newcatbox);
+
+        newcat.width(newcat.width(800 * (1 / 5)));
+        newcat.height(newcat.height(453 * (1 / 5)));
+
+        //Start next one in 1s (so they are spaced out)
+        newcat.delay(Math.random() * 1000).queue(flynext());
+    }
+
+    function flynext() {
+        x = Math.floor(Math.random() * fly.length);
+        if ((Math.floor(Math.random() * 8 * cats)) < 1) {
+            flyflyfly();
+        }
+        return fly[x];
+    }
+
+    var maxsounds = 9; // 1-9: 9 total files
+    var sounds = [];
+
+    $(function() {
+        flyflyfly();
+        flyflyfly();
+        flyflyfly();
+
+        //load sounds
+        for (var i = 0; i < maxsounds; i++) {
+            sounds[i] = new Audio("sounds/" + (i + 1) + ".ogg");
+        }
+        var nyan = new Audio("sounds/nyan.mp3");
+        var nyanPlaying = false;
+
+        function playNyan() {
+            if(nyanPlaying === true) {
+                return;
+            }
+            nyanPlaying=true;
+            nyan.loop = true;
+            nyan.volume = 0.5;nyan.play();
+        }
+
+        // Chrome block autoplay, so start playing music whenever a user misclicks anywhere
+        $(document).on("click", function() {
+            playNyan();
+        });
+
+        //Mode switch
+        $('#modus a').on("click", function() {
+            playNyan();
+            $('#modus a').removeClass('sel');
+            $(this).addClass('sel');
+            if ($(this).attr('href').indexOf('easy') !== -1) {
+                flyspeed = 7000;
+            } else {
+                flyspeed = 1500;
+                flyflyfly(); // No clue why I call this so many times
+                flyflyfly(); // But it works almost like I expect it
+                flyflyfly();
+                flyflyfly();
+            }
+        });
+
+        //music switch
+        $('#music a').on("click", function() {
+            $('#music a').removeClass('sel');
+            $(this).addClass('sel');
+            if ($(this).attr('href').indexOf('On') !== -1) {
+                nyan.play();
+            } else {
+                nyan.pause();
+            }
+        });
+    });
+
+    function placeStar() {
+        var newStar = $("<div class='star frame-1'><div class='wrapper'><div class='dot dot-1'></div><div class='dot dot-2'></div><div class='dot dot-3'></div><div class='dot dot-4'></div><div class='dot dot-5'></div><div class='dot dot-6'></div><div class='dot dot-7'></div><div class='dot dot-8'></div><div class='dot dot-9'></div></div></div>");
+        newStar.css({
+            //1600
+            top: Math.floor(Math.random() * 800),
+            left: Math.floor(Math.random() * 2000)
+        }); //1200
+
+        $('body').append(newStar);
+    } //100
+    placeStarTimer = setInterval(placeStar, 20);
+    function animateStars() {
+        $('.star').each(function() {
+            thisFrame = $(this).attr('class');
+            thisFrame = thisFrame.split(' ');
+            thisFrame = thisFrame[1].split('-');
+            thisFrame = parseInt(thisFrame[1]);
+            if (thisFrame == 6) {
+                //6
+                $(this).remove();
+            } else {
+                $(this).removeClass("frame-" + String(thisFrame)).addClass("frame-" + String(parseInt(thisFrame) + 1));
+            }
+        })
+    } //400
+    animateStarsTimer = setInterval(animateStars, 60);
+</script>
+</body>
+</html>

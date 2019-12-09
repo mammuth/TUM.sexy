@@ -491,6 +491,10 @@ class Route {
             'description' => 'Introduction to Biological and Medical Imaging',
             'target'      => 'http://www.cbi.ei.tum.de/courses/course-in-biological-imaging/',
         ],
+        'pretschi'    => [
+            'description' => 'Formerly                   KnownAsSexiPretschi.eu',
+            'target'      => 'https://tum.sexy/pret/',
+        ],
     ];
 
     // Format is: <source / synonym> => <target> - the target must be present in the $routes array
