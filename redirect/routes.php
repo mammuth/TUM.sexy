@@ -499,6 +499,22 @@ class Route {
             'description' => 'GLÜHNIX',
             'target'      => 'https://www.facebook.com/events/807341503020074/',
         ],
+        'eat-api' => [
+            'description' => 'eat-api output in a human readable format as well as the base url for eat-api calls',
+            'target'      => 'https://tum-dev.github.io/eat-api/',
+        ],
+        'all.eat-api'  => [
+            'description' => 'All menus for all locations from the eat-api in JSON',
+            'target'      => 'https://tum-dev.github.io/eat-api/all.json',
+        ],
+        'ref.eat-api'  => [
+            'description' => 'All menus that are not older than one day for all locations from the eat-api in JSON',
+            'target'      => 'https://tum-dev.github.io/eat-api/all_ref.json',
+        ],
+        'canteens.eat-api'=> [
+            'description' => 'A JSON list of all available canteens for the eat-api',
+            'target'      => 'https://tum-dev.github.io/eat-api/canteens.json',
+        ],  
     ];
 
     // Format is: <source / synonym> => <target> - the target must be present in the $routes array
@@ -574,6 +590,7 @@ class Route {
         '6. Semester' => [],
         'Special'     => [
             'hunger',
+            'eat-api'
             'mensabot',
             'mensabot2',
             'roombot',
@@ -644,6 +661,9 @@ class Route {
             'pat',
             'cvvm',
             'vt',
+            'all.eat-api',
+            'ref.eat-api',
+            'canteens.eat-api'
         ],
     ];
 
