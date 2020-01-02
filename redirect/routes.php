@@ -661,9 +661,6 @@ class Route {
             'pat',
             'cvvm',
             'vt',
-            'all.eat-api',
-            'ref.eat-api',
-            'canteens.eat-api'
         ],
     ];
 
