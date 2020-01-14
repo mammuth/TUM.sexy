@@ -496,10 +496,9 @@ class Route {
             'target'      => 'https://tum.sexy/pret/',
         ],
         'nix'          => [
-             'description' => 'GLÜHNIX',
+            'description' => 'GLÜHNIX',
             'target'      => 'https://www.facebook.com/events/807341503020074/',
         ],
-            
     ];
 
     // Format is: <source / synonym> => <target> - the target must be present in the $routes array
