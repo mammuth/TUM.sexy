@@ -514,7 +514,7 @@ class Route {
         'canteens.eat-api'=> [
             'description' => 'A JSON list of all available canteens for the eat-api',
             'target'      => 'https://tum-dev.github.io/eat-api/canteens.json',
-        ],  
+        ],
     ];
 
     // Format is: <source / synonym> => <target> - the target must be present in the $routes array
