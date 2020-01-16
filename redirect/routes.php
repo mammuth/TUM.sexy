@@ -590,7 +590,7 @@ class Route {
         '6. Semester' => [],
         'Special'     => [
             'hunger',
-            'eat-api'
+            'eat-api',
             'mensabot',
             'mensabot2',
             'roombot',
