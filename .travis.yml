@@ -13,8 +13,8 @@ env:
     - DOCKER_REPOSITORY=$DOCKER_USERNAME/tum.sexy
 
 php:
-  - 7.2
   - 7.3
+  - 7.4
   - nightly
 
 matrix:
