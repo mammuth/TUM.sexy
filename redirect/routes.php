@@ -262,6 +262,14 @@ class Route {
             'description' => 'Statista',
             'target'      => 'https://de-statista-com.eaccess.ub.tum.de',
         ],
+        'ieee'         => [
+            'description' => 'IEEE Xplore Login',
+            'target'      => 'https://ieeexplore.ieee.org/servlet/wayf.jsp?entityId=https://tumidp.lrz.de/idp/shibboleth&url=https%3A%2F%2Fieeexplore.ieee.org',
+        ],
+        'springer'     => [
+            'description' => 'Springer Link Login',
+            'target'      => 'https://fsso.springer.com/federation/init?entityId=https://tumidp.lrz.de/idp/shibboleth&returnUrl=https%3A%2F%2Flink.springer.com',
+        ],
         'sharelatex'   => [
             'description' => 'ShareLaTeX@TUM',
             'target'      => 'https://sharelatex.tum.de/',
@@ -609,6 +617,8 @@ class Route {
             'reddit',
             'vorkurs',
             'statista',
+            'ieee',
+            'springer',
             'shuttle',
             'sharelatex',
             'matching',
