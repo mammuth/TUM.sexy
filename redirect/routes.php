@@ -523,7 +523,11 @@ class Route {
             'description' => 'A JSON list of all available canteens for the eat-api',
             'target'      => 'https://tum-dev.github.io/eat-api/canteens.json',
         ],
-        'git'=> [
+        'gitlab'=> [
+            'description' => 'The fast way to the LRZ hosted gitlab',
+            'target'      => 'https://gitlab.lrz.de/users/sign_in',
+        ],
+        'git-tut'=> [
             'description' => 'Getting started with Git? Learn the basics for the console. With Visualizations!',
             'target'      => 'https://learngitbranching.js.org',
         ],
@@ -611,6 +615,8 @@ class Route {
             'app',
             'c',
             'm',
+            'gitlab',
+            'git-tut',
             'sp',
             'ma-sp',
             'ge-sp',
