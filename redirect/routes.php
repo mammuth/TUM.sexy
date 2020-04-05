@@ -293,7 +293,7 @@ class Route {
         ],
         'adlr'         => [
             'description' => 'Advanced Deep Learning for Robotics',
-            'target'      => 'https://bbaeuml.github.io/ss19-advanced-dl-for-robotics/',
+            'target'      => 'https://bbaeuml.github.io/tum-adlr-ss20/',
         ],
         'diversity'    => [
             'description' => 'Diversity & Queer Referat',
