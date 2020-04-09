@@ -535,6 +535,10 @@ class Route {
             'description' => 'Getting started with Git? Learn the basics for the console. With Visualizations!',
             'target'      => 'https://learngitbranching.js.org',
         ],
+        'conf'=> [
+            'description' => 'TUM-Conf (Zoom)',
+            'target'      => 'https://tum-conf.zoom.us',
+        ],
     ];
 
     // Format is: <source / synonym> => <target> - the target must be present in the $routes array
@@ -570,6 +574,7 @@ class Route {
         'roomfinder'     => 'finder',
         'patterns'       => 'pat',
         'ai'             => 'ki',
+        'zoom'           => 'conf',
     ];
 
     /**
