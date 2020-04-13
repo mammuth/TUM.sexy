@@ -108,7 +108,7 @@ class Route {
         ],
         'dwt'          => [
             'description' => 'Diskrete Wahrscheinlichkeitstheorie',
-            'target'      => 'http://wwwalbers.in.tum.de/lehre/2019SS/dwt/',
+            'target'      => 'http://wwwalbers.in.tum.de/lehre/2020SS/dwt/index.html.de',
         ],
         'theo'         => [
             'description' => 'Einführung in die theoretische Informatik',
@@ -419,7 +419,7 @@ class Route {
         ],
         'fds'          => [
             'description' => 'Functional Data Structures',
-            'target'      => 'https://www21.in.tum.de/teaching/FDS/SS19/',
+            'target'      => 'https://www21.in.tum.de/teaching/FDS/SS20/',
         ],
         'langenacht'   => [
             'description' => 'Lange Nacht der Univeristäten',
@@ -427,7 +427,7 @@ class Route {
         ],
         'compiler'     => [
             'description' => 'Compiler Construction',
-            'target'      => 'https://www.in.tum.de/i02/lehre/sommersemester-19/vorlesungen/compiler-construction/',
+            'target'      => 'https://www.in.tum.de/i02/lehre/sommersemester-20/vorlesungen/compiler-construction/',
         ],
         'ilab1'        => [
             'description' => 'Practical Course: iLab1 - Build your own Internet',
@@ -510,7 +510,7 @@ class Route {
             'description' => 'GLÜHNIX',
             'target'      => 'https://www.facebook.com/events/807341503020074/',
         ],
-        'eat-api' => [
+        'eat-api'      => [
             'description' => 'eat-api output in a human readable format as well as the base url for eat-api calls',
             'target'      => 'https://tum-dev.github.io/eat-api/',
         ],
@@ -526,17 +526,21 @@ class Route {
             'description' => 'A JSON list of all available canteens for the eat-api',
             'target'      => 'https://tum-dev.github.io/eat-api/canteens.json',
         ],
-        'gitlab'=> [
+        'gitlab'       => [
             'description' => 'The fast way to the LRZ hosted gitlab',
             'target'      => 'https://gitlab.lrz.de/users/sign_in',
         ],
-        'git-tut'=> [
+        'git-tut'      => [
             'description' => 'Getting started with Git? Learn the basics for the console. With Visualizations!',
             'target'      => 'https://learngitbranching.js.org',
         ],
-        'conf'=> [
+        'conf'         => [
             'description' => 'TUM-Conf (Zoom)',
             'target'      => 'https://tum-conf.zoom.us',
+        ],
+        'vm'           => [
+            'description' => 'Virtual Machines',
+            'target'      => 'https://www.in.tum.de/i02/lehre/sommersemester-20/vorlesungen/virtual-machines/',
         ],
     ];
 
@@ -690,6 +694,7 @@ class Route {
             'pat',
             'cvvm',
             'vt',
+            'vm'
         ],
     ];
 
