@@ -83,7 +83,7 @@ class Route {
         ],
         'erdb'         => [
             'description' => 'Einsatz und Realisierung von Datenbanksystemen',
-            'target'      => 'https://db.in.tum.de/teaching/ss19/impldb/',
+            'target'      => 'https://db.in.tum.de/teaching/ss20/impldb/',
         ],
         'gbs'          => [
             'description' => 'Grundlagen: Betriebssysteme und Systemsoftware',
