@@ -112,7 +112,7 @@ class Route {
         ],
         'theo'         => [
             'description' => 'Einführung in die theoretische Informatik',
-            'target'      => 'https://www21.in.tum.de/teaching/theo/SS19/',
+            'target'      => 'https://www21.in.tum.de/teaching/theo/SS20/',
         ],
         'theojudge'    => [
             'description' => 'TUMjudge - Einführung in die theoretische Informatik',
@@ -134,6 +134,11 @@ class Route {
         'scivis'       => [
             'description' => 'Scientific Visualization',
             'target'      => 'https://wwwcg.in.tum.de/teaching/teaching/winter-term-1617/scientific-visualization.html',
+        ],
+        'evpro'       => [
+            'description' => 'Event Processing',
+            'target'      => 'https://www.in.tum.de/i13/teaching/summer-semester-2020/event-processing/',
+            'moodle_id'   => '53173'
         ],
         'ds'           => [
             'description' => 'Diskrete Strukturen',
@@ -189,12 +194,12 @@ class Route {
         ],
         'eist'         => [
             'description' => 'Einführung in die Softwaretechnik',
-            'target'      => 'https://ase.in.tum.de/eist',
+            'target'      => 'https://ase.in.tum.de/lehrstuhl_1/teaching/summer-2020/1111-introduction-to-software-engineering-eist-summer-2020',
         ],
         'gad'          => [
             'description' => 'Grundlegende Algorithmen und Datenstrukturen',
-            'target'      => 'https://www.in.tum.de/cg/teaching/summer-term-19/grundlagen-algorithmen-und-datenstrukturen-in0007/',
-            'moodle_id'   => '40888',
+            'target'      => 'https://ciip.in.tum.de/teaching/gad_ss20.html',
+            'moodle_id'   => '53358',
         ],
         'gadjudge'     => [
             'description' => 'TUMJudge - Grundlegende Algorithmen und Datenstrukturen',
@@ -210,7 +215,7 @@ class Route {
         ],
         'grnvs'        => [
             'description' => 'Grundlagen Rechnernetze und Verteilte Systeme',
-            'target'      => 'https://www.net.in.tum.de/teaching/ss19/grnvs.html',
+            'target'      => 'https://www.net.in.tum.de/teaching/ss20/grnvs.html',
         ],
         'pgm'          => [
             'description' => "Probabilistic Graphical Models in Computer Vision",
