@@ -112,7 +112,7 @@ class Route {
         ],
         'theo'         => [
             'description' => 'Einführung in die theoretische Informatik',
-            'target'      => 'https://www21.in.tum.de/teaching/theo/SS19/',
+            'target'      => 'https://www21.in.tum.de/teaching/theo/SS20/',
         ],
         'theojudge'    => [
             'description' => 'TUMjudge - Einführung in die theoretische Informatik',
@@ -134,6 +134,11 @@ class Route {
         'scivis'       => [
             'description' => 'Scientific Visualization',
             'target'      => 'https://wwwcg.in.tum.de/teaching/teaching/winter-term-1617/scientific-visualization.html',
+        ],
+        'evpro'       => [
+            'description' => 'Event Processing',
+            'target'      => 'https://www.in.tum.de/i13/teaching/summer-semester-2020/event-processing/',
+            'moodle_id'   => '53173'
         ],
         'ds'           => [
             'description' => 'Diskrete Strukturen',
