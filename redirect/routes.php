@@ -114,6 +114,10 @@ class Route {
             'description' => 'Einführung in die theoretische Informatik',
             'target'      => 'https://www21.in.tum.de/teaching/theo/SS20/',
         ],
+        'theotutor'         => [
+            'description' => 'Einführung in die theoretische Informatik: Automatatutor',
+            'target'      => 'https://automata.model.in.tum.de/',
+        ],
         'theojudge'    => [
             'description' => 'TUMjudge - Einführung in die theoretische Informatik',
             'target'      => 'https://judge.in.tum.de/theo/public/',
