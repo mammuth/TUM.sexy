@@ -202,7 +202,7 @@ class Route {
         ],
         'gad'          => [
             'description' => 'Grundlegende Algorithmen und Datenstrukturen',
-            'target'      => 'https://ciip.in.tum.de/teaching/gad_ss20.html',
+            'target'      => 'https://www.moodle.tum.de/course/view.php?id=53358',
             'moodle_id'   => '53358',
         ],
         'gadjudge'     => [
@@ -211,7 +211,7 @@ class Route {
         ],
         'linalg'       => [
             'description' => 'Lineare Algebra für Informatik',
-            'target'      => 'https://www.moodle.tum.de/course/view.php?id=47866',
+            'target'      => 'https://www.moodle.tum.de/course/view.php?id=55594',
         ],
         'gog'          => [
             'description' => 'Games on Graphs',
@@ -227,7 +227,7 @@ class Route {
         ],
         'erapraktikum' => [
             'description' => 'Praktikum - Einführung in die Rechnerarchitektur',
-            'target'      => 'https://www.caps.in.tum.de/lehre/ws19/praktika/rechnerarchitektur/',
+            'target'      => 'https://gepasp.in.tum.de/eraweb/main',
         ],
         'ged'          => [
             'description' => 'Game Engine Design',
