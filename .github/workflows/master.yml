@@ -1,0 +1,22 @@
+# This is a basic workflow to help you get started with Actions
+name: CI
+on:
+  push:
+    branches: master
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v1
+    - name: Build and push Docker images
+      uses: docker/build-push-action@v1.1.0
+      with:
+        username: ${{ github.actor }}
+        password: ${{ github.token }}
+        registry: docker.pkg.github.com
+        repository: mammuth/TUM.sexy/server
+        tags: latest
+        tag_with_ref: true
+        tag_with_sha: true
+        add_git_labels: true
