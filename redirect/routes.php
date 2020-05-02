@@ -69,7 +69,7 @@ class Route {
         ],
         'fpv'          => [
             'description' => 'Functional Programming and Verification',
-            'target'      => 'http://www21.in.tum.de/teaching/fpv/WS1920/',
+            'target'      => 'https://www21.in.tum.de/teaching/fpv/WS1920/',
             'moodle_id'   => '52268',
         ],
         'e2ocaml'      => [
@@ -108,7 +108,7 @@ class Route {
         ],
         'dwt'          => [
             'description' => 'Diskrete Wahrscheinlichkeitstheorie',
-            'target'      => 'http://wwwalbers.in.tum.de/lehre/2020SS/dwt/index.html.de',
+            'target'      => 'https://wwwalbers.in.tum.de/lehre/2020SS/dwt/index.html.de',
         ],
         'theo'         => [
             'description' => 'Einführung in die theoretische Informatik',
