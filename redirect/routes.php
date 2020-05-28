@@ -495,6 +495,10 @@ class Route {
             'description' => 'Medizin 1',
             'moodle_id'   => '52166',
         ],
+        'med2'         => [
+            'description' => 'Medizin II (Krankheitslehre, klinische Propädeutik, Einführung in die Medizinische Informatik)',
+            'moodle_id'   => '56092',
+        ],
         'cvvm'         => [
             'description' => 'Computer Vision I: Variational Methods',
             'target'      => 'https://vision.in.tum.de/teaching/ws2019/cvvm_ws19',
