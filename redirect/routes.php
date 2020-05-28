@@ -52,7 +52,7 @@ class Route {
         ],
         'numprog'      => [
             'description' => 'Numerisches Programmieren',
-            'moodle_id'   => '49337',
+            'moodle_id'   => '53128',
         ],
         'websec'       => [
             'description' => 'WebApplication Security Bachelor Praktikum',
@@ -69,7 +69,7 @@ class Route {
         ],
         'fpv'          => [
             'description' => 'Functional Programming and Verification',
-            'target'      => 'http://www21.in.tum.de/teaching/fpv/WS1920/',
+            'target'      => 'https://www21.in.tum.de/teaching/fpv/WS1920/',
             'moodle_id'   => '52268',
         ],
         'e2ocaml'      => [
@@ -83,7 +83,7 @@ class Route {
         ],
         'erdb'         => [
             'description' => 'Einsatz und Realisierung von Datenbanksystemen',
-            'target'      => 'https://db.in.tum.de/teaching/ss19/impldb/',
+            'target'      => 'https://db.in.tum.de/teaching/ss20/impldb/',
         ],
         'gbs'          => [
             'description' => 'Grundlagen: Betriebssysteme und Systemsoftware',
@@ -108,11 +108,15 @@ class Route {
         ],
         'dwt'          => [
             'description' => 'Diskrete Wahrscheinlichkeitstheorie',
-            'target'      => 'http://wwwalbers.in.tum.de/lehre/2019SS/dwt/',
+            'target'      => 'http://wwwalbers.in.tum.de/lehre/2020SS/dwt/index.html.de',
         ],
         'theo'         => [
             'description' => 'Einführung in die theoretische Informatik',
-            'target'      => 'https://www21.in.tum.de/teaching/theo/SS19/',
+            'target'      => 'https://www21.in.tum.de/teaching/theo/SS20/',
+        ],
+        'theotutor'         => [
+            'description' => 'Einführung in die theoretische Informatik: Automatatutor',
+            'target'      => 'https://automata.model.in.tum.de/',
         ],
         'theojudge'    => [
             'description' => 'TUMjudge - Einführung in die theoretische Informatik',
@@ -134,6 +138,11 @@ class Route {
         'scivis'       => [
             'description' => 'Scientific Visualization',
             'target'      => 'https://wwwcg.in.tum.de/teaching/teaching/winter-term-1617/scientific-visualization.html',
+        ],
+        'evpro'       => [
+            'description' => 'Event Processing',
+            'target'      => 'https://www.in.tum.de/i13/teaching/summer-semester-2020/event-processing/',
+            'moodle_id'   => '53173'
         ],
         'ds'           => [
             'description' => 'Diskrete Strukturen',
@@ -189,13 +198,12 @@ class Route {
         ],
         'eist'         => [
             'description' => 'Einführung in die Softwaretechnik',
-            'target'      => 'https://ase.in.tum.de/lehrstuhl_1/teaching/summer-2019/123-teaching/st19/1032-eist-2019',
-            'moodle_id'   => '46061',
+            'target'      => 'https://ase.in.tum.de/lehrstuhl_1/teaching/summer-2020/1111-introduction-to-software-engineering-eist-summer-2020',
         ],
         'gad'          => [
             'description' => 'Grundlegende Algorithmen und Datenstrukturen',
-            'target'      => 'https://www.in.tum.de/cg/teaching/summer-term-19/grundlagen-algorithmen-und-datenstrukturen-in0007/',
-            'moodle_id'   => '40888',
+            'target'      => 'https://www.moodle.tum.de/course/view.php?id=53358',
+            'moodle_id'   => '53358',
         ],
         'gadjudge'     => [
             'description' => 'TUMJudge - Grundlegende Algorithmen und Datenstrukturen',
@@ -203,7 +211,7 @@ class Route {
         ],
         'linalg'       => [
             'description' => 'Lineare Algebra für Informatik',
-            'target'      => 'https://www.moodle.tum.de/course/view.php?id=47866',
+            'target'      => 'https://www.moodle.tum.de/course/view.php?id=55594',
         ],
         'gog'          => [
             'description' => 'Games on Graphs',
@@ -211,7 +219,7 @@ class Route {
         ],
         'grnvs'        => [
             'description' => 'Grundlagen Rechnernetze und Verteilte Systeme',
-            'target'      => 'https://www.net.in.tum.de/teaching/ss19/grnvs.html',
+            'target'      => 'https://www.net.in.tum.de/teaching/ss20/grnvs.html',
         ],
         'pgm'          => [
             'description' => "Probabilistic Graphical Models in Computer Vision",
@@ -219,7 +227,7 @@ class Route {
         ],
         'erapraktikum' => [
             'description' => 'Praktikum - Einführung in die Rechnerarchitektur',
-            'target'      => 'https://www.caps.in.tum.de/lehre/ws19/praktika/rechnerarchitektur/',
+            'target'      => 'https://gepasp.in.tum.de/eraweb/main',
         ],
         'ged'          => [
             'description' => 'Game Engine Design',
@@ -262,6 +270,18 @@ class Route {
             'description' => 'Statista',
             'target'      => 'https://de-statista-com.eaccess.ub.tum.de',
         ],
+        'ieee'         => [
+            'description' => 'IEEE Xplore Login',
+            'target'      => 'https://ieeexplore.ieee.org/servlet/wayf.jsp?entityId=https://tumidp.lrz.de/idp/shibboleth&url=https%3A%2F%2Fieeexplore.ieee.org',
+        ],
+        'springer'     => [
+            'description' => 'Springer Link Login',
+            'target'      => 'https://fsso.springer.com/federation/init?entityId=https://tumidp.lrz.de/idp/shibboleth&returnUrl=https%3A%2F%2Flink.springer.com',
+        ],
+        'scopus'       => [
+            'description' => 'TUM UB Scopus Login (eAccess)',
+            'target'      => 'https://login.eaccess.ub.tum.de/login?qurl=https://ub.tum.de%2fdbis-link%3ftitle_id%3d3636%26destination%3ddatenbanken%2fsuche%253Fqt-dbis%253D1%2526type%253Ddb%2526terms%253Dscopus%2526x%253D0%2526y%253D0',
+        ],
         'sharelatex'   => [
             'description' => 'ShareLaTeX@TUM',
             'target'      => 'https://sharelatex.tum.de/',
@@ -281,7 +301,7 @@ class Route {
         ],
         'adlr'         => [
             'description' => 'Advanced Deep Learning for Robotics',
-            'target'      => 'https://bbaeuml.github.io/ss19-advanced-dl-for-robotics/',
+            'target'      => 'https://bbaeuml.github.io/tum-adlr-ss20/',
         ],
         'diversity'    => [
             'description' => 'Diversity & Queer Referat',
@@ -408,7 +428,7 @@ class Route {
         ],
         'fds'          => [
             'description' => 'Functional Data Structures',
-            'target'      => 'https://www21.in.tum.de/teaching/FDS/SS19/',
+            'target'      => 'https://www21.in.tum.de/teaching/FDS/SS20/',
         ],
         'langenacht'   => [
             'description' => 'Lange Nacht der Univeristäten',
@@ -416,7 +436,7 @@ class Route {
         ],
         'compiler'     => [
             'description' => 'Compiler Construction',
-            'target'      => 'https://www.in.tum.de/i02/lehre/sommersemester-19/vorlesungen/compiler-construction/',
+            'target'      => 'https://www.in.tum.de/i02/lehre/sommersemester-20/vorlesungen/compiler-construction/',
         ],
         'ilab1'        => [
             'description' => 'Practical Course: iLab1 - Build your own Internet',
@@ -499,7 +519,7 @@ class Route {
             'description' => 'GLÜHNIX',
             'target'      => 'https://www.facebook.com/events/807341503020074/',
         ],
-        'eat-api' => [
+        'eat-api'      => [
             'description' => 'eat-api output in a human readable format as well as the base url for eat-api calls',
             'target'      => 'https://tum-dev.github.io/eat-api/',
         ],
@@ -514,6 +534,22 @@ class Route {
         'canteens-eat-api'=> [
             'description' => 'A JSON list of all available canteens for the eat-api',
             'target'      => 'https://tum-dev.github.io/eat-api/canteens.json',
+        ],
+        'gitlab'       => [
+            'description' => 'The fast way to the LRZ hosted gitlab',
+            'target'      => 'https://gitlab.lrz.de/users/sign_in',
+        ],
+        'git-tut'      => [
+            'description' => 'Getting started with Git? Learn the basics for the console. With Visualizations!',
+            'target'      => 'https://learngitbranching.js.org',
+        ],
+        'conf'         => [
+            'description' => 'TUM-Conf (Zoom)',
+            'target'      => 'https://tum-conf.zoom.us',
+        ],
+        'vm'           => [
+            'description' => 'Virtual Machines',
+            'target'      => 'https://www.in.tum.de/i02/lehre/sommersemester-20/vorlesungen/virtual-machines/',
         ],
     ];
 
@@ -550,6 +586,7 @@ class Route {
         'roomfinder'     => 'finder',
         'patterns'       => 'pat',
         'ai'             => 'ki',
+        'zoom'           => 'conf',
     ];
 
     /**
@@ -599,6 +636,8 @@ class Route {
             'app',
             'c',
             'm',
+            'gitlab',
+            'git-tut',
             'sp',
             'ma-sp',
             'ge-sp',
@@ -609,6 +648,9 @@ class Route {
             'reddit',
             'vorkurs',
             'statista',
+            'ieee',
+            'springer',
+            'scopus',
             'shuttle',
             'sharelatex',
             'matching',
@@ -661,6 +703,7 @@ class Route {
             'pat',
             'cvvm',
             'vt',
+            'vm'
         ],
     ];
 
