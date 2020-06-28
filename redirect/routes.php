@@ -205,10 +205,6 @@ class Route {
             'target'      => 'https://www.moodle.tum.de/course/view.php?id=53358',
             'moodle_id'   => '53358',
         ],
-        'gadjudge'     => [
-            'description' => 'TUMJudge - Grundlegende Algorithmen und Datenstrukturen',
-            'target'      => 'https://judge.in.tum.de/gad/public/',
-        ],
         'linalg'       => [
             'description' => 'Lineare Algebra für Informatik',
             'target'      => 'https://www.moodle.tum.de/course/view.php?id=55594',
@@ -608,7 +604,6 @@ class Route {
         '2. Semester' => [
             'eist',
             'gad',
-            'gadjudge',
             'erapraktikum',
             'linalg',
             'ged',
