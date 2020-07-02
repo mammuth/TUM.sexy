@@ -632,7 +632,7 @@ class Route {
         '6. Semester' => [],
         'Special'     => [
             'wahl',
-            'walomat'
+            'walomat',
             'hunger',
             'eat-api',
             'mensabot',
