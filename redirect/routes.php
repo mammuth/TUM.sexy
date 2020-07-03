@@ -321,7 +321,7 @@ class Route {
         ],
         'wahl'         => [
             'description' => 'Hochschulwahlen',
-            'target'      => 'https://www.asta.tum.de/wahl/',
+            'target'      => 'https://www.sv.tum.de/wahl/',
         ],
         'agt'          => [
             'description' => 'Algorithmic Game Theory',
@@ -551,10 +551,16 @@ class Route {
             'description' => 'Virtual Machines',
             'target'      => 'https://www.in.tum.de/i02/lehre/sommersemester-20/vorlesungen/virtual-machines/',
         ],
+        'walomat'           => [
+            'description' => 'Wal-O-Mat',
+            'target'      => 'https://walomat.asta.tum.de',
+        ],
     ];
 
     // Format is: <source / synonym> => <target> - the target must be present in the $routes array
     private $synonyms = [
+        'wahlomat'       => 'walomat',
+        'hsw'            => 'wahl',
         'csd'            => 'pride',
         'erapra'         => 'erapraktikum',
         'erap'           => 'erapraktikum',
@@ -625,6 +631,8 @@ class Route {
         ],
         '6. Semester' => [],
         'Special'     => [
+            'wahl',
+            'walomat',
             'hunger',
             'eat-api',
             'mensabot',
