@@ -555,6 +555,10 @@ class Route {
             'description' => 'Wal-O-Mat',
             'target'      => 'https://walomat.asta.tum.de',
         ],
+        'julius'            => [
+            'description' => 'Julius Kreutz Tutoriums Website',
+            'target'      => 'https://julius-kreutz.de',
+        ],
     ];
 
     // Format is: <source / synonym> => <target> - the target must be present in the $routes array
@@ -593,6 +597,7 @@ class Route {
         'patterns'       => 'pat',
         'ai'             => 'ki',
         'zoom'           => 'conf',
+        'kreutz'         => 'julius',
     ];
 
     /**
