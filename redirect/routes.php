@@ -495,6 +495,10 @@ class Route {
             'description' => 'Medizin II (Krankheitslehre, klinische Propädeutik, Einführung in die Medizinische Informatik)',
             'moodle_id'   => '56092',
         ],
+        'cvmvg'         => [
+            'description' => 'Computer Vision II: Multiple View Geometry',
+            'target'      => 'https://vision.in.tum.de/teaching/ss2020/mvg2020',
+        ],
         'cvvm'         => [
             'description' => 'Computer Vision I: Variational Methods',
             'target'      => 'https://vision.in.tum.de/teaching/ws2019/cvvm_ws19',
@@ -714,6 +718,7 @@ class Route {
             'ki',
             'pat',
             'cvvm',
+            'cvmvg',
             'vt',
             'vm'
         ],
