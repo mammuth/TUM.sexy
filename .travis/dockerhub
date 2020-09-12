@@ -1,9 +1,0 @@
-#!/bin/bash
-
-push_to_repo() {
-  docker tag tumsexy $DOCKER_REPOSITORY:$1
-  docker push $DOCKER_REPOSITORY:$1
-}
-
-push_to_repo "latest"
-push_to_repo "$TRAVIS_COMMIT"
