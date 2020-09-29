@@ -186,7 +186,7 @@ class Route {
         ],
         'wi-ma-sp'     => [
             'description' => 'Studienplan M.Sc. Wirtschaftsinformatik',
-            'target'      => 'https://www.in.tum.de/fuer-studierende/master-studiengaenge/wirtschaftsinformatik/studienplan/ab-sose-2018/',
+            'target'      => 'https://www.in.tum.de/fuer-studierende/master-studiengaenge/wirtschaftsinformatik/studienplan/ab-sose-2020/',
         ],
         'app'          => [
             'description' => 'TUM Campus App',
