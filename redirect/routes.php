@@ -24,7 +24,7 @@ class Route {
         ],
         'c'            => [
             'description' => 'TUM Online',
-            'target'      => 'https://campus.tum.de/tumonline/anmeldung.durchfuehren',
+            'target'      => 'https://campus.tum.de/tumonline/ee/ui/ca2/app/desktop/#/login',
         ],
         'm'            => [
             'description' => 'Moodle',
