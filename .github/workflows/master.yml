@@ -15,7 +15,7 @@ jobs:
         username: ${{ github.actor }}
         password: ${{ github.token }}
         registry: docker.pkg.github.com
-        repository: mammuth/tum.sexy/server
+        repository: tum-dev/tum.sexy/sexy-server
         tags: latest
         tag_with_ref: true
         tag_with_sha: true
