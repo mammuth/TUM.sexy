@@ -563,6 +563,10 @@ class Route {
             'description' => 'Julius Kreutz Tutoriums Website',
             'target'      => 'https://julius-kreutz.de',
         ],
+        'corona'            => [
+            'description' => 'Coronavirus Information',
+            'target'      => 'https://www.tum.de/die-tum/aktuelles/coronavirus/',
+        ],
     ];
 
     // Format is: <source / synonym> => <target> - the target must be present in the $routes array
@@ -602,6 +606,7 @@ class Route {
         'ai'             => 'ki',
         'zoom'           => 'conf',
         'kreutz'         => 'julius',
+        'covid'         => 'corona'
     ];
 
     /**
