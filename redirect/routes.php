@@ -335,10 +335,6 @@ class Route {
             'description' => 'TUM Diversity & Queer',
             'target'      => 'https://www.facebook.com/events/599246697252806/',
         ],
-        'mario'        => [
-            'description' => 'Mario im tu film',
-            'target'      => 'https://www.facebook.com/events/2186204174962290/',
-        ],
         'matching'     => [
             'description' => 'IN.TUM-Matching-System',
             'target'      => 'https://matching.in.tum.de/saml2/login/',
