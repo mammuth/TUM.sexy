@@ -146,7 +146,7 @@ class Route {
         ],
         'ds'           => [
             'description' => 'Diskrete Strukturen',
-            'target'      => 'https://www7.in.tum.de/um/courses/ds/ws1920/index.html',
+            'target'      => 'https://www.moodle.tum.de/course/view.php?id=57991',
         ],
         'vorkurs'      => [
             'description' => 'Mathematik Vorkurs für Informatiker',
