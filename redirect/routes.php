@@ -124,16 +124,15 @@ class Route {
         ],
         'info1'        => [
             'description' => 'Einführung in die Informatik 1',
-            'moodle_id'   => '49563',
+            'moodle_id'   => '58145',
         ],
         'pgdp'         => [
             'description' => 'Praktikum Grundlagen der Programmierung (Moodle-Kurs)',
-            'moodle_id'   => '49563',
+            'moodle_id'   => '58145',
         ],
         'era'          => [
             'description' => 'Einführung in die Rechnerarchitektur',
-            'target'      => 'https://www.caps.in.tum.de/lehre/ws19/vorlesungen/era/',
-            'moodle_id'   => '49305',
+            'moodle_id'   => '57731',
         ],
         'scivis'       => [
             'description' => 'Scientific Visualization',
@@ -146,7 +145,7 @@ class Route {
         ],
         'ds'           => [
             'description' => 'Diskrete Strukturen',
-            'target'      => 'https://www.moodle.tum.de/course/view.php?id=57991',
+            'moodle_id'   => '57991',
         ],
         'vorkurs'      => [
             'description' => 'Mathematik Vorkurs für Informatiker',
