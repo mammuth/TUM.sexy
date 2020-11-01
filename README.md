@@ -1,10 +1,12 @@
+## [**FUTURE DEVELOPMENT IS HANDED OVER TO THE TUM-DEV GITHUB TEAM!**](https://github.com/TUM-Dev/TUM.sexy)
+
+
 TUM.sexy
 ========
 
 [![Build Status](https://travis-ci.org/mammuth/TUM.sexy.svg?branch=master)](https://travis-ci.org/mammuth/TUM.sexy)
 
 Code of https://tum.sexy. A website providing some links, redirects and tools regarding the Technical University Munich
-
 
 **Redirects** like
 * hunger.tum.sexy → FMI Speiseplan

@@ -2,6 +2,7 @@
   "name": "mammuth/tum.sexy",
   "description": "A website providing links, redirects and tools related to the Technical University Munich 💃📚",
   "homepage": "https://tum.sexy",
+  "license": "GPL-2.0-only",
   "scripts": {
     "test": "phpunit"
   },
