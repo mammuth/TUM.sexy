@@ -296,7 +296,7 @@ class Route {
         ],
         'adlr'         => [
             'description' => 'Advanced Deep Learning for Robotics',
-            'target'      => 'https://bbaeuml.github.io/tum-adlr-ss20/',
+            'target'      => 'https://bbaeuml.github.io/tum-adlr/adlr/index.html',
         ],
         'diversity'    => [
             'description' => 'Diversity & Queer Referat',
