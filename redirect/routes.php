@@ -561,6 +561,10 @@ class Route {
             'description' => 'Coronavirus Information',
             'target'      => 'https://www.tum.de/die-tum/aktuelles/coronavirus/',
         ],
+        'panopto'           => [
+            'description' => 'Panopto Video platform',
+            'target'      => 'https://tum.cloud.panopto.eu',
+        ],
     ];
 
     // Format is: <source / synonym> => <target> - the target must be present in the $routes array
@@ -674,6 +678,7 @@ class Route {
             'film',
             'set',
             'slam',
+            'panopto',
         ],
         'Electives'   => [
             'pl',
