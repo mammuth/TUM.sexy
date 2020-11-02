@@ -69,8 +69,8 @@ class Route {
         ],
         'fpv'          => [
             'description' => 'Functional Programming and Verification',
-            'target'      => 'https://www21.in.tum.de/teaching/fpv/WS1920/',
-            'moodle_id'   => '52268',
+            'target'      => 'http://www21.in.tum.de/teaching/fpv/WS20/',
+            'moodle_id'   => '57940',
         ],
         'e2ocaml'      => [
             'description' => 'Einführung in die Informatik 2 OCAML HA-Abgabe',
@@ -78,8 +78,8 @@ class Route {
         ],
         'db'           => [
             'description' => 'Grundlagen: Datenbanken',
-            'target'      => 'https://db.in.tum.de/teaching/ws1920/grundlagen/?lang=de',
-            'moodle_id'   => '49531',
+            'target'      => 'https://db.in.tum.de/teaching/ws2021/grundlagen/?lang=de',
+            'moodle_id'   => '58088',
         ],
         'erdb'         => [
             'description' => 'Einsatz und Realisierung von Datenbanksystemen',
