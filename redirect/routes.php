@@ -373,7 +373,7 @@ class Route {
         ],
         'automata'     => [
             'description' => 'Automata and Formal Languages',
-            'target'      => 'https://www7.in.tum.de/um/courses/auto/ws1920/index.php?category=uebungen',
+            'target'      => 'https://www7.in.tum.de/um/courses/auto/ws2021/index.php?category=uebungen',
         ],
         'sd'           => [
             'description' => 'Signaldarstellung',
