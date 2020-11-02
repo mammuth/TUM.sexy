@@ -477,10 +477,9 @@ class Route {
             'description' => 'Aspekte der systemnahen Programmierung bei der Spieleentwicklung',
             'target'      => 'https://www.caps.in.tum.de/lehre/ws19/praktika/asp/',
         ],
-        'pat'          => [
-            'description' => 'Patterns',
-            'target'      => 'https://ase.in.tum.de/lehrstuhl_1/teaching/winter-2018-19?id=998',
-            'moodle_id'   => '49541',
+        'pse'          => [
+            'description' => 'Patterns in Software Engineering',
+            'target'      => 'https://ase.in.tum.de/lehrstuhl_1/teaching/1138-patterns-in-software-engineering-ws20-21',
         ],
         'med1'         => [
             'description' => 'Medizin 1',
@@ -597,7 +596,8 @@ class Route {
         'complexity'     => 'comp',
         'sp-ge'          => 'ge-sp',
         'roomfinder'     => 'finder',
-        'patterns'       => 'pat',
+        'patterns'       => 'pse',
+        'pat'            => 'pse',
         'ai'             => 'ki',
         'zoom'           => 'conf',
         'kreutz'         => 'julius',
@@ -716,7 +716,7 @@ class Route {
             'tms',
             'ml',
             'ki',
-            'pat',
+            'pse',
             'cvvm',
             'cvmvg',
             'vt',
