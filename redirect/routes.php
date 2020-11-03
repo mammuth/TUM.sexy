@@ -60,7 +60,7 @@ class Route {
         ],
         'netsec'       => [
             'description' => 'Network Security - Netzsicherheit',
-            'target'      => 'https://www.net.in.tum.de/teaching/ws1920/netsec.html',
+            'target'      => 'https://www.net.in.tum.de/teaching/ws2021/netsec.html',
         ],
         'anal'         => [
             'description' => 'Analysis für Informatiker',
@@ -69,11 +69,11 @@ class Route {
         ],
         'fpv'          => [
             'description' => 'Functional Programming and Verification',
-            'target'      => 'http://www21.in.tum.de/teaching/fpv/WS20/',
+            'target'      => 'https://www21.in.tum.de/teaching/fpv/WS20/',
             'moodle_id'   => '57940',
         ],
         'e2ocaml'      => [
-            'description' => 'Einführung in die Informatik 2 OCAML HA-Abgabe',
+            'description' => 'Einführung in die Informatik 2 Haskell HA-Abgabe',
             'target'      => 'https://vmnipkow3.in.tum.de/',
         ],
         'db'           => [
@@ -132,6 +132,7 @@ class Route {
         ],
         'era'          => [
             'description' => 'Einführung in die Rechnerarchitektur',
+            'target'      => 'https://www.in.tum.de/caps/lehre/ws20/vorlesungen/einfuehrung-in-die-rechnerarchitektur-era/',
             'moodle_id'   => '57731',
         ],
         'scivis'       => [
@@ -145,7 +146,8 @@ class Route {
         ],
         'ds'           => [
             'description' => 'Diskrete Strukturen',
-            'moodle_id'   => '57991',
+            'target'      => 'https://www7.in.tum.de/um/courses/ds/ws2021/index.html',
+            'moodle_id'   => '57991'
         ],
         'vorkurs'      => [
             'description' => 'Mathematik Vorkurs für Informatiker',
@@ -348,7 +350,7 @@ class Route {
         ],
         'crypto'       => [
             'description' => 'Kryptographie',
-            'target'      => 'https://www7.in.tum.de/um/courses/crypto/ws1819/',
+            'target'      => 'https://www7.in.tum.de/um/courses/crypto/ws2021/',
         ],
         'markov'       => [
             'description' => 'Markovketten',
@@ -360,7 +362,7 @@ class Route {
         ],
         'itsec'        => [
             'description' => 'IT-Sicherheit',
-            'target'      => 'https://www.sec.in.tum.de/i20/teaching/ws2019/it-sicherheit',
+            'target'      => 'https://www.sec.in.tum.de/i20/teaching/ws2020/it-sicherheit',
             'moodle_id'   => '42097',
         ],
         'ausitsec'     => [
