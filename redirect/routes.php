@@ -389,7 +389,7 @@ class Route {
         ],
         'progopt'      => [
             'description' => 'Program Optimization',
-            'target'      => 'https://www.in.tum.de/i02/lehre/wintersemester-1819/vorlesungen/program-optimization/',
+            'target'      => 'https://www.in.tum.de/i02/lehre/wintersemester-2021/vorlesungen/program-optimization/',
         ],
         'advalgs'      => [
             'description' => 'Advanced Algorithms',
