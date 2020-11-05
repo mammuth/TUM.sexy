@@ -443,6 +443,10 @@ class Route {
             'description' => 'Practical Course: iLabX - The Virtual Internet Laboratory (block)',
             'target'      => 'https://ilabx.net.in.tum.de',
         ],
+        'osp'        => [
+            'description' => 'Practical Course: Contributing to an Open-Source Project',
+            'target'      => 'https://www21.in.tum.de/teaching/osp/WS20/',
+        ],
         'comp'         => [
             'description' => 'Computational Complexity',
             'target'      => 'https://www7.in.tum.de/um/courses/complexity/SS19/',
@@ -719,6 +723,7 @@ class Route {
             'ilab1',
             'ilab2',
             'ilabx',
+            'osp',
             'comp',
             'tms',
             'ml',
