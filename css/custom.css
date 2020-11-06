@@ -38,7 +38,7 @@ a.logo {
     position: relative !important;
     opacity: 0.9;
     padding: 0 20px 20px 20px;
-} 
+}
 
 #footer {
     position: fixed;
@@ -280,10 +280,10 @@ h4 {
     #searchbox {
         color: #e5e6e7;
         background-color: #1f2833;
-        border-color: #45a29e; 
+        border-color: #45a29e;
     }
     #searchbox:focus {
-        border-color: #66fcf1; 
+        border-color: #66fcf1;
     }
     h3 {
         border-bottom-color: #888;
@@ -336,4 +336,45 @@ h4 {
         background-size:100% auto;
         color: #e5e6e7;
     }
+}
+.pin{
+    opacity: 0;
+    cursor: pointer;
+    height: 1.2em;
+}
+.pincontainer{
+    display: flex;
+    gap: 1em;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+li:hover .pin, li.hover .pin{
+    opacity: 1;
+}
+.card{
+    border: solid 1px black;
+    padding: 1em;
+    flex-basis: 200px;
+    flex-grow: 1;
+    overflow: hidden;
+    text-align: center;
+}
+.unpin{
+    height: 1.2em;
+    float: right;
+    opacity: 0;
+}
+.card:hover .unpin, .card.hover .unpin{
+    opacity: 1;
+}
+.cardheader{
+    font-size: 2rem;
+}
+.placeholder {
+    width: 200px;
+    height: 0;
+    margin-left: 1em;
+    margin-right: 1em;
+    flex-basis: 200px;
+    flex-grow: 1;
 }
