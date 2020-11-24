@@ -64,8 +64,7 @@ class Route {
         ],
         'anal'         => [
             'description' => 'Analysis für Informatiker',
-            'target'      => 'https://www-m5.ma.tum.de/Allgemeines/MA0902_2019W',
-            'moodle_id'   => '50842',
+            'moodle_id'   => '61369',
         ],
         'fpv'          => [
             'description' => 'Functional Programming and Verification',
@@ -570,6 +569,14 @@ class Route {
         'panopto'           => [
             'description' => 'Panopto Video platform',
             'target'      => 'https://tum.cloud.panopto.eu',
+        ],
+        'ifm'           => [
+            'description' => 'Investitions- und Finanzmanagement',
+            'moodle_id'   => '59135',
+        ],
+        'seba'           => [
+            'description' => 'Software Engineering for Business Applications',
+            'moodle_id'   => '58046',
         ],
     ];
 
