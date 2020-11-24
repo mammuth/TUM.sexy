@@ -39,8 +39,8 @@ class Route {
             'target'      => 'https://live.rbg.tum.de',
         ],
         'stuff'        => [
-            'description' => 'Unistuff (ehemals Tumstuff)',
-            'target'      => 'https://unistuff.org',
+            'description' => 'Studystuff (ehemals Unistuff)',
+            'target'      => 'https://studystuff.org',
         ],
         'reddit'       => [
             'description' => 'ReddiTUM',
@@ -52,11 +52,11 @@ class Route {
         ],
         'numprog'      => [
             'description' => 'Numerisches Programmieren',
-            'moodle_id'   => '53128',
+            'moodle_id'   => '57975',
         ],
         'websec'       => [
             'description' => 'WebApplication Security Bachelor Praktikum',
-            'target'      => 'https://websec.sec.in.tum.de',
+            'target'      => 'https://www.sec.in.tum.de/i20/teaching/ws2017/web-application-security',
         ],
         'netsec'       => [
             'description' => 'Network Security - Netzsicherheit',
@@ -71,10 +71,6 @@ class Route {
             'target'      => 'https://www21.in.tum.de/teaching/fpv/WS20/',
             'moodle_id'   => '57940',
         ],
-        'e2ocaml'      => [
-            'description' => 'Einführung in die Informatik 2 Haskell HA-Abgabe',
-            'target'      => 'https://vmnipkow3.in.tum.de/',
-        ],
         'db'           => [
             'description' => 'Grundlagen: Datenbanken',
             'target'      => 'https://db.in.tum.de/teaching/ws2021/grundlagen/?lang=de',
@@ -86,8 +82,7 @@ class Route {
         ],
         'gbs'          => [
             'description' => 'Grundlagen: Betriebssysteme und Systemsoftware',
-            'target'      => 'https://www.moodle.tum.de/course/view.php?id=49592',
-            'moodle_id'   => '49592',
+            'moodle_id'   => '58083',
         ],
         'quintero'     => [
             'description' => 'Mathias Quintero',
@@ -99,7 +94,7 @@ class Route {
         ],
         'github'       => [
             'description' => 'Official TUM.sexy Github Repository',
-            'target'      => 'https://github.com/mammuth/TUM.sexy',
+            'target'      => 'https://github.com/TUM-Dev/TUM.sexy',
         ],
         'docker'       => [
             'description' => 'Official TUM.sexy Docker Hub Repository',
@@ -135,8 +130,8 @@ class Route {
             'moodle_id'   => '57731',
         ],
         'scivis'       => [
-            'description' => 'Scientific Visualization',
-            'target'      => 'https://wwwcg.in.tum.de/teaching/teaching/winter-term-1617/scientific-visualization.html',
+            'description' => 'Scientific Visualization / Visual Data Analytics',
+            'target'      => 'https://www.in.tum.de/cg/teaching/winter-term-2021/visual-data-analytics/',
         ],
         'evpro'       => [
             'description' => 'Event Processing',
@@ -190,7 +185,7 @@ class Route {
         ],
         'app'          => [
             'description' => 'TUM Campus App',
-            'target'      => 'https://tumcabe.in.tum.de/landing/',
+            'target'      => 'https://www.tum.app/',
         ],
         'eduroam'      => [
             'description' => 'HowTo: Setup eduroam securely!',
@@ -235,12 +230,11 @@ class Route {
         ],
         'conpra'       => [
             'description' => 'Practical Course: Algorithms for Programming Contests',
-            'target'      => 'https://www7.in.tum.de/um/courses/praktika/conpra/SS17/index.php?category=material',
+            'target'      => 'https://www7.in.tum.de/um/courses/praktika/conpra/WS20/',
         ],
         'gki'          => [
             'description' => 'Grundlagen der Künstlichen Intelligenz',
-            'target'      => 'https://www.moodle.tum.de/course/view.php?id=41898',
-            'moodle_id'   => '41898',
+            'moodle_id'   => '58014',
         ],
         'pl'           => [
             'description' => 'Programming Languages',
@@ -248,11 +242,11 @@ class Route {
         ],
         'ase'          => [
             'description' => 'Advanced Topics In Software Engineering',
-            'target'      => 'https://www.moodle.tum.de/course/view.php?id=35023',
+            'moodle_id'   => '58021',
         ],
         'qo'           => [
             'description' => 'Query Optimization',
-            'target'      => 'https://db.in.tum.de/teaching/ws1718/queryopt/',
+            'target'      => 'https://db.in.tum.de/teaching/ws2021/queryopt/',
         ],
         'satellite'    => [
             'description' => 'The TUM Satellite',
@@ -301,11 +295,11 @@ class Route {
         ],
         'diversity'    => [
             'description' => 'Diversity & Queer Referat',
-            'target'      => 'https://www.asta.tum.de/studentische-vertretung/asta/aemter/diversityqueer/',
+            'target'      => 'https://www.sv.tum.de/asta/team/diversityqueer/',
         ],
         'asta'         => [
             'description' => 'Studentische Vertretung – AStA',
-            'target'      => 'https://www.asta.tum.de',
+            'target'      => 'https://www.sv.tum.de/startseite/',
         ],
         'slam'         => [
             'description' => 'TUM Hörsaal Slam',
@@ -313,7 +307,7 @@ class Route {
         ],
         'sbrml'        => [
             'description' => 'Sensor-based Robotic Manipulation and Locomotion',
-            'target'      => 'https://www.in.tum.de/i23/teaching/sensor-based-robotic-manipulation-and-locomotion/',
+            'moodle_id'   => '62737',
         ],
         'rpchi'        => [
             'description' => 'Robot Programming and Control for Human Interaction',
@@ -329,7 +323,7 @@ class Route {
         ],
         'io'           => [
             'description' => 'Information Officer',
-            'target'      => 'https://www.asta.tum.de/studentische-vertretung/asta/aemter/information-office-io/',
+            'target'      => 'https://www.sv.tum.de/asta/io/',
         ],
         'pride'        => [
             'description' => 'TUM Diversity & Queer',
@@ -362,7 +356,7 @@ class Route {
         'itsec'        => [
             'description' => 'IT-Sicherheit',
             'target'      => 'https://www.sec.in.tum.de/i20/teaching/ws2020/it-sicherheit',
-            'moodle_id'   => '42097',
+            'moodle_id'   => '58097',
         ],
         'ausitsec'     => [
             'description' => 'ausgewählte Themen der IT-Sicherheit',
@@ -376,9 +370,9 @@ class Route {
             'description' => 'Automata and Formal Languages',
             'target'      => 'https://www7.in.tum.de/um/courses/auto/ws2021/index.php?category=uebungen',
         ],
-        'sd'           => [
-            'description' => 'Signaldarstellung',
-            'target'      => 'https://www.mmk.ei.tum.de/lehre/signaldarstellung-ab-ws1415/',
+        'st'           => [
+            'description' => 'Signaltheorie',
+            'target'      => 'https://www.ei.tum.de/mmk/lehre/signaltheorie-ab-ws1920/',
             'moodle_id'   => '44034',
         ],
         'markov'       => [
@@ -392,7 +386,7 @@ class Route {
         ],
         'advalgs'      => [
             'description' => 'Advanced Algorithms',
-            'target'      => 'http://www14.in.tum.de/lehre/2018WS/ada/index.html.en',
+            'target'      => 'http://www14.in.tum.de/lehre/2020WS/ada/index.html.en',
         ],
         'ea'           => [
             'description' => 'Efficient Algorithms',
@@ -412,7 +406,7 @@ class Route {
         ],
         'ja'           => [
             'description' => 'Junge Akademie',
-            'target'      => 'https://www.jungeakademie.tum.de/',
+            'target'      => 'https://www.ja.tum.de/start/',
         ],
         'film'         => [
             'description' => 'tu film',
@@ -468,7 +462,7 @@ class Route {
         ],
         'set'          => [
             'description' => 'Studieneinführungstage der FSMPI',
-            'target'      => 'https://www.fsmpi.de/set',
+            'target'      => 'https://mpi.fs.tum.de/neu-an-der-tum/set/',
         ],
         'ml'           => [
             'description' => 'Machine Learning',
@@ -476,11 +470,11 @@ class Route {
         ],
         'ki'           => [
             'description' => 'Grundlagen der künstlichen Intelligenz',
-            'moodle_id'   => '49273',
+            'moodle_id'   => '58014',
         ],
         'asp'          => [
             'description' => 'Aspekte der systemnahen Programmierung bei der Spieleentwicklung',
-            'target'      => 'https://www.caps.in.tum.de/lehre/ws19/praktika/asp/',
+            'target'      => 'https://www.in.tum.de/caps/lehre/ws20/praktika/asp/',
         ],
         'pse'          => [
             'description' => 'Patterns in Software Engineering',
@@ -500,7 +494,7 @@ class Route {
         ],
         'cvvm'         => [
             'description' => 'Computer Vision I: Variational Methods',
-            'target'      => 'https://vision.in.tum.de/teaching/ws2019/cvvm_ws19',
+            'target'      => 'https://vision.in.tum.de/teaching/online/cvvm',
         ],
         'vt'           => [
             'description' => 'Virtualization Techniques',
@@ -508,14 +502,14 @@ class Route {
         ],
         'imgtech'      => [
             'description' => 'Medical Imaging Technology',
-            'target'      => 'https://www.moodle.tum.de/course/view.php?id=52208',
+            'moodle_id'   => '61616',
         ],
         'ibmi'         => [
             'description' => 'Introduction to Biological and Medical Imaging',
             'target'      => 'http://www.cbi.ei.tum.de/courses/course-in-biological-imaging/',
         ],
         'pretschi'     => [
-            'description' => 'Formerly                   KnownAsSexiPretschi.eu',
+            'description' => 'Formerly Known As SexiPretschi.eu',
             'target'      => 'https://tum.sexy/pret/',
         ],
         'nix'          => [
@@ -564,7 +558,7 @@ class Route {
         ],
         'corona'            => [
             'description' => 'Coronavirus Information',
-            'target'      => 'https://www.tum.de/die-tum/aktuelles/coronavirus/',
+            'target'      => 'https://www.in.tum.de/fuer-studierende/coronavirus/',
         ],
         'panopto'           => [
             'description' => 'Panopto Video platform',
@@ -718,7 +712,7 @@ class Route {
             'crypto',
             'geokalkuele',
             'automata',
-            'sd',
+            'st',
             'markov',
             'progopt',
             'advalgs',
