@@ -22,4 +22,19 @@ class MainTest extends \PHPUnit\Framework\TestCase {
         $router = new Route();
         $this->assertNotEmpty($router->getResolvedArrays());
     }
+
+    public function testIsAlphabetically(){
+        $router = new Route();
+        foreach($router->getArraysThatShouldBeSorted() as $array){
+            $this->isAlphabetically($array);
+        }
+    }
+
+    private function isAlphabetically($array){
+        $prevkey = array_key_first($array);
+            foreach($array as $key){
+                $this->assertLessThanOrEqual(0, strcmp($prevkey,$key), "'$prevkey' should not be before '$key'");
+                $prevkey = $key;
+            }
+    }
 }

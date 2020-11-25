@@ -14,4 +14,5 @@ This is damn easy, man! Just do it!
 
 ### Badass RULES everyone has to follow
 - **what to add?** Everything that is not misleading. DO: propra35.tum.sexy, which targets the website of the Tutorübung Group 35. **DON'T** propra.tum.sexy targeting that specific group page.
+- **where to add?** Make sure to submit your entries such that everything stays in alphabetical order
 - **what to hide from frontage?** Everything that does not affect more than a few people.

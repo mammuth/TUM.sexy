@@ -1,0 +1,1 @@
+- [ ] I made sure that the arrays in `routes.php` are still alphabetically sorted. :sparkles: 

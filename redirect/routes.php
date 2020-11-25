@@ -1,618 +1,615 @@
 <?php
 
+// please make sure to add your redirects such that the arrays remains sorted alphabetically
 class Route {
     private $routes = [
-        'hunger'       => [
-            'description' => 'FMI Bistro Speiseplan',
-            'target'      => 'https://tum.sexy/hunger',
+        'adlr' => [
+            'description' => 'Advanced Deep Learning for Robotics',
+            'target'      => 'https://bbaeuml.github.io/tum-adlr/adlr/index.html',
         ],
-        'mensabot'     => [
-            'description' => 'TUMMensabot für Telegram',
-            'target'      => 'https://t.me/TUMMensabot',
+        'adm' => [
+            'description' => 'Algorithmische Diskrete Mathematik',
+            'target'      => 'https://agdm.ma.tum.de/teaching/2019W/adm.html',
         ],
-        'mensabot2'    => [
-            'description' => 'Hübscher Telegram-MensaBot',
-            'target'      => 'https://t.me/MensaMUCBot',
+        'advalgs' => [
+            'description' => 'Advanced Algorithms',
+            'target'      => 'http://www14.in.tum.de/lehre/2020WS/ada/index.html.en',
         ],
-        'roombot'      => [
-            'description' => 'Roomfinder als Telegram Bot',
-            'target'      => 'https://t.me/tumroomsbot',
+        'agt' => [
+            'description' => 'Algorithmic Game Theory',
+            'target'      => 'https://dss.in.tum.de/teaching/38-teaching/semester/sommersemster-2019/203-algorithmic-game-theory-ss2019.html',
         ],
-        'room'         => [
-            'description' => 'Lernräume',
-            'target'      => 'https://www.devapp.it.tum.de/iris/app/',
+        'algebra1' => [
+            'description' => 'Algebra 1',
+            'target'      => 'https://www.moodle.tum.de/course/view.php?idnumber=950370507',
         ],
-        'c'            => [
-            'description' => 'TUM Online',
-            'target'      => 'https://campus.tum.de/tumonline/ee/ui/ca2/app/desktop/#/login',
+        'all-eat-api' => [
+            'description' => 'All menus for all locations from the eat-api in JSON',
+            'target'      => 'https://tum-dev.github.io/eat-api/all.json',
         ],
-        'm'            => [
-            'description' => 'Moodle',
-            'target'      => 'https://www.moodle.tum.de/Shibboleth.sso/Login?providerId=https://tumidp.lrz.de/idp/shibboleth&target=https://www.moodle.tum.de/auth/shibboleth/index.php',
-        ],
-        'o'            => [
-            'description' => 'TUM Opac',
-            'target'      => 'https://www.ub.tum.de/tum-opac',
-        ],
-        'live'         => [
-            'description' => 'Livestreams und Aufzeichnungen von Vorlesungen',
-            'target'      => 'https://live.rbg.tum.de',
-        ],
-        'stuff'        => [
-            'description' => 'Studystuff (ehemals Unistuff)',
-            'target'      => 'https://studystuff.org',
-        ],
-        'reddit'       => [
-            'description' => 'ReddiTUM',
-            'target'      => 'https://reddit.com/r/redditum',
-        ],
-        'ted'          => [
-            'description' => 'TEDxTUM Event-Seite',
-            'target'      => 'https://tedxtum.com',
-        ],
-        'numprog'      => [
-            'description' => 'Numerisches Programmieren',
-            'moodle_id'   => '57975',
-        ],
-        'websec'       => [
-            'description' => 'WebApplication Security Bachelor Praktikum',
-            'target'      => 'https://www.sec.in.tum.de/i20/teaching/ws2017/web-application-security',
-        ],
-        'netsec'       => [
-            'description' => 'Network Security - Netzsicherheit',
-            'target'      => 'https://www.net.in.tum.de/teaching/ws2021/netsec.html',
-        ],
-        'anal'         => [
+        'anal' => [
             'description' => 'Analysis für Informatiker',
             'moodle_id'   => '61369',
         ],
-        'fpv'          => [
-            'description' => 'Functional Programming and Verification',
-            'target'      => 'https://www21.in.tum.de/teaching/fpv/WS20/',
-            'moodle_id'   => '57940',
+        'androidsec' => [
+            'description' => 'Praktikum: Android Security',
+            'target'      => 'https://www22.in.tum.de/en/teaching/android-security-lab/',
         ],
-        'db'           => [
+        'app' => [
+            'description' => 'TUM Campus App',
+            'target'      => 'https://www.tum.app/',
+        ],
+        'artemis' => [
+            'description' => 'ArTEMIS platform of the Prof. Brügge, Chair 1',
+            'target'      => 'https://artemis.ase.in.tum.de',
+        ],
+        'ase' => [
+            'description' => 'Advanced Topics In Software Engineering',
+            'moodle_id'   => '58021',
+        ],
+        'asp' => [
+            'description' => 'Aspekte der systemnahen Programmierung bei der Spieleentwicklung',
+            'target'      => 'https://www.in.tum.de/caps/lehre/ws20/praktika/asp/',
+        ],
+        'asta' => [
+            'description' => 'Studentische Vertretung – AStA',
+            'target'      => 'https://www.sv.tum.de/startseite/',
+        ],
+        'ausitsec' => [
+            'description' => 'ausgewählte Themen der IT-Sicherheit',
+            'target'      => 'https://www.sec.in.tum.de/i20/teaching/ws2019/ausgewahlte-themen-aus-dem-bereich-it-sicherheit',
+        ],
+        'automata' => [
+            'description' => 'Automata and Formal Languages',
+            'target'      => 'https://www7.in.tum.de/um/courses/auto/ws2021/index.php?category=uebungen',
+        ],
+        'c' => [
+            'description' => 'TUM Online',
+            'target'      => 'https://campus.tum.de/tumonline/ee/ui/ca2/app/desktop/#/login',
+        ],
+        'canteens-eat-api' => [
+            'description' => 'A JSON list of all available canteens for the eat-api',
+            'target'      => 'https://tum-dev.github.io/eat-api/canteens.json',
+        ],
+        'carlos' => [
+            'description' => 'Carlos Camino',
+            'target'      => 'https://carlos-camino.de',
+        ],
+        'comp' => [
+            'description' => 'Computational Complexity',
+            'target'      => 'https://www7.in.tum.de/um/courses/complexity/SS19/',
+        ],
+        'compiler' => [
+            'description' => 'Compiler Construction',
+            'target'      => 'https://www.in.tum.de/i02/lehre/sommersemester-20/vorlesungen/compiler-construction/',
+        ],
+        'conf' => [
+            'description' => 'TUM-Conf (Zoom)',
+            'target'      => 'https://tum-conf.zoom.us',
+        ],
+        'conpra' => [
+            'description' => 'Practical Course: Algorithms for Programming Contests',
+            'target'      => 'https://www7.in.tum.de/um/courses/praktika/conpra/WS20/',
+        ],
+        'corona' => [
+            'description' => 'Coronavirus Information',
+            'target'      => 'https://www.in.tum.de/fuer-studierende/coronavirus/',
+        ],
+        'crypto' => [
+            'description' => 'Kryptographie',
+            'target'      => 'https://www7.in.tum.de/um/courses/crypto/ws2021/',
+        ],
+        'csc' => [
+            'description' => 'Computational Social Choice',
+            'target'      => 'https://dss.in.tum.de/teaching/ws-18-19/37-teaching/semester/wintersemster-2018-19/193-computational-social-choice-2018-19.html',
+        ],
+        'cvmvg' => [
+            'description' => 'Computer Vision II: Multiple View Geometry',
+            'target'      => 'https://vision.in.tum.de/teaching/ss2020/mvg2020',
+        ],
+        'cvvm' => [
+            'description' => 'Computer Vision I: Variational Methods',
+            'target'      => 'https://vision.in.tum.de/teaching/online/cvvm',
+        ],
+        'db' => [
             'description' => 'Grundlagen: Datenbanken',
             'target'      => 'https://db.in.tum.de/teaching/ws2021/grundlagen/?lang=de',
             'moodle_id'   => '58088',
         ],
-        'erdb'         => [
-            'description' => 'Einsatz und Realisierung von Datenbanksystemen',
-            'target'      => 'https://db.in.tum.de/teaching/ss20/impldb/',
+        'diversity' => [
+            'description' => 'Diversity & Queer Referat',
+            'target'      => 'https://www.sv.tum.de/asta/team/diversityqueer/',
         ],
-        'gbs'          => [
-            'description' => 'Grundlagen: Betriebssysteme und Systemsoftware',
-            'moodle_id'   => '58083',
-        ],
-        'quintero'     => [
-            'description' => 'Mathias Quintero',
-            'target'      => 'https://home.in.tum.de/~szillat/',
-        ],
-        'carlos'       => [
-            'description' => 'Carlos Camino',
-            'target'      => 'https://carlos-camino.de',
-        ],
-        'github'       => [
-            'description' => 'Official TUM.sexy Github Repository',
-            'target'      => 'https://github.com/TUM-Dev/TUM.sexy',
-        ],
-        'docker'       => [
+        'docker' => [
             'description' => 'Official TUM.sexy Docker Hub Repository',
             'target'      => 'https://hub.docker.com/r/mammuth/tum.sexy',
         ],
-        'dwt'          => [
+        'ds' => [
+            'description' => 'Diskrete Strukturen',
+            'target'      => 'https://www7.in.tum.de/um/courses/ds/ws2021/index.html',
+            'moodle_id'   => '57991',
+        ],
+        'dwt' => [
             'description' => 'Diskrete Wahrscheinlichkeitstheorie',
             'target'      => 'http://wwwalbers.in.tum.de/lehre/2020SS/dwt/index.html.de',
         ],
-        'theo'         => [
-            'description' => 'Einführung in die theoretische Informatik',
-            'target'      => 'https://www21.in.tum.de/teaching/theo/SS20/',
+        'ea' => [
+            'description' => 'Efficient Algorithms',
+            'target'      => 'http://www14.in.tum.de/lehre/2019WS/ea/index.html.en',
         ],
-        'theotutor'         => [
-            'description' => 'Einführung in die theoretische Informatik: Automatatutor',
-            'target'      => 'https://automata.model.in.tum.de/',
+        'eat-api' => [
+            'description' => 'eat-api output in a human readable format as well as the base url for eat-api calls',
+            'target'      => 'https://tum-dev.github.io/eat-api/',
         ],
-        'theojudge'    => [
-            'description' => 'TUMjudge - Einführung in die theoretische Informatik',
-            'target'      => 'https://judge.in.tum.de/theo/public/',
+        'ecarus' => [
+            'description' => 'E-Mobility der Zukunft: Ingenieurspraxis, Forschungspraxis & Co.',
+            'target'      => 'https://www.ecarus.ei.tum.de',
         ],
-        'info1'        => [
-            'description' => 'Einführung in die Informatik 1',
-            'moodle_id'   => '58145',
-        ],
-        'pgdp'         => [
-            'description' => 'Praktikum Grundlagen der Programmierung (Moodle-Kurs)',
-            'moodle_id'   => '58145',
-        ],
-        'era'          => [
-            'description' => 'Einführung in die Rechnerarchitektur',
-            'target'      => 'https://www.in.tum.de/caps/lehre/ws20/vorlesungen/einfuehrung-in-die-rechnerarchitektur-era/',
-            'moodle_id'   => '57731',
-        ],
-        'scivis'       => [
-            'description' => 'Scientific Visualization / Visual Data Analytics',
-            'target'      => 'https://www.in.tum.de/cg/teaching/winter-term-2021/visual-data-analytics/',
-        ],
-        'evpro'       => [
-            'description' => 'Event Processing',
-            'target'      => 'https://www.in.tum.de/i13/teaching/summer-semester-2020/event-processing/',
-            'moodle_id'   => '53173'
-        ],
-        'ds'           => [
-            'description' => 'Diskrete Strukturen',
-            'target'      => 'https://www7.in.tum.de/um/courses/ds/ws2021/index.html',
-            'moodle_id'   => '57991'
-        ],
-        'vorkurs'      => [
-            'description' => 'Mathematik Vorkurs für Informatiker',
-            'target'      => 'https://www.ma.tum.de/de/studium/vorkurse-ferienkurse/informatik.html',
-        ],
-        'csc'          => [
-            'description' => 'Computational Social Choice',
-            'target'      => 'https://dss.in.tum.de/teaching/ws-18-19/37-teaching/semester/wintersemster-2018-19/193-computational-social-choice-2018-19.html',
-        ],
-        'eval'         => [
-            'description' => 'Evaluation of Lectures',
-            'target'      => 'https://evasys.zv.tum.de/evasys/online.php',
-        ],
-        'artemis'      => [
-            'description' => 'ArTEMIS platform of the Prof. Brügge, Chair 1',
-            'target'      => 'https://artemis.ase.in.tum.de',
-        ],
-        'sp'           => [
-            'description' => 'Studienplan B.Sc. Informatik',
-            'target'      => 'https://www.in.tum.de/fuer-studierende/bachelor-studiengaenge/informatik/studienplan/studienbeginn-ab-ws-201819/',
-        ],
-        'ma-sp'        => [
-            'description' => 'Studienplan M.Sc. Informatik',
-            'target'      => 'https://www.in.tum.de/fuer-studierende/master-studiengaenge/informatik/studienplan/fpso-2018/',
-        ],
-        'ge-sp'        => [
-            'description' => 'Studienplan B.Sc. Informatik: Games Engineering',
-            'target'      => 'https://www.in.tum.de/de/fuer-studierende/bachelor-studiengaenge/informatik-games-engineering/studienplan-games/studienbeginn-ab-ws-201819-games/',
-        ],
-        'ge-ma-sp'     => [
-            'description' => 'Studienplan M.Sc. Informatik: Games Engineering',
-            'target'      => 'https://www.in.tum.de/de/fuer-studierende/master-studiengaenge/informatik-games-engineering/curriculum/',
-        ],
-        'wi-sp'        => [
-            'description' => 'Studienplan B.Sc. Wirtschaftsinformatik',
-            'target'      => 'https://www.in.tum.de/fuer-studierende/bachelor-studiengaenge/wirtschaftsinformatik/studienplan/studienbeginn-ab-ws-20182019/',
-        ],
-        'wi-ma-sp'     => [
-            'description' => 'Studienplan M.Sc. Wirtschaftsinformatik',
-            'target'      => 'https://www.in.tum.de/fuer-studierende/master-studiengaenge/wirtschaftsinformatik/studienplan/ab-sose-2018/',
-        ],
-        'app'          => [
-            'description' => 'TUM Campus App',
-            'target'      => 'https://www.tum.app/',
-        ],
-        'eduroam'      => [
+        'eduroam' => [
             'description' => 'HowTo: Setup eduroam securely!',
             'target'      => 'https://tum.sexy/eduroam.php',
         ],
-        'eist'         => [
+        'eist' => [
             'description' => 'Einführung in die Softwaretechnik',
             'target'      => 'https://ase.in.tum.de/lehrstuhl_1/teaching/summer-2020/1111-introduction-to-software-engineering-eist-summer-2020',
         ],
-        'gad'          => [
-            'description' => 'Grundlegende Algorithmen und Datenstrukturen',
-            'target'      => 'https://www.moodle.tum.de/course/view.php?id=53358',
-            'moodle_id'   => '53358',
-        ],
-        'linalg'       => [
-            'description' => 'Lineare Algebra für Informatik',
-            'target'      => 'https://www.moodle.tum.de/course/view.php?id=55594',
-        ],
-        'gog'          => [
-            'description' => 'Games on Graphs',
-            'target'      => 'https://www7.in.tum.de/um/courses/gog/ss17/index.php',
-        ],
-        'grnvs'        => [
-            'description' => 'Grundlagen Rechnernetze und Verteilte Systeme',
-            'target'      => 'https://www.net.in.tum.de/teaching/ss20/grnvs.html',
-        ],
-        'pgm'          => [
-            'description' => "Probabilistic Graphical Models in Computer Vision",
-            'target'      => 'https://vision.in.tum.de/teaching/ss2017/pgmcv',
+        'era' => [
+            'description' => 'Einführung in die Rechnerarchitektur',
+            'target'      => 'https://www.in.tum.de/caps/lehre/ws20/vorlesungen/einfuehrung-in-die-rechnerarchitektur-era/',
+            'moodle_id'   => '57731',
         ],
         'erapraktikum' => [
             'description' => 'Praktikum - Einführung in die Rechnerarchitektur',
             'target'      => 'https://gepasp.in.tum.de/eraweb/main',
         ],
-        'ged'          => [
-            'description' => 'Game Engine Design',
-            'target'      => 'https://www.in.tum.de/cg/teaching/summer-term-19/echtzeit-computergrafik/',
+        'erdb' => [
+            'description' => 'Einsatz und Realisierung von Datenbanksystemen',
+            'target'      => 'https://db.in.tum.de/teaching/ss20/impldb/',
+        ],
+        'esn' => [
+            'description' => 'ESN TUMi München',
+            'target'      => 'https://esn-tumi.de',
+        ],
+        'eval' => [
+            'description' => 'Evaluation of Lectures',
+            'target'      => 'https://evasys.zv.tum.de/evasys/online.php',
+        ],
+        'evpro' => [
+            'description' => 'Event Processing',
+            'target'      => 'https://www.in.tum.de/i13/teaching/summer-semester-2020/event-processing/',
+            'moodle_id'   => '53173',
+        ],
+        'fds' => [
+            'description' => 'Functional Data Structures',
+            'target'      => 'https://www21.in.tum.de/teaching/FDS/SS20/',
+        ],
+        'film' => [
+            'description' => 'tu film',
+            'target'      => 'https://www.tu-film.de/',
+        ],
+        'finder' => [
+            'description' => 'Roomfinder',
+            'target'      => 'https://www.ph.tum.de/about/visit/roomfinder/',
+        ],
+        'fpv' => [
+            'description' => 'Functional Programming and Verification',
+            'target'      => 'https://www21.in.tum.de/teaching/fpv/WS20/',
+            'moodle_id'   => '57940',
+        ],
+        'future' => [
+            'description' => 'TUM4Future',
+            'target'      => 'https://tum4future.de',
+        ],
+        'gad' => [
+            'description' => 'Grundlegende Algorithmen und Datenstrukturen',
+            'target'      => 'https://www.moodle.tum.de/course/view.php?id=53358',
+            'moodle_id'   => '53358',
         ],
         'gadunittests' => [
             'description' => 'Unit - Tests: Grundlegende Algorithmen und Datenstrukturen',
             'target'      => 'https://github.com/Code-Connect/TUM_Homework/tree/master/src/gad17/',
         ],
-        'conpra'       => [
-            'description' => 'Practical Course: Algorithms for Programming Contests',
-            'target'      => 'https://www7.in.tum.de/um/courses/praktika/conpra/WS20/',
+        'gbs' => [
+            'description' => 'Grundlagen: Betriebssysteme und Systemsoftware',
+            'moodle_id'   => '58083',
         ],
-        'gki'          => [
+        'ge-ma-sp' => [
+            'description' => 'Studienplan M.Sc. Informatik: Games Engineering',
+            'target'      => 'https://www.in.tum.de/de/fuer-studierende/master-studiengaenge/informatik-games-engineering/curriculum/',
+        ],
+        'ge-sp' => [
+            'description' => 'Studienplan B.Sc. Informatik: Games Engineering',
+            'target'      => 'https://www.in.tum.de/de/fuer-studierende/bachelor-studiengaenge/informatik-games-engineering/studienplan-games/studienbeginn-ab-ws-201819-games/',
+        ],
+        'ged' => [
+            'description' => 'Game Engine Design',
+            'target'      => 'https://www.in.tum.de/cg/teaching/summer-term-19/echtzeit-computergrafik/',
+        ],
+        'geokalkuele' => [
+            'description' => 'Geometriekalküle',
+            'target'      => 'https://www-m10.ma.tum.de/bin/view/Lehre/WS1819/GeometrieKalkueleWS1819',
+        ],
+        'git-tut' => [
+            'description' => 'Getting started with Git? Learn the basics for the console. With Visualizations!',
+            'target'      => 'https://learngitbranching.js.org',
+        ],
+        'github' => [
+            'description' => 'Official TUM.sexy Github Repository',
+            'target'      => 'https://github.com/TUM-Dev/TUM.sexy',
+        ],
+        'gitlab' => [
+            'description' => 'The fast way to the LRZ hosted gitlab',
+            'target'      => 'https://gitlab.lrz.de/users/sign_in',
+        ],
+        'gki' => [
             'description' => 'Grundlagen der Künstlichen Intelligenz',
             'moodle_id'   => '58014',
         ],
-        'pl'           => [
-            'description' => 'Programming Languages',
-            'target'      => 'https://www.in.tum.de/i02/lehre/wintersemester-1920/vorlesungen/programming-languages/',
+        'gog' => [
+            'description' => 'Games on Graphs',
+            'target'      => 'https://www7.in.tum.de/um/courses/gog/ss17/index.php',
         ],
-        'ase'          => [
-            'description' => 'Advanced Topics In Software Engineering',
-            'moodle_id'   => '58021',
+        'grnvs' => [
+            'description' => 'Grundlagen Rechnernetze und Verteilte Systeme',
+            'target'      => 'https://www.net.in.tum.de/teaching/ss20/grnvs.html',
         ],
-        'qo'           => [
-            'description' => 'Query Optimization',
-            'target'      => 'https://db.in.tum.de/teaching/ws2021/queryopt/',
+        'hunger' => [
+            'description' => 'FMI Bistro Speiseplan',
+            'target'      => 'https://tum.sexy/hunger',
         ],
-        'satellite'    => [
-            'description' => 'The TUM Satellite',
-            'target'      => 'https://www.move2space.de/',
+        'ibmi' => [
+            'description' => 'Introduction to Biological and Medical Imaging',
+            'target'      => 'http://www.cbi.ei.tum.de/courses/course-in-biological-imaging/',
         ],
-        'shuttle'      => [
-            'description' => 'WZW-GAR-MUC shuttle schedule',
-            'target'      => 'https://tum.sexy/shuttle/',
-        ],
-        'statista'     => [
-            'description' => 'Statista',
-            'target'      => 'https://de-statista-com.eaccess.ub.tum.de',
-        ],
-        'ieee'         => [
+        'ieee' => [
             'description' => 'IEEE Xplore Login',
             'target'      => 'https://ieeexplore.ieee.org/servlet/wayf.jsp?entityId=https://tumidp.lrz.de/idp/shibboleth&url=https%3A%2F%2Fieeexplore.ieee.org',
         ],
-        'springer'     => [
-            'description' => 'Springer Link Login',
-            'target'      => 'https://fsso.springer.com/federation/init?entityId=https://tumidp.lrz.de/idp/shibboleth&returnUrl=https%3A%2F%2Flink.springer.com',
+        'ifm' => [
+            'description' => 'Investitions- und Finanzmanagement',
+            'moodle_id'   => '59135',
         ],
-        'scopus'       => [
-            'description' => 'TUM UB Scopus Login (eAccess)',
-            'target'      => 'https://login.eaccess.ub.tum.de/login?qurl=https://ub.tum.de%2fdbis-link%3ftitle_id%3d3636%26destination%3ddatenbanken%2fsuche%253Fqt-dbis%253D1%2526type%253Ddb%2526terms%253Dscopus%2526x%253D0%2526y%253D0',
+        'ilab1' => [
+            'description' => 'Practical Course: iLab1 - Build your own Internet',
+            'target'      => 'https://ilab.net.in.tum.de',
         ],
-        'sharelatex'   => [
-            'description' => 'ShareLaTeX@TUM',
-            'target'      => 'https://sharelatex.tum.de/',
+        'ilab2' => [
+            'description' => 'Practical Course: iLab2 - You set the Focus',
+            'target'      => 'https://ilab2.net.in.tum.de',
         ],
-        'modsim'       => [
-            'description' => 'Modellbildung und Simulation',
-            'target'      => 'https://www5.in.tum.de/wiki/index.php/Modeling_and_Simulation_-_Summer_18',
+        'ilabx' => [
+            'description' => 'Practical Course: iLabX - The Virtual Internet Laboratory (block)',
+            'target'      => 'https://ilabx.net.in.tum.de',
         ],
-        'pp'           => [
-            'description' => 'Protein Prediction 1',
-            'target'      => 'https://www.rostlab.org/teaching/sose18/pp1cs',
+        'imgtech' => [
+            'description' => 'Medical Imaging Technology',
+            'moodle_id'   => '61616',
         ],
-        'mvs'          => [
-            'description' => 'Mobile Verteilte Systeme',
-            'target'      => 'https://www.os.in.tum.de/studium-und-lehre/ss18/mobile-verteilte-systeme/',
-            'moodle_id'   => '38940',
+        'info1' => [
+            'description' => 'Einführung in die Informatik 1',
+            'moodle_id'   => '58145',
         ],
-        'adlr'         => [
-            'description' => 'Advanced Deep Learning for Robotics',
-            'target'      => 'https://bbaeuml.github.io/tum-adlr/adlr/index.html',
-        ],
-        'diversity'    => [
-            'description' => 'Diversity & Queer Referat',
-            'target'      => 'https://www.sv.tum.de/asta/team/diversityqueer/',
-        ],
-        'asta'         => [
-            'description' => 'Studentische Vertretung – AStA',
-            'target'      => 'https://www.sv.tum.de/startseite/',
-        ],
-        'slam'         => [
-            'description' => 'TUM Hörsaal Slam',
-            'target'      => 'https://www.facebook.com/events/400633344170175/',
-        ],
-        'sbrml'        => [
-            'description' => 'Sensor-based Robotic Manipulation and Locomotion',
-            'moodle_id'   => '62737',
-        ],
-        'rpchi'        => [
-            'description' => 'Robot Programming and Control for Human Interaction',
-            'target'      => 'https://www.in.tum.de/i23/teaching/robot-programming-and-control-for-human-interaction/',
-        ],
-        'wahl'         => [
-            'description' => 'Hochschulwahlen',
-            'target'      => 'https://www.sv.tum.de/wahl/',
-        ],
-        'agt'          => [
-            'description' => 'Algorithmic Game Theory',
-            'target'      => 'https://dss.in.tum.de/teaching/38-teaching/semester/sommersemster-2019/203-algorithmic-game-theory-ss2019.html',
-        ],
-        'io'           => [
+        'io' => [
             'description' => 'Information Officer',
             'target'      => 'https://www.sv.tum.de/asta/io/',
         ],
-        'pride'        => [
-            'description' => 'TUM Diversity & Queer',
-            'target'      => 'https://www.facebook.com/events/599246697252806/',
-        ],
-        'matching'     => [
-            'description' => 'IN.TUM-Matching-System',
-            'target'      => 'https://matching.in.tum.de/saml2/login/',
-        ],
-        'esn'          => [
-            'description' => 'ESN TUMi München',
-            'target'      => 'https://esn-tumi.de',
-        ],
-        'adm'          => [
-            'description' => 'Algorithmische Diskrete Mathematik',
-            'target'      => 'https://agdm.ma.tum.de/teaching/2019W/adm.html',
-        ],
-        'crypto'       => [
-            'description' => 'Kryptographie',
-            'target'      => 'https://www7.in.tum.de/um/courses/crypto/ws2021/',
-        ],
-        'markov'       => [
-            'description' => 'Markovketten',
-            'target'      => 'https://www-m5.ma.tum.de/Allgemeines/MA2404_2018W',
-        ],
-        'androidsec'   => [
-            'description' => 'Praktikum: Android Security',
-            'target'      => 'https://www22.in.tum.de/en/teaching/android-security-lab/',
-        ],
-        'itsec'        => [
+        'itsec' => [
             'description' => 'IT-Sicherheit',
             'target'      => 'https://www.sec.in.tum.de/i20/teaching/ws2020/it-sicherheit',
             'moodle_id'   => '58097',
         ],
-        'ausitsec'     => [
-            'description' => 'ausgewählte Themen der IT-Sicherheit',
-            'target'      => 'https://www.sec.in.tum.de/i20/teaching/ws2019/ausgewahlte-themen-aus-dem-bereich-it-sicherheit',
+        'ja' => [
+            'description' => 'Junge Akademie',
+            'target'      => 'https://www.ja.tum.de/start/',
         ],
-        'geokalkuele'  => [
-            'description' => 'Geometriekalküle',
-            'target'      => 'https://www-m10.ma.tum.de/bin/view/Lehre/WS1819/GeometrieKalkueleWS1819',
+        'julius' => [
+            'description' => 'Julius Kreutz Tutoriums Website',
+            'target'      => 'https://julius-kreutz.de',
         ],
-        'automata'     => [
-            'description' => 'Automata and Formal Languages',
-            'target'      => 'https://www7.in.tum.de/um/courses/auto/ws2021/index.php?category=uebungen',
+        'ki' => [
+            'description' => 'Grundlagen der künstlichen Intelligenz',
+            'moodle_id'   => '58014',
         ],
-        'st'           => [
-            'description' => 'Signaltheorie',
-            'target'      => 'https://www.ei.tum.de/mmk/lehre/signaltheorie-ab-ws1920/',
-            'moodle_id'   => '44034',
+        'langenacht' => [
+            'description' => 'Lange Nacht der Univeristäten',
+            'target'      => 'https://www.facebook.com/events/2681178088623650/',
         ],
-        'markov'       => [
+        'linalg' => [
+            'description' => 'Lineare Algebra für Informatik',
+            'target'      => 'https://www.moodle.tum.de/course/view.php?id=55594',
+        ],
+        'live' => [
+            'description' => 'Livestreams und Aufzeichnungen von Vorlesungen',
+            'target'      => 'https://live.rbg.tum.de',
+        ],
+        'm' => [
+            'description' => 'Moodle',
+            'target'      => 'https://www.moodle.tum.de/Shibboleth.sso/Login?providerId=https://tumidp.lrz.de/idp/shibboleth&target=https://www.moodle.tum.de/auth/shibboleth/index.php',
+        ],
+        'ma-sp' => [
+            'description' => 'Studienplan M.Sc. Informatik',
+            'target'      => 'https://www.in.tum.de/fuer-studierende/master-studiengaenge/informatik/studienplan/fpso-2018/',
+        ],
+        'markov' => [
             'description' => 'Markovketten',
             'target'      => 'https://www-m5.ma.tum.de/Allgemeines/MA2404_2018W',
             'moodle_id'   => '44962',
         ],
-        'progopt'      => [
-            'description' => 'Program Optimization',
-            'target'      => 'https://www.in.tum.de/i02/lehre/wintersemester-2021/vorlesungen/program-optimization/',
+        'matching' => [
+            'description' => 'IN.TUM-Matching-System',
+            'target'      => 'https://matching.in.tum.de/saml2/login/',
         ],
-        'advalgs'      => [
-            'description' => 'Advanced Algorithms',
-            'target'      => 'http://www14.in.tum.de/lehre/2020WS/ada/index.html.en',
-        ],
-        'ea'           => [
-            'description' => 'Efficient Algorithms',
-            'target'      => 'http://www14.in.tum.de/lehre/2019WS/ea/index.html.en',
-        ],
-        'algebra1'     => [
-            'description' => 'Algebra 1',
-            'target'      => 'https://www.moodle.tum.de/course/view.php?idnumber=950370507',
-        ],
-        'rts'          => [
-            'description' => 'Echtzeitsysteme / Real Time Systems',
-            'moodle_id'   => '42138',
-        ],
-        'ecarus'       => [
-            'description' => 'E-Mobility der Zukunft: Ingenieurspraxis, Forschungspraxis & Co.',
-            'target'      => 'https://www.ecarus.ei.tum.de',
-        ],
-        'ja'           => [
-            'description' => 'Junge Akademie',
-            'target'      => 'https://www.ja.tum.de/start/',
-        ],
-        'film'         => [
-            'description' => 'tu film',
-            'target'      => 'https://www.tu-film.de/',
-        ],
-        'fds'          => [
-            'description' => 'Functional Data Structures',
-            'target'      => 'https://www21.in.tum.de/teaching/FDS/SS20/',
-        ],
-        'langenacht'   => [
-            'description' => 'Lange Nacht der Univeristäten',
-            'target'      => 'https://www.facebook.com/events/2681178088623650/',
-        ],
-        'compiler'     => [
-            'description' => 'Compiler Construction',
-            'target'      => 'https://www.in.tum.de/i02/lehre/sommersemester-20/vorlesungen/compiler-construction/',
-        ],
-        'ilab1'        => [
-            'description' => 'Practical Course: iLab1 - Build your own Internet',
-            'target'      => 'https://ilab.net.in.tum.de',
-        ],
-        'ilab2'        => [
-            'description' => 'Practical Course: iLab2 - You set the Focus',
-            'target'      => 'https://ilab2.net.in.tum.de',
-        ],
-        'ilabx'        => [
-            'description' => 'Practical Course: iLabX - The Virtual Internet Laboratory (block)',
-            'target'      => 'https://ilabx.net.in.tum.de',
-        ],
-        'osp'        => [
-            'description' => 'Practical Course: Contributing to an Open-Source Project',
-            'target'      => 'https://www21.in.tum.de/teaching/osp/WS20/',
-        ],
-        'comp'         => [
-            'description' => 'Computational Complexity',
-            'target'      => 'https://www7.in.tum.de/um/courses/complexity/SS19/',
-        ],
-        'future'       => [
-            'description' => 'TUM4Future',
-            'target'      => 'https://tum4future.de',
-        ],
-        'restplaetze'  => [
-            'description' => 'Liste der Restplätze in Seminaren und Praktika',
-            'target'      => 'https://www.in.tum.de/fuer-studierende/module-und-veranstaltungen/praktika-und-seminare/',
-        ],
-        'tms'          => [
-            'description' => 'Support Elective: Think. Make. Start.',
-            'target'      => 'https://www.thinkmakestart.com/',
-        ],
-        'finder'       => [
-            'description' => 'Roomfinder',
-            'target'      => 'https://www.ph.tum.de/about/visit/roomfinder/',
-        ],
-        'set'          => [
-            'description' => 'Studieneinführungstage der FSMPI',
-            'target'      => 'https://mpi.fs.tum.de/neu-an-der-tum/set/',
-        ],
-        'ml'           => [
-            'description' => 'Machine Learning',
-            'target'      => 'https://piazza.com/tum.de/fall2019/in2064/resources',
-        ],
-        'ki'           => [
-            'description' => 'Grundlagen der künstlichen Intelligenz',
-            'moodle_id'   => '58014',
-        ],
-        'asp'          => [
-            'description' => 'Aspekte der systemnahen Programmierung bei der Spieleentwicklung',
-            'target'      => 'https://www.in.tum.de/caps/lehre/ws20/praktika/asp/',
-        ],
-        'pse'          => [
-            'description' => 'Patterns in Software Engineering',
-            'target'      => 'https://ase.in.tum.de/lehrstuhl_1/teaching/1138-patterns-in-software-engineering-ws20-21',
-        ],
-        'med1'         => [
+        'med1' => [
             'description' => 'Medizin 1',
             'moodle_id'   => '52166',
         ],
-        'med2'         => [
+        'med2' => [
             'description' => 'Medizin II (Krankheitslehre, klinische Propädeutik, Einführung in die Medizinische Informatik)',
             'moodle_id'   => '56092',
         ],
-        'cvmvg'         => [
-            'description' => 'Computer Vision II: Multiple View Geometry',
-            'target'      => 'https://vision.in.tum.de/teaching/ss2020/mvg2020',
+        'mensabot' => [
+            'description' => 'TUMMensabot für Telegram',
+            'target'      => 'https://t.me/TUMMensabot',
         ],
-        'cvvm'         => [
-            'description' => 'Computer Vision I: Variational Methods',
-            'target'      => 'https://vision.in.tum.de/teaching/online/cvvm',
+        'mensabot2' => [
+            'description' => 'Hübscher Telegram-MensaBot',
+            'target'      => 'https://t.me/MensaMUCBot',
         ],
-        'vt'           => [
-            'description' => 'Virtualization Techniques',
-            'target'      => 'https://www.caps.in.tum.de/lehre/ws19/vorlesungen/virtualization-techniques/',
+        'ml' => [
+            'description' => 'Machine Learning',
+            'target'      => 'https://piazza.com/tum.de/fall2019/in2064/resources',
         ],
-        'imgtech'      => [
-            'description' => 'Medical Imaging Technology',
-            'moodle_id'   => '61616',
+        'modsim' => [
+            'description' => 'Modellbildung und Simulation',
+            'target'      => 'https://www5.in.tum.de/wiki/index.php/Modeling_and_Simulation_-_Summer_18',
         ],
-        'ibmi'         => [
-            'description' => 'Introduction to Biological and Medical Imaging',
-            'target'      => 'http://www.cbi.ei.tum.de/courses/course-in-biological-imaging/',
+        'mvs' => [
+            'description' => 'Mobile Verteilte Systeme',
+            'target'      => 'https://www.os.in.tum.de/studium-und-lehre/ss18/mobile-verteilte-systeme/',
+            'moodle_id'   => '38940',
         ],
-        'pretschi'     => [
-            'description' => 'Formerly Known As SexiPretschi.eu',
-            'target'      => 'https://tum.sexy/pret/',
+        'netsec' => [
+            'description' => 'Network Security - Netzsicherheit',
+            'target'      => 'https://www.net.in.tum.de/teaching/ws2021/netsec.html',
         ],
-        'nix'          => [
+        'nix' => [
             'description' => 'GLÜHNIX',
             'target'      => 'https://www.facebook.com/events/807341503020074/',
         ],
-        'eat-api'      => [
-            'description' => 'eat-api output in a human readable format as well as the base url for eat-api calls',
-            'target'      => 'https://tum-dev.github.io/eat-api/',
+        'numprog' => [
+            'description' => 'Numerisches Programmieren',
+            'moodle_id'   => '57975',
         ],
-        'all-eat-api'  => [
-            'description' => 'All menus for all locations from the eat-api in JSON',
-            'target'      => 'https://tum-dev.github.io/eat-api/all.json',
+        'o' => [
+            'description' => 'TUM Opac',
+            'target'      => 'https://www.ub.tum.de/tum-opac',
         ],
-        'ref-eat-api'  => [
-            'description' => 'All menus that are not older than one day for all locations from the eat-api in JSON',
-            'target'      => 'https://tum-dev.github.io/eat-api/all_ref.json',
+        'osp' => [
+            'description' => 'Practical Course: Contributing to an Open-Source Project',
+            'target'      => 'https://www21.in.tum.de/teaching/osp/WS20/',
         ],
-        'canteens-eat-api'=> [
-            'description' => 'A JSON list of all available canteens for the eat-api',
-            'target'      => 'https://tum-dev.github.io/eat-api/canteens.json',
-        ],
-        'gitlab'       => [
-            'description' => 'The fast way to the LRZ hosted gitlab',
-            'target'      => 'https://gitlab.lrz.de/users/sign_in',
-        ],
-        'git-tut'      => [
-            'description' => 'Getting started with Git? Learn the basics for the console. With Visualizations!',
-            'target'      => 'https://learngitbranching.js.org',
-        ],
-        'conf'         => [
-            'description' => 'TUM-Conf (Zoom)',
-            'target'      => 'https://tum-conf.zoom.us',
-        ],
-        'vm'           => [
-            'description' => 'Virtual Machines',
-            'target'      => 'https://www.in.tum.de/i02/lehre/sommersemester-20/vorlesungen/virtual-machines/',
-        ],
-        'walomat'           => [
-            'description' => 'Wal-O-Mat',
-            'target'      => 'https://walomat.asta.tum.de',
-        ],
-        'julius'            => [
-            'description' => 'Julius Kreutz Tutoriums Website',
-            'target'      => 'https://julius-kreutz.de',
-        ],
-        'corona'            => [
-            'description' => 'Coronavirus Information',
-            'target'      => 'https://www.in.tum.de/fuer-studierende/coronavirus/',
-        ],
-        'panopto'           => [
+        'panopto' => [
             'description' => 'Panopto Video platform',
             'target'      => 'https://tum.cloud.panopto.eu',
         ],
-        'ifm'           => [
-            'description' => 'Investitions- und Finanzmanagement',
-            'moodle_id'   => '59135',
+        'pgdp' => [
+            'description' => 'Praktikum Grundlagen der Programmierung (Moodle-Kurs)',
+            'moodle_id'   => '58145',
         ],
-        'seba'           => [
+        'pgm' => [
+            'description' => 'Probabilistic Graphical Models in Computer Vision',
+            'target'      => 'https://vision.in.tum.de/teaching/ss2017/pgmcv',
+        ],
+        'pl' => [
+            'description' => 'Programming Languages',
+            'target'      => 'https://www.in.tum.de/i02/lehre/wintersemester-1920/vorlesungen/programming-languages/',
+        ],
+        'pp' => [
+            'description' => 'Protein Prediction 1',
+            'target'      => 'https://www.rostlab.org/teaching/sose18/pp1cs',
+        ],
+        'pretschi' => [
+            'description' => 'Formerly Known As SexiPretschi.eu',
+            'target'      => 'https://tum.sexy/pret/',
+        ],
+        'pride' => [
+            'description' => 'TUM Diversity & Queer',
+            'target'      => 'https://www.facebook.com/events/599246697252806/',
+        ],
+        'progopt' => [
+            'description' => 'Program Optimization',
+            'target'      => 'https://www.in.tum.de/i02/lehre/wintersemester-2021/vorlesungen/program-optimization/',
+        ],
+        'pse' => [
+            'description' => 'Patterns in Software Engineering',
+            'target'      => 'https://ase.in.tum.de/lehrstuhl_1/teaching/1138-patterns-in-software-engineering-ws20-21',
+        ],
+        'qo' => [
+            'description' => 'Query Optimization',
+            'target'      => 'https://db.in.tum.de/teaching/ws2021/queryopt/',
+        ],
+        'quintero' => [
+            'description' => 'Mathias Quintero',
+            'target'      => 'https://home.in.tum.de/~szillat/',
+        ],
+        'reddit' => [
+            'description' => 'ReddiTUM',
+            'target'      => 'https://reddit.com/r/redditum',
+        ],
+        'ref-eat-api' => [
+            'description' => 'All menus that are not older than one day for all locations from the eat-api in JSON',
+            'target'      => 'https://tum-dev.github.io/eat-api/all_ref.json',
+        ],
+        'restplaetze' => [
+            'description' => 'Liste der Restplätze in Seminaren und Praktika',
+            'target'      => 'https://www.in.tum.de/fuer-studierende/module-und-veranstaltungen/praktika-und-seminare/',
+        ],
+        'room' => [
+            'description' => 'Lernräume',
+            'target'      => 'https://www.devapp.it.tum.de/iris/app/',
+        ],
+        'roombot' => [
+            'description' => 'Roomfinder als Telegram Bot',
+            'target'      => 'https://t.me/tumroomsbot',
+        ],
+        'rpchi' => [
+            'description' => 'Robot Programming and Control for Human Interaction',
+            'target'      => 'https://www.in.tum.de/i23/teaching/robot-programming-and-control-for-human-interaction/',
+        ],
+        'rts' => [
+            'description' => 'Echtzeitsysteme / Real Time Systems',
+            'moodle_id'   => '42138',
+        ],
+        'satellite' => [
+            'description' => 'The TUM Satellite',
+            'target'      => 'https://www.move2space.de/',
+        ],
+        'sbrml' => [
+            'description' => 'Sensor-based Robotic Manipulation and Locomotion',
+            'moodle_id'   => '62737',
+        ],
+        'scivis' => [
+            'description' => 'Scientific Visualization / Visual Data Analytics',
+            'target'      => 'https://www.in.tum.de/cg/teaching/winter-term-2021/visual-data-analytics/',
+        ],
+        'scopus' => [
+            'description' => 'TUM UB Scopus Login (eAccess)',
+            'target'      => 'https://login.eaccess.ub.tum.de/login?qurl=https://ub.tum.de%2fdbis-link%3ftitle_id%3d3636%26destination%3ddatenbanken%2fsuche%253Fqt-dbis%253D1%2526type%253Ddb%2526terms%253Dscopus%2526x%253D0%2526y%253D0',
+        ],
+        'seba' => [
             'description' => 'Software Engineering for Business Applications',
             'moodle_id'   => '58046',
+        ],
+        'set' => [
+            'description' => 'Studieneinführungstage der FSMPI',
+            'target'      => 'https://mpi.fs.tum.de/neu-an-der-tum/set/',
+        ],
+        'sharelatex' => [
+            'description' => 'ShareLaTeX@TUM',
+            'target'      => 'https://sharelatex.tum.de/',
+        ],
+        'shuttle' => [
+            'description' => 'WZW-GAR-MUC shuttle schedule',
+            'target'      => 'https://tum.sexy/shuttle/',
+        ],
+        'slam' => [
+            'description' => 'TUM Hörsaal Slam',
+            'target'      => 'https://www.facebook.com/events/400633344170175/',
+        ],
+        'sp' => [
+            'description' => 'Studienplan B.Sc. Informatik',
+            'target'      => 'https://www.in.tum.de/fuer-studierende/bachelor-studiengaenge/informatik/studienplan/studienbeginn-ab-ws-201819/',
+        ],
+        'springer' => [
+            'description' => 'Springer Link Login',
+            'target'      => 'https://fsso.springer.com/federation/init?entityId=https://tumidp.lrz.de/idp/shibboleth&returnUrl=https%3A%2F%2Flink.springer.com',
+        ],
+        'st' => [
+            'description' => 'Signaltheorie',
+            'target'      => 'https://www.ei.tum.de/mmk/lehre/signaltheorie-ab-ws1920/',
+            'moodle_id'   => '44034',
+        ],
+        'statista' => [
+            'description' => 'Statista',
+            'target'      => 'https://de-statista-com.eaccess.ub.tum.de',
+        ],
+        'stuff' => [
+            'description' => 'Studystuff (ehemals Unistuff)',
+            'target'      => 'https://studystuff.org',
+        ],
+        'ted' => [
+            'description' => 'TEDxTUM Event-Seite',
+            'target'      => 'https://tedxtum.com',
+        ],
+        'theo' => [
+            'description' => 'Einführung in die theoretische Informatik',
+            'target'      => 'https://www21.in.tum.de/teaching/theo/SS20/',
+        ],
+        'theojudge' => [
+            'description' => 'TUMjudge - Einführung in die theoretische Informatik',
+            'target'      => 'https://judge.in.tum.de/theo/public/',
+        ],
+        'theotutor' => [
+            'description' => 'Einführung in die theoretische Informatik: Automatatutor',
+            'target'      => 'https://automata.model.in.tum.de/',
+        ],
+        'tms' => [
+            'description' => 'Support Elective: Think. Make. Start.',
+            'target'      => 'https://www.thinkmakestart.com/',
+        ],
+        'vm' => [
+            'description' => 'Virtual Machines',
+            'target'      => 'https://www.in.tum.de/i02/lehre/sommersemester-20/vorlesungen/virtual-machines/',
+        ],
+        'vorkurs' => [
+            'description' => 'Mathematik Vorkurs für Informatiker',
+            'target'      => 'https://www.ma.tum.de/de/studium/vorkurse-ferienkurse/informatik.html',
+        ],
+        'vt' => [
+            'description' => 'Virtualization Techniques',
+            'target'      => 'https://www.caps.in.tum.de/lehre/ws19/vorlesungen/virtualization-techniques/',
+        ],
+        'wahl' => [
+            'description' => 'Hochschulwahlen',
+            'target'      => 'https://www.sv.tum.de/wahl/',
+        ],
+        'walomat' => [
+            'description' => 'Wal-O-Mat',
+            'target'      => 'https://walomat.asta.tum.de',
+        ],
+        'websec' => [
+            'description' => 'WebApplication Security Bachelor Praktikum',
+            'target'      => 'https://www.sec.in.tum.de/i20/teaching/ws2017/web-application-security',
+        ],
+        'wi-ma-sp' => [
+            'description' => 'Studienplan M.Sc. Wirtschaftsinformatik',
+            'target'      => 'https://www.in.tum.de/fuer-studierende/master-studiengaenge/wirtschaftsinformatik/studienplan/ab-sose-2018/',
+        ],
+        'wi-sp' => [
+            'description' => 'Studienplan B.Sc. Wirtschaftsinformatik',
+            'target'      => 'https://www.in.tum.de/fuer-studierende/bachelor-studiengaenge/wirtschaftsinformatik/studienplan/studienbeginn-ab-ws-20182019/',
         ],
     ];
 
     // Format is: <source / synonym> => <target> - the target must be present in the $routes array
     private $synonyms = [
-        'wahlomat'       => 'walomat',
-        'hsw'            => 'wahl',
+        'ada'            => 'advalgs',
+        'ai'             => 'ki',
+        'algebra'        => 'algebra1',
+        'bs'             => 'gbs',
+        'complexity'     => 'comp',
+        'covid'         => 'corona',
         'csd'            => 'pride',
-        'erapra'         => 'erapraktikum',
-        'erap'           => 'erapraktikum',
-        'sp-ma'          => 'ma-sp',
         'eidi'           => 'info1',
         'eidi2'          => 'fpv',
+        'erap'           => 'erapraktikum',
+        'erapra'         => 'erapraktikum',
+        'ezs'            => 'rts',
+        'gdb'            => 'db',
+        'geo'            => 'geokalkuele',
+        'geokal'         => 'geokalkuele',
+        'hsw'            => 'wahl',
         'info2'          => 'fpv',
-        'zweidi'         => 'fpv',
+        'kino'           => 'film',
+        'kreutz'         => 'julius',
+        'la'             => 'linalg',
         'latex'          => 'sharelatex',
-        'tex'            => 'sharelatex',
-        'bs'             => 'gbs',
+        'match'          => 'matching',
         'netz'           => 'grnvs',
+        'pat'            => 'pse',
+        'patterns'       => 'pse',
         'protein'        => 'pp',
         'queer'          => 'diversity',
-        'rooms'          => 'room',
-        'match'          => 'matching',
-        'la'             => 'linalg',
-        'geokal'         => 'geokalkuele',
-        'geo'            => 'geokalkuele',
-        'ada'            => 'advalgs',
-        'algebra'        => 'algebra1',
-        'ezs'            => 'rts',
-        'urban-mobility' => 'ecarus',
-        'kino'           => 'film',
-        'gdb'            => 'db',
-        'tumi'           => 'esn',
-        'complexity'     => 'comp',
-        'sp-ge'          => 'ge-sp',
         'roomfinder'     => 'finder',
-        'patterns'       => 'pse',
-        'pat'            => 'pse',
-        'ai'             => 'ki',
+        'rooms'          => 'room',
+        'sp-ge'          => 'ge-sp',
+        'sp-ma'          => 'ma-sp',
+        'tex'            => 'sharelatex',
+        'tumi'           => 'esn',
+        'urban-mobility' => 'ecarus',
+        'wahlomat'       => 'walomat',
         'zoom'           => 'conf',
-        'kreutz'         => 'julius',
-        'covid'         => 'corona'
+        'zweidi'         => 'fpv',
     ];
 
     /**
@@ -651,89 +648,89 @@ class Route {
         ],
         '6. Semester' => [],
         'Special'     => [
-            'wahl',
-            'walomat',
-            'hunger',
-            'eat-api',
-            'mensabot',
-            'mensabot2',
-            'roombot',
-            'finder',
-            'room',
             'app',
             'c',
-            'm',
-            'gitlab',
-            'git-tut',
-            'sp',
-            'ma-sp',
-            'ge-sp',
-            'ge-ma-sp',
-            'wi-sp',
-            'wi-ma-sp',
-            'stuff',
-            'reddit',
-            'vorkurs',
-            'statista',
-            'ieee',
-            'springer',
-            'scopus',
-            'shuttle',
-            'sharelatex',
-            'matching',
+            'eat-api',
             'ecarus',
             'film',
-            'set',
-            'slam',
+            'finder',
+            'ge-ma-sp',
+            'ge-sp',
+            'git-tut',
+            'gitlab',
+            'hunger',
+            'ieee',
+            'm',
+            'ma-sp',
+            'matching',
+            'mensabot',
+            'mensabot2',
             'panopto',
+            'reddit',
+            'room',
+            'roombot',
+            'scopus',
+            'set',
+            'sharelatex',
+            'shuttle',
+            'slam',
+            'sp',
+            'springer',
+            'statista',
+            'stuff',
+            'vorkurs',
+            'wahl',
+            'walomat',
+            'wi-ma-sp',
+            'wi-sp',
         ],
         'Electives'   => [
-            'pl',
-            'gki',
-            'conpra',
-            'ged',
-            'pgm',
-            'gog',
-            'artemis',
-            'csc',
-            'scivis',
-            'ase',
-            'qo',
-            'itsec',
-            'netsec',
-            'modsim',
-            'pp',
-            'mvs',
             'adlr',
-            'sbrml',
-            'rpchi',
-            'agt',
             'adm',
-            'crypto',
-            'geokalkuele',
-            'automata',
-            'st',
-            'markov',
-            'progopt',
             'advalgs',
-            'ea',
+            'agt',
             'algebra1',
-            'rts',
-            'erdb',
+            'artemis',
+            'ase',
+            'automata',
+            'comp',
             'compiler',
+            'conpra',
+            'crypto',
+            'csc',
+            'cvmvg',
+            'cvvm',
+            'ea',
+            'erdb',
+            'ged',
+            'geokalkuele',
+            'gki',
+            'gog',
             'ilab1',
             'ilab2',
             'ilabx',
-            'osp',
-            'comp',
-            'tms',
-            'ml',
+            'itsec',
             'ki',
+            'markov',
+            'ml',
+            'modsim',
+            'mvs',
+            'netsec',
+            'osp',
+            'pgm',
+            'pl',
+            'pp',
+            'progopt',
             'pse',
-            'cvvm',
-            'cvmvg',
+            'qo',
+            'rpchi',
+            'rts',
+            'sbrml',
+            'scivis',
+            'st',
+            'tms',
+            'vm',
             'vt',
-            'vm'
         ],
     ];
 
@@ -798,6 +795,15 @@ class Route {
         }
 
         return $this->routes[$redirectUrl]['target'];
+    }
+
+    public function getArraysThatShouldBeSorted(){
+        return array(
+            array_keys($this->routes),
+            array_keys($this->synonyms),
+            $this->sections["Special"],
+            $this->sections["Electives"]
+        );
     }
 
     public function getResolvedArrays() {
