@@ -537,6 +537,10 @@ class Route {
             'description' => 'Support Elective: Think. Make. Start.',
             'target'      => 'https://www.thinkmakestart.com/',
         ],
+        'unidb' => [
+            'description' => 'Unischema von Prof. Kemper',
+            'target'      => 'https://db.in.tum.de/teaching/ws2021/grundlagen/uni.png',
+        ],
         'vm' => [
             'description' => 'Virtual Machines',
             'target'      => 'https://www.in.tum.de/i02/lehre/sommersemester-20/vorlesungen/virtual-machines/',
