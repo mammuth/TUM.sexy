@@ -1,7 +1,7 @@
 TUM.sexy
 ========
 
-[![Build Status](https://travis-ci.org/mammuth/TUM.sexy.svg?branch=master)](https://travis-ci.org/mammuth/TUM.sexy)
+[![Build Status](https://github.com/TUM-Dev/TUM.sexy/workflows/CI/badge.svg)](https://github.com/TUM-Dev/TUM.sexy/actions)
 
 Code of https://tum.sexy. A website providing some links, redirects and tools regarding the Technical University Munich
 
