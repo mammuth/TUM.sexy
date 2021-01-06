@@ -324,7 +324,7 @@ class Route {
         ],
         'live'             => [
             'description' => 'Livestreams und Aufzeichnungen von Vorlesungen',
-            'target'      => 'https://live.rbg.tum.de',
+            'target'      => 'https://stream.tum.sexy',
         ],
         'm'                => [
             'description' => 'Moodle',
@@ -691,6 +691,7 @@ class Route {
             'sp',
             'springer',
             'statista',
+            'streams',
             'stuff',
             'vorkurs',
             'wahl',
