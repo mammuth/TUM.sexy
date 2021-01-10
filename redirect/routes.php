@@ -61,7 +61,7 @@ class Route {
         ],
         'automata'         => [
             'description' => 'Automata and Formal Languages',
-            'target'      => 'https://www7.in.tum.de/um/courses/auto/ws2021/index.php?category=uebungen',
+            'target'      => 'https://www.in.tum.de/i07/lehre/wintersemester-20202021/automaten-und-formale-sprachen/',
         ],
         'bmt'              => [
             'description' => 'Basic Mathematical Tools for Imaging & Visualization',
