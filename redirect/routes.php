@@ -522,7 +522,7 @@ class Route {
             'target'      => 'https://de-statista-com.eaccess.ub.tum.de',
         ],
         'streams'          => [
-            'description' => 'RBGreaterAgain - Besser RBG streams',
+            'description' => 'RBGreaterAgain - Bessere RBG streams',
             'target'      => 'https://stream.tum.sexy',
         ],
         'stuff'            => [
