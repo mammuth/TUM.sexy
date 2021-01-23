@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3c043e60dc1b33ea18100b1dae3cc5e9",
+    "content-hash": "d58005fd90e28fa945079d9c7024942c",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
@@ -206,60 +206,6 @@
                 "source": "https://github.com/guzzle/psr7/tree/1.7.0"
             },
             "time": "2020-09-30T07:37:11+00:00"
-        },
-        {
-            "name": "jpbernius/fmeat",
-            "version": "2.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/jpbernius/FMeat.php.git",
-                "reference": "d6c6647ed465a5ed2dbfd441fdb9d546b2ff1928"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/jpbernius/FMeat.php/zipball/d6c6647ed465a5ed2dbfd441fdb9d546b2ff1928",
-                "reference": "d6c6647ed465a5ed2dbfd441fdb9d546b2ff1928",
-                "shasum": ""
-            },
-            "require": {
-                "guzzlehttp/guzzle": "~6.0",
-                "php": ">=7.2.0",
-                "php-di/php-di": "^6.0",
-                "tedivm/stash": "^0.15.1"
-            },
-            "require-dev": {
-                "hamcrest/hamcrest-php": "^2.0",
-                "phpunit/phpunit": "~8.2",
-                "squizlabs/php_codesniffer": "~3.4"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "JPBernius\\FMeat\\": "src/JPBernius/FMeat/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Jan Philip Bernius",
-                    "email": "janphilip@bernius.net",
-                    "homepage": "https://janphilip.bernius.net"
-                }
-            ],
-            "description": "PHP Library for accessing the FMeat API",
-            "homepage": "https://jpbernius.github.io/FMeat.php/",
-            "keywords": [
-                "FMeat",
-                "TUM"
-            ],
-            "support": {
-                "issues": "https://github.com/jpbernius/FMeat.php/issues",
-                "source": "https://github.com/jpbernius/FMeat.php/tree/2.0.0"
-            },
-            "time": "2019-07-01T08:17:27+00:00"
         },
         {
             "name": "opis/closure",
@@ -1085,20 +1031,20 @@
         },
         {
             "name": "tedivm/stash",
-            "version": "v0.15.2",
+            "version": "v0.16.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tedious/Stash.git",
-                "reference": "7a6a74106c49b1bdc3a10a725b03c509dc773dbb"
+                "reference": "7d42f58e4f395397d7c76d4eff55eb56aacadc34"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tedious/Stash/zipball/7a6a74106c49b1bdc3a10a725b03c509dc773dbb",
-                "reference": "7a6a74106c49b1bdc3a10a725b03c509dc773dbb",
+                "url": "https://api.github.com/repos/tedious/Stash/zipball/7d42f58e4f395397d7c76d4eff55eb56aacadc34",
+                "reference": "7d42f58e4f395397d7c76d4eff55eb56aacadc34",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.0",
+                "php": ">7.0",
                 "psr/cache": "~1.0"
             },
             "provide": {
@@ -1143,9 +1089,69 @@
             ],
             "support": {
                 "issues": "https://github.com/tedious/Stash/issues",
-                "source": "https://github.com/tedious/Stash/tree/v0.15.2"
+                "source": "https://github.com/tedious/Stash/tree/v0.16.0"
             },
-            "time": "2019-03-09T21:04:14+00:00"
+            "funding": [
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/tedivm/stash",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-01-18T04:06:48+00:00"
+        },
+        {
+            "name": "tum-dev/fmeat",
+            "version": "3.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TUM-Dev/FMeat.php.git",
+                "reference": "e282e925d0f1d997889a108b46f897bac8ff34bb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TUM-Dev/FMeat.php/zipball/e282e925d0f1d997889a108b46f897bac8ff34bb",
+                "reference": "e282e925d0f1d997889a108b46f897bac8ff34bb",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "~6.0",
+                "php": ">=7.2.0",
+                "php-di/php-di": "^6.0",
+                "tedivm/stash": "^0.16.0"
+            },
+            "require-dev": {
+                "hamcrest/hamcrest-php": "^2.0",
+                "phpunit/phpunit": "~8.2",
+                "squizlabs/php_codesniffer": "~3.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "JPBernius\\FMeat\\": "src/JPBernius/FMeat/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jan Philip Bernius",
+                    "email": "janphilip@bernius.net",
+                    "homepage": "https://janphilip.bernius.net"
+                }
+            ],
+            "description": "PHP Library for accessing the FMeat API",
+            "homepage": "https://jpbernius.github.io/FMeat.php/",
+            "keywords": [
+                "FMeat",
+                "TUM"
+            ],
+            "support": {
+                "issues": "https://github.com/TUM-Dev/FMeat.php/issues",
+                "source": "https://github.com/TUM-Dev/FMeat.php/tree/3.0.2"
+            },
+            "time": "2021-01-23T13:15:15+00:00"
         },
         {
             "name": "twig/twig",

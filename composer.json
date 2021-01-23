@@ -8,8 +8,8 @@
   },
   "require": {
     "twig/twig": "^1.33",
-    "jpbernius/fmeat": "~2.0",
-    "stripe/stripe-php": "^5.9"
+    "stripe/stripe-php": "^5.9",
+    "tum-dev/fmeat": "^3.0.2"
   },
   "require-dev": {
     "phpunit/phpunit": "~8.2"
