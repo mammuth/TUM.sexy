@@ -124,10 +124,6 @@ class Route {
             'description' => 'Diversity & Queer Referat',
             'target'      => 'https://www.sv.tum.de/asta/team/diversityqueer/',
         ],
-        'docker'           => [
-            'description' => 'Official TUM.sexy Docker Hub Repository',
-            'target'      => 'https://hub.docker.com/r/mammuth/tum.sexy',
-        ],
         'ds'               => [
             'description' => 'Diskrete Strukturen',
             'target'      => 'https://www7.in.tum.de/um/courses/ds/ws2021/index.html',
