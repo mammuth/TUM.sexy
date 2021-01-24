@@ -167,8 +167,8 @@ class Route {
             'target'      => 'https://db.in.tum.de/teaching/ss20/impldb/',
         ],
         'esn'              => [
-            'description' => 'ESN TUMi München',
-            'target'      => 'https://esn-tumi.de',
+            'description' => 'International engagement: ESN TUMi e.V.',
+            'target'      => 'https://tumi.esn.world',
         ],
         'eval'             => [
             'description' => 'Evaluation of Lectures',
@@ -666,6 +666,7 @@ class Route {
             'c',
             'eat-api',
             'ecarus',
+            'esn',
             'film',
             'finder',
             'ge-ma-sp',
