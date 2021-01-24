@@ -22,7 +22,7 @@ $twig = new Twig_Environment($loader, [
 ]);
 
 
-function renderTemplate($tplName = 'start', $vars) {
+function renderTemplate($vars, $tplName = 'start') {
     global $twig;
     $vars['main_tpl'] = $tplName . '.twig';
     echo $twig->render('main.twig', $vars);

@@ -2,7 +2,7 @@
 
 // please make sure to add your redirects such that the arrays remains sorted alphabetically
 class Route {
-    private $routes = [
+    private array $routes = [
         'adlr'             => [
             'description' => 'Advanced Deep Learning for Robotics',
             'target'      => 'https://bbaeuml.github.io/tum-adlr/adlr/index.html',
@@ -813,7 +813,7 @@ class Route {
         return $this->routes[$redirectUrl]['target'];
     }
 
-    public function getArraysThatShouldBeSorted() {
+    public function getArraysThatShouldBeSorted(): array {
         return [
             array_keys($this->routes),
             array_keys($this->synonyms),
@@ -822,7 +822,7 @@ class Route {
         ];
     }
 
-    public function getResolvedArrays() {
+    public function getResolvedArrays(): array {
         $ret = [];
 
         sort($this->sections['Electives']);

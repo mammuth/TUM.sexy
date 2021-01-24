@@ -37,4 +37,4 @@ foreach ($locations as $viewKey => $apiName) {
 }
 
 //Render the template
-renderTemplate('hunger/hunger', $output);
+renderTemplate($output, $tplName = 'hunger/hunger');

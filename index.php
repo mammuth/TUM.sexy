@@ -15,4 +15,4 @@ if (isset($_GET['cats']) && $_GET['cats'] !== '0') {
 //Donation Key
 //$vars['stripe_publishable_key'] = $stripe['publishable_key'];
 
-renderTemplate($tplName = 'start', $vars);
+renderTemplate($vars, $tplName = 'start');
