@@ -6,10 +6,9 @@ COPY ./composer.lock /app
 
 RUN composer install --no-dev
 
-
-FROM php:7.4-apache
+FROM php:8.0-apache
 RUN a2enmod rewrite
-RUN pecl install APCu-5.1.18
+RUN pecl install APCu-5.1.19
 RUN docker-php-ext-enable apcu
 
 WORKDIR /var/www/html/
