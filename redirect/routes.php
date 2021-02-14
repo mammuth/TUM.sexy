@@ -829,6 +829,8 @@ class Route {
 
     public function getResolvedArrays(): array {
         $ret = [];
+        //all entries, will be reduced to the entries that are not in a section
+        $all = $this->routes;
 
         sort($this->sections['Electives']);
 
@@ -841,9 +843,13 @@ class Route {
 
                 //Resolve the route and add to final array
                 $ret[$section][] = ['desc' => $this->routes[$sub]['description'], 'sub' => $sub];
+                // remove entry from all (because it is in a section)
+                unset($all[$sub]);
             }
         }
-
+        foreach ($all as $sub => $hiddenElem) {
+            $ret["Others"][] = ['desc' => $hiddenElem['description'], 'sub' => $sub];
+        }
         return $ret;
     }
 

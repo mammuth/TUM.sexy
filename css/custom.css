@@ -387,3 +387,7 @@ li:hover .pin, li.hover .pin {
         border-color: #e5e6e7;
     }
 }
+
+#othersSection{
+    display: none;
+}

@@ -29,10 +29,10 @@
             <div class="row">
                     {% for section,elements in routes %}
                         {% if loop.index % 2 == 0 %}
-                            </div><div class="one-half column semester" data-ss-forceadditional="{{ section }}">
+                            </div><div class="one-half column semester" {% if section=="Others" %} id="othersSection" {% endif %} data-ss-forceadditional="{{ section }}">
                         {% endif %}
                         {% if loop.index % 2 == 1 %}
-                            {% if loop.index != 1 %}</div>{%endif%}<div class="one-half column semester" data-ss-forceadditional="{{ section }}">
+                            {% if loop.index != 1 %}</div>{%endif%}<div class="one-half column semester" {% if section=="Others" %} id="othersSection" {% endif %} data-ss-forceadditional="{{ section }}">
                         {% endif %}
                         <h4>{{ section }}</h4>
                         {% for route in elements %}
@@ -53,22 +53,6 @@
                 <li>You have an idea for how to improve this site? Feel free to <strong>contribute</strong> on our <a href="https://github.com/TUM-Dev/TUM.sexy" target="_blank">GitHub Page</a>!
                 <li>Contact: <a href="mailto:heilig@tum.sexy">heilig@tum.sexy</a></li>
             </ul>
-            {# <h3>Buy us a beer</h3>
-            <div>
-                Coding makes us thirsty. Buy us a beer!
-                <form action="donate.php" method="post">
-                    <span id="moneyField">
-                        <i>€</i>
-                        <input class="form-control" value="3" type="number" name="amount" id="moneyFieldInput" />
-                    </span>
-                    <script src="https://checkout.stripe.com/checkout.js" class="stripe-button" id="stripeField"
-                            data-key="{{ stripe_publishable_key }}"
-                            data-description="TUM.sexy Donation"
-                            data-locale="auto"
-                            data-label="Donate!"
-                            data-currency="eur"></script>
-                </form>
-            </div> #}
         </div>
         <div class="one-half column subsection">
             <h3>Projects / Links</h3>
@@ -107,6 +91,13 @@
         let searchbox = document.getElementById("searchbox");
 
         searchbox.addEventListener('input', function(evt) {
+            // hide/show hidden section if currently searching
+            if (this.value === ""){
+                document.getElementById("othersSection").setAttribute("style", "display:none")
+            }else {
+                document.getElementById("othersSection").setAttribute("style", "display:block")
+            }
+
             let pattern = this.value;
             mysearch.filter(pattern);
         });
