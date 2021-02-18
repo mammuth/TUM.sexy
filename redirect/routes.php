@@ -35,6 +35,10 @@ class Route {
             'description' => 'Praktikum: Android Security',
             'target'      => 'https://www22.in.tum.de/en/teaching/android-security-lab/',
         ],
+        'apollon'         => [
+            'description' => 'Apollon UML Modeling Editor',
+            'target'      => 'https://apollon.ase.in.tum.de/',
+        ],
         'app'              => [
             'description' => 'TUM Campus App',
             'target'      => 'https://www.tum.app/',
@@ -624,6 +628,7 @@ class Route {
         'sp-ma'          => 'ma-sp',
         'tex'            => 'sharelatex',
         'tumi'           => 'esn',
+        'uml'            => 'apollon',
         'urban-mobility' => 'ecarus',
         'wahlomat'       => 'walomat',
         'zoom'           => 'conf',
