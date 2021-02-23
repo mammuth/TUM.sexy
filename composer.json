@@ -12,6 +12,6 @@
     "tum-dev/fmeat": "^3.0.2"
   },
   "require-dev": {
-    "phpunit/phpunit": "~8.2"
+    "phpunit/phpunit": "~9.5"
   }
 }
