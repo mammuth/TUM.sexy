@@ -1,0 +1,10 @@
+version: 2
+updates:
+  - package-ecosystem: "composer"
+    directory: "/" # Location of package manifests
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "docker"
+    directory: "/" # Location of package manifests
+    schedule:
+      interval: "daily"
