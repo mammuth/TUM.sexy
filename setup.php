@@ -12,11 +12,12 @@ session_start();
 
 //Include libs
 include __DIR__ . '/vendor/autoload.php';
-
+use Twig\Environment;
+use Twig\Loader\FilesystemLoader;
 
 //Startup Twig
-$loader = new Twig_Loader_Filesystem(__DIR__ . '/tpl');
-$twig = new Twig_Environment($loader, [
+$loader = new FilesystemLoader(__DIR__ . '/tpl');
+$twig = new Environment($loader, [
     'cache' => __DIR__ . '/tmp/compile',
     'debug' => true
 ]);
