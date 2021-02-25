@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "592c6fd273c64a6948001256a92c4004",
+    "content-hash": "dddf9cb43a0d6b4295b8d486006faeed",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
@@ -643,65 +643,6 @@
                 "source": "https://github.com/ralouphie/getallheaders/tree/develop"
             },
             "time": "2019-03-08T08:55:37+00:00"
-        },
-        {
-            "name": "stripe/stripe-php",
-            "version": "v5.9.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/stripe/stripe-php.git",
-                "reference": "026191d12241a76c957884dff75e4f3721b0e77f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/026191d12241a76c957884dff75e4f3721b0e77f",
-                "reference": "026191d12241a76c957884dff75e4f3721b0e77f",
-                "shasum": ""
-            },
-            "require": {
-                "ext-curl": "*",
-                "ext-json": "*",
-                "ext-mbstring": "*",
-                "php": ">=5.3.3"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~4.0",
-                "satooshi/php-coveralls": "~0.6.1",
-                "squizlabs/php_codesniffer": "~2.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Stripe\\": "lib/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Stripe and contributors",
-                    "homepage": "https://github.com/stripe/stripe-php/contributors"
-                }
-            ],
-            "description": "Stripe PHP Library",
-            "homepage": "https://stripe.com/",
-            "keywords": [
-                "api",
-                "payment processing",
-                "stripe"
-            ],
-            "support": {
-                "issues": "https://github.com/stripe/stripe-php/issues",
-                "source": "https://github.com/stripe/stripe-php/tree/master"
-            },
-            "time": "2018-02-07T18:36:55+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",

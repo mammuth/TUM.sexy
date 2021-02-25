@@ -6,4 +6,3 @@ tmp/*
 !tmp/.htaccess
 .idea/
 !/tmp/hunger/.htaccess
-donateInfos.php

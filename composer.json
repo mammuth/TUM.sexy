@@ -8,7 +8,6 @@
   },
   "require": {
     "twig/twig": "^3.3",
-    "stripe/stripe-php": "^5.9",
     "tum-dev/fmeat": "^3.0.2"
   },
   "require-dev": {
