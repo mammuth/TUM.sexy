@@ -135,7 +135,7 @@ class Route {
         ],
         'dwt'              => [
             'description' => 'Diskrete Wahrscheinlichkeitstheorie',
-            'target'      => 'http://wwwalbers.in.tum.de/lehre/2020SS/dwt/index.html.de',
+            'target'      => 'http://wwwalbers.in.tum.de/lehre/2021SS/dwt/index.html.de',
         ],
         'ea'               => [
             'description' => 'Efficient Algorithms',
