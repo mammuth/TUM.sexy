@@ -811,13 +811,13 @@ class Route {
         //In case we actually want to go to a different target than the actual redirect
         switch ($siteType) {
             case 'm' :
-                // This is a moodle redirect like m.info1.tum.sexy
-                $moodle_id = $this->routes[$redirectUrl]['moodle_id'];
-                if (!isset($moodle_id)) {
-                    return $this->routes[$redirectUrl]['target'];  // Fallback to target if moodle id is unknown
+                // This is a moodle redirect like minfo1.tum.sexy
+                $route = $this->routes[$redirectUrl];
+                if (!isset($route['moodle_id'])) {
+                    return $route['target'];  // Fallback to target if moodle id is unknown
                 }
 
-                return 'https://www.moodle.tum.de/course/view.php?id=' . $moodle_id;
+                return 'https://www.moodle.tum.de/course/view.php?id=' . $route['moodle_id'];
         }
 
         return $this->routes[$redirectUrl]['target'];
