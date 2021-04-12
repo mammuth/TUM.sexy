@@ -155,7 +155,7 @@ class Route {
         ],
         'eist'             => [
             'description' => 'Einführung in die Softwaretechnik',
-            'target'      => 'https://ase.in.tum.de/lehrstuhl_1/teaching/summer-2020/1111-introduction-to-software-engineering-eist-summer-2020',
+            'target'      => 'https://artemis.ase.in.tum.de/courses/121',
         ],
         'era'              => [
             'description' => 'Einführung in die Rechnerarchitektur',
@@ -210,8 +210,7 @@ class Route {
         ],
         'gad'              => [
             'description' => 'Grundlegende Algorithmen und Datenstrukturen',
-            'target'      => 'https://www.moodle.tum.de/course/view.php?id=53358',
-            'moodle_id'   => '53358',
+            'target'      => 'https://artemis.ase.in.tum.de/courses/119',
         ],
         'gadunittests'     => [
             'description' => 'Unit - Tests: Grundlegende Algorithmen und Datenstrukturen',
@@ -332,7 +331,7 @@ class Route {
         ],
         'linalg'           => [
             'description' => 'Lineare Algebra für Informatik',
-            'target'      => 'https://www.moodle.tum.de/course/view.php?id=55594',
+            'target'      => 'https://www.moodle.tum.de/course/view.php?id=65973',
         ],
         'live'             => [
             'description' => 'Livestreams und Aufzeichnungen von Vorlesungen',
