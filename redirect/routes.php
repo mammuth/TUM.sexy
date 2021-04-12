@@ -269,6 +269,10 @@ class Route {
             'description' => 'HyPer DB Webschnittstelle',
             'target'      => 'http://hyper-db.com/interface.html',
         ],
+        'i2dl'             => [
+            'description' => 'Introduction to Deep Learning',
+            'target'      => 'https://niessner.github.io/I2DL/',
+        ],
         'ibmi'             => [
             'description' => 'Introduction to Biological and Medical Imaging',
             'target'      => 'http://www.cbi.ei.tum.de/courses/course-in-biological-imaging/',
