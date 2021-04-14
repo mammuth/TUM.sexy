@@ -258,7 +258,7 @@ class Route {
         ],
         'grnvs'            => [
             'description' => 'Grundlagen Rechnernetze und Verteilte Systeme',
-            'target'      => 'https://www.net.in.tum.de/teaching/ss20/grnvs.html',
+            'target'      => 'https://svm0000.net.in.tum.de',
         ],
         'hunger'           => [
             'description' => 'FMI Bistro Speiseplan',
