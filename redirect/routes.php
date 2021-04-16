@@ -337,6 +337,10 @@ class Route {
             'description' => 'Livestreams und Aufzeichnungen von Vorlesungen',
             'target'      => 'https://stream.tum.sexy',
         ],
+        'logic'           => [
+            'description' => 'Logic',
+            'target'      => 'https://www21.in.tum.de/teaching/logic/SS21/',
+        ],
         'm'                => [
             'description' => 'Moodle',
             'target'      => 'https://www.moodle.tum.de/Shibboleth.sso/Login?providerId=https://tumidp.lrz.de/idp/shibboleth&target=https://www.moodle.tum.de/auth/shibboleth/index.php',
