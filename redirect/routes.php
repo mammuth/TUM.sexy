@@ -168,7 +168,7 @@ class Route {
         ],
         'erdb'             => [
             'description' => 'Einsatz und Realisierung von Datenbanksystemen',
-            'target'      => 'https://db.in.tum.de/teaching/ss20/impldb/',
+            'target'      => 'https://db.in.tum.de/teaching/ss21/impldb/',
         ],
         'esn'              => [
             'description' => 'International engagement: ESN TUMi e.V.',
