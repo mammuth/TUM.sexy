@@ -397,7 +397,7 @@ class Route {
         ],
         'numprog'          => [
             'description' => 'Numerisches Programmieren',
-            'moodle_id'   => '57975',
+            'moodle_id'   => '63517',
         ],
         'o'                => [
             'description' => 'TUM Opac',
