@@ -495,6 +495,10 @@ class Route {
             'description' => 'TUM UB Scopus Login (eAccess)',
             'target'      => 'https://login.eaccess.ub.tum.de/login?qurl=https://ub.tum.de%2fdbis-link%3ftitle_id%3d3636%26destination%3ddatenbanken%2fsuche%253Fqt-dbis%253D1%2526type%253Ddb%2526terms%253Dscopus%2526x%253D0%2526y%253D0',
         ],
+        'scraper'          => [
+            'description' => 'Tool to scrape and download videos from Panopto, TumLive and TumLive-v2',
+            'target'      => 'https://github.com/Valentin-Metz/tum_video_scraper',
+        ],
         'seba'             => [
             'description' => 'Software Engineering for Business Applications',
             'moodle_id'   => '58046',
