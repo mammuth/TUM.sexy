@@ -380,7 +380,7 @@ class Route {
         ],
         'modsim'           => [
             'description' => 'Modellbildung und Simulation',
-            'target'      => 'https://www5.in.tum.de/wiki/index.php/Modeling_and_Simulation_-_Summer_18',
+            'moodle_id'   => '63516',
         ],
         'mvs'              => [
             'description' => 'Mobile Verteilte Systeme',
