@@ -17,7 +17,7 @@ class Route {
         ],
         'agt'              => [
             'description' => 'Algorithmic Game Theory',
-            'target'      => 'https://dss.in.tum.de/teaching/38-teaching/semester/sommersemster-2019/203-algorithmic-game-theory-ss2019.html',
+            'target'      => 'https://dss.in.tum.de/teaching/ss-21/43-teaching/semester/sommersemester-2021/247-algorithmic-game-theory-ss2021.html',
         ],
         'algebra1'         => [
             'description' => 'Algebra 1',
@@ -89,7 +89,7 @@ class Route {
         ],
         'compiler'         => [
             'description' => 'Compiler Construction',
-            'target'      => 'https://www.in.tum.de/i02/lehre/sommersemester-20/vorlesungen/compiler-construction/',
+            'target'      => 'https://www.in.tum.de/i02/lehre/sommersemester-21/vorlesungen/compiler-construction/',
         ],
         'conf'             => [
             'description' => 'TUM-Conf (Zoom)',
