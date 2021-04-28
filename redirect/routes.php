@@ -463,6 +463,10 @@ class Route {
             'description' => 'Liste der Restplätze in Seminaren und Praktika',
             'target'      => 'https://www.in.tum.de/fuer-studierende/module-und-veranstaltungen/praktika-und-seminare/',
         ],
+        'rmp'              => [
+            'description' => 'Robot Motion Planning',
+            'target'      => 'https://mvp.in.tum.de/courses/motion/index.html',
+        ],
         'room'             => [
             'description' => 'Lernräume',
             'target'      => 'https://www.devapp.it.tum.de/iris/app/',
@@ -760,6 +764,7 @@ class Route {
             'progopt',
             'pse',
             'qo',
+            'rmp',
             'rpchi',
             'rts',
             'sbrml',
