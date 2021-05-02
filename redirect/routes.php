@@ -513,7 +513,7 @@ class Route {
         ],
         'sharelatex'       => [
             'description' => 'ShareLaTeX@TUM',
-            'target'      => 'https://sharelatex.tum.de/',
+            'target'      => 'https://latex.tum.de/',
         ],
         'shuttle'          => [
             'description' => 'WZW-GAR-MUC shuttle schedule',
