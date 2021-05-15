@@ -386,6 +386,10 @@ class Route {
             'description' => 'Machine Learning',
             'target'      => 'https://piazza.com/tum.de/fall2019/in2064/resources',
         ],
+        'mobilitaet'      => [
+            'description' => 'Referat für Mobilität',
+            'target'      => 'https://www.sv.tum.de/das-sind-wir/allgemeiner-studentischer-ausschuss-asta/team/mobilitaet/',
+        ],
         'modsim'           => [
             'description' => 'Modellbildung und Simulation',
             'moodle_id'   => '63516',
@@ -515,6 +519,10 @@ class Route {
             'description' => 'Software Engineering for Business Applications',
             'moodle_id'   => '58046',
         ],
+        'semesterticket'   => [
+            'description' => 'Semesterticket München',
+            'target'      => 'https://www.semesterticket-muenchen.de',
+        ],
         'set'              => [
             'description' => 'Studieneinführungstage der FSMPI',
             'target'      => 'https://mpi.fs.tum.de/neu-an-der-tum/set/',
@@ -616,6 +624,7 @@ class Route {
 
     // Format is: <source / synonym> => <target> - the target must be present in the $routes array
     private $synonyms = [
+        '365'            => 'semesterticket',
         'ada'            => 'advalgs',
         'ai'             => 'ki',
         'algebra'        => 'algebra1',
@@ -650,6 +659,7 @@ class Route {
         'sp-ge'          => 'ge-sp',
         'sp-ma'          => 'ma-sp',
         'tex'            => 'sharelatex',
+        'ticket'         => 'semesterticket',
         'tumi'           => 'esn',
         'uml'            => 'apollon',
         'urban-mobility' => 'ecarus',
