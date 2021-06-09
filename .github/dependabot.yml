@@ -3,8 +3,8 @@ updates:
   - package-ecosystem: "composer"
     directory: "/" # Location of package manifests
     schedule:
-      interval: "daily"
+      interval: "monthly"
   - package-ecosystem: "docker"
     directory: "/" # Location of package manifests
     schedule:
-      interval: "daily"
+      interval: "monthly"
