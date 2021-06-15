@@ -620,6 +620,10 @@ class Route {
             'description' => 'Studienplan B.Sc. Wirtschaftsinformatik',
             'target'      => 'https://www.in.tum.de/fuer-studierende/bachelor-studiengaenge/wirtschaftsinformatik/studienplan/studienbeginn-ab-ws-20182019/',
         ],
+        'z'            => [
+            'description' => 'Zulip',
+            'target'      => 'https://zulip.in.tum.de/',
+        ],
     ];
 
     // Format is: <source / synonym> => <target> - the target must be present in the $routes array
@@ -743,6 +747,7 @@ class Route {
             'walomat',
             'wi-ma-sp',
             'wi-sp',
+            'z',
         ],
         'Electives'   => [
             'adlr',
