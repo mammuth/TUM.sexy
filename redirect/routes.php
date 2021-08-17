@@ -374,6 +374,10 @@ class Route {
             'description' => 'Medizin II (Krankheitslehre, klinische Propädeutik, Einführung in die Medizinische Informatik)',
             'moodle_id'   => '56092',
         ],
+        'memes'			  => [
+            'description' => 'Exzellente TUM Memes',
+            'target'	  => 'https://tumemes.de',
+        ],
         'mensabot'         => [
             'description' => 'TUMMensabot für Telegram',
             'target'      => 'https://t.me/TUMMensabot',
@@ -624,7 +628,7 @@ class Route {
             'description' => 'Zulip',
             'target'      => 'https://zulip.in.tum.de/',
         ],
-    ];
+	];
 
     // Format is: <source / synonym> => <target> - the target must be present in the $routes array
     private $synonyms = [
@@ -726,6 +730,7 @@ class Route {
             'm',
             'ma-sp',
             'matching',
+            'memes',
             'mensabot',
             'mensabot2',
             'panopto',
