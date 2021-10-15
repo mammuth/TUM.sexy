@@ -547,6 +547,10 @@ class Route {
             'description' => 'Studienplan B.Sc. Informatik',
             'target'      => 'https://www.in.tum.de/fuer-studierende/bachelor-studiengaenge/informatik/studienplan/studienbeginn-ab-wise-202122/',
         ],
+	'sp18'               => [
+            'description' => 'Studienplan B.Sc. Informatik beginn WS 18/19',
+            'target'      => 'https://www.in.tum.de/fuer-studierende/bachelor-studiengaenge/informatik/studienplan/studienbeginn-wise-201819-bis-sose-2021/',
+        ],
         'springer'         => [
             'description' => 'Springer Link Login',
             'target'      => 'https://fsso.springer.com/federation/init?entityId=https://tumidp.lrz.de/idp/shibboleth&returnUrl=https%3A%2F%2Flink.springer.com',
