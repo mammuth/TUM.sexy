@@ -209,8 +209,8 @@ class Route {
         ],
         'fpv'              => [
             'description' => 'Functional Programming and Verification',
-            'target'      => 'https://www21.in.tum.de/teaching/fpv/WS20/',
-            'moodle_id'   => '57940',
+            'target'      => 'https://www.in.tum.de/i02/lehre/wintersemester-2122/vorlesungen/functional-programming-and-verification/',
+            'moodle_id'   => '69055',
         ],
         'future'           => [
             'description' => 'TUM4Future',
