@@ -78,8 +78,7 @@ class Route {
         ],
         'db'           => [
             'description' => 'Grundlagen: Datenbanken',
-            'target'      => 'https://db.in.tum.de/teaching/ws1920/grundlagen/?lang=de',
-            'moodle_id'   => '49531',
+            'moodle_id'   => '68916',
         ],
         'erdb'         => [
             'description' => 'Einsatz und Realisierung von Datenbanksystemen',
@@ -124,16 +123,15 @@ class Route {
         ],
         'info1'        => [
             'description' => 'Einführung in die Informatik 1',
-            'moodle_id'   => '49563',
+            'moodle_id'   => '69004',
         ],
         'pgdp'         => [
             'description' => 'Praktikum Grundlagen der Programmierung (Moodle-Kurs)',
-            'moodle_id'   => '49563',
+            'moodle_id'   => '69004',
         ],
         'era'          => [
             'description' => 'Einführung in die Rechnerarchitektur',
-            'target'      => 'https://www.caps.in.tum.de/lehre/ws19/vorlesungen/era/',
-            'moodle_id'   => '49305',
+            'moodle_id'   => '68787',
         ],
         'scivis'       => [
             'description' => 'Scientific Visualization',
@@ -146,7 +144,7 @@ class Route {
         ],
         'ds'           => [
             'description' => 'Diskrete Strukturen',
-            'target'      => 'https://www7.in.tum.de/um/courses/ds/ws1920/index.html',
+            'moodle_id'   => '69053',
         ],
         'vorkurs'      => [
             'description' => 'Mathematik Vorkurs für Informatiker',
