@@ -129,8 +129,8 @@ class Route {
         ],
         'db'               => [
             'description' => 'Grundlagen: Datenbanken',
-            'target'      => 'https://db.in.tum.de/teaching/ws2021/grundlagen/?lang=de',
-            'moodle_id'   => '58088',
+            'target'      => 'https://db.in.tum.de/teaching/ws2122/grundlagen/?lang=de',
+            'moodle_id'   => '68916',
         ],
         'diversity'        => [
             'description' => 'Diversity & Queer Referat',
@@ -138,8 +138,7 @@ class Route {
         ],
         'ds'               => [
             'description' => 'Diskrete Strukturen',
-            'target'      => 'https://www7.in.tum.de/um/courses/ds/ws2021/index.html',
-            'moodle_id'   => '57991',
+            'moodle_id'   => '69053',
         ],
         'dwt'              => [
             'description' => 'Diskrete Wahrscheinlichkeitstheorie',
@@ -167,8 +166,8 @@ class Route {
         ],
         'era'              => [
             'description' => 'Einführung in die Rechnerarchitektur',
-            'target'      => 'https://www.in.tum.de/caps/lehre/ws20/vorlesungen/einfuehrung-in-die-rechnerarchitektur-era/',
-            'moodle_id'   => '57731',
+            'target'      => 'https://www.in.tum.de/caps/lehre/ws21/vorlesungen/einfuehrung-in-die-rechnerarchitektur-era/',
+            'moodle_id'   => '68787',
         ],
         'erapraktikum'     => [
             'description' => 'Praktikum - Einführung in die Rechnerarchitektur',
@@ -310,7 +309,7 @@ class Route {
         ],
         'info1'            => [
             'description' => 'Einführung in die Informatik 1',
-            'moodle_id'   => '58145',
+            'moodle_id'   => '69004',
         ],
         'io'               => [
             'description' => 'Information Officer',
@@ -429,7 +428,7 @@ class Route {
         ],
         'pgdp'             => [
             'description' => 'Praktikum Grundlagen der Programmierung (Moodle-Kurs)',
-            'moodle_id'   => '58145',
+            'moodle_id'   => '69004',
         ],
         'pgm'              => [
             'description' => 'Probabilistic Graphical Models in Computer Vision',
