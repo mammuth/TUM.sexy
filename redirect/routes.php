@@ -258,7 +258,7 @@ class Route {
         ],
         'gki'              => [
             'description' => 'Grundlagen der Künstlichen Intelligenz',
-            'moodle_id'   => '58014',
+            'moodle_id'   => '68920',
         ],
         'gog'              => [
             'description' => 'Games on Graphs',
@@ -388,7 +388,7 @@ class Route {
         ],
         'ml'               => [
             'description' => 'Machine Learning',
-            'target'      => 'https://piazza.com/tum.de/fall2019/in2064/resources',
+            'moodle_id'   => '68785',
         ],
         'mobilitaet'      => [
             'description' => 'Referat für Mobilität',
