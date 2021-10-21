@@ -164,6 +164,10 @@ class Route {
             'description' => 'Einführung in die Softwaretechnik',
             'target'      => 'https://artemis.ase.in.tum.de/courses/121',
         ],
+        'enigame'          => [
+            'description' => 'enigame Puzzle Hunt (Escape Game) Event',
+            'target'      => 'https://enig.ma.tum.de',
+        ],
         'era'              => [
             'description' => 'Einführung in die Rechnerarchitektur',
             'target'      => 'https://www.in.tum.de/caps/lehre/ws21/vorlesungen/einfuehrung-in-die-rechnerarchitektur-era/',
@@ -721,6 +725,7 @@ class Route {
             'cvl',
             'eat-api',
             'ecarus',
+            'enigame',
             'esn',
             'film',
             'finder',
