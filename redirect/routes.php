@@ -49,7 +49,7 @@ class Route {
         ],
         'ase'              => [
             'description' => 'Advanced Topics In Software Engineering',
-            'moodle_id'   => '58021',
+            'moodle_id'   => '69081',
         ],
         'asp'              => [
             'description' => 'Aspekte der systemnahen Programmierung bei der Spieleentwicklung',
@@ -500,7 +500,7 @@ class Route {
         ],
         'rts'              => [
             'description' => 'Echtzeitsysteme / Real Time Systems',
-            'moodle_id'   => '42138',
+            'moodle_id'   => '68918',
         ],
         'satellite'        => [
             'description' => 'The TUM Satellite',
@@ -617,7 +617,7 @@ class Route {
         ],
         'vt'               => [
             'description' => 'Virtualization Techniques',
-            'target'      => 'https://www.caps.in.tum.de/lehre/ws19/vorlesungen/virtualization-techniques/',
+            'target'      => 'https://www.caps.in.tum.de/lehre/ws21/vorlesungen/virtualization-techniques/',
         ],
         'wahl'             => [
             'description' => 'Hochschulwahlen',
