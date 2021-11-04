@@ -408,7 +408,7 @@ class Route {
         ],
         'netsec'           => [
             'description' => 'Network Security - Netzsicherheit',
-            'target'      => 'https://www.net.in.tum.de/teaching/ws2021/netsec.html',
+            'target'      => 'https://www.net.in.tum.de/teaching/ws2122/netsec.html',
         ],
         'nix'              => [
             'description' => 'GLÜHNIX',
@@ -440,7 +440,7 @@ class Route {
         ],
         'pl'               => [
             'description' => 'Programming Languages',
-            'target'      => 'https://www.in.tum.de/i02/lehre/wintersemester-1920/vorlesungen/programming-languages/',
+            'target'      => 'https://www.in.tum.de/i02/lehre/wintersemester-2122/vorlesungen/programming-languages/',
         ],
         'pp'               => [
             'description' => 'Protein Prediction 1',
@@ -456,7 +456,7 @@ class Route {
         ],
         'progopt'          => [
             'description' => 'Program Optimization',
-            'target'      => 'https://www.in.tum.de/i02/lehre/wintersemester-2021/vorlesungen/program-optimization/',
+            'target'      => 'https://www.in.tum.de/i02/lehre/wintersemester-2122/vorlesungen/program-optimization/',
         ],
         'pse'              => [
             'description' => 'Patterns in Software Engineering',
