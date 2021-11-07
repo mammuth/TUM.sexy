@@ -664,6 +664,7 @@ class Route {
         'gdb'            => 'db',
         'geo'            => 'geokalkuele',
         'geokal'         => 'geokalkuele',
+        'gpp'            => 'pgdp',
         'hsw'            => 'wahl',
         'info2'          => 'fpv',
         'kino'           => 'film',
