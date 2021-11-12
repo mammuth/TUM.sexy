@@ -263,7 +263,7 @@ class Route {
             'description' => 'Games on Graphs',
             'target'      => 'https://www7.in.tum.de/um/courses/gog/ss17/index.php',
         ],
-	'gra'     => [
+        'gra'     => [
             'description' => 'Grundlagenpraktikum Rechnerarchitektur',
             'target'      => 'https://gra.caps.in.tum.de/login',
         ],
@@ -426,6 +426,10 @@ class Route {
             'description' => 'Practical Course: Contributing to an Open-Source Project',
             'target'      => 'https://www21.in.tum.de/teaching/osp/WS20/',
         ],
+        'paging'            => [
+            'description' => 'GBS Paging Trainer',
+            'target'      => 'https://vmott42.in.tum.de/paging?iscsv=false&strategy=fifo&frames=4&pages=5&rounds=10',
+        ],
         'panopto'          => [
             'description' => 'Panopto Video platform',
             'target'      => 'https://tum.cloud.panopto.eu',
@@ -510,6 +514,10 @@ class Route {
             'description' => 'Sensor-based Robotic Manipulation and Locomotion',
             'moodle_id'   => '62737',
         ],
+        'scheduling'            => [
+            'description' => 'GBS Scheduling Trainer',
+            'target'      => 'https://vmott42.in.tum.de/scheduling',
+        ],
         'scivis'           => [
             'description' => 'Scientific Visualization / Visual Data Analytics',
             'target'      => 'https://www.in.tum.de/cg/teaching/winter-term-2021/visual-data-analytics/',
@@ -526,7 +534,7 @@ class Route {
             'description' => 'Software Engineering for Business Applications',
             'moodle_id'   => '58046',
         ],
-	'semantics'   => [
+        'semantics'   => [
             'description' => 'Semantics of Programming Languages',
             'target'      => 'https://www21.in.tum.de/teaching/semantics/WS21/index.html',
         ],
@@ -554,7 +562,7 @@ class Route {
             'description' => 'Studienplan B.Sc. Informatik',
             'target'      => 'https://www.in.tum.de/fuer-studierende/bachelor-studiengaenge/informatik/studienplan/studienbeginn-ab-wise-202122/',
         ],
-	'sp18'               => [
+        'sp18'               => [
             'description' => 'Studienplan B.Sc. Informatik beginn WS 18/19',
             'target'      => 'https://www.in.tum.de/fuer-studierende/bachelor-studiengaenge/informatik/studienplan/studienbeginn-wise-201819-bis-sose-2021/',
         ],
