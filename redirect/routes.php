@@ -211,10 +211,6 @@ class Route {
             'target'      => 'https://www.in.tum.de/i02/lehre/wintersemester-2122/vorlesungen/functional-programming-and-verification/',
             'moodle_id'   => '69055',
         ],
-        'future'           => [
-            'description' => 'TUM4Future',
-            'target'      => 'https://tum4future.de',
-        ],
         'gad'              => [
             'description' => 'Grundlegende Algorithmen und Datenstrukturen',
             'target'      => 'https://artemis.ase.in.tum.de/courses/119',
@@ -583,10 +579,6 @@ class Route {
             'description' => 'RBGreaterAgain - Bessere RBG streams',
             'target'      => 'https://stream.tum.sexy',
         ],
-        'stuff'            => [
-            'description' => 'Studystuff (ehemals Unistuff)',
-            'target'      => 'https://studystuff.org',
-        ],
         'ted'              => [
             'description' => 'TEDxTUM Event-Seite',
             'target'      => 'https://tedxtum.com',
@@ -777,7 +769,6 @@ class Route {
             'springer',
             'statista',
             'streams',
-            'stuff',
             'vorkurs',
             'wahl',
             'walomat',
