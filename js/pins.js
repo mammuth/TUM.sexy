@@ -2,13 +2,7 @@ let pins = [];
 
 function removePin(elem) {
     let remove = elem.parentElement.children[1].innerHTML
-    let newPins = []
-    pins.forEach(pin => {
-        if (pin.n !== remove) {
-            newPins.push(pin)
-        }
-    })
-    pins = newPins
+    pins = pins.filter(pin => pin.n !== remove)
     localStorage.setItem("pins", JSON.stringify(pins))
     render()
 }
@@ -35,6 +29,8 @@ function render() {
 }
 
 window.onload = function () {
-    pins = JSON.parse(localStorage.getItem("pins") === null ? "[]" : localStorage.getItem("pins"))
-    render()
+    if (document.getElementById("pins")){
+        pins = JSON.parse(localStorage.getItem("pins") === null ? "[]" : localStorage.getItem("pins"))
+        render()
+    }
 }
