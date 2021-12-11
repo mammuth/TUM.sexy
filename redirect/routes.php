@@ -239,6 +239,10 @@ class Route {
             'description' => 'Geometriekalküle',
             'target'      => 'https://www-m10.ma.tum.de/bin/view/Lehre/WS1819/GeometrieKalkueleWS1819',
         ],
+	'gin'          => [
+            'description' => 'Check out the excellent TUM-Gin',
+            'target'      => 'https://shop.tum.de/getraenke/94/tum-gin',
+        ],
         'git-tut'          => [
             'description' => 'Getting started with Git? Learn the basics for the console. With Visualizations!',
             'target'      => 'https://learngitbranching.js.org',
