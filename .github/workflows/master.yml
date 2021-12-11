@@ -12,7 +12,7 @@ jobs:
       id: meta
       uses: docker/metadata-action@v3
       with:
-        images: tum-dev/tum.sexy/sexy-server
+        images: ghcr.io/tum-dev/tum.sexy/sexy-server
         tags: |
           type=ref,event=branch
           type=ref,event=pr
