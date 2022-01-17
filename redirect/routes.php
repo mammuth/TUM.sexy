@@ -132,6 +132,10 @@ class Route {
             'target'      => 'https://db.in.tum.de/teaching/ws2122/grundlagen/?lang=de',
             'moodle_id'   => '68916',
         ],
+        'dea'              => [
+            'description' => 'Studienplan von Data Engineering & Analytics',
+            'target'      => 'https://www.in.tum.de/en/current-students/masters-programs/data-engineering-and-analytics/compulsory-elective-and-support-elective-modules/fpso-2018/',
+        ],
         'diversity'        => [
             'description' => 'Diversity & Queer Referat',
             'target'      => 'https://www.sv.tum.de/asta/team/diversityqueer/',
@@ -742,6 +746,7 @@ class Route {
             'c',
             'chairs',
             'cvl',
+            'dea',
             'eat-api',
             'ecarus',
             'enigame',
