@@ -587,6 +587,10 @@ class Route {
             'description' => 'RBGreaterAgain - Bessere RBG streams',
             'target'      => 'https://stream.tum.sexy',
         ],
+        'study'            => [
+            'description' => 'Arbeitsplatz reservieren',
+            'target'      => 'https://www.ub.tum.de/arbeitsplatz-reservieren',
+        ],
         'ted'              => [
             'description' => 'TEDxTUM Event-Seite',
             'target'      => 'https://tedxtum.com',
