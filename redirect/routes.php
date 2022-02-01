@@ -644,12 +644,12 @@ class Route {
             'target'      => 'https://www.sec.in.tum.de/i20/teaching/ws2017/web-application-security',
         ],
         'wi-ma-sp'         => [
-            'description' => 'Studienplan M.Sc. Wirtschaftsinformatik',
-            'target'      => 'https://www.in.tum.de/fuer-studierende/master-studiengaenge/wirtschaftsinformatik/studienplan/ab-sose-2020/',
+            'description' => 'Studienplan M.Sc. Information Systems (Wirtschaftsinformatik)',
+            'target'      => 'https://www.in.tum.de/fuer-studierende/master-studiengaenge/wirtschaftsinformatik-information-systems/curriculum/'            
         ],
         'wi-sp'            => [
             'description' => 'Studienplan B.Sc. Wirtschaftsinformatik',
-            'target'      => 'https://www.in.tum.de/fuer-studierende/bachelor-studiengaenge/wirtschaftsinformatik/studienplan/studienbeginn-ab-ws-20182019/',
+            'target'      => 'https://www.in.tum.de/fuer-studierende/bachelor-studiengaenge/wirtschaftsinformatik/studienplan/studienbeginn-ab-ws-202122/',
         ],
         'z'            => [
             'description' => 'Zulip',
