@@ -583,6 +583,10 @@ class Route {
             'description' => 'Statista',
             'target'      => 'https://de-statista-com.eaccess.ub.tum.de',
         ],
+        'stats'            => [
+            'description' => 'Prüfungsstatistiken',
+            'target'      => 'https://home.stusta.de/~013107/cgi-bin/show_stat.cgi',
+        ],
         'streams'          => [
             'description' => 'RBGreaterAgain - Bessere RBG streams',
             'target'      => 'https://stream.tum.sexy',
