@@ -562,6 +562,10 @@ class Route {
             'description' => 'TUM Hörsaal Slam',
             'target'      => 'https://www.facebook.com/events/400633344170175/',
         ],
+        'smds'             => [
+            'description' => 'Seminar Modern Database Systems',
+            'target'      => 'https://db.in.tum.de/teaching/ss22/seminarModernDatabaseSystems/',
+        ],
         'sp'               => [
             'description' => 'Studienplan B.Sc. Informatik',
             'target'      => 'https://www.in.tum.de/fuer-studierende/bachelor-studiengaenge/informatik/studienplan/studienbeginn-ab-wise-202122/',
@@ -838,6 +842,7 @@ class Route {
             'rts',
             'sbrml',
             'scivis',
+            'smds',
             'st',
             'tms',
             'vm',
