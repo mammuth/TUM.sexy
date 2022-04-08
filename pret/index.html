@@ -14,7 +14,7 @@
 <style type="text/css" media="screen">
     html,body{ margin:0;padding:0;overflow:hidden; position: relative;font-family: 'Roboto', sans-serif;width:100%;height:100%;}
     #nyanbox div{ position:absolute; z-index: 150;}
-    .nyancat{ position:absolute;}
+    .nyancat{ position:absolute; user-select: none;}
     div#nyanfeet{ position:fixed;position:absolute;right:0;bottom:0;padding:0;margin:0; width:100%;background:#ccc;text-align:left;}
     div#nyanfeet a{ margin:0;}
     #nyanfeetpic,#nyanfeetgen{ float:left}
@@ -188,6 +188,7 @@
         newcatbox = $('<div></div>');
         newcat = $('<img/>', {
             src: "sexipretschi.gif",
+            draggable: "false",
             //IE 8 chokes on the class here, NYAN
             //class: "nyancat",
             click: function() {
