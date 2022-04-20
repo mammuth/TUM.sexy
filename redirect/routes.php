@@ -71,6 +71,10 @@ class Route {
             'description' => 'Basic Mathematical Tools for Imaging & Visualization',
             'target'      => 'http://campar.in.tum.de/Chair/TeachingWs11BasicMathTools',
         ],
+	'bf'              => [
+            'description' => 'Brückenfest 2022',
+            'target'      => 'https://www.instagram.com/p/CcODBH6Lqmv/?igshid=MDJmNzVkMjY=',
+        ],
         'c'                => [
             'description' => 'TUM Online',
             'target'      => 'https://campus.tum.de/tumonline/ee/ui/ca2/app/desktop/#/login',
