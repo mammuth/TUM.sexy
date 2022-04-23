@@ -170,7 +170,7 @@ class Route {
         ],
         'eist'             => [
             'description' => 'Einführung in die Softwaretechnik',
-            'target'      => 'https://artemis.ase.in.tum.de/courses/121',
+            'target'      => 'https://artemis.ase.in.tum.de/courses/169',
         ],
         'enigame'          => [
             'description' => 'enigame Puzzle Hunt (Escape Game) Event',
