@@ -67,13 +67,13 @@ class Route {
             'description' => 'Automata and Formal Languages',
             'target'      => 'https://www.in.tum.de/i07/lehre/wintersemester-20202021/automaten-und-formale-sprachen/',
         ],
-        'bmt'              => [
-            'description' => 'Basic Mathematical Tools for Imaging & Visualization',
-            'target'      => 'http://campar.in.tum.de/Chair/TeachingWs11BasicMathTools',
-        ],
 	'bf'              => [
             'description' => 'Brückenfest 2022',
             'target'      => 'https://www.instagram.com/p/CcODBH6Lqmv/?igshid=MDJmNzVkMjY=',
+        ],
+        'bmt'              => [
+            'description' => 'Basic Mathematical Tools for Imaging & Visualization',
+            'target'      => 'http://campar.in.tum.de/Chair/TeachingWs11BasicMathTools',
         ],
         'c'                => [
             'description' => 'TUM Online',
