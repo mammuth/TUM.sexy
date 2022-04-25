@@ -613,7 +613,7 @@ class Route {
         ],
         'theo'             => [
             'description' => 'Einführung in die theoretische Informatik',
-            'target'      => 'https://www.in.tum.de/i07/lehre/ss21/theo/',
+            'target'      => 'https://www.in.tum.de/i07/lehre/ss22/theo/',
         ],
         'theojudge'        => [
             'description' => 'TUMjudge - Einführung in die theoretische Informatik',
