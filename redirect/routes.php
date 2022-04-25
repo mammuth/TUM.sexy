@@ -150,7 +150,7 @@ class Route {
         ],
         'dwt'              => [
             'description' => 'Diskrete Wahrscheinlichkeitstheorie',
-            'target'      => 'http://wwwalbers.in.tum.de/lehre/2021SS/dwt/index.html.de',
+            'target'      => 'http://wwwalbers.in.tum.de/lehre/2022SS/dwt/index.html.de',
         ],
         'ea'               => [
             'description' => 'Efficient Algorithms',
@@ -428,7 +428,7 @@ class Route {
         ],
         'numprog'          => [
             'description' => 'Numerisches Programmieren',
-            'moodle_id'   => '68974',
+            'moodle_id'   => '75131',
         ],
         'o'                => [
             'description' => 'TUM Opac',
