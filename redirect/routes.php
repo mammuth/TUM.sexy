@@ -204,7 +204,7 @@ class Route {
         ],
         'fds'              => [
             'description' => 'Functional Data Structures',
-            'target'      => 'https://www21.in.tum.de/teaching/fds/SS21/',
+            'target'      => 'https://www21.in.tum.de/teaching/fds/SS22/',
         ],
         'film'             => [
             'description' => 'tu film',
