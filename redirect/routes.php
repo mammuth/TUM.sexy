@@ -3,6 +3,10 @@
 // please make sure to add your redirects such that the arrays remains sorted alphabetically
 class Route {
     private array $routes = [
+        '3dui'             => [
+            'description' => '3D User Interfaces',
+            'moodle_id'   => '75481',
+        ],
         'adlr'             => [
             'description' => 'Advanced Deep Learning for Robotics',
             'target'      => 'https://bbaeuml.github.io/tum-adlr/adlr/index.html',
@@ -183,7 +187,7 @@ class Route {
         ],
         'erdb'             => [
             'description' => 'Einsatz und Realisierung von Datenbanksystemen',
-            'target'      => 'https://db.in.tum.de/teaching/ss21/impldb/',
+            'target'      => 'https://db.in.tum.de/teaching/ss22/impldb/',
         ],
         'esn'              => [
             'description' => 'International engagement: ESN TUMi e.V.',
