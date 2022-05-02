@@ -618,6 +618,7 @@ class Route {
         'theo'             => [
             'description' => 'Einführung in die theoretische Informatik',
             'target'      => 'https://www.in.tum.de/i07/lehre/ss22/theo/',
+            'moodle_id'   => '75506',
         ],
         'theojudge'        => [
             'description' => 'TUMjudge - Einführung in die theoretische Informatik',
