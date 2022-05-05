@@ -225,11 +225,11 @@ class Route {
         ],
         'gad'              => [
             'description' => 'Grundlegende Algorithmen und Datenstrukturen',
-            'target'      => 'https://artemis.ase.in.tum.de/courses/119',
+            'target'      => 'https://artemis.ase.in.tum.de/courses/184',
         ],
         'gadunittests'     => [
             'description' => 'Unit - Tests: Grundlegende Algorithmen und Datenstrukturen',
-            'target'      => 'https://github.com/Code-Connect/TUM_Homework/tree/master/src/gad17/',
+            'target'      => 'https://github.com/MaximilianAnzinger/gad2022-tests',
         ],
         'gbs'              => [
             'description' => 'Grundlagen: Betriebssysteme und Systemsoftware',
