@@ -354,7 +354,7 @@ class Route {
         ],
         'linalg'           => [
             'description' => 'Lineare Algebra für Informatik',
-            'target'      => 'https://www.moodle.tum.de/course/view.php?id=65973',
+            'target'      => 'https://www.moodle.tum.de/course/view.php?id=78521',
         ],
         'live'             => [
             'description' => 'Livestreams und Aufzeichnungen von Vorlesungen',
