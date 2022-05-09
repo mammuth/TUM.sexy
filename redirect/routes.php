@@ -220,8 +220,8 @@ class Route {
         ],
         'fpv'              => [
             'description' => 'Functional Programming and Verification',
-            'target'      => 'https://www.in.tum.de/i02/lehre/wintersemester-2122/vorlesungen/functional-programming-and-verification/',
-            'moodle_id'   => '69055',
+            'target'      => 'https://www.in.tum.de/i02/lehre/sommersemester-22/vorlesungen/functional-programming-and-verification/',
+            'moodle_id'   => '75431',
         ],
         'gad'              => [
             'description' => 'Grundlegende Algorithmen und Datenstrukturen',
