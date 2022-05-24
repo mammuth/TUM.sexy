@@ -230,6 +230,7 @@ class Route {
         'gad'              => [
             'description' => 'Grundlegende Algorithmen und Datenstrukturen',
             'target'      => 'https://artemis.ase.in.tum.de/courses/184',
+            'moodle_id'   => '75236',
         ],
         'gadunittests'     => [
             'description' => 'Unit - Tests: Grundlegende Algorithmen und Datenstrukturen',
