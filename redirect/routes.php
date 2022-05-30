@@ -577,7 +577,7 @@ class Route {
         ],
         'slam'             => [
             'description' => 'TUM Hörsaal Slam',
-            'target'      => 'https://www.facebook.com/events/400633344170175/',
+            'target'      => 'https://fb.me/e/eQ0mb4QYz',
         ],
         'smds'             => [
             'description' => 'Seminar Modern Database Systems',
