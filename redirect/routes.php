@@ -367,7 +367,7 @@ class Route {
         ],
         'logic'           => [
             'description' => 'Logic',
-            'target'      => 'https://www21.in.tum.de/teaching/logic/SS21/',
+            'target'      => 'https://www21.in.tum.de/teaching/logic/SS22/',
         ],
         'm'                => [
             'description' => 'Moodle',
