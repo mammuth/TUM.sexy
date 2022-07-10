@@ -495,7 +495,11 @@ class Route {
             'description' => 'Mathias Quintero',
             'target'      => 'https://home.in.tum.de/~szillat/',
         ],
-        'reddit'           => [
+        'rad'           => [
+            'description' => 'Rad Umfrage',
+            'target'      => 'https://evasys.zv.tum.de/evasys/online.php?p=TUMbike',
+        ],
+    	'reddit'           => [
             'description' => 'ReddiTUM',
             'target'      => 'https://reddit.com/r/redditum',
         ],
