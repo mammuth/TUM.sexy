@@ -363,7 +363,7 @@ class Route {
         ],
         'live'             => [
             'description' => 'Livestreams und Aufzeichnungen von Vorlesungen',
-            'target'      => 'https://stream.tum.sexy',
+            'target'      => 'https://live.rbg.tum.de',
         ],
         'logic'           => [
             'description' => 'Logic',
