@@ -83,6 +83,10 @@ class Route {
             'description' => 'TUM Online',
             'target'      => 'https://campus.tum.de/tumonline/ee/ui/ca2/app/desktop/#/login',
         ],
+        'c2'               => [
+            'description' => 'Campus Cneipe',
+            'target'      => 'https://www.c2.tum.de',
+        ],
         'canteens-eat-api' => [
             'description' => 'A JSON list of all available canteens for the eat-api',
             'target'      => 'https://tum-dev.github.io/eat-api/canteens.json',
@@ -778,6 +782,7 @@ class Route {
         'Special'     => [
             'app',
             'c',
+            'c2',
             'chairs',
             'cvl',
             'dea',
