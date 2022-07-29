@@ -71,7 +71,7 @@ class Route {
             'description' => 'Automata and Formal Languages',
             'target'      => 'https://www.in.tum.de/i07/lehre/wintersemester-20202021/automaten-und-formale-sprachen/',
         ],
-	'bf'              => [
+        'bf'               => [
             'description' => 'Brückenfest 2022',
             'target'      => 'https://www.instagram.com/p/CcODBH6Lqmv/?igshid=MDJmNzVkMjY=',
         ],
@@ -260,7 +260,7 @@ class Route {
             'description' => 'Geometriekalküle',
             'target'      => 'https://www-m10.ma.tum.de/bin/view/Lehre/WS1819/GeometrieKalkueleWS1819',
         ],
-	'gin'          => [
+        'gin'          => [
             'description' => 'Check out the excellent TUM-Gin',
             'target'      => 'https://shop.tum.de/getraenke/94/tum-gin',
         ],
@@ -503,7 +503,7 @@ class Route {
             'description' => 'Rad Umfrage',
             'target'      => 'https://evasys.zv.tum.de/evasys/online.php?p=TUMbike',
         ],
-    	'reddit'           => [
+        'reddit'           => [
             'description' => 'ReddiTUM',
             'target'      => 'https://reddit.com/r/redditum',
         ],
@@ -705,7 +705,7 @@ class Route {
         'eidi2'          => 'fpv',
         'erap'           => 'gra',
         'erapra'         => 'gra',
-	'erapraktikum'	 => 'gra',
+        'erapraktikum'	 => 'gra',
         'ezs'            => 'rts',
         'gdb'            => 'db',
         'geo'            => 'geokalkuele',
@@ -719,7 +719,7 @@ class Route {
         'latex'          => 'sharelatex',
         'match'          => 'matching',
         'netz'           => 'grnvs',
-	'np'		 => 'numprog',
+        'np'             => 'numprog',
         'pat'            => 'pse',
         'patterns'       => 'pse',
         'protein'        => 'pp',
@@ -728,8 +728,8 @@ class Route {
         'rbgreateragain' => 'streams',
         'roomfinder'     => 'finder',
         'rooms'          => 'room',
-	'sem'		 => 'semantics',
-	'semantik'	 => 'semantics',
+        'sem'            => 'semantics',
+        'semantik'       => 'semantics',
         'sp-ge'          => 'ge-sp',
         'sp-ma'          => 'ma-sp',
         'tex'            => 'sharelatex',
@@ -804,7 +804,7 @@ class Route {
             'memes',
             'mensabot',
             'mensabot2',
-	    'navigatum',
+            'navigatum',
             'panopto',
             'reddit',
             'room',
@@ -838,7 +838,7 @@ class Route {
             'comp',
             'compiler',
             'conpra',
-	    'cpp',
+            'cpp',
             'crypto',
             'csc',
             'cvmvg',
