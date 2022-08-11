@@ -591,6 +591,10 @@ class Route {
             'description' => 'Seminar Modern Database Systems',
             'target'      => 'https://db.in.tum.de/teaching/ss22/seminarModernDatabaseSystems/',
         ],
+        'social'           => [
+            'description' => 'TUM Social Network (Mastodon Instance)',
+            'target'      => 'https://tum.social/',
+        ],
         'sp'               => [
             'description' => 'Studienplan B.Sc. Informatik',
             'target'      => 'https://www.in.tum.de/in/fuer-studierende/bachelor-studiengaenge/informatik/studienplan/studienbeginn-ab-wise-2021-22/',
@@ -814,6 +818,7 @@ class Route {
             'sharelatex',
             'shuttle',
             'slam',
+            'social',
             'sp',
             'springer',
             'statista',
