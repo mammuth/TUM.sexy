@@ -1,4 +1,4 @@
-FROM composer:2.3.10 as composer
+FROM composer:2.4.1 as composer
 
 WORKDIR /app
 COPY ./composer.json /app
