@@ -190,7 +190,7 @@ class Route {
         ],
         'era'              => [
             'description' => 'Einführung in die Rechnerarchitektur',
-            'target'      => 'https://www.in.tum.de/caps/lehre/ws21/vorlesungen/einfuehrung-in-die-rechnerarchitektur-era/',
+            'target'      => 'https://www.ce.cit.tum.de/caps/lehre/ws22/vorlesungen/einfuehrung-in-die-rechnerarchitektur-era/',
             'moodle_id'   => '68787',
         ],
         'erdb'             => [
