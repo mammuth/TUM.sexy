@@ -33,7 +33,7 @@ class Route {
         ],
         'anal'             => [
             'description' => 'Analysis für Informatik',
-            'moodle_id'   => '73098',
+            'moodle_id'   => '83133',
         ],
         'androidsec'       => [
             'description' => 'Praktikum: Android Security',
@@ -342,8 +342,8 @@ class Route {
         ],
         'itsec'            => [
             'description' => 'IT-Sicherheit',
-            'target'      => 'https://www.sec.in.tum.de/i20/teaching/ws2020/it-sicherheit',
-            'moodle_id'   => '58097',
+            'target'      => 'https://www.sec.in.tum.de/i20/teaching/ws2022/it-sicherheit-in0042',
+            'moodle_id'   => '82495',
         ],
         'ja'               => [
             'description' => 'Junge Akademie',
@@ -651,7 +651,7 @@ class Route {
         ],
         'uanal'            => [
             'description' => 'Übungen zu Analysis für Informatik',
-            'moodle_id'   => '73696',
+            'moodle_id'   => '84798',
         ],
         'unidb'            => [
             'description' => 'Unischema von Prof. Kemper',
