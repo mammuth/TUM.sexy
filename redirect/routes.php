@@ -69,7 +69,7 @@ class Route {
         ],
         'automata'         => [
             'description' => 'Automata and Formal Languages',
-            'target'      => 'https://www.in.tum.de/i07/lehre/wintersemester-20202021/automaten-und-formale-sprachen/',
+            'target'      => 'https://www.cs.cit.tum.de/tcs/lehre/ws22-23/automaten-und-formale-sprachen/',
         ],
         'bf'               => [
             'description' => 'Brückenfest 2022',
@@ -86,6 +86,10 @@ class Route {
         'c2'               => [
             'description' => 'Campus Cneipe',
             'target'      => 'https://www.c2.tum.de',
+        ],
+        'camp1'            => [
+            'description' => 'Computer Aided Medical Procedures I',
+            'moodle_id'   => '80189',
         ],
         'canteens-eat-api' => [
             'description' => 'A JSON list of all available canteens for the eat-api',
@@ -433,7 +437,7 @@ class Route {
         ],
         'netsec'           => [
             'description' => 'Network Security - Netzsicherheit',
-            'target'      => 'https://www.net.in.tum.de/teaching/ws2122/netsec.html',
+            'target'      => 'https://www.net.in.tum.de/teaching/ws2223/netsec.html',
         ],
         'nix'              => [
             'description' => 'GLÜHNIX',
@@ -565,7 +569,7 @@ class Route {
         ],
         'semantics'   => [
             'description' => 'Semantics of Programming Languages',
-            'target'      => 'https://www21.in.tum.de/teaching/semantics/WS21/index.html',
+            'target'      => 'https://www21.in.tum.de/teaching/semantics/WS22/index.html',
         ],
         'semesterticket'   => [
             'description' => 'Semesterticket München',
@@ -699,6 +703,7 @@ class Route {
     private $synonyms = [
         '365'            => 'semesterticket',
         'ada'            => 'advalgs',
+        'afl'            => 'automata',
         'ai'             => 'ki',
         'algebra'        => 'algebra1',
         'bs'             => 'gbs',
