@@ -149,8 +149,8 @@ class Route {
         ],
         'db'               => [
             'description' => 'Grundlagen: Datenbanken',
-            'target'      => 'https://db.in.tum.de/teaching/ws2122/grundlagen/?lang=de',
-            'moodle_id'   => '68916',
+            'target'      => 'https://db.in.tum.de/teaching/ws2223/grundlagen/?lang=de',
+            'moodle_id'   => '80363',
         ],
         'dea'              => [
             'description' => 'Studienplan von Data Engineering & Analytics',
