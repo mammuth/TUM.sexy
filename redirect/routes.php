@@ -19,6 +19,11 @@ class Route {
             'description' => 'Advanced Algorithms',
             'target'      => 'http://www14.in.tum.de/lehre/2020WS/ada/index.html.en',
         ],
+        'advist'           => [
+            'description' => 'Advanced Data Handling and Visualization Techniques',
+            'target'      => 'https://www.rostlab.org/teaching/WiSe2022-23/advist',
+            'moodle_id'   => '84975',
+        ],
         'agt'              => [
             'description' => 'Algorithmic Game Theory',
             'target'      => 'https://dss.in.tum.de/teaching/ss-21/43-teaching/semester/sommersemester-2021/247-algorithmic-game-theory-ss2021.html',
@@ -442,6 +447,10 @@ class Route {
         'nix'              => [
             'description' => 'GLÜHNIX',
             'target'      => 'https://www.facebook.com/events/807341503020074/',
+        ],
+        'nlp'              => [
+            'description' => 'Natural Language Processing',
+            'moodle_id'   => '80381',
         ],
         'numprog'          => [
             'description' => 'Numerisches Programmieren',
