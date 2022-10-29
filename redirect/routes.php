@@ -366,6 +366,11 @@ class Route {
             'description' => 'Grundlagen der künstlichen Intelligenz',
             'moodle_id'   => '58014',
         ],
+	'lambda'           => [
+	    'description' => 'Lambda Calculus',
+	    'target'      => 'https://www21.in.tum.de/teaching/lambda/WS22/index.html',
+            'moodle_id'   => '80136',
+	],
         'langenacht'       => [
             'description' => 'Lange Nacht der Univeristäten',
             'target'      => 'https://www.facebook.com/events/2681178088623650/',
