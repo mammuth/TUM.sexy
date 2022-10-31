@@ -58,7 +58,8 @@ class Route {
         ],
         'ase'              => [
             'description' => 'Advanced Topics In Software Engineering',
-            'moodle_id'   => '69081',
+            'target'      => 'https://wwwmatthes.in.tum.de/pages/c9ulr7t9nrqs/Advanced-Topics-of-Software-Engineering',
+            'moodle_id'   => '80385',
         ],
         'asp'              => [
             'description' => 'Aspekte der systemnahen Programmierung bei der Spieleentwicklung',
@@ -104,6 +105,11 @@ class Route {
             'description' => 'Carlos Camino',
             'target'      => 'https://carlos-camino.de',
         ],
+        'cbdp'             => [
+            'description' => 'Cloud-Based Data Processing',
+            'target'      => 'https://db.in.tum.de/teaching/ws2223/clouddataprocessing',
+            'moodle_id'   => '80360',
+        ],
         'chairs'           => [
             'description' => 'Liste der Informatik Lehrstühle',
             'target'      => 'https://www.in.tum.de/forschung/lehrstuehle/',
@@ -130,7 +136,8 @@ class Route {
         ],
         'cpp'              => [
             'description' => 'Concepts of C++ programming (IN2377)',
-            'moodle_id'   => '75234',
+            'target'      => 'https://ciip.in.tum.de/teaching/cpp_ws22.html',
+            'moodle_id'   => '80267',
         ],
         'crypto'           => [
             'description' => 'Kryptographie',
@@ -139,6 +146,10 @@ class Route {
         'csc'              => [
             'description' => 'Computational Social Choice',
             'target'      => 'https://dss.in.tum.de/teaching/ws-18-19/37-teaching/semester/wintersemster-2018-19/193-computational-social-choice-2018-19.html',
+        ],
+        'csdcps'           => [
+            'description' => 'Concepts and Software Design for Cyberphysical Systems',
+            'moodle_id'   => '83237',
         ],
         'cvl'              => [
             'description' => 'Carl von Linde-Akademie Kurse nach Themen',
@@ -859,6 +870,7 @@ class Route {
             'ase',
             'automata',
             'bmt',
+            'cbdp',
             'comp',
             'compiler',
             'conpra',
