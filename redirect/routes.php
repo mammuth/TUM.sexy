@@ -178,7 +178,7 @@ class Route {
         ],
         'ds'               => [
             'description' => 'Diskrete Strukturen',
-            'moodle_id'   => '69053',
+            'moodle_id'   => '80008',
         ],
         'dwt'              => [
             'description' => 'Diskrete Wahrscheinlichkeitstheorie',
@@ -211,7 +211,7 @@ class Route {
         'era'              => [
             'description' => 'Einführung in die Rechnerarchitektur',
             'target'      => 'https://www.ce.cit.tum.de/caps/lehre/ws22/vorlesungen/einfuehrung-in-die-rechnerarchitektur-era/',
-            'moodle_id'   => '68787',
+            'moodle_id'   => '80453',
         ],
         'erdb'             => [
             'description' => 'Einsatz und Realisierung von Datenbanksystemen',
@@ -354,7 +354,7 @@ class Route {
         ],
         'info1'            => [
             'description' => 'Einführung in die Informatik 1',
-            'moodle_id'   => '69004',
+            'moodle_id'   => '80182',
         ],
         'io'               => [
             'description' => 'Information Officer',
@@ -490,7 +490,7 @@ class Route {
         ],
         'pgdp'             => [
             'description' => 'Praktikum Grundlagen der Programmierung (Moodle-Kurs)',
-            'moodle_id'   => '69004',
+            'moodle_id'   => '80180',
         ],
         'pgm'              => [
             'description' => 'Probabilistic Graphical Models in Computer Vision',
@@ -712,7 +712,7 @@ class Route {
         ],
         'wi-ma-sp'         => [
             'description' => 'Studienplan M.Sc. Information Systems (Wirtschaftsinformatik)',
-            'target'      => 'https://www.in.tum.de/fuer-studierende/master-studiengaenge/wirtschaftsinformatik-information-systems/curriculum/'            
+            'target'      => 'https://www.in.tum.de/fuer-studierende/master-studiengaenge/wirtschaftsinformatik-information-systems/curriculum/'
         ],
         'wi-sp'            => [
             'description' => 'Studienplan B.Sc. Wirtschaftsinformatik',
