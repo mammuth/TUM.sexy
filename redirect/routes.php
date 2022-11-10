@@ -312,6 +312,10 @@ class Route {
             'description' => 'Grundlagen Rechnernetze und Verteilte Systeme',
             'target'      => 'https://svm0000.net.in.tum.de',
         ],
+        'gs'            => [
+            'description' => 'DocGS',
+            'target'      => 'https://www.docgs.tum.de',
+        ],
         'hunger'           => [
             'description' => 'FMI Bistro Speiseplan',
             'target'      => 'https://tum.sexy/hunger',
