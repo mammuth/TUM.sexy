@@ -496,6 +496,10 @@ class Route {
             'description' => 'Praktikum Grundlagen der Programmierung (Moodle-Kurs)',
             'moodle_id'   => '80180',
         ],
+        'pgdpunittests'     => [
+            'description' => 'Unit - Tests: Praktikum Grundlagen der Programmierung',
+            'target'      => 'https://github.com/MaximilianAnzinger/pgdp2223-tests',
+        ],
         'pgm'              => [
             'description' => 'Probabilistic Graphical Models in Computer Vision',
             'target'      => 'https://vision.in.tum.de/teaching/ss2017/pgmcv',
