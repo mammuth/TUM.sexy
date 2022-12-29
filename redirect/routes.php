@@ -114,6 +114,14 @@ class Route {
             'description' => 'Liste der Informatik Lehrstühle',
             'target'      => 'https://www.in.tum.de/forschung/lehrstuehle/',
         ],
+        'chairs-ce'           => [
+            'description' => 'Liste der Computer Engineering Lehrstühle',
+            'target'      => 'https://www.ce.cit.tum.de/ce/forschung/professuren/',
+        ],
+        'chairs-cs'           => [
+            'description' => 'Liste der Computer Science Lehrstühle',
+            'target'      => 'https://www.cs.cit.tum.de/cs/forschung/professuren/',
+        ],
         'comp'             => [
             'description' => 'Computational Complexity',
             'target'      => 'https://www7.in.tum.de/um/courses/complexity/SS19/',
