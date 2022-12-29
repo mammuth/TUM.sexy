@@ -53,8 +53,8 @@ class Route {
             'target'      => 'https://www.tum.app/',
         ],
         'artemis'          => [
-            'description' => 'ArTEMIS platform of the Prof. Brügge, Chair 1',
-            'target'      => 'https://artemis.ase.in.tum.de',
+            'description' => 'Artemis platform (Applied Software Engineering)',
+            'target'      => 'https://artemis.cit.tum.de',
         ],
         'ase'              => [
             'description' => 'Advanced Topics In Software Engineering',
@@ -202,7 +202,7 @@ class Route {
         ],
         'eist'             => [
             'description' => 'Einführung in die Softwaretechnik',
-            'target'      => 'https://artemis.ase.in.tum.de/courses/169',
+            'target'      => 'https://artemis.cit.tum.de/courses/169',
         ],
         'enigame'          => [
             'description' => 'enigame Puzzle Hunt (Escape Game) Event',
@@ -253,7 +253,7 @@ class Route {
         ],
         'gad'              => [
             'description' => 'Grundlegende Algorithmen und Datenstrukturen',
-            'target'      => 'https://artemis.ase.in.tum.de/courses/184',
+            'target'      => 'https://artemis.cit.tum.de/courses/184',
             'moodle_id'   => '75236',
         ],
         'gadunittests'     => [
@@ -526,7 +526,7 @@ class Route {
         ],
         'pse'              => [
             'description' => 'Patterns in Software Engineering',
-            'target'      => 'https://ase.in.tum.de/lehrstuhl_1/teaching/1138-patterns-in-software-engineering-ws20-21',
+            'target'      => 'https://artemis.cit.tum.de/courses/209',
         ],
         'qo'               => [
             'description' => 'Query Optimization',
@@ -735,6 +735,7 @@ class Route {
     // Format is: <source / synonym> => <target> - the target must be present in the $routes array
     private $synonyms = [
         '365'            => 'semesterticket',
+        'a'              => 'artemis',
         'ada'            => 'advalgs',
         'afl'            => 'automata',
         'ai'             => 'ki',
@@ -757,6 +758,7 @@ class Route {
         'info2'          => 'fpv',
         'kino'           => 'film',
         'kreutz'         => 'julius',
+        'l'              => 'live',
         'la'             => 'linalg',
         'latex'          => 'sharelatex',
         'match'          => 'matching',
@@ -823,6 +825,7 @@ class Route {
         '6. Semester' => [],
         'Special'     => [
             'app',
+            'artemis',
             'c',
             'c2',
             'chairs',
@@ -840,6 +843,7 @@ class Route {
             'gitlab',
             'hunger',
             'ieee',
+            'live',
             'm',
             'ma-sp',
             'matching',
@@ -874,7 +878,6 @@ class Route {
             'advalgs',
             'agt',
             'algebra1',
-            'artemis',
             'ase',
             'automata',
             'bmt',
