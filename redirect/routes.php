@@ -732,7 +732,7 @@ class Route {
         ],
         'wi-sp'            => [
             'description' => 'Studienplan B.Sc. Wirtschaftsinformatik',
-            'target'      => 'https://www.in.tum.de/fuer-studierende/bachelor-studiengaenge/wirtschaftsinformatik/studienplan/studienbeginn-ab-ws-202122/',
+            'target'      => 'https://www.in.tum.de/fuer-studierende/bachelor-studiengaenge/wirtschaftsinformatik/studienplan/studienbeginn-ab-ws-2021-22/',
         ],
         'z'            => [
             'description' => 'Zulip',
