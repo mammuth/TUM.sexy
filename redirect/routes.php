@@ -642,7 +642,7 @@ class Route {
         ],
         'sp'               => [
             'description' => 'Studienplan B.Sc. Informatik',
-            'target'      => 'https://www.in.tum.de/in/fuer-studierende/bachelor-studiengaenge/informatik/studienplan/studienbeginn-ab-wise-2021-22/',
+            'target'      => 'https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-informatik/studienplan/',
         ],
         'sp18'               => [
             'description' => 'Studienplan B.Sc. Informatik beginn WS 18/19',
