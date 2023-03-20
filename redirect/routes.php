@@ -810,6 +810,7 @@ class Route {
             'era',
             'ds',
             'carlos',
+            'dsolver',
         ],
         '2. Semester' => [
             'eist',
