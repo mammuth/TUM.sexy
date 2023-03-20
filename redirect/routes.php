@@ -188,6 +188,10 @@ class Route {
             'description' => 'Diskrete Strukturen',
             'moodle_id'   => '80008',
         ],
+	'dsolver'          => [
+            'description' => 'DSolver',
+            'target'   	  => 'https://www.dsolver.de/',
+        ],
         'dwt'              => [
             'description' => 'Diskrete Wahrscheinlichkeitstheorie',
             'target'      => 'http://wwwalbers.in.tum.de/lehre/2022SS/dwt/index.html.de',
