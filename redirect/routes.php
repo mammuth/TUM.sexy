@@ -283,7 +283,7 @@ class Route {
         ],
         'ge-sp'            => [
             'description' => 'Studienplan B.Sc. Informatik: Games Engineering',
-            'target'      => 'https://www.in.tum.de/de/fuer-studierende/bachelor-studiengaenge/informatik-games-engineering/studienplan-games/studienbeginn-ab-ws-201819-games/',
+            'target'      => 'https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-informatik-games-engineering/studienplaene/',
         ],
         'ged'              => [
             'description' => 'Game Engine Design',
