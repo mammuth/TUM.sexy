@@ -421,7 +421,7 @@ class Route {
         ],
         'ma-sp'            => [
             'description' => 'Studienplan M.Sc. Informatik',
-            'target'      => 'https://www.in.tum.de/fuer-studierende/master-studiengaenge/informatik/studienplan/fpso-2018/',
+            'target'      => 'https://www.cit.tum.de/cit/studium/studiengaenge/master-informatik/studienplaene/',
         ],
         'markov'           => [
             'description' => 'Markovketten',
