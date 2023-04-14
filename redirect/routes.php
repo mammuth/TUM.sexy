@@ -195,7 +195,7 @@ class Route {
         ],
         'dwt'              => [
             'description' => 'Diskrete Wahrscheinlichkeitstheorie',
-            'target'      => 'http://wwwalbers.in.tum.de/lehre/2022SS/dwt/index.html.de',
+            'target'      => 'https://wwwalbers.in.tum.de/lehre/2023SS/dwt/index.html.de',
         ],
         'ea'               => [
             'description' => 'Efficient Algorithms',
@@ -266,8 +266,8 @@ class Route {
         ],
         'gad'              => [
             'description' => 'Grundlegende Algorithmen und Datenstrukturen',
-            'target'      => 'https://artemis.cit.tum.de/courses/184',
-            'moodle_id'   => '75236',
+            'target'      => 'https://artemis.ase.in.tum.de/courses/256/exercises',
+            'moodle_id'   => '86017',
         ],
         'gadunittests'     => [
             'description' => 'Unit - Tests: Grundlegende Algorithmen und Datenstrukturen',
@@ -323,7 +323,7 @@ class Route {
         ],
         'grnvs'            => [
             'description' => 'Grundlagen Rechnernetze und Verteilte Systeme',
-            'target'      => 'https://svm0000.net.in.tum.de',
+            'target'      => 'https://www.net.in.tum.de/teaching/ss23/grnvs.html',
         ],
         'gs'            => [
             'description' => 'DocGS',
@@ -413,7 +413,8 @@ class Route {
         ],
         'logic'           => [
             'description' => 'Logic',
-            'target'      => 'https://www21.in.tum.de/teaching/logic/SS22/',
+            'target'      => 'https://www21.in.tum.de/teaching/logic/SS22/index.html',
+            'moodle_id'   => '89824',
         ],
         'm'                => [
             'description' => 'Moodle',
@@ -684,8 +685,8 @@ class Route {
         ],
         'theo'             => [
             'description' => 'Einführung in die theoretische Informatik',
-            'target'      => 'https://www.in.tum.de/i07/lehre/ss22/theo/',
-            'moodle_id'   => '75506',
+            'target'      => 'https://www.cs.cit.tum.de/tcs/lehre/sommersemester-2023/theo/',
+            'moodle_id'   => '86282',
         ],
         'theojudge'        => [
             'description' => 'TUMjudge - Einführung in die theoretische Informatik',
