@@ -215,7 +215,11 @@ class Route {
         ],
         'eist'             => [
             'description' => 'Einführung in die Softwaretechnik',
-            'target'      => 'https://artemis.cit.tum.de/courses/169',
+            'target'      => 'https://artemis.cit.tum.de/courses/241',
+        ],
+	'eistslack'             => [
+            'description' => 'EIST Slack-Channel',
+            'target'      => 'https://eist2023.slack.com/',
         ],
         'enigame'          => [
             'description' => 'enigame Puzzle Hunt (Escape Game) Event',
@@ -816,6 +820,8 @@ class Route {
         ],
         '2. Semester' => [
             'eist',
+	    'eistslack',
+	    'fpv',
             'gad',
             'gra',
             'linalg',
@@ -824,7 +830,6 @@ class Route {
         '3. Semester' => [
             'anal',
             'uanal',
-            'fpv',
             'db',
             'gbs',
         ],
