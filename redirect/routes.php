@@ -26,7 +26,7 @@ class Route {
         ],
         'agt'              => [
             'description' => 'Algorithmic Game Theory',
-            'target'      => 'https://dss.in.tum.de/teaching/ss-21/43-teaching/semester/sommersemester-2021/247-algorithmic-game-theory-ss2021.html',
+            'target'      => 'https://www.cs.cit.tum.de/en/dss/teaching/summer-semester-2023/algorithmic-game-theory-ss23/',
         ],
         'algebra1'         => [
             'description' => 'Algebra 1',
@@ -253,7 +253,7 @@ class Route {
         ],
         'fds'              => [
             'description' => 'Functional Data Structures',
-            'target'      => 'https://www21.in.tum.de/teaching/fds/SS22/',
+            'target'      => 'https://www21.in.tum.de/teaching/fds/SS23/',
         ],
         'film'             => [
             'description' => 'tu film',
