@@ -632,7 +632,7 @@ class Route {
         ],
         'sharelatex'       => [
             'description' => 'ShareLaTeX@TUM',
-            'target'      => 'https://latex.tum.de/',
+            'target'      => 'https://sharelatex.tum.de',
         ],
         'shuttle'          => [
             'description' => 'WZW-GAR-MUC shuttle schedule',
