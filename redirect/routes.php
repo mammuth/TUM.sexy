@@ -704,6 +704,10 @@ class Route {
             'description' => 'Support Elective: Think. Make. Start.',
             'target'      => 'https://www.thinkmakestart.com/',
         ],
+	'tumenu'           => [
+            'description' => 'The place, where you can find daily menus for some student places in Munich',
+            'target'      => 'https://menu.tum.sexy/',
+        ],  
         'uanal'            => [
             'description' => 'Übungen zu Analysis für Informatik',
             'moodle_id'   => '84798',
@@ -885,6 +889,7 @@ class Route {
             'springer',
             'statista',
             'streams',
+	    'tumenu',
             'vorkurs',
             'wahl',
             'walomat',
