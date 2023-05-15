@@ -23,13 +23,10 @@ spec:
       labels:
         app.kubernetes.io/part-of: tum-sexy
         app.kubernetes.io/name: server
-      {{- if eq "nav.tum.de" $.Values.url }}
-      annotations:
-        prometheus.io/path: /metrics
-        prometheus.io/port: '8080'
-        prometheus.io/scrape: 'true'
-      {{- end }}
     spec:
+      volumes:
+        - name: tmp-apache2
+          emptyDir: { }
       containers:
         - name: sexy-server
           image: ghcr.io/tum-dev/tum.sexy/sexy-server:latest
@@ -39,3 +36,6 @@ spec:
               name: https
           securityContext:
             readOnlyRootFilesystem: true
+          volumeMounts:
+            - mountPath: /var/run/apache2/
+              name: tmp-apache2
