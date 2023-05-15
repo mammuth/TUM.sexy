@@ -1,0 +1,6 @@
+name: tum-sexy
+description: TUM.sexy
+version: 1.0.0
+apiVersion: v1
+deprecated: false
+icon: https://tum.sexy/favicon.png
