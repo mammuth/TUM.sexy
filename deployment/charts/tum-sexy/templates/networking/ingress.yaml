@@ -1,0 +1,37 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: ingress
+  labels:
+    app.kubernetes.io/part-of: tum-sexy
+  namespace: {{ $.Values.namespace }}
+spec:
+  entryPoints:
+    - websecure
+  routes:
+    - kind: Rule
+      match: Host(`{{ $.Values.url }}`)
+      services:
+        - name: tum-sexy-svc
+          port: 80
+  tls:
+    secretName: {{ $.Values.url }}
+---
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: ingress-http
+  labels:
+    app.kubernetes.io/part-of: tum-sexy
+  namespace: {{ $.Values.namespace }}
+spec:
+  entryPoints:
+    - web
+  routes:
+    - kind: Rule
+      match: Host(`{{ $.Values.url }}`)
+      services:
+        - name: noop@internal
+          kind: TraefikService
+      middlewares:
+        - name: https

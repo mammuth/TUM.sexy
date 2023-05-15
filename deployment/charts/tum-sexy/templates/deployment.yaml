@@ -1,0 +1,41 @@
+serverVersion: apps/v1
+kind: Deployment
+metadata:
+  name: server
+  labels:
+    app.kubernetes.io/part-of: tum-sexy
+    app.kubernetes.io/name: server
+  namespace: {{ $.Values.namespace }}
+spec:
+  replicas: 1
+  revisionHistoryLimit: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/part-of: tum-sexy
+      app.kubernetes.io/name: server
+  strategy:
+    rollingUpdate:
+      maxSurge: 100%
+      maxUnavailable: 0%
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/part-of: tum-sexy
+        app.kubernetes.io/name: server
+      {{- if eq "nav.tum.de" $.Values.url }}
+      annotations:
+        prometheus.io/path: /metrics
+        prometheus.io/port: '8080'
+        prometheus.io/scrape: 'true'
+      {{- end }}
+    spec:
+      containers:
+        - name: sexy-server
+          image: "docker.pkg.github.com/tum-dev/tum.sexy/sexy-server:latest"
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
+              name: https
+          securityContext:
+            readOnlyRootFilesystem: true

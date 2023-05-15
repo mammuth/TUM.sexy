@@ -1,0 +1,11 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: Middleware
+metadata:
+  name: https
+  labels:
+    app.kubernetes.io/part-of: tum-sexy
+  namespace: {{ $.Values.namespace }}
+spec:
+  redirectScheme:
+    scheme: https
+    permanent: true
