@@ -704,6 +704,10 @@ class Route {
             'description' => 'Support Elective: Think. Make. Start.',
             'target'      => 'https://www.thinkmakestart.com/',
         ],
+        'ts'              => [
+            'description' => 'Transaction Systems',
+            'target'      => 'https://db.in.tum.de/teaching/ss23/transactions/',
+        ],
 	'tumenu'           => [
             'description' => 'The place, where you can find daily menus for some student places in Munich',
             'target'      => 'https://menu.tum.sexy/',
