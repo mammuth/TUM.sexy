@@ -27,6 +27,8 @@ spec:
       volumes:
         - name: tmp-apache2
           emptyDir: { }
+        - name: tmp-tum-sexy
+          emptyDir: { }
       containers:
         - name: sexy-server
           image: ghcr.io/tum-dev/tum.sexy/sexy-server:latest
@@ -39,3 +41,5 @@ spec:
           volumeMounts:
             - mountPath: /var/run/apache2/
               name: tmp-apache2
+            - mountPath: /tmp/
+              name: tmp-tum-sexy
