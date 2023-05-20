@@ -51,3 +51,10 @@ spec:
               name: logs
             - mountPath: /tmp/
               name: tmp-tum-sexy
+          resources:
+            requests:
+              cpu: 10m
+              memory: 64Mi
+            limits:
+              cpu: 1000m
+              memory: 1024Mi
