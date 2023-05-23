@@ -232,7 +232,7 @@ class Route {
         ],
         'erdb'             => [
             'description' => 'Einsatz und Realisierung von Datenbanksystemen',
-            'target'      => 'https://db.in.tum.de/teaching/ss22/impldb/',
+            'target'      => 'https://db.in.tum.de/teaching/ss23/impldb/',
         ],
         'esn'              => [
             'description' => 'International engagement: ESN TUMi e.V.',
