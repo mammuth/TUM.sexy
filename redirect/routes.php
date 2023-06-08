@@ -536,7 +536,7 @@ class Route {
         ],
         'pride'            => [
             'description' => 'TUM Diversity & Queer',
-            'target'      => 'https://www.facebook.com/events/599246697252806/',
+            'target'      => 'https://www.sv.tum.de/en/sv/who-we-are/asta/team/departments-of-asta/diversity-queer-department/',
         ],
         'progopt'          => [
             'description' => 'Program Optimization',
