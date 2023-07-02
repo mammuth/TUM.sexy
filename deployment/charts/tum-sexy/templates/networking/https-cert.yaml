@@ -9,6 +9,7 @@ spec:
   commonName: {{ $.Values.url }}
   dnsNames:
     - {{ $.Values.url }}
+    - "*.{{ $.Values.url }}"
   secretName: {{ $.Values.url }}
   issuerRef:
     name: letsencrypt-production
