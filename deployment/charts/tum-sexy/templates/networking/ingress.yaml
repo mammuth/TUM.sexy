@@ -29,7 +29,7 @@ spec:
     - web
   routes:
     - kind: Rule
-      match: Host(`{{ $.Values.url }}`) || Host(`*.{{ $.Values.url }}`) 
+      match: HostRegexp(`{{ $.Values.url }}`, `{subdomain:[a-z0-9]+}.{{ $.Values.url }}`)
       services:
         - name: noop@internal
           kind: TraefikService
