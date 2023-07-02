@@ -10,7 +10,7 @@ spec:
     - websecure
   routes:
     - kind: Rule
-      match: Host(`{{ $.Values.url }}`)
+      match: Host(`{{ $.Values.url }}`) || Host(`*.{{ $.Values.url }}`) 
       services:
         - name: tum-sexy-svc
           port: 80
@@ -29,7 +29,7 @@ spec:
     - web
   routes:
     - kind: Rule
-      match: Host(`{{ $.Values.url }}`)
+      match: Host(`{{ $.Values.url }}`) || Host(`*.{{ $.Values.url }}`) 
       services:
         - name: noop@internal
           kind: TraefikService
