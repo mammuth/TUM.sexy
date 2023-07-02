@@ -10,7 +10,7 @@ spec:
     - websecure
   routes:
     - kind: Rule
-      match: HostRegexp(`{{ $.Values.url }}, `{subdomain:[a-z0-9]+}.{{ $.Values.url }}`)
+      match: HostRegexp(`{{ $.Values.url }}`, `{subdomain:[a-z0-9]+}.{{ $.Values.url }}`)
       services:
         - name: tum-sexy-svc
           port: 80
