@@ -3,8 +3,8 @@
 class Route {
     private $routes = [
         'hunger'       => [
-            'description' => 'FMI Bistro Speiseplan',
-            'target'      => 'https://tum.sexy/hunger',
+            'description' => 'Mensa Speiseplan',
+            'target'      => 'https://menu.tum.sexy/',
         ],
         'mensabot'     => [
             'description' => 'TUMMensabot für Telegram',

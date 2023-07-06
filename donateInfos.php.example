@@ -1,5 +1,0 @@
-<?php
-$stripe = array(
-    "secret_key"      => "sk_live_xxx",
-    "publishable_key" => "pk_live_xxx"
-);
