@@ -474,9 +474,13 @@ class Route {
             'target'      => 'https://www.os.in.tum.de/studium-und-lehre/ss18/mobile-verteilte-systeme/',
             'moodle_id'   => '38940',
         ],
+        'nav'        => [
+            'description' => 'NavigaTUM - Finde Räume, Gebäude und andere Orte an der TUM mit Exzellenz. Eine moderne Alternative zum RoomFinder, entwickelt von Studierenden.',
+            'target'      => 'https://nav.tum.de',
+        ],
         'navigatum'        => [
             'description' => 'NavigaTUM - Finde Räume, Gebäude und andere Orte an der TUM mit Exzellenz. Eine moderne Alternative zum RoomFinder, entwickelt von Studierenden.',
-            'target'      => 'https://nav.tum.sexy',
+            'target'      => 'https://nav.tum.de',
         ],
         'netsec'           => [
             'description' => 'Network Security - Netzsicherheit',
