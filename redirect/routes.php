@@ -657,10 +657,14 @@ class Route {
         'sp'               => [
             'description' => 'Studienplan B.Sc. Informatik',
             'target'      => 'https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-informatik/studienplan/',
-        ],
+		],
         'sp18'               => [
             'description' => 'Studienplan B.Sc. Informatik beginn WS 18/19',
             'target'      => 'https://www.in.tum.de/fuer-studierende/bachelor-studiengaenge/informatik/studienplan/studienbeginn-wise-201819-bis-sose-2021/',
+		],
+		'spaetzle'		   => [
+            'description' => 'Spätzle Ticker',
+            'target'      => 'https://leonwind.github.io/spaetzle-ticker/',
         ],
         'springer'         => [
             'description' => 'Springer Link Login',
@@ -893,7 +897,8 @@ class Route {
             'shuttle',
             'slam',
             'social',
-            'sp',
+			'sp',
+			'spaetzle',
             'springer',
             'statista',
             'streams',
