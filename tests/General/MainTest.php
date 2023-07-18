@@ -6,7 +6,7 @@ class MainTest extends \PHPUnit\Framework\TestCase {
         $router = new Route();
 
         // Normal redirect
-        $this->assertEquals('https://tum.sexy/hunger', $router->getTargetOfSub('hunger.tum.sexy'));
+        $this->assertEquals('https://menu.tum.sexy/', $router->getTargetOfSub('hunger.tum.sexy'));
 
         // Not found redirect
         $this->assertEquals('https://tum.sexy/', $router->getTargetOfSub('kjhdsfjkdfsgkjldsfgkjl.tum.sexy'));

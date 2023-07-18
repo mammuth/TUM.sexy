@@ -638,10 +638,6 @@ class Route {
             'description' => 'ShareLaTeX@TUM',
             'target'      => 'https://sharelatex.tum.de',
         ],
-        'shuttle'          => [
-            'description' => 'WZW-GAR-MUC shuttle schedule',
-            'target'      => 'https://tum.sexy/shuttle/',
-        ],
         'slam'             => [
             'description' => 'TUM Hörsaal Slam',
             'target'      => 'https://fb.me/e/eQ0mb4QYz',
@@ -894,7 +890,6 @@ class Route {
             'scopus',
             'set',
             'sharelatex',
-            'shuttle',
             'slam',
             'social',
 			'sp',
