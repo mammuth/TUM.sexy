@@ -334,8 +334,8 @@ class Route {
             'target'      => 'https://www.docgs.tum.de',
         ],
         'hunger'           => [
-            'description' => 'FMI Bistro Speiseplan',
-            'target'      => 'https://tum.sexy/hunger',
+            'description' => 'Mensa Speiseplan',
+            'target'      => 'https://menu.tum.sexy/',
         ],
         'hyper'            => [
             'description' => 'HyPer DB Webschnittstelle',
@@ -719,7 +719,7 @@ class Route {
 	'tumenu'           => [
             'description' => 'The place, where you can find daily menus for some student places in Munich',
             'target'      => 'https://menu.tum.sexy/',
-        ],  
+        ],
         'uanal'            => [
             'description' => 'Übungen zu Analysis für Informatik',
             'moodle_id'   => '84798',

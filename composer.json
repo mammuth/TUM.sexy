@@ -7,8 +7,7 @@
     "test": "phpunit"
   },
   "require": {
-    "twig/twig": "^3.3",
-    "tum-dev/fmeat": "^3.0.2"
+    "twig/twig": "^3.3"
   },
   "require-dev": {
     "phpunit/phpunit": "~9.5"
