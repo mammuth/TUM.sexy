@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
- <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
-   <ShortName>tum.sexy</ShortName>
-   <Description>redirect to [searchterm].tum.sexy. More information about the specific redirects on tum.sexy</Description>
-   <Tags>tum TUM</Tags>
-   <Url type="text/html" template="http://{searchTerms}.tum.sexy"/>
- </OpenSearchDescription>
