@@ -110,10 +110,6 @@ class Route {
             'target'      => 'https://db.in.tum.de/teaching/ws2223/clouddataprocessing',
             'moodle_id'   => '80360',
         ],
-        'chairs'           => [
-            'description' => 'Liste der Informatik Lehrstühle',
-            'target'      => 'https://www.in.tum.de/forschung/lehrstuehle/',
-        ],
         'chairs-ce'           => [
             'description' => 'Liste der Computer Engineering Lehrstühle',
             'target'      => 'https://www.ce.cit.tum.de/ce/forschung/professuren/',
@@ -750,11 +746,11 @@ class Route {
         ],
         'wi-ma-sp'         => [
             'description' => 'Studienplan M.Sc. Information Systems (Wirtschaftsinformatik)',
-            'target'      => 'https://www.in.tum.de/fuer-studierende/master-studiengaenge/wirtschaftsinformatik-information-systems/curriculum/'
+            'target'      => 'https://www.cit.tum.de/cit/studium/studiengaenge/master-information-systems/studienplaene/'
         ],
         'wi-sp'            => [
             'description' => 'Studienplan B.Sc. Wirtschaftsinformatik',
-            'target'      => 'https://www.in.tum.de/fuer-studierende/bachelor-studiengaenge/wirtschaftsinformatik/studienplan/studienbeginn-ab-ws-2021-22/',
+            'target'      => 'https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-wirtschaftsinformatik/studienplaene/',
         ],
         'z'            => [
             'description' => 'Zulip',
@@ -860,7 +856,6 @@ class Route {
             'artemis',
             'c',
             'c2',
-            'chairs',
             'cvl',
             'dea',
             'eat-api',
