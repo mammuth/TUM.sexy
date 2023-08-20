@@ -712,6 +712,10 @@ class Route {
             'description' => 'The place, where you can find daily menus for some student places in Munich',
             'target'      => 'https://menu.tum.sexy/',
         ],
+        'tval'            => [
+            'description' => 'Status of the Validation Stations',
+            'target'      => 'https://campus.tum.de/valistatus/en/',
+        ],
         'uanal'            => [
             'description' => 'Übungen zu Analysis für Informatik',
             'moodle_id'   => '84798',
@@ -893,6 +897,7 @@ class Route {
             'statista',
             'streams',
 	    'tumenu',
+            'tval',
             'vorkurs',
             'wahl',
             'walomat',
