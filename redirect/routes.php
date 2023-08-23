@@ -140,7 +140,7 @@ class Route {
         ],
         'cpp'              => [
             'description' => 'Concepts of C++ programming (IN2377)',
-            'target'      => 'https://ciip.in.tum.de/teaching/cpp_ws22.html',
+            'target'      => 'https://ciip.in.tum.de/teaching/cpp_ws23.html',
             'moodle_id'   => '80267',
         ],
         'crypto'           => [
