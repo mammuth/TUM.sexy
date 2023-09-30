@@ -245,7 +245,7 @@ class Route {
         ],
         'exzellenz'        => [
             'description' => 'Exzellenz!!1elf',
-            'target'      => 'https://shop.tum.de/accessoires/extras/105/tum-kondom',
+            'target'      => 'https://shop.tum.de/product/https-shop-tum-de-product-tum-kondom-csd/',
         ],
         'fds'              => [
             'description' => 'Functional Data Structures',
