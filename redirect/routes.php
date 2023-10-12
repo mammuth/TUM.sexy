@@ -627,8 +627,8 @@ class Route {
             'target'      => 'https://www.semesterticket-muenchen.de',
         ],
         'set'              => [
-            'description' => 'Studieneinführungstage der FSMPI',
-            'target'      => 'https://mpi.fs.tum.de/neu-an-der-tum/set/',
+            'description' => 'Studieneinführungstage der FSMPIC',
+            'target'      => 'https://mpic.fs.tum.de/studium/studienbeginn/set/',
         ],
         'sharelatex'       => [
             'description' => 'ShareLaTeX@TUM',
