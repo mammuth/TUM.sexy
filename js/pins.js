@@ -1,16 +1,21 @@
 let pins = [];
 
 function removePin(elem) {
-    let remove = elem.parentElement.children[1].innerHTML
-    pins = pins.filter(pin => pin.n !== remove)
+    let removeN = elem.parentElement.children[1].innerHTML
+    let removeL = elem.parentElement.children[2].children[0].href
+    pins = pins.filter(pin => pin.n !== removeN && pin.l !== removeL)
     localStorage.setItem("pins", JSON.stringify(pins))
     render()
 }
 
 function addPin(elem) {
     const parentContent = elem.parentElement.innerText
-    let pinName = parentContent.substr(0, parentContent.lastIndexOf(" — "))
-    let pinUrl = parentContent.substr(parentContent.lastIndexOf(" — ") + 3, parentContent.length - (13 + parentContent.lastIndexOf(" — ")))
+    let pinName = parentContent.substring(0, parentContent.lastIndexOf(" — "))
+    let pinUrl = parentContent.substring(parentContent.lastIndexOf(" — ") + 3, parentContent.length - (13 + parentContent.lastIndexOf(" — ")))
+    // make sure the pin is not already in the list
+    if (pins.filter(pin =>  pin.n === pinName && pin.l === pinUrl ).length > 0) {
+        return
+    }
     pins.push({"n": pinName, "l": pinUrl})
     localStorage.setItem("pins", JSON.stringify(pins))
     elem.parentElement.removeChild(elem)
