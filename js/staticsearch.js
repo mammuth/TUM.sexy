@@ -30,7 +30,7 @@ function staticsearch(htmlnode, {
 			"cite","code","del","dfn","em","i","ins","kbd",
 			"mark","meter","pre","progress","q","rp","rt",
 			"ruby","s","samp","small","strong","sub","time",
-			"u","var","wbr","label"],
+			"u","var","wbr","label", "img"],
 		tomark = true,
 		getIndices = function(pattern, str, onlyexists) {
 			if (onlyexists)
@@ -55,6 +55,9 @@ function staticsearch(htmlnode, {
 	class VNode {
 		constructor(htmlnode, nofilter = false) {
 			this.origdisplay = htmlnode.style.display;
+			if (htmlnode.classList.contains("pin")) {
+				this.origdisplay = "block";
+			}
 			this.preactive = true;
 			this.active = true;
 			this.predisplay = true;

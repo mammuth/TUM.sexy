@@ -11,7 +11,8 @@ function removePin(elem) {
 function addPin(elem) {
     const parentContent = elem.parentElement.innerText
     let pinName = parentContent.substring(0, parentContent.lastIndexOf(" — "))
-    let pinUrl = parentContent.substring(parentContent.lastIndexOf(" — ") + 3, parentContent.length - (13 + parentContent.lastIndexOf(" — ")))
+    let pinUrl = parentContent.substring(parentContent.lastIndexOf(" — ") + 3)
+    pinUrl = pinUrl.slice(0, -10)
     // make sure the pin is not already in the list
     if (pins.filter(pin =>  pin.n === pinName && pin.l === pinUrl ).length > 0) {
         return
