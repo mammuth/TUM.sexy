@@ -377,6 +377,10 @@ class Route {
             'description' => 'Information Officer',
             'target'      => 'https://www.sv.tum.de/asta/io/',
         ],
+        'itguide'          => [
+            'description' => 'Information Officer',
+            'target'      => 'https://mpic.fs.tum.de/studium/itguide/#tumonline',
+        ],
         'itsec'            => [
             'description' => 'IT-Sicherheit',
             'target'      => 'https://www.sec.in.tum.de/i20/teaching/ws2022/it-sicherheit-in0042',
